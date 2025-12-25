@@ -1,0 +1,74 @@
+/* Definimos la gama de colores */
+:root {
+--naranja: #6b2b00;
+}
+
+body {
+    background-color: black;
+    font-family: 'CMU Serif', serif;
+    }
+
+/* Se definen los estilos para los encabezados */
+    
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #e0e0e0;
+}
+
+h3 {
+    color: #b0b0b0;
+}
+
+h4 {
+    color: #808080;
+}
+
+h5 {
+    color: #606060;
+}
+
+h6 {
+    color: #404040;
+}
+
+p {
+    color: #fffdf4;
+    font-size: 20px;
+}
+
+button {
+    background-color: #601d1d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'CMU Serif', serif;
+
+}
+
+button:hover {
+    background-color: var(--naranja);
+}   
+
+a {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Cambiar color del texto y fondo al seleccionarlo */
+
+::selection { color: white; /* Color de la letra */ background: var(--naranja); /* Color de fondo al seleccionar */ }
+
+i {
+    font-style: italic;
+}
+
