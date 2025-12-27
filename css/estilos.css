@@ -1,8 +1,13 @@
+/* Importamos la fuente personalizada */
+
+@import url('https://fonts.cdnfonts.com/css/cmu-serif');
+
 /* Definimos la gama de colores */
 :root {
 --naranja: #6b2b00;
 }
 
+/* Establecemos los estilos generales del cuerpo */
 body {
     background-color: black;
     font-family: 'CMU Serif', serif;
@@ -36,8 +41,9 @@ h6 {
 
 p {
     color: #fffdf4;
-    font-size: 20px;
 }
+
+/* Definimos estilo para el botón */
 
 button {
     background-color: #601d1d;
@@ -47,7 +53,6 @@ button {
     cursor: pointer;
     border-radius: 50px;
     font-family: 'CMU Serif', serif;
-
 }
 
 button:hover {
