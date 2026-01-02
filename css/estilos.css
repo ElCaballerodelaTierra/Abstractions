@@ -140,5 +140,19 @@ i {
 .articulo {
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo img.anchura-completa {
+    max-width: 100%;
+}
+
+.articulo img.anchura-al-texto {
+   max-width: 800px; /* igual que el párrafo */ 
+   width: 100%; /* ocupa todo el ancho disponible dentro de ese límite */ 
+   height: auto; 
+   display: block; 
+   margin: 0 auto; /* centra la imagen */ 
+   padding: 0px 20px 0px 20px; 
 }
