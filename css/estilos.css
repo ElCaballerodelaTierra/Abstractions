@@ -5,7 +5,8 @@
 /* Definimos la gama de colores */
 :root {
 --naranja: #6b2b00;
-
+--color-texto-articulo: #ffffffb7;
+--color-descripcion-imagenes: #ffb27f;
 --anchura-contenido: 800px;
 }
 
@@ -21,7 +22,7 @@
 body {
     font-family: 'CMU Serif', serif;
     background-color: black;
-    color: #ffffff;
+    color:var(--color-texto-articulo);
     user-select: text;
 }
 
@@ -129,17 +130,27 @@ figure img {
 
 figure.anchura-completa img {
     width: 100vw;
+    padding: 0px;
+}
+
+figure.anchura-completa figcaption{
+    padding: 10px 10px 0px 0px;
 }
 
 /* Estilo para la descripción de las imagenes */
 
 figcaption {
-    padding: 10px 0px;
+    padding: 10px 10px 0px 10px;
     font-size: 0.85rem;
     text-align: right;
     font-style: italic;
-    width: var(--anchura-contenido);
+    max-width: var(--anchura-contenido);
     margin: 0 auto;
+    color:var(--color-descripcion-imagenes);
+}
+
+article figcaption {
+    padding: 10px 0px 0px 0px;
 }
 
 article {
@@ -149,5 +160,5 @@ article {
     align-items: center;
     max-width: var(--anchura-contenido);
     margin: 0 auto;
+    padding: 0px 10px;
 }
-
