@@ -49,15 +49,13 @@ h6 {
 }
 
 p {
-    color: #fffdf4;
-    padding: 20px;
-    max-width: 800px;
+    padding: 10px 0px;
 }
 
 /* Definimos estilo para los botones */
 
 button {
-    background-color: #601d1d;
+    background-color: var(--naranja);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -73,18 +71,19 @@ button:hover {
 /* Estilos para los enlaces */
 
 a {
-    color: #ff6b6b;
+    color: var(--naranja);
     text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: underline;
     cursor: pointer;
 }
 
 /* Estilo al seleccionar texto */
 
-::selection { color: white; /* Color de la letra */ background: var(--naranja); /* Color de fondo al seleccionar */ }
+::selection { 
+    color: white; /* Color de la letra */ 
+    background: var(--naranja); /* Color de fondo al seleccionar */ }
 
 i {
     font-style: italic;
@@ -94,22 +93,11 @@ i {
 
 .portada-imagen {
     height: 100vh;              /* 100% de la altura del viewport */
-    width: 100%;               /* 100% del ancho del viewport */
+    width: 100%;
     object-fit: cover;         /* que cubra todo */
-    background-size: cover;     /* que cubra todo */
-    background-position: center;
-    position: relative;         /* para posicionar el título */
-    display: flex;              /* centrar contenido */
-    align-items: flex-end;      /* alinear al fondo */
-    justify-content: center;    /* centrar horizontalmente */
+    position: relative;
     mask-image: linear-gradient(to bottom, black 50%, transparent);
-}
-
-.portada-imagen::after {
-    position: absolute;
-    bottom: 20px;
-    font-size: 2rem;
-    font-weight: bold;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
 }
 
 .portada-titulos {
@@ -142,17 +130,15 @@ i {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .articulo img.anchura-completa {
-    max-width: 100%;
+    max-width: 100vw;
 }
 
 .articulo img.anchura-al-texto {
-   max-width: 800px; /* igual que el párrafo */ 
-   width: 100%; /* ocupa todo el ancho disponible dentro de ese límite */ 
-   height: auto; 
-   display: block; 
-   margin: 0 auto; /* centra la imagen */ 
-   padding: 0px 20px 0px 20px; 
+    width: 100%;
 }
