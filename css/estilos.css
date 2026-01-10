@@ -5,21 +5,24 @@
 /* Definimos la gama de colores */
 :root {
 --naranja: #6b2b00;
+
+--anchura-contenido: 800px;
 }
+
 
 /* Establecemos los estilos generales del cuerpo */
 * {
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-    
+    scrollbar-width: none !important;
     }
 
 body {
     font-family: 'CMU Serif', serif;
     background-color: black;
     color: #ffffff;
-    
+    user-select: text;
 }
 
 /* Se definen los estilos para los encabezados */
@@ -85,6 +88,8 @@ a:hover {
     color: white; /* Color de la letra */ 
     background: var(--naranja); /* Color de fondo al seleccionar */ }
 
+/* Estilo para texto en cursiva */
+
 i {
     font-style: italic;
 }
@@ -116,29 +121,33 @@ i {
     font-style: italic;
 }
 
-.portada-descripcion {
-    position: static;
-    padding: 10px 10px;
-    font-size: 1rem;
-    color: rgb(255, 242, 177);
-    text-align: right;
-    font-style: italic;
+/* Estilos para las imagenes dentro del articulo */
+
+figure img {
+    width: 100%;
 }
 
-.articulo {
+figure.anchura-completa img {
+    width: 100vw;
+}
+
+/* Estilo para la descripción de las imagenes */
+
+figcaption {
+    padding: 10px 0px;
+    font-size: 0.85rem;
+    text-align: right;
+    font-style: italic;
+    width: var(--anchura-contenido);
+    margin: 0 auto;
+}
+
+article {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    max-width: 800px;
+    max-width: var(--anchura-contenido);
     margin: 0 auto;
 }
 
-.articulo img.anchura-completa {
-    max-width: 100vw;
-}
-
-.articulo img.anchura-al-texto {
-    width: 100%;
-}
