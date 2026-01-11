@@ -6,6 +6,7 @@
 :root {
 --naranja: #6b2b00;
 --color-texto-articulo: #ffffffb7;
+--color-titulos: #dfa776;
 --color-descripcion-imagenes: #ffb27f;
 --anchura-contenido: 800px;
 }
@@ -28,11 +29,11 @@ body {
 /* Se definen los estilos para los encabezados */
     
 h1 {
-    color: #ffffff;
+    color: var(--color-titulos);
 }
 
 h2 {
-    color: #e0e0e0;
+    color: var(--color-titulos);
 }
 
 h3 {
@@ -94,6 +95,18 @@ i {
     font-style: italic;
 }
 
+/* Estilo de la linea divisora */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right,transparent,var(--naranja) 50%, transparent); 
+    margin: 20px 0px;
+    width: 50%;
+    max-width: var(--anchura-contenido);
+    margin: 0 auto;
+}
+
 /* Estilos para la imagen de portada */
 
 .portada-imagen {
@@ -133,7 +146,11 @@ figure.anchura-completa img {
 }
 
 figure.anchura-completa figcaption{
-    padding: 10px 10px 0px 0px;
+    padding: 10px 10px 0px 10px;
+}
+
+figure.portada figcaption {
+    padding: 10px 10px 50px 10px;
 }
 
 /* Estilo para la descripción de las imagenes */
