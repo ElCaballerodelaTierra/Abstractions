@@ -2,7 +2,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/cmu-serif');
 
-/* Definimos la gama de colores */
+/* Definimos la gama de colores y propiedades generales*/
 :root {
 --naranja: #6b2b00;
 --color-texto-articulo: #ffffffb7;
@@ -10,8 +10,7 @@
 --anchura-contenido: 800px;
 }
 
-
-/* Establecemos los estilos generales del cuerpo */
+/* Establecemos los estilos del cuerpo */
 * {
     margin: 0; 
     padding: 0; 
@@ -162,3 +161,4 @@ article {
     margin: 0 auto;
     padding: 0px 10px;
 }
+
