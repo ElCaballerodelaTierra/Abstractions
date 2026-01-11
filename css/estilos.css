@@ -99,9 +99,8 @@ i {
 
 hr {
     border: none;
-    height: 2px;
+    height: 1px;
     background: linear-gradient(to right,transparent,var(--naranja) 50%, transparent); 
-    margin: 20px 0px;
     width: 50%;
     max-width: var(--anchura-contenido);
     margin: 0 auto;
