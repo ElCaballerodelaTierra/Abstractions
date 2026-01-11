@@ -108,7 +108,7 @@ hr {
 
 /* Estilos para la imagen de portada */
 
-.portada-imagen {
+figure.portada img {
     height: 100vh;              /* 100% de la altura del viewport */
     width: 100%;
     object-fit: cover;         /* que cubra todo */
@@ -178,3 +178,8 @@ article {
     padding: 0px 10px;
 }
 
+/* Se ajustan los encabezados dentro de las secciones para que estén centrados */
+
+section h1 , section h2, section h3, section h4, section h5, section h6 {
+    text-align: center;
+}
