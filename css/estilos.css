@@ -100,7 +100,7 @@ i {
 hr {
     border: none;
     height: 1px;
-    background: linear-gradient(to right,transparent,var(--naranja) 50%, transparent); 
+    background: linear-gradient(to right,transparent,var(--color-titulos) 50%, transparent); 
     width: 50%;
     max-width: var(--anchura-contenido);
     margin: 0 auto;
