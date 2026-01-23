@@ -1,0 +1,18 @@
+body {
+    color: white;
+    background-color: black;
+    
+}
+
+button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    border-color: orangered;
+}
+
+button:hover {
+    background-color: orangered;
+    cursor: pointer;
+}

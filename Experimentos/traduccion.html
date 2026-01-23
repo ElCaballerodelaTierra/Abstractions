@@ -1,0 +1,62 @@
+<!-- Lenguaje: HTML + JavaScript -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multilingüe</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1 id="titulo">Hola</h1>
+    <p id="descripcion">Este texto se debe tomar como la traducción al español, sin necesidad de cambiarlo</p>
+    <button id="btn-cambiar">Cambiar Idioma</button>
+
+    <script>
+        // Diccionario de traducciones
+        const traducciones = {
+            "en": {
+                "titulo": "Hello",
+                "descripcion": "This is an example of automatic language change.",
+                "boton": "Español"
+            },
+        };
+
+        // Guardar el contenido original como idioma español
+        traducciones["es"] = {
+            "titulo": document.getElementById('titulo').textContent,
+            "descripcion": document.getElementById('descripcion').textContent,
+            "boton": document.getElementById('btn-cambiar').textContent
+        };
+
+        // Detectar el idioma del navegador
+        let idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
+        idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
+
+        // Seleccionar idioma disponible, por defecto a inglés si no hay coincidencia
+        if (!traducciones.hasOwnProperty(idioma)) {
+            idioma = 'en';
+        }
+
+        function actualizarTextos() {
+            document.getElementById('titulo').textContent = traducciones[idioma].titulo;
+            document.getElementById('descripcion').textContent = traducciones[idioma].descripcion;
+            document.getElementById('btn-cambiar').textContent = traducciones[idioma].boton;
+        }
+
+        // Inicializar textos al cargar
+        actualizarTextos();
+
+        // Event listener para el botón
+        document.getElementById('btn-cambiar').addEventListener('click', function () {
+            const idiomasDisponibles = Object.keys(traducciones);
+            let indiceActual = idiomasDisponibles.indexOf(idioma);
+            let siguienteIndice = (indiceActual + 1) % idiomasDisponibles.length;
+            idioma = idiomasDisponibles[siguienteIndice];
+            actualizarTextos();
+        });
+    </script>
+</body>
+
+</html>
