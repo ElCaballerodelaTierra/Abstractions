@@ -5,13 +5,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Multilingüe</title>
-    <link rel="stylesheet" href="/styles.css">
+
 </head>
+
+<style>
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    button {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 50px;
+        border-color: orangered;
+    }
+
+    button:hover {
+        background-color: orangered;
+        cursor: pointer;
+    }
+</style>
 
 <body>
     <h1 id="titulo">Hola</h1>
     <p id="descripcion">Este texto se debe tomar como la traducción al español, sin necesidad de cambiarlo</p>
-    <button id="btn-cambiar">Cambiar Idioma</button>
+    <button id="btn-cambiar">English</button>
 
     <script>
         // Diccionario de traducciones
@@ -50,10 +70,7 @@
 
         // Event listener para el botón
         document.getElementById('btn-cambiar').addEventListener('click', function () {
-            const idiomasDisponibles = Object.keys(traducciones);
-            let indiceActual = idiomasDisponibles.indexOf(idioma);
-            let siguienteIndice = (indiceActual + 1) % idiomasDisponibles.length;
-            idioma = idiomasDisponibles[siguienteIndice];
+            idioma = idioma === 'es' ? 'en' : 'es';
             actualizarTextos();
         });
     </script>
