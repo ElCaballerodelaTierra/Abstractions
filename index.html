@@ -1,4 +1,4 @@
-<!-- Esta página fue creada sin enlazar ningún archivo CSS o Javascript. Es un experimento para conocer los alcances del código y practicar con las propiedades directamente. -->
+<!-- Esta página fue creada sin enlazar ningún archivo CSS o Javascript. Es un experimento para conocer los alcances del código. Es una mala práctica usar CSS en el HTML, pero en este caso es solo para probar las propiedades directamente. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,32 +12,73 @@
 
 <style>
     body div {
-        /* border-color: white;
-        border-width: 2px;
-        border-style: solid; */
         font-size: 20px;
+        /* border: 2px solid white; */
     }
 </style>
+
 <body>
-    
-    <h1 style="display: flex; justify-content: center; align-items: center; font-size: 3em; padding: 20px;">Abstractions</h1>
-    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; height: 80vh;">
-        <div>
-            <img src="/assets/index/In the Búnker.jpg" alt="C.A.V.N." style="border-radius: 50%; width: 100vw; max-width: 500px; object-fit: cover; padding: 20px;">
+
+
+
+    <div>
+        <h1 style="display: flex; justify-content: center; align-items: center; font-size: 2.3em; padding: 20px;">
+            Abstractions</h1>
+        <div style=" display: flex; justify-content: center; padding: 0px 20px;">
+            <button id="lang-btn" onclick="toggleLanguage()" style="padding: 10px 20px; cursor: pointer; background-color: #121212;
+        border: 0px solid white;">English</button>
+        </div>
+        <div
+            style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; height: 80vh;">
+            <div>
+                <img src="/assets/index/In the Búnker.jpg" alt="C.A.V.N."
+                    style="border-radius: 50%; width: 100vw; max-width: 500px; object-fit: cover; padding: 20px;">
+            </div>
+
+            <div style="width:100vw; max-width: 500px; padding: 20px; ">
+                <h3>Carlos Alberto Villarreal Noyola</h3>
+
+                <cite class="content-es" style="font-size: .75em;">Inventor y visionario en México</cite>
+                <cite class="content-en" style="display: none; font-size: .75em;">Inventor and visionary in
+                    Mexico</cite>
+                <p class="content-es">
+                    Imagina por un momento que todo aquello que sustenta a la humanidad, los sistemas económicos, los
+                    sistemas políticos y cada una de las invenciones que hacen posible nuestra vida cotidiana, fuera
+                    replanteado y rediseñado a partir de una filosofía central: preservar la vida global.
+                </p>
+                <p class="content-en" style="display: none;">
+                    Imagine for a moment that everything that sustains humanity, economic systems, political systems and
+                    every single invention that makes our daily life possible, were rethought and redesigned based on a
+                    central philosophy: preserving global life.
+                </p>
+
+                <a href="/lienzo.html"
+                    style="display: flex; justify-content: center; align-items: center; margin: 20px auto; text-decoration: none; width: fit-content;">
+                    <button id="lang-btn" class="content-es">Entrar</button>
+                    <button id="lang-btn" class="content-en" style="display: none;">Enter</button>
+
+                </a>
+            </div>
         </div>
 
-        <div style="width:100vw; max-width: 500px; padding: 20px;">
-            <h3>Carlos Alberto Villarreal Noyola</h3>
-            <cite style="font-size: .75em;">Inventor y visionario en México</cite>
-            <p>
-                Imagina por un momento que todo aquello que sustenta a la humanidad, los sistemas económicos, los sistemas políticos y cada una de las invenciones que hacen posible nuestra vida cotidiana, fuera replanteado y transformado a partir de una filosofía central: preservar la vida global.
-            </p>
 
-            <a href="/lienzo.html" style="display: flex; justify-content: center; align-items: center; margin: 20px auto; text-decoration: none;">
-                <button>Entrar</button>
-            </a>
-        </div>
-    </div>
+        <script>
+            function toggleLanguage() {
+                const esElements = document.querySelectorAll('.content-es');
+                const enElements = document.querySelectorAll('.content-en');
+                const btn = document.getElementById('lang-btn');
+
+                if (esElements[0].style.display === 'none') {
+                    esElements.forEach(el => el.style.display = 'block');
+                    enElements.forEach(el => el.style.display = 'none');
+                    btn.innerText = 'English';
+                } else {
+                    esElements.forEach(el => el.style.display = 'none');
+                    enElements.forEach(el => el.style.display = 'block');
+                    btn.innerText = 'Español';
+                }
+            }
+        </script>
 </body>
 
 </html>
