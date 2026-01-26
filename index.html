@@ -15,6 +15,11 @@
         font-size: 20px;
         /* border: 2px solid white; */
     }
+
+    :root {
+        --naranja: #963e0094;
+        --gris: #121212;
+    }
 </style>
 
 <body>
@@ -22,9 +27,12 @@
     <div>
         <h1 style="display: flex; justify-content: center; align-items: center; font-size: 2.3em; padding: 20px;">
             Abstractions</h1>
-        <div style=" display: flex; justify-content: center; padding: 0px 20px;">
-            <button id="lang-btn" onclick="toggleLanguage()" style="padding: 10px 20px; cursor: pointer; background-color: #121212;
-        border: 0px solid white;">English</button>
+        <div
+            style=" display: flex; justify-content: center; align-items: center; padding: 0px 0px; gap: 5px; width: fit-content; border-radius: 50px; margin: 0px auto; background-color: var(--gris);">
+            <button id="btn-es" onclick="setLanguage('es')"
+                style="padding: 10px 20px; cursor: pointer; background-color: var(--naranja); color: white; border: 0px solid white;">Español</button>
+            <button id="btn-en" onclick="setLanguage('en')"
+                style="padding: 10px 20px; cursor: pointer; background-color: var(--gris); color: white; border: 0px solid white;">English</button>
         </div>
         <div
             style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; height: 80vh;">
@@ -34,7 +42,7 @@
             </div>
 
             <div style="width:100vw; max-width: 500px; padding: 20px; ">
-                <h3>Carlos Alberto Villarreal Noyola</h3>
+                <h3 style="font-size: 1.3em; text-align: center;">Carlos Alberto Villarreal Noyola</h3>
 
                 <cite class="content-es" style="font-size: .75em;">Inventor y visionario en México</cite>
                 <cite class="content-en" style="display: none; font-size: .75em;">Inventor and visionary in
@@ -57,8 +65,8 @@
 
                 </a>
 
-                <div style="display: flex; justify-content: center; padding: 20px;">
-                    <a href="https://instagram.com/elcaballerodelatierra"> 
+                <div style="display: flex; justify-content: center; padding: 20px; gap: 5px;">
+                    <a href="https://instagram.com/elcaballerodelatierra">
                         <img src="/assets/index/instagram.svg" alt="Instagram"
                             style="width: 20px; height: 20px; margin: 0px 10px;">
                     </a>
@@ -77,21 +85,31 @@
 
 
         <script>
-            function toggleLanguage() {
+            let currentLanguage = 'es'; // Idioma inicial
+
+            function setLanguage(lang) {
                 const esElements = document.querySelectorAll('.content-es');
                 const enElements = document.querySelectorAll('.content-en');
-                const btn = document.getElementById('lang-btn');
+                const btnEs = document.getElementById('btn-es');
+                const btnEn = document.getElementById('btn-en');
 
-                if (esElements[0].style.display === 'none') {
+                if (lang === 'es') {
                     esElements.forEach(el => el.style.display = 'block');
                     enElements.forEach(el => el.style.display = 'none');
-                    btn.innerText = 'English';
+                    btnEs.style.backgroundColor = 'var(--naranja)';
+                    btnEn.style.backgroundColor = 'var(--gris)';
+                    currentLanguage = 'es';
                 } else {
                     esElements.forEach(el => el.style.display = 'none');
                     enElements.forEach(el => el.style.display = 'block');
-                    btn.innerText = 'Español';
+                    btnEs.style.backgroundColor = 'var(--gris)';
+                    btnEn.style.backgroundColor = 'var(--naranja)';
+                    currentLanguage = 'en';
                 }
             }
+
+            // Inicializar en español
+            setLanguage('es');
         </script>
 </body>
 
