@@ -44,47 +44,64 @@
             <div style="width:100vw; max-width: 500px; padding: 20px; ">
                 <h2 style="font-size: 1.3em; text-align: center; padding: 10px;">Carlos Alberto Villarreal Noyola</h3>
 
-                <cite class="content-es" style="font-size: .75em; padding: 5px 0px;">Inventor y visionario en México</cite>
-                <cite class="content-en" style="display: none; font-size: .75em;">Inventor and visionary in
-                    Mexico</cite>
-                <p class="content-es">
-                    Imagina por un momento que todo aquello que sustenta a la humanidad, los sistemas económicos, los
-                    sistemas políticos y cada una de las invenciones que hacen posible nuestra vida cotidiana, fuera
-                    replanteado y rediseñado a partir de una filosofía central: preservar la vida global.
-                </p>
-                <p class="content-en" style="display: none;">
-                    Imagine for a moment that everything that sustains humanity, economic systems, political systems and
-                    every single invention that makes our daily life possible, were rethought and redesigned based on a
-                    central philosophy: preserving global life.
-                </p>
+                    <cite class="content-es" style="font-size: .75em; padding: 5px 0px;">Inventor y visionario en
+                        México</cite>
+                    <cite class="content-en" style="display: none; font-size: .75em;">Inventor and visionary in
+                        Mexico</cite>
+                    <p class="content-es">
+                        Imagina por un momento que todo aquello que sustenta a la humanidad, los sistemas económicos,
+                        los
+                        sistemas políticos y cada una de las invenciones que hacen posible nuestra vida cotidiana, fuera
+                        replanteado y rediseñado a partir de una filosofía central: preservar la vida global.
+                    </p>
+                    <p class="content-en" style="display: none;">
+                        Imagine for a moment that everything that sustains humanity, economic systems, political systems
+                        and
+                        every single invention that makes our daily life possible, were rethought and redesigned based
+                        on a
+                        central philosophy: preserving global life.
+                    </p>
 
-                <a href="/lienzo.html"
-                    style="display: flex; justify-content: center; align-items: center; margin: 20px auto; text-decoration: none; width: fit-content;">
-                    <button id="lang-btn" class="content-es">Entrar</button>
-                    <button id="lang-btn" class="content-en" style="display: none;">Enter</button>
+                    <a href="/lienzo.html"
+                        style="display: flex; justify-content: center; align-items: center; margin: 20px auto; text-decoration: none; width: fit-content;">
+                        <button id="lang-btn" class="content-es">Entrar</button>
+                        <button id="lang-btn" class="content-en" style="display: none;">Enter</button>
 
-                </a>
-
-                <div style="display: flex; justify-content: center; padding: 20px; gap: 5px;">
-                    <a href="https://instagram.com/elcaballerodelatierra">
-                        <img src="/assets/index/instagram.svg" alt="Instagram"
-                            style="width: 20px; height: 20px; margin: 0px 10px;">
-                    </a>
-                    <a href="https://linkedin.com/in/cavn">
-                        <img src="/assets/index/linkedin.svg" alt="LinkedIn"
-                            style="width: 20px; height: 20px; margin: 0px 10px;">
-                    </a>
-                    <a href="https://github.com/elcaballerodelatierra">
-                        <img src="/assets/index/github.svg" alt="GitHub"
-                            style="width: 20px; height: 20px; margin: 0px 10px;">
                     </a>
 
-                </div>
+                    <div style="display: flex; justify-content: center; padding: 20px; gap: 5px;">
+                        <a href="https://instagram.com/elcaballerodelatierra">
+                            <img src="/assets/index/instagram.svg" alt="Instagram"
+                                style="width: 20px; height: 20px; margin: 0px 10px;">
+                        </a>
+                        <a href="https://linkedin.com/in/cavn">
+                            <img src="/assets/index/linkedin.svg" alt="LinkedIn"
+                                style="width: 20px; height: 20px; margin: 0px 10px;">
+                        </a>
+                        <a href="https://github.com/elcaballerodelatierra">
+                            <img src="/assets/index/github.svg" alt="GitHub"
+                                style="width: 20px; height: 20px; margin: 0px 10px;">
+                        </a>
+
+                    </div>
             </div>
         </div>
 
 
         <script>
+            
+            // Detectar el idioma del navegador
+            let idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
+            idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
+
+            // Seleccionar idioma disponible, por defecto a inglés si no hay coincidencia
+            if (idioma !== 'es' && idioma !== 'en') {
+                idioma = 'en';
+            }
+
+            // Inicializar en el idioma detectado
+            setLanguage(idioma);
+
             let currentLanguage = 'es'; // Idioma inicial
 
             function setLanguage(lang) {
@@ -108,8 +125,7 @@
                 }
             }
 
-            // Inicializar en español
-            setLanguage('es');
+
         </script>
 </body>
 
