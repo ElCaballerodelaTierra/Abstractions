@@ -1,0 +1,18 @@
+# archivo_config.yml
+
+site_name: "Abstractions"
+baseurl: "/"
+language: "es"
+author:
+  name: "Carlos Alberto Villarreal Noyola"
+  # email: "tu@correo.example"
+
+# Opciones de build
+# markdown: kramdown
+permalink: /:categories/:title.html
+
+# Variables personalizadas
+show_author: false
+show_date: false
+
+google_analytics: G-DX9PGTB7JC
