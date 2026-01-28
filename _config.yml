@@ -15,4 +15,13 @@ permalink: /:categories/:title.html
 show_author: false
 show_date: false
 
+# Configuración de colecciones
+collections:
+  pages:
+    output: true
+    permalink: /:name.html
+  articulos:
+    output: true
+
+# Google Analytics
 google_analytics: G-DX9PGTB7JC
