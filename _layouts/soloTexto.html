@@ -7,29 +7,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
     <title>{{ page.title }}</title>
 
     {% include analytics.html %}
 
 </head>
-<main>
-    
-    {{ content }}
-   <article>
-    Hola
-   </article>
-
-</main>
 
 <body>
 
+    <div style="display: flex; gap: 10px; padding: 20px; justify-content: center; align-items: center;">
+        <button id="btn-es" onclick="setLanguage('es')">Español</button>
+        <button id="btn-en" onclick="setLanguage('en')">English</button>
+    </div>
 
+    <main>
+
+        <article>
+            <div class="content-es">
+                {{ page['content-es'] | markdownify }}
+            </div>
+            <div class="content-en" style="display: none;">
+                {{ page['content-en'] | markdownify }}
+            </div>
+        </article>
+
+    </main>
 
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
 
     {% include autor.html %}
     {% include footer.html %}
+
+    <script src="/js/main.js"></script>
 
 </body>
 
