@@ -1,0 +1,93 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>{{ page.title }}</title>
+
+    {% include analytics.html %}
+
+</head>
+
+<body>
+
+    <cite class="portada content-es">
+        {{ page['frase-es'] | markdownify }}
+    </cite>
+    
+    <cite class="portada content-en" style="display: none;">
+        {{ page['frase-en'] | markdownify }}
+    </cite>
+    
+    <article>
+        {% include selectordeidioma.html %}
+
+        <h1>Título</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi officiis, ex, eum dolorum
+            consequuntur inventore officia nemo nobis quasi odit tempore ullam qui, ipsa distinctio aliquid non!
+            Doloremque, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vitae illum dolorem
+            nulla laudantium suscipit, dignissimos mollitia quo ex quisquam nemo ut eum veritatis, quam aliquam eveniet
+            eaque numquam ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero ab, eos ex
+            assumenda error ut laudantium facere excepturi quae eaque consectetur unde consequuntur numquam debitis modi
+            placeat accusantium quibusdam.</p>
+
+        <figure>
+            <img src="/assets/plantilla/Dos-barcos.jpg" alt="Dos barcos" class="anchura-completa">
+            <figcaption>Figura 1: Dos barcos navegando</figcaption>
+        </figure>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, officiis optio suscipit deserunt totam
+            omnis veritatis? Pariatur amet sit doloremque. Sunt, facere. Nam veniam possimus iure explicabo recusandae
+            nesciunt exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minima et! Odit,
+            natus veniam doloribus id tempore similique accusamus harum sunt laboriosam praesentium deserunt,
+            repellendus quisquam aliquid. Quasi, sit ipsa?</p>
+
+        <figure class="anchura-completa">
+            <img src="/assets/plantilla/Dos-barcos.jpg" alt="Dos barcos">
+            <figcaption>Figura 2: Dos barcos navegando</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque eius qui, sed consequuntur expedita
+            dolorum, velit enim illo delectus ut, magnam aperiam ad nostrum optio reprehenderit a saepe corrupti. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Ducimus asperiores dolor itaque minus nemo aperiam
+            aliquid porro eaque ipsam quam sunt quibusdam autem assumenda facere quis repellat, voluptatibus excepturi
+            error.</p>
+
+        <section>
+            <h2>Sección</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta aliquid. Recusandae, nisi incidunt,
+                blanditiis soluta est veritatis quod cumque aut non magnam temporibus, ipsa debitis laudantium.
+                Doloremque, rem est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor quia sit dolore
+                cumque aut qui sint, recusandae consequatur facilis eius exercitationem ipsum pariatur corporis magnam
+                quisquam obcaecati eligendi. Sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+                minima ducimus dicta velit aliquid ullam facere sapiente architecto nam repudiandae, repellat totam, ad
+                iure alias reiciendis quidem optio? Voluptatum, dolorem!</p>
+        </section>
+
+        <h2>Capítulo</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta aliquid. Recusandae, nisi incidunt,
+            blanditiis soluta est veritatis quod cumque aut non magnam temporibus, ipsa debitis laudantium. Doloremque,
+            rem est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti ad eligendi cum ducimus
+            repellendus necessitatibus officiis, a minus tempora. Quis sapiente error necessitatibus, dicta quae
+            cupiditate rem iusto minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi ratione sint
+            accusantium dolore, corrupti harum. Sint numquam maiores ex corporis. Voluptatibus beatae veniam omnis
+            impedit fuga minus sed sequi.</p>
+
+    </article>
+
+    <!-- Se insertan los elementos reutilizables de autor y footer  -->
+
+    {% include autor.html %}
+    {% include footer.html %}
+
+</body>
+
+</html>

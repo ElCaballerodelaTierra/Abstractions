@@ -3,7 +3,7 @@ layout: soloTexto
 title: Mi visión del mundo
 content-es: | 
 
-    Creo que la humanidad ya posee la tecnología necesaria para resolver la mayoría de sus problemas más urgentes. Lo que nos falta no son herramientas, sino sistemas que sean capaces de utilizarlas con inteligencia, equidad y visión a largo plazo.
+    Creo firmemente que la humanidad ya posee la tecnología necesaria para resolver la mayoría de sus problemas más urgentes. Lo que falta no son herramientas, sino sistemas que sean capaces de utilizarlas con inteligencia, equidad y visión a largo plazo.
     
     Mi interés se encuentra en la intersección entre el desarrollo espacial, la tecnología sostenible y los sistemas complejos. Me obsesiona una pregunta sencilla y, al mismo tiempo, radical: ¿cómo diseñar sistemas que permitan la vida autónoma, tanto fuera como dentro de la Tierra? La exploración espacial nos ha obligado a pensar en términos de energía, agua, residuos y cooperación como recursos finitos. Esa misma lógica puede y debe aplicarse a nuestras ciudades, comunidades y estructuras sociales.
  

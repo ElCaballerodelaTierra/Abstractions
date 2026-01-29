@@ -185,3 +185,16 @@ article {
 section h1 , section h2, section h3, section h4, section h5, section h6 {
     text-align: center;
 }
+
+/* Estilos para la frase de portada */
+
+cite.portada {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 100vh;              /* 100% de la altura del viewport */
+    width: 90%;
+    margin: 0 auto;    
+}
