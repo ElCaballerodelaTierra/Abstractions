@@ -1,0 +1,31 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Flow Diagram Example</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+    <h2>Mermaid Flow Diagram Embedded in HTML</h2>
+
+    {% include diagramaDeFlujo.html %}
+    <!-- Mermaid diagram -->
+    <figure class="mermaid">
+        flowchart TD
+        A[Start] --> B{Is it working?}
+        B -- Yes --> C[Great!]
+        B -- No --> D[Check code]
+        D --> B
+    </figure>
+    <figcaption>Diagrama de flujo</figcaption>
+
+</body>
+
+</html>
