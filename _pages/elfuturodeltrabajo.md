@@ -26,6 +26,7 @@ frase-contexto-en: |
 
 content-es: |
     La vida es bella
+    
 content-en: |
     Life is beautiful
 ---

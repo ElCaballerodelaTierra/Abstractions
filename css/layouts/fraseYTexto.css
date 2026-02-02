@@ -1,0 +1,35 @@
+
+.frase-autor {
+    width: fit-content;
+    object-position: right;
+    margin: 0 auto;
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: clamp(1rem, 1rem + 2vw, 3rem);
+}
+
+.frase-contexto p{
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    
+    .frase-autor {
+        width: 100%;
+        text-align: center;
+        font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+    }
+    .frase-contexto p {
+        width: 100%;
+        /* ocupa todo el ancho */
+        margin: 0;
+        /* elimina el auto-margin */
+        text-align: center;
+        /* opcional: centra el texto en móviles */
+    }
+}

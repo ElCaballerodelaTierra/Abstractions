@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/layouts/fraseYTexto.css">
     <link rel="stylesheet" href="/css/estilos.css">
     <title>{{ page.title }}</title>
 
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+
     <!-- {% if page.imagenPortada %}
     <figure class="portada">
         <img src="{{ page.imagenPortada }}" alt="{{ page.descripcionImagenPortada | default: page.title }}">
@@ -25,19 +27,19 @@
     {% endif %} -->
 
     <cite class="portada content-es"
-        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ page.imagenPortada }}');">
+        style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}');">
         {{ page['frase-es'] | markdownify }}
         <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
-        <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
+        <div class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</div>
     </cite>
     {% if page.imagenPortada %}
     <figcaption class="content-es">{{ page.descripcionImagenPortada }}</figcaption>
     {% endif %}
 
     <cite class="portada content-en"
-        style="display: none; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ page.imagenPortada }}'); background-size: cover; background-position: center; mask-image: linear-gradient(to bottom, black 70%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);">
+        style="display: none; background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}'); background-size: cover; background-position: center; mask-image: linear-gradient(to bottom, black 70%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);">
         {{ page['frase-en'] | markdownify }}
-        <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
+        <span class="frase-autor" style="width: fit-content; ">{{ page['frase-autor-en'] | markdownify }}</span>
         <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
     </cite>
     {% if page.imagenPortada %}
@@ -45,15 +47,20 @@
     {% endif %}
 
     {% include selectordeidioma.html %}
-    
-    <article>
 
-        <h1 class="content-es">{{ page.title }}</h1>
-        <h1 class="content-en" style="display: none;">{{ page.title-en }}</h1>
+    <article class="content-es">
 
-        <p class="content-es">{{ page.content-es}}</p>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.content-es}}</p>
+        
+    </article>
 
-        <p class="content-en" style="display: none;">{{ page.content-en }}</p>
+    <article class="content-en" style="display: none;">
+        <h1>{{ page.title-en }}</h1>
+        <p>{{ page.content-en }}</p>
+    </article>
+
+    <!-- <article>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi officiis, ex, eum dolorum
             consequuntur inventore officia nemo nobis quasi odit tempore ullam qui, ipsa distinctio aliquid non!
@@ -107,7 +114,7 @@
             accusantium dolore, corrupti harum. Sint numquam maiores ex corporis. Voluptatibus beatae veniam omnis
             impedit fuga minus sed sequi.</p>
 
-    </article>
+    </article> -->
 
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
 

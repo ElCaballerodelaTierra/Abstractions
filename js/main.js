@@ -19,14 +19,14 @@ function setLanguage(lang) {
     const btnEn = document.getElementById('btn-en');
 
     if (lang === 'es') {
-        esElements.forEach(el => el.style.display = 'block');
+        esElements.forEach(el => el.style.display = '');
         enElements.forEach(el => el.style.display = 'none');
         btnEs.style.backgroundColor = 'var(--naranja)';
         btnEn.style.backgroundColor = 'var(--gris)';
         currentLanguage = 'es';
     } else {
         esElements.forEach(el => el.style.display = 'none');
-        enElements.forEach(el => el.style.display = 'block');
+        enElements.forEach(el => el.style.display = '');
         btnEs.style.backgroundColor = 'var(--gris)';
         btnEn.style.backgroundColor = 'var(--naranja)';
         currentLanguage = 'en';
