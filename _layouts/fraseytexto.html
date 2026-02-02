@@ -15,19 +15,45 @@
 </head>
 
 <body>
+    <!-- {% if page.imagenPortada %}
+    <figure class="portada">
+        <img src="{{ page.imagenPortada }}" alt="{{ page.descripcionImagenPortada | default: page.title }}">
+        {% if page.descripcionImagenPortada %}
+        <figcaption>{{ page.descripcionImagenPortada }}</figcaption>
+        {% endif %}
+    </figure>
+    {% endif %} -->
 
-    <cite class="portada content-es">
+    <cite class="portada content-es"
+        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ page.imagenPortada }}');">
         {{ page['frase-es'] | markdownify }}
+        <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
+        <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
     </cite>
-    
-    <cite class="portada content-en" style="display: none;">
+    {% if page.imagenPortada %}
+    <figcaption class="content-es">{{ page.descripcionImagenPortada }}</figcaption>
+    {% endif %}
+
+    <cite class="portada content-en"
+        style="display: none; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ page.imagenPortada }}'); background-size: cover; background-position: center; mask-image: linear-gradient(to bottom, black 70%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);">
         {{ page['frase-en'] | markdownify }}
+        <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
+        <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
     </cite>
+    {% if page.imagenPortada %}
+    <figcaption class="content-en" style="display: none;">{{ page['descripcionImagenPortada-en'] }}</figcaption>
+    {% endif %}
+
+    {% include selectordeidioma.html %}
     
     <article>
-        {% include selectordeidioma.html %}
 
-        <h1>Título</h1>
+        <h1 class="content-es">{{ page.title }}</h1>
+        <h1 class="content-en" style="display: none;">{{ page.title-en }}</h1>
+
+        <p class="content-es">{{ page.content-es}}</p>
+
+        <p class="content-en" style="display: none;">{{ page.content-en }}</p>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi officiis, ex, eum dolorum
             consequuntur inventore officia nemo nobis quasi odit tempore ullam qui, ipsa distinctio aliquid non!

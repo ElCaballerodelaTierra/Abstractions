@@ -4,31 +4,31 @@
 
 /* Definimos la gama de colores y propiedades generales*/
 :root {
---naranja: #6b2b00;
---color-texto-articulo: #ffffffb7;
---color-titulos: #dfa776;
---color-descripcion-imagenes: #ffb27f;
---anchura-contenido: 800px;
+    --naranja: #6b2b00;
+    --color-texto-articulo: #ffffffb7;
+    --color-titulos: #dfa776;
+    --color-descripcion-imagenes: #ffb27f;
+    --anchura-contenido: 800px;
 }
 
 /* Establecemos los estilos del cuerpo */
 * {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scrollbar-width: none !important;
-    }
+}
 
 body {
     font-family: 'CMU Serif', serif;
     font-size: 20px;
     background-color: black;
-    color:var(--color-texto-articulo);
+    color: var(--color-texto-articulo);
     user-select: text;
 }
 
 /* Se definen los estilos para los encabezados */
-    
+
 h1 {
     color: var(--color-titulos);
 }
@@ -67,12 +67,12 @@ button {
     cursor: pointer;
     border-radius: 50px;
     font-family: 'CMU Serif', serif;
-    font-size: 1em ;
+    font-size: 1em;
 }
 
 button:hover {
     background-color: var(--naranja);
-}   
+}
 
 /* Estilos para los enlaces */
 
@@ -87,9 +87,12 @@ a:hover {
 
 /* Estilo al seleccionar texto */
 
-::selection { 
-    color: white; /* Color de la letra */ 
-    background: var(--naranja); /* Color de fondo al seleccionar */ }
+::selection {
+    color: white;
+    /* Color de la letra */
+    background: var(--naranja);
+    /* Color de fondo al seleccionar */
+}
 
 /* Estilo para texto en cursiva */
 
@@ -102,18 +105,57 @@ i {
 hr {
     border: none;
     height: 1px;
-    background: linear-gradient(to right,transparent,var(--color-descripcion-imagenes) 50%, transparent); 
+    background: linear-gradient(to right, transparent, var(--color-descripcion-imagenes) 50%, transparent);
     width: 50%;
     max-width: var(--anchura-contenido);
     margin: 0 auto;
 }
 
+/* Estilo para la frase de portada */
+
+cite.portada {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.75rem;
+    height: 100vh;
+    /* 100% de la altura del viewport */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70));
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent)
+}
+
+.frase-autor {
+    font-style: normal;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.frase-contexto {
+    font-style: normal;
+    font-size: 0.6em;
+    display: block;
+    margin: 10px auto 0 auto;
+    text-align: right;
+    
+}
+
 /* Estilos para la imagen de portada */
 
 figure.portada img {
-    height: 100vh;              /* 100% de la altura del viewport */
+    height: 100vh;
+    /* 100% de la altura del viewport */
     width: 100%;
-    object-fit: cover;         /* que cubra todo */
+    object-fit: cover;
+    /* que cubra todo */
     position: relative;
     mask-image: linear-gradient(to bottom, black 50%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
@@ -146,7 +188,7 @@ figure.anchura-completa img {
     padding: 0px;
 }
 
-figure.anchura-completa figcaption{
+figure.anchura-completa figcaption {
     padding: 10px 10px 0px 10px;
 }
 
@@ -163,7 +205,7 @@ figcaption {
     font-style: italic;
     max-width: var(--anchura-contenido);
     margin: 0 auto;
-    color:var(--color-descripcion-imagenes);
+    color: var(--color-descripcion-imagenes);
 }
 
 article figcaption {
@@ -182,19 +224,11 @@ article {
 
 /* Se ajustan los encabezados dentro de las secciones para que estén centrados */
 
-section h1 , section h2, section h3, section h4, section h5, section h6 {
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
     text-align: center;
-}
-
-/* Estilos para la frase de portada */
-
-cite.portada {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    height: 100vh;              /* 100% de la altura del viewport */
-    width: 90%;
-    margin: 0 auto;    
 }
