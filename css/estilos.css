@@ -222,6 +222,10 @@ article {
     padding: 0px 10px;
 }
 
+article p {
+    text-align: justify;
+}
+
 /* Se ajustan los encabezados dentro de las secciones para que estén centrados */
 
 section h1,

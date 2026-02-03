@@ -1,12 +1,14 @@
 ---
 
 layout: default
-title: Los elementos de Euclides
-
+titulo: Los elementos de Euclides
+subtitulo: El inicio de la matemática moderna
+imagenPortada: /assets/euclides/Demostracion-del-teorema-de-pitagoras.jpg
+descripcionImagenPortada: Demostracion del teorema de pitagoras, Los elementos de Euclides, Oliver Byrne, 1847
 ---
 
-<em>Los elementos</em> de Euclides ha sido una de las obras más influyentes para la humanidad; creó las bases del modelo axiomático usado en la matemática.<br>
-En 1847, Oliver Byrne combinó la esencia de las demostraciones con la elegancia del color, creando la edición más simple y bella, una auténtica obra de arte.<br>
+<em>Los elementos</em> de Euclides ha sido una de las obras más influyentes para la humanidad; creó y popularizó las bases del modelo axiomático usado en la matemática.<br><br>
+En 1847, Oliver Byrne combinó la esencia de las demostraciones con la elegancia del color, creando la edición más simple y bella, una auténtica obra de arte.<br><br>
 Pocas bibliotecas lo tienen actualmente. No comprendo por qué ha sido tan difícil acceder a uno de sus ejemplares; ¿por qué no se enseña en la educación?<br>
 Este libro debería estar en cualquier estante del mundo, esperando a ser leído por futuras mentes curiosas…<br>
 Afortunadamente, la obra es de dominio público. Tal ha sido su influencia que diversos proyectos han tratado de mantener el legado que Byrne mostró.<br><br>
