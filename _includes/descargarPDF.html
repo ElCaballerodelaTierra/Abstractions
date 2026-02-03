@@ -35,6 +35,8 @@
             padding: 0 !important;
             width: 100% !important;
             box-shadow: none !important;
+            /* CRITICAL: Cambiar display flex a block para evitar problemas de paginación en impresión */
+            display: block !important;
         }
 
         /* Tipografía legible para impresión */
@@ -43,12 +45,12 @@
         }
 
         /* Evitar que las imágenes se partan entre páginas */
+        figure,
         img {
             max-width: 100% !important;
-            page-break-after: avoid;
-            break-after: avoid;
-            -webkit-column-break-after: avoid;
-            page-break-inside: avoid;
+            page-break-inside: avoid !important;
+            break-inside: avoid !important;
+            display: block !important;
         }
 
         /* Evitar cortes en párrafos */
