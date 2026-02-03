@@ -2,7 +2,6 @@
 .frase-autor {
     width: fit-content;
     object-position: right;
-    margin: 0 auto;
     text-align: right;
     display: block;
     margin-left: auto;
@@ -10,26 +9,26 @@
     font-size: clamp(1rem, 1rem + 2vw, 3rem);
 }
 
-.frase-contexto p{
+cite .frase-contexto {
+    display: block;
     width: 50%;
     margin-left: auto;
     margin-right: 0;
+    text-align: right;
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-    
+
     .frase-autor {
         width: 100%;
         text-align: center;
         font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
     }
-    .frase-contexto p {
+    cite .frase-contexto {
         width: 100%;
         /* ocupa todo el ancho */
-        margin: 0;
+        margin: 0 auto;
         /* elimina el auto-margin */
-        text-align: center;
-        /* opcional: centra el texto en móviles */
     }
 }

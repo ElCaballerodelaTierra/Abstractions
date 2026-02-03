@@ -1,14 +1,16 @@
-// Detectar el idioma del navegador
-let idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
-idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
+document.addEventListener('DOMContentLoaded', () => {
+    // Detectar el idioma del navegador
+    let idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
+    idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
 
-// Seleccionar idioma disponible, por defecto a inglés si no hay coincidencia
-if (idioma !== 'es' && idioma !== 'en') {
-    idioma = 'en';
-}
+    // Seleccionar idioma disponible, por defecto a inglés si no hay coincidencia
+    if (idioma !== 'es' && idioma !== 'en') {
+        idioma = 'en';
+    }
 
-// Inicializar en el idioma detectado
-setLanguage(idioma);
+    // Inicializar en el idioma detectado
+    setLanguage(idioma);
+});
 
 let currentLanguage = 'es'; // Idioma inicial
 

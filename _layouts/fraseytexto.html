@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/layouts/fraseYTexto.css">
     <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/layouts/fraseYTexto.css">
     <title>{{ page.title }}</title>
 
     {% include analytics.html %}
@@ -30,7 +30,7 @@
         style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}');">
         {{ page['frase-es'] | markdownify }}
         <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
-        <div class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</div>
+        <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
     </cite>
     {% if page.imagenPortada %}
     <figcaption class="content-es">{{ page.descripcionImagenPortada }}</figcaption>
