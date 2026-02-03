@@ -35,27 +35,6 @@
             box-shadow: none !important;
         }
 
-        .portada-titulos,
-        .portada-titulo,
-        .portada-subtitulo {
-            color: rgb(0, 0, 0) !important;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-        }
-
-        .portada figcaption {
-            color: rgb(0, 0, 0) !important;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-        }
-
-        .portada {
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-            color: white !important;
-        }
-
-
         /* Tipografía legible para impresión */
         body {
             font-size: 12pt;
@@ -67,7 +46,7 @@
             page-break-inside: avoid;
         }
 
-        /* Evitar cortes  en párrafos */
+        /* Evitar cortes en párrafos */
         p,
         h2,
         h3 {
@@ -79,6 +58,23 @@
         a:after {
             content: " (" attr(href) ")";
             font-size: 0.8em;
+        }
+
+        /* Asegurar que los títulos y subtítulos tengan color negro */
+        .portada-titulos,
+        .portada-titulo,
+        .portada-subtitulo,
+        .portada figcaption {
+            color: rgb(0, 0, 0) !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        /* Asegurar que se mantenga el degradado en la imagen de fondo */
+        .portada {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color: white !important;
         }
     }
 </style>
