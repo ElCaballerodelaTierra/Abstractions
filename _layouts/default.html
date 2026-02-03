@@ -13,17 +13,18 @@
     {% include analytics.html %}
 
 </head>
+
 <body>
 
     <figure class="portada">
         <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada }}>
-       <!-- Titulos en español -->
+        <!-- Titulos en español -->
         <div class="portada-titulos content-es">
             <div class="portada-titulo">{{page.titulo-es}}</div>
             <div class="portada-subtitulo">{{page.subtitulo-es}}</div>
         </div>
         <figcaption class="content-es">{{ page.descripcionImagenPortada-es }}</figcaption>
-        
+
         <!-- Titulos en ingles -->
         <div class="portada-titulos content-en" style="display: none;">
             <div class="portada-titulo">{{page.titulo-en}}</div>
@@ -71,17 +72,19 @@
                 minima ducimus dicta velit aliquid ullam facere sapiente architecto nam repudiandae, repellat totam, ad
                 iure alias reiciendis quidem optio? Voluptatum, dolorem!</p>
         </section>
+        <section>
+            <h2>Capítulo</h2>
 
-        <h2>Capítulo</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta aliquid. Recusandae, nisi incidunt,
-            blanditiis soluta est veritatis quod cumque aut non magnam temporibus, ipsa debitis laudantium. Doloremque,
-            rem est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti ad eligendi cum ducimus
-            repellendus necessitatibus officiis, a minus tempora. Quis sapiente error necessitatibus, dicta quae
-            cupiditate rem iusto minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi ratione sint
-            accusantium dolore, corrupti harum. Sint numquam maiores ex corporis. Voluptatibus beatae veniam omnis
-            impedit fuga minus sed sequi.</p>
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta aliquid. Recusandae, nisi incidunt,
+                blanditiis soluta est veritatis quod cumque aut non magnam temporibus, ipsa debitis laudantium.
+                Doloremque,
+                rem est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti ad eligendi cum ducimus
+                repellendus necessitatibus officiis, a minus tempora. Quis sapiente error necessitatibus, dicta quae
+                cupiditate rem iusto minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi ratione
+                sint
+                accusantium dolore, corrupti harum. Sint numquam maiores ex corporis. Voluptatibus beatae veniam omnis
+                impedit fuga minus sed sequi.</p>
+        </section>
     </article>
 
     {% include descargarPDF.html %}
