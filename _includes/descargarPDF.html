@@ -80,8 +80,9 @@
 
         /* Asegurar que se mantenga el degradado en la imagen de fondo */
         .portada {
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
+            /* Se prueba comentando estas funciones para saber si el problema de la portada en negro desaparece */
+            /* -webkit-print-color-adjust: exact !important; */
+            /* print-color-adjust: exact !important; */
 
             /* Fix: Establecer contexto de posicionamiento para que los títulos absolutos se queden aquí */
             position: relative !important;
