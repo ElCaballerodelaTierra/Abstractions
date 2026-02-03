@@ -2,7 +2,7 @@
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,22 +17,12 @@
 
     <figure class="portada">
         <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada }}>
-       <!-- Titulos en español -->
-        <div class="portada-titulos content-es">
-            <div class="portada-titulo">{{page.titulo-es}}</div>
-            <div class="portada-subtitulo">{{page.subtitulo-es}}</div>
+        <div class="portada-titulos">
+            <div class="portada-titulo">{{page.titulo}}</div>
+            <div class="portada-subtitulo">{{page.subtitulo}}</div>
         </div>
-        <figcaption class="content-es">{{ page.descripcionImagenPortada-es }}</figcaption>
-        
-        <!-- Titulos en ingles -->
-        <div class="portada-titulos content-en" style="display: none;">
-            <div class="portada-titulo">{{page.titulo-en}}</div>
-            <div class="portada-subtitulo">{{page.subtitulo-en}}</div>
-        </div>
-        <figcaption class="content-en" style="display: none;">{{ page.descripcionImagenPortada-en }}</figcaption>
+        <figcaption>{{ page.descripcionImagenPortada }}</figcaption>
     </figure>
-
-    {% include selectordeidioma.html %}
 
     <article>
 
@@ -83,8 +73,6 @@
             impedit fuga minus sed sequi.</p>
 
     </article>
-
-    {% include descargarPDF.html %}
 
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
 

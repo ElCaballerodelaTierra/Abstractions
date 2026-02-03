@@ -77,7 +77,7 @@ button:hover {
 /* Estilos para los enlaces */
 
 a {
-    color: var(--naranja);
+    color: var(--color-titulosportada);
     text-decoration: underline;
 }
 

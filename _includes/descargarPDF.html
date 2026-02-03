@@ -1,0 +1,94 @@
+<style>
+    @media print {
+
+        /* Ocultar elementos innecesarios en la impresión */
+        header,
+        footer,
+        nav,
+        .selectorDeIdioma,
+        .boton-descargar-pdf {
+            display: none !important;
+        }
+
+        /* Forzar que los títulos no queden solos al final de la página */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .portada-titulos,
+        .portada-titulo,
+        .portada-subtitulo {
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        /* Asegurar que el cuerpo ocupe el 100% y tenga fondo blanco */
+        body,
+        article {
+            background-color: white !important;
+            color: black !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            box-shadow: none !important;
+        }
+
+        .portada-titulos,
+        .portada-titulo,
+        .portada-subtitulo {
+            color: rgb(0, 0, 0) !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .portada figcaption {
+            color: rgb(0, 0, 0) !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .portada {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color: white !important;
+        }
+
+
+        /* Tipografía legible para impresión */
+        body {
+            font-size: 12pt;
+        }
+
+        /* Evitar que las imágenes se partan entre páginas */
+        img {
+            max-width: 100% !important;
+            page-break-inside: avoid;
+        }
+
+        /* Evitar cortes  en párrafos */
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+
+        /* Opcional: Mostrar la URL de los enlaces */
+        a:after {
+            content: " (" attr(href) ")";
+            font-size: 0.8em;
+        }
+    }
+</style>
+
+<div class="boton-descargar-pdf"
+    style="display: flex; justify-content: center; align-items: center; width: fit-content; margin: 20px auto">
+    <button onclick="window.print()" class="boton-descargar-pdf content-es">
+        Descargar
+    </button>
+    <button onclick="window.print()" class="boton-descargar-pdf content-en" style="display: none;">
+        Download
+    </button>
+</div>
