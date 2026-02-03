@@ -3,19 +3,17 @@ layout: soloTexto
 title: Mi visión del mundo
 content-es: | 
 
-    Creo firmemente que la humanidad ya posee la tecnología necesaria para resolver la mayoría de sus problemas más urgentes. Lo que falta no son herramientas, sino sistemas que sean capaces de utilizarlas con inteligencia, equidad y visión a largo plazo.
+    La humanidad ya posee la tecnología necesaria para resolver los problemas más urgentes de nuestra generación. Lo que falta no son herramientas, sino sistemas que sean capaces de utilizarlas con inteligencia, equidad y visión a largo plazo.
     
-    Mi interés se encuentra en la intersección entre el desarrollo espacial, la tecnología sostenible y los sistemas complejos. Me obsesiona una pregunta sencilla y, al mismo tiempo, radical: ¿cómo diseñar sistemas que permitan la vida autónoma, tanto fuera como dentro de la Tierra? La exploración espacial nos ha obligado a pensar en términos de energía, agua, residuos y cooperación como recursos finitos. Esa misma lógica puede y debe aplicarse a nuestras ciudades, comunidades y estructuras sociales.
- 
-    La Tierra no es tan distinta de una nave espacial. La diferencia es que aún actuamos como si los recursos fueran infinitos.
+    Mi interés se encuentra en la intersección entre el desarrollo espacial, la tecnología sostenible y los sistemas complejos. Me obsesiona una pregunta sencilla y, al mismo tiempo, radical: ¿cómo diseñar sistemas que permitan la vida autónoma, tanto fuera como dentro de la Tierra? La exploración espacial nos ha obligado a pensar en términos de energía, agua, residuos y cooperación como recursos finitos. Esa misma lógica puede y debe aplicarse a nuestras ciudades, comunidades y estructuras sociales. La Tierra no es tan distinta de una nave espacial. La diferencia es que aún actuamos como si los recursos fueran infinitos. 
     
-    Más adelante, al estudiar matemáticas, confirmé otra intuición inquietante: muchos de nuestros problemas sociales, como la corrupción o la ineficiencia institucional, no son fallas morales aisladas, sino dinámicas sistémicas que pueden entenderse y modelarse. Si somos capaces de optimizar nuestro consumo energético, también deberíamos ser capaces de rediseñar los sistemas políticos y económicos que sostienen nuestra civilización.
+    Más adelante, al estudiar matemáticas, confirmé otra intuición inquietante: muchos de nuestros problemas sociales, como la corrupción o la ineficiencia institucional, no son fallas morales aisladas, son producto de un mal diseño en nuestros sistemas politicos, los cuales pueden entenderse y modelarse. Si somos capaces de optimizar nuestro consumo energético, también deberíamos ser capaces de rediseñar los sistemas políticos y económicos que sostienen nuestra civilización.
     
-    Aquí escribo sobre mi visión del futuro, plataformas tecnológicas para la toma colectiva de decisiones, sistemas inspirados en la exploración espacial que podrían sustentar comunidades en la Tierra, y una visión en la que la política se basa menos en delegar poder y más en construir comunes acuerdos.
+    Aquí escribo sobre mi visión del futuro, plataformas para la toma colectiva de decisiones, invenciones para el hogar inspirados en la exploración espacial que podrían sustentar comunidades enteras en la Tierra, y una visión en la que la política se basa menos en delegar poder y más en construir comunes acuerdos.
     
     Programar, investigar y diseñar sistemas no son, para mí, actividades separadas: son distintas formas de pensar el mundo como un conjunto de procesos interconectados. Desde satélites hasta plataformas cívicas, todos mis proyectos comparten un mismo objetivo: ampliar los límites de la humanidad sin destruir el planeta que nos sostiene.
     
-    Imagino un futuro donde las tecnologías creadas para sobrevivir en Marte permitan a nuestras comunidades vivir con respeto en la Tierra. Donde entender un sistema sea el primer paso para sanarlo. Donde el progreso no se mida solo en crecimiento, sino en resiliencia.
+    Imagino un futuro donde las tecnologías creadas para sobrevivir en el espacio permitan a nuestras comunidades vivir con respeto en la Tierra. 
     
     Este espacio es mi intento de pensar ese futuro en voz alta y compartirlo contigo.
 
