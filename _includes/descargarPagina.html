@@ -99,6 +99,11 @@
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
 
+            /* Override inline background-image to remove the gradient layer that breaks Safari print */
+            background-image: url('{{ page.imagenPortada }}') !important;
+            background-size: cover !important;
+            background-position: center !important;
+
             /* Fix: Establecer contexto de posicionamiento para que los títulos absolutos se queden aquí */
             position: relative !important;
             height: 100vh !important;
@@ -143,6 +148,7 @@
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
+
     }
 </style>
 
