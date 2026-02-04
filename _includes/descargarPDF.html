@@ -75,9 +75,14 @@
         /* Asegurar que los títulos y subtítulos tengan color negro */
         .portada-titulos,
         .portada-titulo,
-        .portada-subtitulo,
+        .portada-subtitulo {
+            color: #dfa776 !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
         .portada figcaption {
-            color: rgb(0, 0, 0) !important;
+            color: black !important;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
