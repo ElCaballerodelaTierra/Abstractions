@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let currentLanguage = 'es'; // Idioma inicial
 
 function setLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
     const esElements = document.querySelectorAll('.content-es');
     const enElements = document.querySelectorAll('.content-en');
     const btnEs = document.getElementById('btn-es');

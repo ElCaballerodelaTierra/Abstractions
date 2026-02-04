@@ -26,7 +26,7 @@
     </figure>
     {% endif %} -->
 
-    <cite class="portada content-es"
+    <cite class="portada content-es frase"
         style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}');">
         {{ page['frase-es'] | markdownify }}
         <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
@@ -36,7 +36,7 @@
     <figcaption class="content-es">{{ page.descripcionImagenPortada }}</figcaption>
     {% endif %}
 
-    <cite class="portada content-en"
+    <cite class="portada content-en frase"
         style="display: none; background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}'); background-size: cover; background-position: center; mask-image: linear-gradient(to bottom, black 70%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);">
         {{ page['frase-en'] | markdownify }}
         <span class="frase-autor" style="width: fit-content; ">{{ page['frase-autor-en'] | markdownify }}</span>
@@ -115,6 +115,8 @@
             impedit fuga minus sed sequi.</p>
 
     </article> -->
+
+    {% include descargarPagina.html %}
 
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
 

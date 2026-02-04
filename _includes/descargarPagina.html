@@ -1,6 +1,12 @@
 <style>
     @media print {
 
+        /* Ocultar el idioma no seleccionado */
+        html[lang="es"] .content-en,
+        html[lang="en"] .content-es {
+            display: none !important;
+        }
+
         /* Ocultar elementos innecesarios en la impresión */
         header,
         footer,
@@ -127,6 +133,15 @@
             position: absolute !important;
             bottom: 10px !important;
             z-index: 10 !important;
+        }
+
+        /* Se modifican los colores a blanco para la plantilla de frase y texto */
+        .frase,
+        .frase-autor,
+        .frase-contexto {
+            color: white !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
     }
 </style>
