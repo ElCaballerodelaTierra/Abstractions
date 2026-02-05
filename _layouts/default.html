@@ -35,7 +35,7 @@
     </figure>
     {% endif %}
 
-    {% include selectorDeIdioma.html %}
+    {% include selectordeidioma.html %}
 
     <!-- Si no hay imagen de portada, se muestran los titulos -->
     {% if page.imagenPortada == null %}
@@ -44,7 +44,7 @@
     {% endif %}
 
     {{content}}
-    
+
     <article>
         <div class="content-es">
             {{ page['content-es'] | markdownify }}
