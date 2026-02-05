@@ -12,8 +12,18 @@
         footer,
         nav,
         .selectorDeIdioma,
-        .boton-descargar-pdf {
+        .boton-descargar-pdf,
+        #nav,
+        .navbar,
+        .nav-bar {
             display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            width: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            opacity: 0 !important;
+            border: none !important;
         }
 
         /* Forzar que los títulos no queden solos al final de la página */
@@ -148,9 +158,9 @@
 
     .boton-descargar-pdf button {
         background-color: black;
-        color: color-mix(in srgb, var(--color-texto-articulo), transparent 20%);
+        color: color-mix(in srgb, var(--color-texto-articulo), transparent 0%);
         border: 1px solid transparent;
-        background-image: linear-gradient(black, black), linear-gradient(to bottom, transparent, #683509, transparent);
+        background-image: linear-gradient(black, black), linear-gradient(to right, transparent, #683509, transparent);
         background-origin: border-box;
         background-clip: padding-box, border-box;
     }
@@ -161,23 +171,22 @@
 
     .boton-descargar-pdf button:hover {
         background-color: #683509;
-        color: var(--color-texto-articulo);
+        color: var(--color-enlaces);
         border: 1px solid transparent;
-        background-image: linear-gradient(black, black), linear-gradient(to bottom, transparent, #683509, transparent);
+        background-image: linear-gradient(black, black), linear-gradient(to right, transparent, #683509, transparent);
         background-origin: border-box;
         background-clip: padding-box, border-box;
     }
-
 </style>
-
-
 
 <div class="boton-descargar-pdf"
     style="display: flex; justify-content: center; align-items: center; width: fit-content; margin: 20px auto">
-    <button onclick="window.print()" class="boton-descargar-pdf content-es">
+    <button onclick="window.print()" class="boton-descargar-pdf content-es"
+        title="Selecciona 'Guardar como PDF' como opción de impresora">
         Descargar artículo
     </button>
-    <button onclick="window.print()" class="boton-descargar-pdf content-en" style="display: none;">
+    <button onclick="window.print()" class="boton-descargar-pdf content-en"
+        title="Select 'Save as PDF' as printer option">
         Download article
     </button>
 </div>
