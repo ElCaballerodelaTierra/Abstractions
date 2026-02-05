@@ -4,11 +4,12 @@
 
 /* Definimos la gama de colores y propiedades generales*/
 :root {
-    --naranja: #6b2b00;
+    --color-naranja-shedron: #6b2b00;
     --color-texto-articulo: #ffffffb7;
     --color-titulos: #dfa776;
     --color-descripcion-imagenes: #ffb27f;
     --anchura-contenido: 800px;
+    --color-enlaces: #ffe1c9de;
 }
 
 /* Establecemos los estilos del cuerpo */
@@ -60,7 +61,7 @@ p {
 /* Definimos estilo para los botones */
 
 button {
-    background-color: var(--naranja);
+    background-color: var(--color-naranja-shedron);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -71,14 +72,16 @@ button {
 }
 
 button:hover {
-    background-color: var(--naranja);
+    background-color: var(--color-naranja-shedron);
 }
 
 /* Estilos para los enlaces */
 
 a {
-    color: var(--color-titulosportada);
+    color: var(--color-enlaces);
     text-decoration: underline;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 a:hover {
@@ -90,7 +93,7 @@ a:hover {
 ::selection {
     color: white;
     /* Color de la letra */
-    background: var(--naranja);
+    background: var(--color-naranja-shedron);
     /* Color de fondo al seleccionar */
 }
 
@@ -145,7 +148,7 @@ cite.portada {
     display: block;
     margin: 10px auto 0 auto;
     text-align: right;
-    
+
 }
 
 /* Estilos para la imagen de portada */
@@ -185,7 +188,8 @@ figure img {
 
 figure.anchura-completa img {
     width: 100vw;
-    padding: 0px;
+    margin-left: calc(50% - 50vw);
+    max-width: none;
 }
 
 figure.anchura-completa figcaption {
@@ -213,7 +217,6 @@ article figcaption {
 }
 
 article {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -226,13 +229,18 @@ article p {
     text-align: justify;
 }
 
+article button {
+    display: block;
+    margin: 0px auto;
+}
+
 /* Se ajustan los encabezados dentro de las secciones para que estén centrados */
 
-section h1,
-section h2,
-section h3,
-section h4,
-section h5,
-section h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
 }
