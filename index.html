@@ -32,13 +32,7 @@
     <div>
         <h1 style="display: flex; justify-content: center; align-items: center; font-size: 2.3em; padding: 20px;">
             Abstractions</h1>
-        <div
-            style=" display: flex; justify-content: center; align-items: center; padding: 0px 0px; gap: 5px; width: fit-content; border-radius: 50px; margin: 0px auto; background-color: var(--gris);">
-            <button id="btn-es" onclick="setLanguage('es')"
-                style="padding: 10px 20px; cursor: pointer; background-color: var(--naranja); color: white; border: 0px solid white;">Español</button>
-            <button id="btn-en" onclick="setLanguage('en')"
-                style="padding: 10px 20px; cursor: pointer; background-color: var(--gris); color: white; border: 0px solid white;">English</button>
-        </div>
+       {% include selectordeidioma.html %}
         <div
             style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; height: 80vh;">
             <div>
