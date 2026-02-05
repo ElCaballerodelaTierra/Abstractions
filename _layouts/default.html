@@ -16,6 +16,7 @@
 
 <body>
 
+    {% if page.imagenPortada %}
     <figure class="portada">
         <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada }}>
         <!-- Titulos en español -->
@@ -32,60 +33,23 @@
         </div>
         <figcaption class="content-en" style="display: none;">{{ page.descripcionImagenPortada-en }}</figcaption>
     </figure>
+    {% endif %}
 
-    {% include selectordeidioma.html %}
+    {% include selectorDeIdioma.html %}
+
+    <!-- Si no hay imagen de portada, se muestran los titulos -->
+    {% if page.imagenPortada == null %}
+    <h1 class="content-es">{{ page.title }}</h1>
+    <h1 class="content-en" style="display: none;">{{ page.title-en }}</h1>
+    {% endif %}
 
     <article>
-
-        <p>{{ content }}</p>
-
-        <figure>
-            <img src="/assets/plantilla/Dos-barcos.jpg" alt="Dos barcos" class="anchura-completa">
-            <figcaption>Figura 1: Dos barcos navegando</figcaption>
-        </figure>
-
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, officiis optio suscipit deserunt totam
-            omnis veritatis? Pariatur amet sit doloremque. Sunt, facere. Nam veniam possimus iure explicabo recusandae
-            nesciunt exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minima et! Odit,
-            natus veniam doloribus id tempore similique accusamus harum sunt laboriosam praesentium deserunt,
-            repellendus quisquam aliquid. Quasi, sit ipsa?</p>
-
-        <figure class="anchura-completa">
-            <img src="/assets/plantilla/Dos-barcos.jpg" alt="Dos barcos">
-            <figcaption>Figura 2: Dos barcos navegando</figcaption>
-        </figure>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque eius qui, sed consequuntur expedita
-            dolorum, velit enim illo delectus ut, magnam aperiam ad nostrum optio reprehenderit a saepe corrupti. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Ducimus asperiores dolor itaque minus nemo aperiam
-            aliquid porro eaque ipsam quam sunt quibusdam autem assumenda facere quis repellat, voluptatibus excepturi
-            error.</p>
-
-        <section>
-            <h2>Sección</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta aliquid. Recusandae, nisi incidunt,
-                blanditiis soluta est veritatis quod cumque aut non magnam temporibus, ipsa debitis laudantium.
-                Doloremque, rem est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor quia sit dolore
-                cumque aut qui sint, recusandae consequatur facilis eius exercitationem ipsum pariatur corporis magnam
-                quisquam obcaecati eligendi. Sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
-                minima ducimus dicta velit aliquid ullam facere sapiente architecto nam repudiandae, repellat totam, adiure alias reiciendis quidem optio? Voluptatum, dolorem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et eveniet exercitationem doloremque debitis totam similique temporibus vitae veniam fugiat animi, amet, suscipit at architecto consectetur harum quo ipsam illo fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consectetur maxime tempore asperiores natus, ex accusamus minus doloribus iure hic molestias dolores est aliquam, eos quibusdam odio neque expedita quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ad distinctio cupiditate soluta iusto dolores laboriosam delectus culpa officiis doloribus dolore, veniam voluptatem dignissimos incidunt nostrum commodi maiores laudantium. Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur asperiores quod voluptas numquam sunt dignissimos vero veniam amet cupiditate optio harum error officia, quas obcaecati molestias blanditiis eum similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sed ducimus quam nihil ex autem vitae incidunt in animi dolor, praesentium, fugit corporis? Alias minima ipsum blanditiis voluptate quos hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi doloribus in molestiae quidem ex nobis corrupti, quis impedit quibusdam, dolorem aspernatur, placeat ratione non et! Quidem impedit quia blanditiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, repellat dolor! At ipsam iure necessitatibus nulla unde fugiat id aliquam aspernatur voluptates ipsum. Magnam et, eveniet reiciendis ea beatae vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam quam eligendi vero id et doloremque, dolor aperiam, sequi omnis laudantium eum ducimus voluptate. Corrupti earum perspiciatis totam consequuntur at?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, incidunt atque aspernatur laboriosam quisquam itaque natus ratione earum sit, dolorum tempore in? Saepe harum nobis alias iusto deleniti reprehenderit sit. 
-            </p>
-        </section>
-        <section>
-            <h2>Capítulo</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dicta aliquid. Recusandae, nisi incidunt,
-                blanditiis soluta est veritatis quod cumque aut non magnam temporibus, ipsa debitis laudantium.
-                Doloremque,
-                rem est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti ad eligendi cum ducimus
-                repellendus necessitatibus officiis, a minus tempora. Quis sapiente error necessitatibus, dicta quae
-                cupiditate rem iusto minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi ratione
-                sint
-                accusantium dolore, corrupti harum. Sint numquam maiores ex corporis. Voluptatibus beatae veniam omnis
-                impedit fuga minus sed sequi.</p>
-        </section>
+        <div class="content-es">
+            {{ page['content-es'] | markdownify }}
+        </div>
+        <div class="content-en" style="display: none;">
+            {{ page['content-en'] | markdownify }}
+        </div>
     </article>
 
     <!-- Se inserta el boton para descargar la pagina -->

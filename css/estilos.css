@@ -4,7 +4,7 @@
 
 /* Definimos la gama de colores y propiedades generales*/
 :root {
-    --color-naranja-shedron: #6b2b00;
+    --naranja: #6b2b00;
     --color-texto-articulo: #ffffffb7;
     --color-titulos: #dfa776;
     --color-descripcion-imagenes: #ffb27f;
@@ -61,7 +61,7 @@ p {
 /* Definimos estilo para los botones */
 
 button {
-    background-color: var(--color-naranja-shedron);
+    background-color: var(--naranja);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--color-naranja-shedron);
+    background-color: var(--naranja);
 }
 
 /* Estilos para los enlaces */
@@ -93,7 +93,7 @@ a:hover {
 ::selection {
     color: white;
     /* Color de la letra */
-    background: var(--color-naranja-shedron);
+    background: var(--naranja);
     /* Color de fondo al seleccionar */
 }
 

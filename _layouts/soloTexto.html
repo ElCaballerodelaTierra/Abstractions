@@ -16,10 +16,7 @@
 
 <body>
 
-    <div style="display: flex; gap: 10px; padding: 20px; justify-content: center; align-items: center;">
-        <button id="btn-es" onclick="setLanguage('es')">Español</button>
-        <button id="btn-en" onclick="setLanguage('en')">English</button>
-    </div>
+    {% include selectorDeIdioma.html %}
 
     <main>
 
@@ -38,8 +35,6 @@
 
     {% include autor.html %}
     {% include footer.html %}
-
-    <script src="/js/main.js"></script>
 
 </body>
 
