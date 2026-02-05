@@ -143,14 +143,41 @@
         }
 
     }
+
+    /* Estilos para el botón de descarga */
+
+    .boton-descargar-pdf button {
+        background-color: black;
+        color: color-mix(in srgb, var(--color-texto-articulo), transparent 20%);
+        border: 1px solid transparent;
+        background-image: linear-gradient(black, black), linear-gradient(to bottom, transparent, #683509, transparent);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+    }
+
+    .boton-descargar-pdf button {
+        transition: all 1s ease;
+    }
+
+    .boton-descargar-pdf button:hover {
+        background-color: #683509;
+        color: var(--color-texto-articulo);
+        border: 1px solid transparent;
+        background-image: linear-gradient(black, black), linear-gradient(to bottom, transparent, #683509, transparent);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+    }
+
 </style>
+
+
 
 <div class="boton-descargar-pdf"
     style="display: flex; justify-content: center; align-items: center; width: fit-content; margin: 20px auto">
     <button onclick="window.print()" class="boton-descargar-pdf content-es">
-        Descargar
+        Descargar artículo
     </button>
     <button onclick="window.print()" class="boton-descargar-pdf content-en" style="display: none;">
-        Download
+        Download article
     </button>
 </div>
