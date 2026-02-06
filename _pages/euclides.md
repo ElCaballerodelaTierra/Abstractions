@@ -94,7 +94,7 @@ content-en: |
 
     The popular website <i>Archive.org </i><a href="https://archive.org/details/firstsixbooksofe00byrn" target="_blank" rel="noopener">hosts a digital copy</a> of the book, freely accessible to anyone.<br><br>
 
-    <div style="width: 90%; max-width: 450px; aspect-ratio: 320 / 460; margin: 20px auto;">
+    <div class="iframe" style="width: 90%; max-width: 450px; aspect-ratio: 320 / 460; margin: 20px auto;">
     <iframe src="https://archive.org/embed/firstsixbooksofe00byrn/page/n6/mode/2up" width="100%" height="100%" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
     </div>
 
