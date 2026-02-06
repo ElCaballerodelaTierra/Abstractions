@@ -171,17 +171,19 @@
         }
 
         /* Se compacta el iframe a la mitad de la altura de la pantalla para que se muestre correctamente en el documento descargado */
-        
+
         .iframe {
-            max-height: 50vh !important;
+            max-height: 60vh !important;
             width: auto !important;
             margin: 0 auto !important;
             aspect-ratio: auto !important;
             /* Permitir que el aspect ratio se rompa si es necesario para ajustar la altura */
+            display: flex !important;
+            justify-content: center !important;
         }
-        
+
         .iframe iframe {
-            height: 50vh !important;
+            height: 60vh !important;
             width: auto !important;
             aspect-ratio: 320 / 460 !important;
         }
