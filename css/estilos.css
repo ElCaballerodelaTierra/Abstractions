@@ -6,6 +6,7 @@
 :root {
     /* Colores */
     --naranja: #6b2b00;
+    --naranja-claro: #ffba8d;
     --color-texto-articulo: #ffffffb7;
     --color-titulos: #dfa776;
     --color-descripcion-imagenes: #ffb27f;
@@ -33,16 +34,10 @@ body {
 
 /* Se definen los estilos para los encabezados */
 
-h1 {
-    color: var(--color-titulos);
-}
-
-h2 {
-    color: var(--color-titulos);
-}
-
+h1,
+h2,
 h3 {
-    color: #b0b0b0;
+    color: var(--color-titulos);
 }
 
 h4 {
@@ -81,6 +76,16 @@ button {
 button:hover {
     background-color: var(--naranja);
 }
+
+
+/* Se da formato al subrayado de los enlaces dentro de los botones */
+button a {
+    text-decoration: none;
+    text-decoration-color: #ffffff67;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+}
+
 
 /* Estilos para los enlaces */
 

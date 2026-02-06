@@ -14,7 +14,7 @@ frase-autor-en: "Author of test in english"
 frase-contexto-en: "Context of test in english"
 
 imagenPortada: "/assets/plantilla/Dos-barcos.jpg"
-descripcionImagenPortada-es: "Descripcion de la imagen de portada en español"
+descripcionImagenPortada-es: Descripción de la imagen de portada en español
 descripcionImagenPortada-en: "Description of the cover image in english"
 
 content-es: |

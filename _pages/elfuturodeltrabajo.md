@@ -3,7 +3,7 @@ layout: default
 title: El futuro del trabajo
 title-en: The future of work
 imagenPortada: /assets/trabajo/Mural-Biblioteca-Iberoamericana.jpg
-descripcionImagenPortada: Mural en la Biblioteca Iberoamericana, Guadalajara, México.
+descripcionImagenPortada-es: Mural en la Biblioteca Iberoamericana, Guadalajara, México.
 descripcionImagenPortada-en: Mural in the Iberoamerican Library, Guadalajara, Mexico.
 
 frase-es: | 

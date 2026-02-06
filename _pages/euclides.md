@@ -94,8 +94,11 @@ content-en: |
     </section>
 
     <section>
-    <i>Archive.org </i><a href="https://archive.org/details/firstsixbooksofe00byrn" target="_blank" rel="noopener">stores a digital copy of the book
-    </a><br><br>
+
+    <h3>Archive.org</h3> <br>
+    
+
+    The popular website <i>Archive.org </i><a href="https://archive.org/details/firstsixbooksofe00byrn" target="_blank" rel="noopener">stores a digital copy</a> of the book.<br><br>
 
     <div style="width: 90%; max-width: 450px; aspect-ratio: 320 / 460; margin: 20px auto;">
     <iframe src="https://archive.org/embed/firstsixbooksofe00byrn/page/n6/mode/2up" width="100%" height="100%" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
@@ -103,11 +106,12 @@ content-en: |
 
     <br>
 
-    <button><a href="https://archive.org/download/firstsixbooksofe00byrn/firstsixbooksofe00byrn.pdf" target="_blank" rel="noopener">The Elements of Euclid
-    </a></button><br><br>
+    <button><a href="https://archive.org/download/firstsixbooksofe00byrn/firstsixbooksofe00byrn.pdf" target="_blank" rel="noopener">📙 Byrne's Elements</a></button><br>
     </section>
 
     <section>
+    <h3>Taschen</h3> <br>
+    
     The Taschen publishing house has put the book on sale:<br><br>
 
     <figure>
@@ -116,9 +120,13 @@ content-en: |
     </figure>
     <br>
 
-    <button><a href="https://www.amazon.com/Byrne-Books-Euclid-Werner-Oechslin/dp/3836559382" target="_blank" rel="noopener">Taschen Reprint – Amazon</a></button><br><br>
+    <button><a href="https://www.amazon.com/Byrne-Books-Euclid-Werner-Oechslin/dp/3836559382" target="_blank" rel="noopener">🌐 Byrne's Elements</a></button><br>
     </section>
+
     <section>
+    
+    <h3>Nicholas Rougeux</h3> <br>
+    
     Nicholas Rougeux showed that it is possible to improve Byrne's work, allowing interaction with each element of the demonstration. <br><br>
 
     <figure>
@@ -128,14 +136,12 @@ content-en: |
 
     <br>
 
-    <button><a href="https://www.c82.net/euclid/" target="_blank" rel="noopener">The Elements by Euclid – c82
-    </a></button><br>
-
-    Also, there is a Spanish version:<br><br>
-
-    <button><a href="https://www.c82.net/euclid/es/" target="_blank" rel="noopener">Los elementos de Euclides – c82</a></button><br><br>
+    <button><a href="https://www.c82.net/euclid/" target="_blank" rel="noopener">🌐 Rougeux's Elements</a></button><br>
     </section>
+
     <section>
+    <h3>Sergey Slyusarev</h3> <br>
+
     Sergey Slyusarev created a <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">digital edition</a> that updates itself and in which anyone can collaborate. It is completely free to edit, translate into more languages and distribute both in physical and digital format:<br><br>
 
     <figure>
@@ -145,8 +151,9 @@ content-en: |
 
     <br><br>
 
-    <button><a href="https://github.com/jemmybutton/byrne-euclid/releases/download/Current/byrne_context.pdf" target="_blank" rel="noopener">The Elements by Euclid – Sergey's GitHub</a></button><br><br>
+    <button><a href="https://github.com/jemmybutton/byrne-euclid/releases/download/Current/byrne_context.pdf" target="_blank" rel="noopener">📙 Slyusarev's Elements</a></button><br>
     </section>
+
     <section>
     It deserves to be spread and the efforts to improve it, that Byrne's legacy spreads to anyone and shows that there are more efficient ways of exposing, both in mathematics and any other discipline, than the conventional ones.<br>
     </section>
