@@ -52,14 +52,14 @@ content-es: |
     <br>
 
     <button><a href="https://www.c82.net/euclid/" target="_blank" rel="noopener">The Elements by Euclid – c82
-    </a></button><br><br>
+    </a></button><br>
 
     Además, existe una versión en español:<br><br>
 
     <button><a href="https://www.c82.net/euclid/es/" target="_blank" rel="noopener">Los elementos de Euclides – c82</a></button><br><br>
     </section>
     <section>
-    Sergey Slyusarev ha creado una <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">edición digital</a> que se actualiza y en la que cualquiera puede colaborar. Es completamente libre para editarse, traducirse a más idiomas y distribuirse tanto en formato físico como digital:<br>
+    Sergey Slyusarev ha creado una <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">edición digital</a> que se actualiza y en la que cualquiera puede colaborar. Es completamente libre para editarse, traducirse a más idiomas y distribuirse tanto en formato físico como digital:<br><br>
 
     <figure>
         <img src="/assets/euclides/Digitalización de Sergey Slyusarev.png" alt="Digitalización de Sergey Slyusarev">
@@ -129,15 +129,14 @@ content-en: |
     <br>
 
     <button><a href="https://www.c82.net/euclid/" target="_blank" rel="noopener">The Elements by Euclid – c82
-    </a></button><br><br>
-    </section>
-    <section>
+    </a></button><br>
+
     Also, there is a Spanish version:<br><br>
 
     <button><a href="https://www.c82.net/euclid/es/" target="_blank" rel="noopener">Los elementos de Euclides – c82</a></button><br><br>
     </section>
     <section>
-    Sergey Slyusarev created a <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">digital edition</a> that updates itself and in which anyone can collaborate. It is completely free to edit, translate into more languages and distribute both in physical and digital format:<br>
+    Sergey Slyusarev created a <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">digital edition</a> that updates itself and in which anyone can collaborate. It is completely free to edit, translate into more languages and distribute both in physical and digital format:<br><br>
 
     <figure>
         <img src="/assets/euclides/Digitalización de Sergey Slyusarev.png" alt="Sergey Slyusarev digitilization">
