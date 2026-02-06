@@ -33,7 +33,6 @@
         h4,
         h5,
         h6,
-        section,
         .portada-titulos,
         .portada-titulo,
         .portada-subtitulo,
@@ -44,6 +43,21 @@
             page-break-inside: avoid;
             break-inside: avoid;
             margin-bottom: 0 !important;
+        }
+
+        /* Configuración inteligente de saltos de página para secciones */
+        section {
+            /* Intentar no dividir una sección en dos páginas */
+            break-inside: avoid;
+            page-break-inside: avoid;
+
+            /* Permitir que compartan página si caben */
+            break-before: auto;
+            page-break-before: auto;
+
+            /* Asegurar espacio visual si comparten página */
+            margin-bottom: 2cm !important;
+            display: block !important;
         }
 
         /* Asegurar que el cuerpo ocupe el 100% y tenga fondo blanco */
