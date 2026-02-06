@@ -147,6 +147,13 @@ cite.portada {
     display: block;
     margin-top: 20px;
     text-align: right;
+    width: fit-content;
+    object-position: right;
+    text-align: right;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: clamp(1rem, 1rem + 2vw, 3rem);
 }
 
 .frase-contexto {
@@ -155,7 +162,14 @@ cite.portada {
     display: block;
     margin: 10px auto 0 auto;
     text-align: right;
+}
 
+cite .frase-contexto {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
 }
 
 /* Estilos para la imagen de portada */
@@ -250,4 +264,20 @@ h4,
 h5,
 h6 {
     text-align: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    .frase-autor {
+        width: 100%;
+        text-align: center;
+        font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+    }
+    cite .frase-contexto {
+        width: 100%;
+        /* ocupa todo el ancho */
+        margin: 0 auto;
+        /* elimina el auto-margin */
+    }
 }

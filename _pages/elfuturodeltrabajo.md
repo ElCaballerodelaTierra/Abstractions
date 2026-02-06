@@ -1,5 +1,5 @@
 ---
-layout: fraseytexto
+layout: default
 title: El futuro del trabajo
 title-en: The future of work
 imagenPortada: /assets/trabajo/Mural-Biblioteca-Iberoamericana.jpg
