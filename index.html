@@ -1,8 +1,6 @@
 ---
 ---
 
-<!-- Esta página es un experimento para conocer los alcances del código. Es una mala práctica usar CSS dentro del HTML. -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,23 +12,10 @@
     {% include analytics.html %}
 </head>
 
-<style>
-    body div {
-        font-size: 20px;
-        /
-        /* border: 2px solid white; */
-    }
-
-    :root {
-        --naranja: #963e0094;
-        --gris: #121212;
-    }
-</style>
-
 <body>
 
     <div>
-        <h1 style="display: flex; justify-content: center; align-items: center; font-size: 2.3em; padding: 10px;">
+        <h1 style="display: flex; justify-content: center; align-items: center; font-size: 2.3em; padding: 20px 0px 0px 0px;">
             Abstractions</h1>
        {% include selectordeidioma.html %}
         <div
@@ -41,7 +26,7 @@
             </div>
 
             <div style="width:100vw; max-width: 500px; padding: 20px; ">
-                <h2 style="font-size: 1.3em; text-align: center; padding: 10px;">Carlos Alberto Villarreal Noyola</h3>
+                <h2 style="font-size: 1.3em; text-align: center; padding: 10px;">Carlos Alberto Villarreal Noyola</h2>
 
                     <cite class="content-es" style="font-size: .75em; padding: 5px 0px;">Inventor y visionario en
                         México</cite>
@@ -83,8 +68,6 @@
             </div>
         </div>
 
-        <!-- Se implementa la lógica de cambio de idioma -->
-        <script src="/js/main.js"></script>
 </body>
 
 </html>

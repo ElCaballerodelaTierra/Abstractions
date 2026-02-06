@@ -4,12 +4,15 @@
 
 /* Definimos la gama de colores y propiedades generales*/
 :root {
+    /* Colores */
     --naranja: #6b2b00;
     --color-texto-articulo: #ffffffb7;
     --color-titulos: #dfa776;
     --color-descripcion-imagenes: #ffb27f;
-    --anchura-contenido: 800px;
+    --gris: #121212;
     --color-enlaces: #ffe1c9de;
+    /* Anchos */
+    --anchura-contenido: 800px;
 }
 
 /* Establecemos los estilos del cuerpo */
