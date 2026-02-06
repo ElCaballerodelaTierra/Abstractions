@@ -55,7 +55,7 @@ content-es: |
 
     <section>
     <h3>Sergey Slyusarev</h3> <br>
-    Sergey Slyusarev ha creado una <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">edición digital</a> en la que cualquiera puede colaborar. Es completamente libre para editarse y traducirse a más idiomas, actualmente está disponible en inglés y ruso.<br><br>
+    Sergey Slyusarev ha creado una <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">edición digital</a> en LaTeX en la que cualquiera puede colaborar. Es completamente libre para editarse y traducirse a más idiomas, actualmente está disponible en inglés y ruso.<br><br>
 
     <figure>
         <img src="/assets/euclides/Digitalización de Sergey Slyusarev.png" alt="Digitalización de Sergey Slyusarev">
@@ -136,7 +136,7 @@ content-en: |
     <section>
     <h3>Sergey Slyusarev</h3> <br>
 
-    Sergey Slyusarev created a <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">digital edition</a> in LaTex that anyone can collaborate on. It is completely free to edit, and translate it into more languages, currently it is available in English and Russian.<br><br>
+    Sergey Slyusarev created a <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">digital edition</a> in LaTeX that anyone can collaborate on. It is completely free to edit, and translate it into more languages, currently it is available in English and Russian.<br><br>
 
     <figure>
         <img src="/assets/euclides/Digitalización de Sergey Slyusarev.png" alt="Sergey Slyusarev digitilization">
