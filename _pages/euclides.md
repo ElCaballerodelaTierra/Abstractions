@@ -2,7 +2,7 @@
 
 layout: default
 
-titulo-es: Los elementos de Euclides
+titulo-es: Los Elementos de Euclides
 subtitulo-es: El inicio de la matemática moderna
 imagenPortada: /assets/euclides/Demostracion-del-teorema-de-pitagoras.jpg
 descripcionImagenPortada-es: Demostración del teorema de pitágoras, Los elementos de Euclides, Oliver Byrne, 1847
@@ -34,7 +34,7 @@ content-es: |
     La editorial Taschen ha puesto a la venta una reimpresión del libro:<br><br>
 
     <figure>
-        <img src="/assets/euclides/Reimpresión de Taschen.png" alt="Reimpresión de Taschen">
+        <img src="/assets/euclides/Reimpresión de Taschen.jpg" alt="Reimpresión de Taschen">
         <figcaption>Reimpresión de Taschen</figcaption>
     </figure>
     <br>
@@ -106,13 +106,13 @@ content-en: |
     <button><a href="https://archive.org/download/firstsixbooksofe00byrn/firstsixbooksofe00byrn.pdf" target="_blank" rel="noopener">The Elements of Euclid
     </a></button><br><br>
     </section>
-    
+
     <section>
     The Taschen publishing house has put the book on sale:<br><br>
 
     <figure>
-        <img src="/assets/euclides/Reimpresión de Taschen.png" alt="Reimpresión de Taschen">
-        <figcaption>Reimpresión de Taschen</figcaption>
+        <img src="/assets/euclides/Reimpresión de Taschen.jpg" alt="Taschen reprint">
+        <figcaption>Taschen reprint</figcaption>
     </figure>
     <br>
 
@@ -122,8 +122,8 @@ content-en: |
     Nicholas Rougeux showed that it is possible to improve Byrne's work, allowing interaction with each element of the demonstration. <br><br>
 
     <figure>
-        <img src="/assets/euclides/Digitalización de Nicholas Rougeux.png" alt="Digitalización de Nicholas Rougeux">
-        <figcaption>Digitalización de Nicholas Rougeux</figcaption>
+        <img src="/assets/euclides/Digitalización de Nicholas Rougeux.png" alt="Nicholas Rougeux digitilization">
+        <figcaption>Nicholas Rougeux digitilization</figcaption>
     </figure>
 
     <br>
@@ -140,8 +140,8 @@ content-en: |
     Sergey Slyusarev created a <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">digital edition</a> that updates itself and in which anyone can collaborate. It is completely free to edit, translate into more languages and distribute both in physical and digital format:<br>
 
     <figure>
-        <img src="/assets/euclides/Digitalización de Sergey Slyusarev.png" alt="Digitalización de Sergey Slyusarev">
-        <figcaption>Digitalización de Sergey Slyusarev</figcaption>
+        <img src="/assets/euclides/Digitalización de Sergey Slyusarev.png" alt="Sergey Slyusarev digitilization">
+        <figcaption>Sergey Slyusarev digitilization</figcaption>
     </figure>
 
     <br><br>
