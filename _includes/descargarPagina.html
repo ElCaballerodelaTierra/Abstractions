@@ -96,11 +96,24 @@
             widows: 2;
         }
 
+        /* Asegurar que los enlaces se muestren correctamente */
+        a {
+            color: #000000 !important;
+            text-decoration: underline !important;
+        }
+
+        button a {
+            color: #dfa776 !important;
+            text-decoration: underline !important;
+        }
+
         /* Mostrar la URL de los enlaces */
         a:after {
             content: " (" attr(href) ")";
             font-size: 0.8em;
         }
+
+
 
         /* Asegurar que los títulos y subtítulos tengan color y fondo legibles */
         .portada-titulos,
