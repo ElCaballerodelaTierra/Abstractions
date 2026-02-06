@@ -9,7 +9,7 @@ descripcionImagenPortada-es: Demostración del teorema de pitágoras, Los elemen
 
 content-es: |
     <section>
-    <em>Los elementos</em> de Euclides ha sido una de las obras más influyentes para la humanidad; creó y popularizó las bases del modelo axiomático usado en la matemática.<br><br>
+    <em>Los Elementos</em> de Euclides ha sido una de las obras más influyentes para la humanidad; creó y popularizó las bases del modelo axiomático usado en la matemática.<br><br>
     En 1847, Oliver Byrne combinó la esencia de las demostraciones con la elegancia del color, creando la edición más simple y bella, una auténtica obra de arte.<br><br>
     Pocas bibliotecas lo tienen actualmente. No comprendo por qué ha sido tan difícil acceder a uno de sus ejemplares; ¿por qué no se enseña en la educación?
     <br><br>
@@ -18,19 +18,19 @@ content-es: |
     </section>
 
     <section>
-    <i>Archive.org </i><a href="https://archive.org/details/firstsixbooksofe00byrn" target="_blank" rel="noopener">almacena una copia digital del libro
-    </a><br><br>
+    <h3>Archive.org</h3> <br>
+    <i>Archive.org </i><a href="https://archive.org/details/firstsixbooksofe00byrn" target="_blank" rel="noopener">almacena una copia digital</a> de la obra.<br><br>
 
     <div style="width: 90%; max-width: 450px; aspect-ratio: 320 / 460; margin: 20px auto;">
     <iframe src="https://archive.org/embed/firstsixbooksofe00byrn/page/n6/mode/2up" width="100%" height="100%" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
     </div>
     <br>
 
-    <button><a href="https://archive.org/download/firstsixbooksofe00byrn/firstsixbooksofe00byrn.pdf" target="_blank" rel="noopener">The Elements of Euclid
-    </a></button><br><br>
+    <button><a href="https://archive.org/download/firstsixbooksofe00byrn/firstsixbooksofe00byrn.pdf" target="_blank" rel="noopener">📙 The Elements - Byrne
+    </a></button><br>
     </section>
     <section>
-
+    <h3>Taschen</h3> <br>
     La editorial Taschen ha puesto a la venta una reimpresión del libro:<br><br>
 
     <figure>
@@ -39,9 +39,10 @@ content-es: |
     </figure>
     <br>
 
-    <button><a href="https://www.amazon.com/Byrne-Books-Euclid-Werner-Oechslin/dp/3836559382" target="_blank" rel="noopener">Reimpresión de Taschen – Amazon</a></button><br><br>
+    <button><a href="https://www.amazon.com/Byrne-Books-Euclid-Werner-Oechslin/dp/3836559382" target="_blank" rel="noopener">🌐 The Elements – Taschen</a></button><br>
     </section>
     <section>
+    <h3>Nicholas Rougeux</h3> <br>
     Nicholas Rougeux mostró que es posible mejorar el trabajo de Byrne, permitiendo interactuar con cada elemento de la demostración. <br><br>
 
     <figure>
@@ -51,14 +52,11 @@ content-es: |
 
     <br>
 
-    <button><a href="https://www.c82.net/euclid/" target="_blank" rel="noopener">The Elements by Euclid – c82
-    </a></button><br>
-
-    Además, existe una versión en español:<br><br>
-
-    <button><a href="https://www.c82.net/euclid/es/" target="_blank" rel="noopener">Los elementos de Euclides – c82</a></button><br><br>
+    <button><a href="https://www.c82.net/euclid/es/" target="_blank" rel="noopener">🌐 The Elements – Rougeux</a></button><br>
     </section>
+
     <section>
+    <h3>Sergey Slyusarev</h3> <br>
     Sergey Slyusarev ha creado una <a href="https://github.com/jemmybutton/byrne-euclid/" target="_blank" rel="noopener">edición digital</a> que se actualiza y en la que cualquiera puede colaborar. Es completamente libre para editarse, traducirse a más idiomas y distribuirse tanto en formato físico como digital:<br><br>
 
     <figure>
@@ -68,7 +66,7 @@ content-es: |
 
     <br><br>
 
-    <button><a href="https://github.com/jemmybutton/byrne-euclid/releases/download/Current/byrne_context.pdf" target="_blank" rel="noopener">The Elements by Euclid – GitHub de Sergey</a></button><br><br>
+    <button><a href="https://github.com/jemmybutton/byrne-euclid/releases/download/Current/byrne_context.pdf" target="_blank" rel="noopener">📙 The Elements – Slyusarev</a></button><br>
     </section>
     <section>
     Merece la pena difundir esta obra y los esfuerzos por mejorarla, que el legado de Byrne contagie a cualquiera y muestre que existen maneras más eficientes de exponer, tanto en matemáticas como en cualquier otra disciplina, que las convencionales.<br>

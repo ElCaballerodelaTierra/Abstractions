@@ -80,10 +80,10 @@ button:hover {
 
 /* Se da formato al subrayado de los enlaces dentro de los botones */
 button a {
-    text-decoration: none;
+    text-decoration: underline;
     text-decoration-color: #ffffff67;
     text-decoration-thickness: 1px;
-    text-underline-offset: 6px;
+    text-underline-offset: 8px;
 }
 
 
