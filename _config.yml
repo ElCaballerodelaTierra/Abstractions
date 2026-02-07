@@ -9,7 +9,7 @@ author:
 
 # Opciones de build
 # markdown: kramdown
-permalink: /:categories/:title.html
+permalink: /:title.html
 
 # Variables personalizadas
 show_author: false

@@ -30,5 +30,3 @@ content-es: |
 content-en: |
     Life is beautiful
 ---
-
-Contenido

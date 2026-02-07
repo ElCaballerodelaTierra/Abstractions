@@ -20,7 +20,7 @@
 
     {% if page.imagenPortada and page.frase-es == null %}
     <figure class="portada">
-        <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada }}>
+        <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada-es }}>
         <!-- Titulos en español -->
         <div class="portada-titulos content-es">
             <div class="portada-titulo">{{page.titulo-es}}</div>
@@ -41,23 +41,26 @@
     <!-- Portada en español con frase e imagen de fondo (opcional) -->
 
     {% if page.frase-es %}
-    <cite class="portada content-es frase"
-        style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}');">
-        {{ page['frase-es'] | markdownify }}
-        <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
-        <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
-    </cite>
+    <figure class="portada content-es frase">
+        <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
+            {{ page['frase-es'] | markdownify }}
 
-    {% if page.imagenPortada %}
-    <figcaption class="content-es">{{ page.descripcionImagenPortada-es }}</figcaption>
+            <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
+            <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
+        </cite>
+
+        {% if page.imagenPortada %}
+        <figcaption class="content-es">{{ page.descripcionImagenPortada-es }}</figcaption>
+
+    </figure>
+
     {% endif %}
     {% endif %}
 
     <!-- Portada en ingles con frase e imagen de fondo (opcional) -->
 
     {% if page.frase-en %}
-    <cite class="portada content-en frase"
-        style="display: none; background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('{{ page.imagenPortada }}'); background-size: cover; background-position: center; mask-image: linear-gradient(to bottom, black 70%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);">
+    <cite class="portada content-en frase" style="display: none; --bg-image: url('{{ page.imagenPortada }}');">
         {{ page['frase-en'] | markdownify }}
         <span class="frase-autor" style="width: fit-content; ">{{ page['frase-autor-en'] | markdownify }}</span>
         <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
@@ -71,7 +74,7 @@
     {% include selectordeidioma.html %}
 
     <!-- Si no hay imagen de portada, se muestran los titulos -->
-    
+
     {% if page.imagenPortada == null or page.frase-es != null %}
     <h1 class="content-es">{{ page.titulo-es }}</h1>
     <h1 class="content-en" style="display: none;">{{ page.titulo-en }}</h1>
@@ -88,12 +91,12 @@
 
     <!-- Se inserta el boton para descargar la pagina -->
 
-    
+
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
-    
+
     {% include autor.html %}
     {% include footer.html %}
-    
+
     {% include descargarPagina.html %}
 </body>
 
