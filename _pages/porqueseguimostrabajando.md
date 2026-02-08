@@ -5,8 +5,8 @@ published: true
 
 categories: Economía
 
-title: El futuro del trabajo
-title-en: The future of work
+titulo-es: ¿Por qué seguimos trabajando?
+titulo-en: Why do we keep working?
 
 imagenPortada: /assets/trabajo/Mural-Biblioteca-Iberoamericana.jpg
 descripcionImagenPortada-es: Mural en la Biblioteca Iberoamericana, Guadalajara, México.

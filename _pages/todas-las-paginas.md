@@ -1,7 +1,20 @@
 ---
 layout: default
+titulo-es: Todas las páginas
+titulo-en: All Pages
 permalink: /todas-las-paginas.html
 ---
+
+<style>
+    /* Se ocultan todos los elementos de la plantilla por defecto */
+    h1,
+    .autor,
+    footer,
+    .boton-descargar-pdf {
+        display: none !important;
+    }
+
+</style>
 
 <section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
 
@@ -17,7 +30,7 @@ permalink: /todas-las-paginas.html
                 <h3 style="display: none;">{{ group.name }}</h3>
 
                 {% for p in group.items %}
-                        <div style="flex: 1 1 120px; max-width: 300px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div style="flex: 1 1 120px; max-width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: end; text-align: center;">
                         <a href="{{ p.url }}" style="text-decoration: none; color: inherit;">
                             {% if p.imagenPortada %}
                                 <img src="{{ p.imagenPortada | relative_url }}" alt="{{ p.titulo-es | default: p.title }}" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 500px; margin-bottom: 10px;">
@@ -26,7 +39,7 @@ permalink: /todas-las-paginas.html
                             {% if p.titulo-es %}
                                 {{ p.titulo-es }}
                             {% else %}
-                                {{ p.title }}
+                                {{ p.titulo-en }}
                             {% endif %}
                             </span>
                         </a>

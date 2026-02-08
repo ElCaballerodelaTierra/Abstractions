@@ -1,12 +1,12 @@
 ---
 layout: default
 
-published: true
+published: false
 
 categories: Personal
 
-title: Mi visión del mundo
-title-en: My vision of the world
+titulo-es: Mi visión del mundo
+titulo-en: My vision of the world
 
 content-es: | 
 
