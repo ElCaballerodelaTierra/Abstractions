@@ -2,6 +2,10 @@
 
 layout: default
 
+published: true
+
+categories: Matemáticas
+
 titulo-es: Los Elementos de Euclides
 subtitulo-es: El inicio de la matemática moderna
 imagenPortada: /assets/euclides/Demostracion-del-teorema-de-pitagoras.jpg

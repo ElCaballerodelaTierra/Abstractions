@@ -1,5 +1,10 @@
 ---
 layout: default
+
+published: true
+
+categories: Personal
+
 title: Mi visión del mundo
 title-en: My vision of the world
 
