@@ -16,6 +16,10 @@
 
 <body>
 
+    {% if page.portada != false %}
+    <!-- Este condicional afecta a todas las portadas, si se desea que una pagina no tenga portada se debe poner 'portada: false' en el frontmatter, ejemplo en 'unpasadoajenoaltiempo.md' -->
+
+
     <!-- Portada en español con titulos e imagen de fondo sin frase -->
 
     {% if page.imagenPortada and page.frase-es == null %}
@@ -102,6 +106,8 @@
     </figure> -->
     {% endif %}
 
+    {% endif %}
+
 
 
 
@@ -109,7 +115,7 @@
 
     <!-- Si no hay imagen de portada, se muestran unicamente los titulos -->
 
-    {% if page.imagenPortada == null or page.frase-es != null %}
+    {% if page.imagenPortada == null or page.frase-es != null or page.portada == false %}
     <h1 class="content-es">{{ page.titulo-es }}</h1>
     <h1 class="content-en" style="display: none;">{{ page.titulo-en }}</h1>
     {% endif %}

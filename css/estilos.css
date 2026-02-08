@@ -228,11 +228,15 @@ section.mediaPortada figure img {
     display: block;
     margin: 0;
     border-radius: 0;
-    /* mask-image: linear-gradient(to right, black 10%, transparent); */
-    mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
+    
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+    
+    /* Estilo con 2 sombras en los bordes */ 
+    /* mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
     mask-composite: intersect;
-    -webkit-mask-composite: source-in;
+    -webkit-mask-composite: source-in; */
 }
 
 section.mediaPortada .texto {

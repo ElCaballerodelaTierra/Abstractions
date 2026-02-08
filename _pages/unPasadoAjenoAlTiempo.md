@@ -1,7 +1,10 @@
 ---
 layout: default
+portada: false
 
 published: true
+
+imagenPortada: /assets/pasado/un-amanecer-ajeno-al-tiempo.jpg
 
 titulo-es: Un pasado ajeno al tiempo
 titulo-en: A past outside of time
@@ -21,6 +24,7 @@ content-es: |
     <br><br>
     Que momento tan maravilloso, ideal para ponerse a recordar...</i>
 
+
 content-en: |
 
     In principle, what is narrated here should be called history, but the writer has been unable to do anything other than capture his memories, which lack the rigor typical of such an epigraph.
@@ -35,3 +39,9 @@ content-en: |
     What a wonderful moment, ideal to remember...</i>
 
 ---
+
+<article>
+    <figure>
+        <img src="/assets/pasado/un-amanecer-ajeno-al-tiempo.jpg" alt="Un amanecer ajeno al tiempo" style="width: 90%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 500px; display: block; margin: 0 auto;">
+    </figure>
+</article>
