@@ -56,7 +56,7 @@
 
     <!-- Portada en ingles con frase e imagen de fondo (opcional) -->
 
-    {% if page.frase-en and page.imagenMediaPortada == null %}
+    {% if page.frase-en and page.mediaPortada != true %}
     <figure class="portada content-en frase" style="display: none;">
         <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
             {{ page['frase-en'] | markdownify }}
@@ -71,17 +71,35 @@
 
     <!-- Portada en ingles con frase o titulos e imagen a la mitad  -->
 
-    {% if page.imagenMediaPortada %}
+    {% if page.mediaPortada == true %}
+    <section class="mediaPortada">
+        {% if page.imagenPortada %}
+        <figure>
+            <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada-es }} >
+        </figure>
+        {% endif %}
+        <div class="texto content-en">
+            <div class="portada-titulo">{{page.titulo-en}}</div>
+            <div class="portada-subtitulo">{{page.subtitulo-en}}</div>
+            <cite>{{ page['frase-en'] | markdownify }}</cite>
+            <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
+            <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
+        </div>
+    </section>
+
+
+<!-- 
+
     <figure class="portada content-en frase" style="display: none;">
-        <cite class="portada frase" style="--bg-image: url('{{ page.imagenMediaPortada }}');">
+        <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
             {{ page['frase-en'] | markdownify }}
             <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
         </cite>
         {% if page.imagenPortada %}
-        <figcaption class="content-en" style="display: none;">{{ page['descripcionImagenPortada-en'] }}</figcaption>
         {% endif %}
-    </figure>
+        <figcaption class="content-en" style="display: none;">{{ page['descripcionImagenPortada-en'] }}</figcaption>
+    </figure> -->
     {% endif %}
 
 
@@ -95,6 +113,8 @@
     <h1 class="content-es">{{ page.titulo-es }}</h1>
     <h1 class="content-en" style="display: none;">{{ page.titulo-en }}</h1>
     {% endif %}
+
+
 
     <article>
         <div class="content-es">

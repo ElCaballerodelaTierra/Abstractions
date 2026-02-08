@@ -3,8 +3,8 @@ layout: default
 
 published: true
 
-title: Un pasado ajeno al tiempo
-title-en: A past outside of time
+titulo-es: Un pasado ajeno al tiempo
+titulo-en: A past outside of time
 
 content-es: |
     

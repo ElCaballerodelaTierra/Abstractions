@@ -36,21 +36,16 @@ body {
 
 h1,
 h2,
-h3 {
-    color: var(--color-titulos);
-}
-
-h4 {
-    color: #808080;
-}
-
-h5 {
-    color: #606060;
-}
-
+h3,
+h4,
+h5,
 h6 {
-    color: #404040;
+    color: var(--color-titulos);
+    text-align: center;
+
 }
+
+/* Se justifica el texto dentro de la etiqueta section */
 
 section {
     text-align: justify;
@@ -126,6 +121,12 @@ hr {
     margin: 0 auto;
 }
 
+
+
+/* Estilos para las portadas */
+
+
+
 /* Estilo para la frase de portada */
 
 cite.portada {
@@ -164,7 +165,7 @@ cite.portada::before {
     display: block;
     margin-top: 20px;
     text-align: right;
-    width: fit-content;
+    width: 100%;
     object-position: right;
     text-align: right;
     display: block;
@@ -200,6 +201,72 @@ figure.portada img {
     position: relative;
     mask-image: linear-gradient(to bottom, black 50%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
+}
+
+section.mediaPortada {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* Desktop: side by side */
+    padding: 0;
+    margin: 0;
+}
+
+section.mediaPortada figure {
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section.mediaPortada figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    /* mask-image: linear-gradient(to right, black 10%, transparent); */
+    mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+}
+
+section.mediaPortada .texto {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    /* Optional background color if needed, otherwise inherits body bg */
+}
+
+section.mediaPortada .texto .frase-autor {
+    text-align: center;
+}
+
+/* Responsive Styles for Split Screen */
+@media (max-width: 768px) {
+    section.mediaPortada {
+        flex-direction: column;
+    }
+
+    section.mediaPortada figure {
+        width: 100%;
+        height: 50vh;
+    }
+
+    section.mediaPortada .texto {
+        width: 100%;
+        height: 50vh;
+        padding: 20px;
+    }
 }
 
 .portada-titulos {
@@ -272,16 +339,6 @@ article button {
     margin: 0px auto;
 }
 
-/* Se ajustan los encabezados dentro de las secciones para que estén centrados */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-align: center;
-}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
