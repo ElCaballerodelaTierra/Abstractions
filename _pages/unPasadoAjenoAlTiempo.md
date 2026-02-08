@@ -1,5 +1,8 @@
 ---
 layout: default
+
+published: true
+
 title: Un pasado ajeno al tiempo
 title-en: A past outside of time
 

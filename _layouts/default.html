@@ -44,22 +44,19 @@
     <figure class="portada content-es frase">
         <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
             {{ page['frase-es'] | markdownify }}
-
             <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
         </cite>
 
         {% if page.imagenPortada %}
         <figcaption class="content-es">{{ page.descripcionImagenPortada-es }}</figcaption>
-
+        {% endif %}
     </figure>
-
-    {% endif %}
     {% endif %}
 
     <!-- Portada en ingles con frase e imagen de fondo (opcional) -->
 
-    {% if page.frase-en %}
+    {% if page.frase-en and page.imagenMediaPortada == null %}
     <figure class="portada content-en frase" style="display: none;">
         <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
             {{ page['frase-en'] | markdownify }}
@@ -72,10 +69,27 @@
     </figure>
     {% endif %}
 
+    <!-- Portada en ingles con frase o titulos e imagen a la mitad  -->
+
+    {% if page.imagenMediaPortada %}
+    <figure class="portada content-en frase" style="display: none;">
+        <cite class="portada frase" style="--bg-image: url('{{ page.imagenMediaPortada }}');">
+            {{ page['frase-en'] | markdownify }}
+            <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
+            <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
+        </cite>
+        {% if page.imagenPortada %}
+        <figcaption class="content-en" style="display: none;">{{ page['descripcionImagenPortada-en'] }}</figcaption>
+        {% endif %}
+    </figure>
+    {% endif %}
+
+
+
 
     {% include selectordeidioma.html %}
 
-    <!-- Si no hay imagen de portada, se muestran los titulos -->
+    <!-- Si no hay imagen de portada, se muestran unicamente los titulos -->
 
     {% if page.imagenPortada == null or page.frase-es != null %}
     <h1 class="content-es">{{ page.titulo-es }}</h1>
@@ -91,13 +105,13 @@
         </div>
     </article>
 
-    
-    {{content}}    
-    
+
+    {{content}}
+
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
     {% include autor.html %}
     {% include footer.html %}
-    
+
     <!-- Se inserta el boton para descargar la pagina -->
     {% include descargarPagina.html %}
 </body>
