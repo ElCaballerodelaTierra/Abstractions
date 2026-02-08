@@ -3,6 +3,7 @@ published: true
 
 layout: default
 mediaPortada: true
+titulo-en-portada: false
 
 imagenPortada: /assets/redes/Red.jpg
 # imagenPortada: /assets/plantilla/Dos-barcos.jpg
@@ -21,9 +22,8 @@ content-es: |
 
 titulo-en: Network theory
 subtitulo-en: |
-    "Welcome to the art of connecting the dots"
-# frase-en: |
-#    "Welcome to the art of connecting the dots"
+frase-en: |
+   "Welcome to the art of connecting the dots"
 # frase-autor-en: "Steve Jobs"
 # frase-contexto-en: "Stanford University graduation speech"
 content-en: |

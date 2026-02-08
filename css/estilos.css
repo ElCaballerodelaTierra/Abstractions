@@ -160,6 +160,11 @@ cite.portada::before {
     z-index: -1;
 }
 
+.frase {
+font-size: clamp(1rem, 1rem + 2vw, 3rem);
+}
+
+
 .frase-autor {
     font-style: normal;
     display: block;
@@ -171,7 +176,7 @@ cite.portada::before {
     display: block;
     margin-left: auto;
     margin-right: 0;
-    font-size: clamp(1rem, 1rem + 2vw, 3rem);
+    font-size: clamp(0.8rem, 0.8rem + 2vw, 3rem);
 }
 
 .frase-contexto {

@@ -44,10 +44,10 @@
 
     <!-- Portada en español con frase e imagen de fondo (opcional) -->
 
-    {% if page.frase-es %}
+    {% if page.frase-es and page.mediaPortada != true %}
     <figure class="portada content-es frase">
         <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
-            {{ page['frase-es'] | markdownify }}
+            <span class="frase">{{ page['frase-es'] | markdownify }}</span>
             <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
         </cite>
@@ -63,7 +63,7 @@
     {% if page.frase-en and page.mediaPortada != true %}
     <figure class="portada content-en frase" style="display: none;">
         <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
-            {{ page['frase-en'] | markdownify }}
+            <span class="frase">{{ page['frase-en'] | markdownify }}</span>
             <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
         </cite>
@@ -82,34 +82,29 @@
             <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada-es }} >
         </figure>
         {% endif %}
+        <div class="texto content-es">
+            {% if page.titulo-en-portada != false %}
+            <div class="portada-titulo">{{page.titulo-es}}</div>
+            {% endif %}
+            <div class="portada-subtitulo">{{page.subtitulo-es}}</div>
+            <cite class="frase">{{ page['frase-es'] | markdownify }}</cite>
+            <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
+            <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
+        </div>
         <div class="texto content-en">
+            {% if page.titulo-en-portada != false %}
             <div class="portada-titulo">{{page.titulo-en}}</div>
+            {% endif %}
             <div class="portada-subtitulo">{{page.subtitulo-en}}</div>
-            <cite>{{ page['frase-en'] | markdownify }}</cite>
+            <cite class="frase">{{ page['frase-en'] | markdownify }}</cite>
             <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
         </div>
     </section>
-
-
-<!-- 
-
-    <figure class="portada content-en frase" style="display: none;">
-        <cite class="portada frase" style="--bg-image: url('{{ page.imagenPortada }}');">
-            {{ page['frase-en'] | markdownify }}
-            <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
-            <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
-        </cite>
-        {% if page.imagenPortada %}
-        {% endif %}
-        <figcaption class="content-en" style="display: none;">{{ page['descripcionImagenPortada-en'] }}</figcaption>
-    </figure> -->
     {% endif %}
 
+    <!-- Este end es del condicional 'if page.portada != false' que afecta a todas las portadas-->
     {% endif %}
-
-
-
 
     {% include selectordeidioma.html %}
 
