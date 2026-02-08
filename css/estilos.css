@@ -261,7 +261,7 @@ section.mediaPortada .texto .frase-autor {
 }
 
 /* Responsive Styles for Split Screen */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     section.mediaPortada {
         flex-direction: column;
     }
