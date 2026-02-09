@@ -2,7 +2,7 @@
 layout: default
 titulo-es: Todas las páginas
 titulo-en: All Pages
-permalink: /todas-las-paginas.html
+permalink: /canvas
 ---
 
 <style>

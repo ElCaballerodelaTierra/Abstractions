@@ -95,12 +95,14 @@
             {% if page.titulo-en-portada != false %}
             <div class="portada-titulo">{{page.titulo-en}}</div>
             {% endif %}
-            <div class="portada-subtitulo">{{page.subtitulo-en}}</div>
+            <div class="portada-subtitulo">{{page.subtitulo-en}}</div>      
             <cite class="frase">{{ page['frase-en'] | markdownify }}</cite>
             <span class="frase-autor">{{ page['frase-autor-en'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-en'] | markdownify }}</span>
         </div>
     </section>
+    <figcaption class="content-es">{{ page.descripcionImagenPortada-es }}</figcaption>
+    <figcaption class="content-en" style="display: none;">{{ page.descripcionImagenPortada-en }}</figcaption>
     {% endif %}
 
     <!-- Este end es del condicional 'if page.portada != false' que afecta a todas las portadas-->
