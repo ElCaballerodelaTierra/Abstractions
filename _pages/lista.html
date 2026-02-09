@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Plan de trabajo</title>
+
+    <style>
+        ol {
+            counter-reset: item; /* Inicializa el contador */
+            list-style-type: none; /* Elimina los marcadores por defecto */
+            padding-left: 1em; /* Añade espacio al margen izquierdo */
+        }
+        
+        li {
+            display: block; /* Muestra cada elemento como un bloque */
+            position: relative; /* Permite posicionar el contador */
+            margin: 0.35em 0;
+        }
+
+        li::before {
+            content: counters(item, ".") " - "; /* Muestra el contador */
+            display: inline-block;
+            counter-increment: item;
+            position: absolute;
+            left: -2.5em;
+            color: var(--color-titulos);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Plan de trabajo</h1>
+    <article>
+        <ol>
+            <li>Publicación sobre mi investigación en teoría de redes y juegos</li>
+            <li>Publicación sobre mi trabajo en nano-satélites y sistemas autónomos</li>
+            <li>Publicación sobre mi visión del mundo (personal statement)</li>
+            <li>Publicación sobre mis planes personales futuros</li>
+                <ol>
+                    <li>Publicación sobre crear una casa rodante</li>
+                    <li>Publicación sobre crear un vivero autosustentable</li>
+                </ol>
+            <li>Pagina donde presente mi CV enlazado a las publicaciones anteriores</li>
+            <li>Sección </li>
+        </ol>
+    </article>
+</body>
+</html>
