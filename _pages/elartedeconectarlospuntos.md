@@ -10,7 +10,7 @@ imagenPortada: /assets/redes/Red.jpg
 descripcionImagenPortada-es: "Ilustración de una red de conexiones entre personas"
 descripcionImagenPortada-en: "Illustration of a network of connections between people"
 
-titulo-es: La teoría de redes
+titulo-es: El arte de conectar los puntos
 subtitulo-es: 
 frase-es: |
     "Bienvenidos al arte de conectar los puntos"
@@ -20,7 +20,7 @@ content-es: |
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
 
-titulo-en: Network theory
+titulo-en: The art of connecting the dots
 subtitulo-en: |
 frase-en: |
    "Welcome to the art of connecting the dots"
