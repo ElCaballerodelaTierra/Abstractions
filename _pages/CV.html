@@ -1,0 +1,168 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<style>
+    .lista-enlaces ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1,
+    h2 {
+        color: var(--color-enlaces);
+        font-variant: small-caps;
+    }
+
+    hr {
+        margin: 20px auto;
+    }
+
+    article {
+        max-width: 1050px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .boton-descargar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .formato-harvard {
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        text-align: justify;
+        margin: 0px;
+    }
+</style>
+
+<body>
+
+    {% include selectordeidioma.html %}
+    <article>
+        <section>
+            <h1>Carlos Alberto Villarreal Noyola</h1>
+
+            <h2 class="content-es">Físico & Matemático </h2>
+            <h2 class="content-en">Physicist & Mathematician </h2>
+
+            <div class="lista-enlaces">
+                <ul>
+                    <li>
+                        🌐<a href="abstractions.blog">Blog</a>
+                    </li>
+                    <li>
+                        🌐<a href="github.com/elcaballerodelatierra">GitHub</a>
+                    </li>
+                    <li>
+                        🌐<a href="linkedin.com/in/cavn/">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <hr>
+            <div class="content-es">
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Me encanta abordar problemas complejos a través de la deducción y la abstracción. Como autodidacta,
+                    siempre estoy ampliando mis conocimientos y aplicándolos a proyectos que buscan no solo el avance
+                    tecnológico, sino también un impacto positivo en la sociedad y el medio ambiente.
+                </p>
+
+                <p>
+                    <b>Habilidades técnicas:</b> Jira | Figma | HTML | CSS | JavaScript | Git | MySQL | Java | Python |
+                    R
+                </p>
+                <p>
+                    <b>Habilidades blandas:</b> Liderazgo | Proactividad | Resiliencia | Adaptabilidad | Creatividad
+                </p>
+            </div>
+
+
+            <div class="content-en">
+                <h2>Professional Profile</h2>
+                <p>
+                    I love tackling complex problems through deduction and abstraction. As a self-taught individual, I'm
+                    always expanding my knowledge and applying it to projects that strive not only for technological
+                    advancement but also for a positive impact on society and the environment.
+                </p>
+
+                <p>
+                    <b>Hard skills:</b> Jira | Figma | HTML | CSS | JavaScript | Git | MySQL | Java | Python | R
+                </p>
+                <p>
+                    <b>Soft skills:</b> Leadership | Proactivity | Resilience | Adaptability | Creativity
+                </p>
+            </div>
+
+        </section>
+
+        <section>
+            <hr>
+
+            <div class="content-es">
+                <h2>Experiencia Laboral</h2>
+
+                <div class="formato-harvard">
+                    <p><b>Konfront</b></p>
+                    <p>Agosto 2025 - Presente</p>
+                </div>
+                <div class="formato-harvard">
+                    <p>
+                        <b>Desarrollador Web</b>
+                    </p>
+                    <p> Remoto - México</p>
+                </div>
+                <p>
+                    Construí una plataforma web que permitía a los usuarios solicitar múltiples seguros con las principales compañías del mercado, simplificando el proceso de solicitud.
+                </p>
+            </div>
+
+            <div class="content-en">
+                <h2>Professional Experience</h2>
+                <div class="formato-harvard">
+                    <p><b>Konfront</b></p>
+                    <p><b>August 2025 - Present</b></p>
+                </div>
+                <div class="formato-harvard">
+                    <p><b>Web Developer</b></p>
+                    <p>Remote - México</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            Built a multiple insurance with the most important companies in the market, simplifying the process to request it.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </article>
+
+    {% include descargarPagina.html texto-boton-descargar-es="Descargar CV" texto-boton-descargar-en="Download CV" %}
+
+</body>
+
+</html>

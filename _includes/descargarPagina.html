@@ -231,10 +231,10 @@
     style="display: flex; justify-content: center; align-items: center; width: fit-content; margin: 20px auto">
     <button onclick="window.print()" class="boton-descargar-pdf content-es"
         title="Selecciona 'Guardar como PDF' como opción de impresora">
-        Descargar artículo
+        {{ include.texto-boton-descargar-es | default: "Descargar artículo" }}
     </button>
     <button onclick="window.print()" class="boton-descargar-pdf content-en"
         title="Select 'Save as PDF' as printer option">
-        Download article
+        {{ include.texto-boton-descargar-en | default: "Download article" }}
     </button>
 </div>

@@ -161,7 +161,7 @@ cite.portada::before {
 }
 
 .frase {
-font-size: clamp(1rem, 1rem + 2vw, 3rem);
+    font-size: clamp(1rem, 1rem + 2vw, 3rem);
 }
 
 
@@ -233,11 +233,11 @@ section.mediaPortada figure img {
     display: block;
     margin: 0;
     border-radius: 0;
-    
+
     mask-image: linear-gradient(to bottom, black 70%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
-    
-    /* Estilo con 2 sombras en los bordes */ 
+
+    /* Estilo con 2 sombras en los bordes */
     /* mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, black 5%, transparent), linear-gradient(to bottom, black 90%, transparent);
     mask-composite: intersect;
@@ -349,7 +349,7 @@ article button {
 }
 
 
-/* Estilos para pantallas pequeñas */
+/* Estilos para pantallas pequeñas, divide la media portada */
 @media (max-width: 768px) {
 
     .frase-autor {
