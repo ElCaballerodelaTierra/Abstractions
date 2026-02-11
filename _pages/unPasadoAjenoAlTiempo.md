@@ -15,18 +15,18 @@ content-es: |
     de
     hacer otra cosa que plasmar sus recuerdos, los cuales carecen del rigor propio de tal epígrafe.
     <br><br>
-    No ha sido mi intención de dar cuenta a los pormenores de los acontecimientos, los detalles que se han conservado son más que suficientes, flotan a la deriva en el olvido. Espero alcancen una nueva mente y allí perduren.
+    No ha sido mi intención de dar cuenta a los pormenores de los acontecimientos, solo proporcionar un marco de referencia para el recuerdo y la posteridad, los detalles que se han conservado son más que suficientes, flotan a la deriva en el olvido. Espero alcancen una nueva mente y allí perduren.
     <br><br>
-    Solo he escrito un marco de referencia para el recuerdo y la posteridad. Uno que sirva algún día para facilitar la tarea de reconstruir los hechos a partir de la información disponible. Aunque huelga decirlo, dicha tarea no recaerá sobre ninguno de nosotros, sin embargo sigo anhelando que algún día llegue el momento de acontecerla.
+    Solo he escrito un marco, uno que sirva algún día para facilitar la tarea de reconstruir los hechos a partir de la información disponible. Aunque huelga decirlo, dicha tarea no recaerá sobre ninguno de nosotros, sin embargo sigo anhelando que algún día llegue el momento de acometerla.
     Por desgracia me temo que tal ocasión ni se dio en el ayer, ni se da en el presente ni se dará en el mañana.
     <br><br>
     <i>Espero el sol en su confín, al cambiar el ángulo de la luz, las nubes sobre mí comienzan a brillar como una multitud de pinturas frescas, abriéndose al tiempo. Luego, al cambiar su intensidad, veo las siluetas de las nubes proyectadas en el horizonte distante, las saludo con la mirada. Ellas hacen lo propio, y yo vuelvo a ser feliz al verlas de nuevo. 
     <br><br>
     Que momento tan maravilloso, ideal para ponerse a recordar...</i>
 
-
+    
 content-en: |
-
+ 
     In principle, what is narrated here should be called history, but the writer has been unable to do anything other than capture his memories, which lack the rigor typical of such an epigraph.
     <br><br>
     It has not been my intention to give an account of the details of the events, the details that have been preserved are more than enough, they float adrift in oblivion. I hope they reach a new mind and last there.
