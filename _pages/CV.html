@@ -19,17 +19,26 @@
         list-style-type: none;
         gap: 20px;
         padding: 0;
-        margin: 0;
+        margin: 0px 0px 20px 0px;
+        }
+
+    li {
+        text-align: justify
     }
 
-    h1,
-    h2 {
-        color: var(--color-enlaces);
+
+    h1 {
         font-variant: small-caps;
     }
 
+    h2 {
+        color: var(--color-enlaces);
+        font-variant: small-caps;
+        margin: 10px 0px 5px 0px;
+    }
+
     hr {
-        margin: 20px auto;
+        margin: 5px auto;
     }
 
     article {
@@ -48,18 +57,68 @@
     .formato-harvard {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        /* padding: 0px !important; */
     }
-    p{
+
+    p {
         text-align: justify;
-        margin: 0px;
+        margin: 0px !important;
+        padding: 5px 0px !important;
     }
+
+    .nombre-lugar,
+    .nombre-lugar a {
+        color: var(--naranja-claro);
+        /* padding: 0px !important; */
+    }
+
+    .titulo-puesto {
+        color: var(--color-enlaces);
+    }
+
+    @media print {
+        @page {
+            margin: 20px !important;
+        }
+
+        .formato-harvard {
+            margin: 0px !important;
+        }
+
+        p {
+            text-align: justify;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+
+        .nombre-lugar,
+        .nombre-lugar a ,
+        p.nombre-lugar {
+            padding: 10px 0px 0px 0px !important;
+        }
+
+        h2, h1 {
+            margin: 0px !important;
+        }
+        hr {
+            margin: 0px auto !important;
+            /* display: none; */
+        }
+        .lista-enlaces {
+            /* display: none; */
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+    }
+
 </style>
 
 <body>
 
     {% include selectordeidioma.html %}
     <article>
-        <section>
+        <div id="contacto">
             <h1>Carlos Alberto Villarreal Noyola</h1>
 
             <h2 class="content-es">Físico & Matemático </h2>
@@ -78,16 +137,17 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        
-        <section>
             <hr>
+        </div>
+
+        <div id="perfil-profesional">
             <div class="content-es">
-                <h2>Perfil Profesional</h2>
+                <h2>Perfil profesional</h2>
+                <hr>
                 <p>
-                    Me encanta abordar problemas complejos a través de la deducción y la abstracción. Como autodidacta,
-                    siempre estoy ampliando mis conocimientos y aplicándolos a proyectos que buscan no solo el avance
-                    tecnológico, sino también un impacto positivo en la sociedad y el medio ambiente.
+                    Me encanta abordar problemas complejos a través de la deducción y la abstracción. Me encanta aprender y
+                    aplicar mis conocimientos a proyectos que buscan no solo el avance tecnológico, sino también un impacto
+                    positivo en la sociedad y el medio ambiente.
                 </p>
 
                 <p>
@@ -101,11 +161,12 @@
 
 
             <div class="content-en">
-                <h2>Professional Profile</h2>
+                <h2>Professional profile</h2>
+                <hr>
                 <p>
-                    I love tackling complex problems through deduction and abstraction. As a self-taught individual, I'm
-                    always expanding my knowledge and applying it to projects that strive not only for technological
-                    advancement but also for a positive impact on society and the environment.
+                    
+                    Technology professional driven by the challenge of solving complex problems through structured thinking and abstraction. I specialize in designing scalable systems for a positive impact on humanity and the planet earth.
+
                 </p>
 
                 <p>
@@ -116,49 +177,264 @@
                 </p>
             </div>
 
-        </section>
+        </div>
 
-        <section>
-            <hr>
-
+        <div id="experiencia-laboral">
             <div class="content-es">
                 <h2>Experiencia Laboral</h2>
+                <hr>
 
-                <div class="formato-harvard">
-                    <p><b>Konfront</b></p>
-                    <p>Agosto 2025 - Presente</p>
+                <div class="trabajo">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>Konfront</b></p>
+                        <p><b>Agosto 2025 - Enero 2026</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto"><b>Full Stack Developer</b>
+                        </p>
+                        <p><b>Remoto - México</b></p>
+                    </div>
+                    <ul>
+                        <li>Construí una plataforma web que permitía a los usuarios solicitar múltiples seguros con las
+                            principales compañías del mercado, simplificando el proceso de solicitud.</li>
+                    </ul>
                 </div>
-                <div class="formato-harvard">
-                    <p>
-                        <b>Desarrollador Web</b>
-                    </p>
-                    <p> Remoto - México</p>
+
+                <div class="trabajo">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>SafeDog</b></p>
+                        <p><b>Junio - Diciembre 2024</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto"><b>Full-Stack Developer & Scrum Master</b></p>
+                        <p><b>Remoto, México</b></p>
+                    </div>
+                    <ul>
+                        <li>Gestioné un equipo de diez personas mediante la metodología Scrum; se usó Jira para la
+                            gestión y Figma para el diseño.</li>
+                        <li>Implementé tecnologías frontend con HTML, CSS, JavaScript y Bootstrap para crear interfaces
+                            responsivas.</li>
+                        <li>Desarrollé el backend utilizando Java y Spring Boot, asegurando una integración eficiente
+                            con el frontend.</li>
+                    </ul>
                 </div>
-                <p>
-                    Construí una plataforma web que permitía a los usuarios solicitar múltiples seguros con las principales compañías del mercado, simplificando el proceso de solicitud.
-                </p>
+            
+        <div id="CDA-IPN">
+            <div class="formato-harvard">
+                <p class="nombre-lugar"><b>Centro de Desarrollo Aeroespacial, IPN</b></p>
+                <p><b>Enero 2023 - Junio 2024</b></p>
+            </div>
+            <div class="formato-harvard">
+                <p class="titulo-puesto"><b>Asistente de Investigación</b></p>
+                <p><b>Híbrido, México</b></p>
+            </div>
+            <ul>
+                <li>Implementé un plan de trabajo basado en la metodología de la NASA para satélites CubeSat.
+                </li>
+                <li>Construí circuitos, optimizando el rendimiento y reduciendo los costos de producción a la
+                    mitad.</li>
+                <li>Diseñé y programé algoritmos en C++ para los sistemas de control de energía de las
+                    computadoras de los CubeSats.</li>
+            </ul>
+        </div>
+
+        <div id="FC-UNAM">
+            <div class="formato-harvard">
+                <p class="nombre-lugar"><b>Facultad de Ciencias, UNAM</b></p>
+                <p><b>Enero - Julio 2023</b></p>
+            </div>
+            <div class="formato-harvard">
+                <p class="titulo-puesto"><b>Asistente de Investigación</b></p>
+                <p><b>Remoto, México</b></p>
+            </div>
+            <ul>
+                <li>Programé modelos matemáticos con bibliotecas especializadas de Python como NetworkX, NDlib y
+                    Pyvis.</li>
+                <li>Creé un nuevo algoritmo de difusión de información para redes complejas.</li>
+            </ul>
+        </div>
+            </div>
+        </div>
+
+
+       
+        <div id="educacion">
+            <div class="content-es">
+                <h2>Educación</h2>
+                <hr>
+                <div id="UNAM">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>Universidad Nacional Autónoma de México (UNAM)</b></p>
+                        <p><b>Junio 2023</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto">Facultad de Ciencias, Licenciatura en <b>Matemáticas</b></p>
+                        <p><b>Ciudad de México, México</b></p>
+                    </div>
+                    <div>
+                        <p>Tesis: Entendiendo y atacando la corrupción, un análisis a través de teoría de redes y teoría
+                            de
+                            juegos de sistemas sociales y su evolución.</p>
+                    </div>
+                </div>
+                
+                <div id="IPN">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>Instituto Politécnico Nacional (IPN)</b></p>
+                        <p><b>Junio 2021</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto">Escuela Superior de Física y Matemáticas, Licenciatura en <b>Física</b></p>
+                        <p><b>Ciudad de México, México</b></p>
+                    </div>
+                    <div>
+                        <p>Tesis: Diseño y creación del subsistema de potencia eléctrica para un satélite CubeSat de
+                            tres
+                            unidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="habilidades-y-cursos">
+            <div class="content-es">
+                <hr>
+                <h2>Habilidades y Cursos</h2>
+                <hr>
+                <ul>
+                    <li><b>Inglés:</b> TOEFL IBT C1</li>
+                    <li><b>Desarrollador Java Full Stack:</b> AIFYC Texas Institute & Generation Mexico</li>
+                </ul>
             </div>
 
             <div class="content-en">
-                <h2>Professional Experience</h2>
-                <div class="formato-harvard">
-                    <p><b>Konfront</b></p>
-                    <p><b>August 2025 - Present</b></p>
+            
+                <h2>Experience</h2>
+                <hr>
+                <div class="trabajo">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>Konfront</b></p>
+                        <p><b>August 2025 - January 2026</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto"><b>Full-Stack Developer</b></p>
+                        <p>Remote - México</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Built a multiple insurance with the most important companies in the market, simplifying
+                                the
+                                process to request it.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="formato-harvard">
-                    <p><b>Web Developer</b></p>
-                    <p>Remote - México</p>
+
+                <div class="trabajo">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar">
+                            <b><a href="https://elcaballerodelatierra.github.io/SafeDog/">SafeDog</a></b>
+                        </p>
+                        <p><b>June - December 2024</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto">
+                            <b>Full-Stack Developer & Scrum Master</b>
+                        </p>
+                        <p>Remote, México</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li> Managed a team of ten people through Scrum methodology, Jira was used for management
+                                and
+                                Figma for design.</li>
+                            <li> Implemented frontend technologies with HTML, CSS, JavaScript and Bootstrap to create
+                                responsive interfaces.</li>
+                            <li> Developed the backend using Java and Spring Boot, ensuring efficient integration with
+                                the
+                                frontend.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li>
-                            Built a multiple insurance with the most important companies in the market, simplifying the process to request it.
-                        </li>
-                    </ul>
+
+                <div class="trabajo">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>Aerospace Development Center, IPN</b></p>
+                        <p><b>January 2023 - June 2024</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto"><b>Research Assistant</b></p>
+                        <p>Hybrid, México</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Implemented a work plan based on NASA methodology for CubeSat satellites.</li>
+                            <li>Constructed circuits, optimizing performance and reduced production costs by half.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="trabajo">
+                    <div class="formato-harvard">
+                        <p class="nombre-lugar"><b>Faculty of Sciences, UNAM</b></p>
+                        <p><b>January - July 2023</b></p>
+                    </div>
+                    <div class="formato-harvard">
+                        <p class="titulo-puesto"><b>Research Assistant</b></p>
+                        <p>Remote, México</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Programmed mathematical models, with python specialized libraries like NetworkX, NDlib
+                                and
+                                Pyvis.</li>
+                            <li>Created a new information diffusion algorithm for complex networks.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-        </section>
+            <div class="content-en">
+                <h2>Education</h2>
+                <hr>
+                <div class="formato-harvard">
+                    <p class="nombre-lugar"><b>National Autonomous University of México (UNAM)</b></p>
+                    <p><b>June 2023</b></p>
+                </div>
+                <div class="formato-harvard">
+                    <p class="titulo-puesto">Faculty of Sciences, bachelor’s degree in <b>Mathematics</b></p>
+                    <p>Mexico City, México</p>
+                </div>
+                <div>
+                    <p>Thesis: Understanding and striking corruption, an analysis through network theory and game theory
+                        of social systems and their evolution.</p>
+                </div>
+                
+                <div class="formato-harvard">
+                    <p class="nombre-lugar"><b>National Polytechnic Institute (IPN)</b></p>
+                    <p><b>June 2021</b></p>
+                </div>
+                <div class="formato-harvard">
+                    <p class="titulo-puesto">Higher School of Physics and Mathematics, bachelor’s degree in <b>Physics</b></p>
+                    <p>Mexico City, México</p>
+                </div>
+                <div>
+                    <p>Thesis: Design and creation of the electrical power subsystem for a three-unit CubeSat satellite.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-en">
+                <h2>Skills & Courses</h2>
+                <hr>
+                <ul>
+                    <li><b>English:</b> TOEFL IBT C1</li>
+                    <li><b>Java Full Stack Developer:</b> AIFYC Texas Institute & Generation Mexico</li>
+                </ul>
+            </div>
+
+        </div>
     </article>
 
     {% include descargarPagina.html texto-boton-descargar-es="Descargar CV" texto-boton-descargar-en="Download CV" %}
