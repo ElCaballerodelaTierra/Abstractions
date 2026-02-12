@@ -19,7 +19,8 @@
         list-style-type: none;
         gap: 20px;
         padding: 0;
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 10px 0px;
+        text-align: center;
     }
 
     li {
@@ -58,6 +59,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 0px 50px;
         /* padding: 0px !important; */
     }
 
@@ -70,20 +72,34 @@
     .nombre-lugar,
     .nombre-lugar a {
         color: var(--naranja-claro);
-        /* padding: 0px !important; */
     }
 
     .titulo-puesto {
         color: var(--color-enlaces);
     }
 
+    .subseccion {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .subseccion p {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .subseccion div {
+        padding: 2px 0px 0px 0px !important;
+        margin: 0px !important;
+    }
+
     @media print {
         @page {
-            margin: 20px !important;
+            margin: 10px 20px !important;
         }
 
         .formato-harvard {
             margin: 0px !important;
+            padding: 0px !important;
         }
 
         p {
@@ -94,13 +110,13 @@
 
         .nombre-lugar,
         .nombre-lugar a,
-        p.nombre-lugar {
-            padding: 10px 0px 0px 0px !important;
+        .nombre-lugar p {
+            padding: 0px 0px 0px 0px !important;
         }
 
         h2,
         h1 {
-            margin: 0px !important;
+            margin: 5px 0px !important;
         }
 
         hr {
@@ -108,10 +124,21 @@
             /* display: none; */
         }
 
-        .lista-enlaces {
-            display: none;
+        .lista-enlaces ul {
+            /* display: none; */
             margin: 0px !important;
             padding: 0px !important;
+            font-size: 14px !important;
+            align-items: center !important;
+        }
+
+        .subseccion {
+            padding: 0px !important;
+        }
+
+        .nombre-lugar a {
+            color: var(--color-enlaces) !important;
+            text-decoration: underline !important;
         }
     }
 </style>
@@ -190,7 +217,7 @@
                 <h2>Experiencia Laboral</h2>
                 <hr>
 
-                <div class="trabajo">
+                <div id="konfront" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Konfront</b></p>
                         <p><b>Agosto 2025 - Enero 2026</b></p>
@@ -201,14 +228,23 @@
                         <p><b>Remoto - México</b></p>
                     </div>
                     <ul>
-                        <li>Construí una plataforma web que permitía a los usuarios solicitar múltiples seguros con las
-                            principales compañías del mercado, simplificando el proceso de solicitud.</li>
+                        <li>
+                            Lideré la reestructuración de bases de datos de proyectos heredados, simplificando las
+                            relaciones entre tablas y optimizando los procesos de carga de datos, logrando una mejora
+                            del 50% en el rendimiento.
+                        </li>
+                        <li>
+                            Co-diseñé la arquitectura de bases de datos y los flujos de usuario desde la etapa
+                            conceptual inicial de un nuevo proyecto, traduciendo los requisitos comerciales en
+                            soluciones técnicas escalables.
+                        </li>
                     </ul>
                 </div>
 
-                <div class="trabajo">
+                <div id="safedog" class="subseccion">
                     <div class="formato-harvard">
-                        <p class="nombre-lugar"><b>SafeDog</b></p>
+                        <p class="nombre-lugar"><b><a
+                                    href="https://elcaballerodelatierra.github.io/SafeDog/">SafeDog</a></b></p>
                         <p><b>Junio - Diciembre 2024</b></p>
                     </div>
                     <div class="formato-harvard">
@@ -216,16 +252,12 @@
                         <p><b>Remoto, México</b></p>
                     </div>
                     <ul>
-                        <li>Gestioné un equipo de diez personas mediante la metodología Scrum; se usó Jira para la
-                            gestión y Figma para el diseño.</li>
-                        <li>Implementé tecnologías frontend con HTML, CSS, JavaScript y Bootstrap para crear interfaces
-                            responsivas.</li>
-                        <li>Desarrollé el backend utilizando Java y Spring Boot, asegurando una integración eficiente
-                            con el frontend.</li>
+                        <li>Lideré un equipo de diez personas mediante la metodología Scrum, creando una plataforma web funcional en 3 meses.</li>
+                        <li>Diseñé la página principal, añadiendo funcionalidades únicas como un diseño intuitivo y geolocalización, logrando una retención y un crecimiento sostenible del 50 % en el primer mes de funcionamiento. </li>
                     </ul>
                 </div>
 
-                <div id="CDA-IPN">
+                <div id="CDA-IPN" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Centro de Desarrollo Aeroespacial, IPN</b></p>
                         <p><b>Enero 2023 - Junio 2024</b></p>
@@ -239,12 +271,10 @@
                         </li>
                         <li>Construí circuitos, optimizando el rendimiento y reduciendo los costos de producción a la
                             mitad.</li>
-                        <li>Diseñé y programé algoritmos en C++ para los sistemas de control de energía de las
-                            computadoras de los CubeSats.</li>
-                    </ul>
+                                            </ul>
                 </div>
 
-                <div id="FC-UNAM">
+                <div id="FC-UNAM" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Facultad de Ciencias, UNAM</b></p>
                         <p><b>Enero - Julio 2023</b></p>
@@ -268,7 +298,7 @@
             <div class="content-es">
                 <h2>Educación</h2>
                 <hr>
-                <div id="UNAM">
+                <div id="UNAM" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Universidad Nacional Autónoma de México (UNAM)</b></p>
                         <p><b>Junio 2023</b></p>
@@ -284,15 +314,18 @@
                     </div>
                 </div>
 
-                <div id="IPN">
-                    <div class="formato-harvard">
-                        <p class="nombre-lugar"><b>Instituto Politécnico Nacional (IPN)</b></p>
-                        <p><b>Junio 2021</b></p>
-                    </div>
-                    <div class="formato-harvard">
-                        <p class="titulo-puesto">Escuela Superior de Física y Matemáticas, Licenciatura en <b>Física</b>
-                        </p>
-                        <p><b>Ciudad de México, México</b></p>
+                <div id="IPN" class="subseccion">
+                    <div class="titulos">
+                        <div class="formato-harvard">
+                            <p class="nombre-lugar"><b>Instituto Politécnico Nacional (IPN)</b></p>
+                            <p><b>Junio 2021</b></p>
+                        </div>
+                        <div class="formato-harvard">
+                            <p class="titulo-puesto">Escuela Superior de Física y Matemáticas, Licenciatura en
+                                <b>Física</b>
+                            </p>
+                            <p><b>Ciudad de México, México</b></p>
+                        </div>
                     </div>
                     <div>
                         <p>Tesis: Diseño y creación del subsistema de potencia eléctrica para un satélite CubeSat de
@@ -317,7 +350,7 @@
 
                 <h2>Experience</h2>
                 <hr>
-                <div class="trabajo">
+                <div id="konfront-en" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Konfront</b></p>
                         <p><b>August 2025 - January 2026</b></p>
@@ -329,15 +362,18 @@
                     <div>
                         <ul>
                             <li>
-                                Built a multiple insurance with the most important companies in the market, simplifying
-                                the
-                                process to request it.
+                                Led the restructuring of legacy project databases, simplifying table relationships and
+                                optimizing data loading processes, achieving a 50% performance improvement.
+                            </li>
+                            <li>
+                                Co-designed database architecture and user flows from the early conceptual stage of a
+                                new project, translating business requirements into scalable technical solutions.
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="trabajo">
+                <div id="safedog-en" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar">
                             <b><a href="https://elcaballerodelatierra.github.io/SafeDog/">SafeDog</a></b>
@@ -352,19 +388,16 @@
                     </div>
                     <div>
                         <ul>
-                            <li> Managed a team of ten people through Scrum methodology, Jira was used for management
-                                and
-                                Figma for design.</li>
-                            <li> Implemented frontend technologies with HTML, CSS, JavaScript and Bootstrap to create
-                                responsive interfaces.</li>
-                            <li> Developed the backend using Java and Spring Boot, ensuring efficient integration with
-                                the
-                                frontend.</li>
+                            <li>Managed a team of ten people through Scrum methodology, creating a functional web
+                                platform in 3 months</li>
+                            <li>Designed the main page, adding unique functionalities as an intuitive design and
+                                geolocation, achieving retention and sustainable growth of 50% in the first month of
+                                operation.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="trabajo">
+                <div id="CDA-IPN-en" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Aerospace Development Center, IPN</b></p>
                         <p><b>January 2023 - June 2024</b></p>
@@ -382,7 +415,7 @@
                     </div>
                 </div>
 
-                <div class="trabajo">
+                <div id="FC-UNAM-en" class="subseccion">
                     <div class="formato-harvard">
                         <p class="nombre-lugar"><b>Faculty of Sciences, UNAM</b></p>
                         <p><b>January - July 2023</b></p>
@@ -402,46 +435,50 @@
                 </div>
             </div>
 
-            <div class="content-en">
-                <h2>Education</h2>
-                <hr>
-                <div class="formato-harvard">
-                    <p class="nombre-lugar"><b>National Autonomous University of México (UNAM)</b></p>
-                    <p><b>June 2023</b></p>
+                <div class="content-en">
+                    <h2>Education</h2>
+                    <hr>
+                    <div id="UNAM-en" class="subseccion">
+                        <div class="formato-harvard">
+                            <p class="nombre-lugar"><b>National Autonomous University of México (UNAM)</b></p>
+                            <p><b>June 2023</b></p>
+                        </div>
+                        <div class="formato-harvard">
+                            <p class="titulo-puesto">Faculty of Sciences, bachelor’s degree in <b>Mathematics</b></p>
+                            <p>Mexico City, México</p>
+                        </div>
+                        <div>
+                            <p>Thesis: Understanding and striking corruption, an analysis through network theory and
+                                game
+                                theory
+                                of social systems and their evolution.</p>
+                        </div>
+                    </div>
+                    <div id="IPN-en" class="subseccion">
+                        <div class="formato-harvard">
+                            <p class="nombre-lugar"><b>National Polytechnic Institute (IPN)</b></p>
+                            <p><b>June 2021</b></p>
+                        </div>
+                        <div class="formato-harvard">
+                            <p class="titulo-puesto">Higher School of Physics and Mathematics, bachelor’s degree in
+                                <b>Physics</b>
+                            </p>
+                            <p>Mexico City, México</p>
+                        </div>
+                        <div>
+                            <p>Thesis: Design and creation of the electrical power subsystem for a three-unit CubeSat
+                                satellite.
+                            </p>
+                        </div>
+                    </div>
+                <div class="content-en">
+                    <h2>Skills & Courses</h2>
+                    <hr>
+                    <ul>
+                        <li><b>English:</b> TOEFL IBT C1</li>
+                        <li><b>Java Full Stack Developer:</b> AIFYC Texas Institute & Generation Mexico</li>
+                    </ul>
                 </div>
-                <div class="formato-harvard">
-                    <p class="titulo-puesto">Faculty of Sciences, bachelor’s degree in <b>Mathematics</b></p>
-                    <p>Mexico City, México</p>
-                </div>
-                <div>
-                    <p>Thesis: Understanding and striking corruption, an analysis through network theory and game theory
-                        of social systems and their evolution.</p>
-                </div>
-
-                <div class="formato-harvard">
-                    <p class="nombre-lugar"><b>National Polytechnic Institute (IPN)</b></p>
-                    <p><b>June 2021</b></p>
-                </div>
-                <div class="formato-harvard">
-                    <p class="titulo-puesto">Higher School of Physics and Mathematics, bachelor’s degree in
-                        <b>Physics</b></p>
-                    <p>Mexico City, México</p>
-                </div>
-                <div>
-                    <p>Thesis: Design and creation of the electrical power subsystem for a three-unit CubeSat satellite.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content-en">
-                <h2>Skills & Courses</h2>
-                <hr>
-                <ul>
-                    <li><b>English:</b> TOEFL IBT C1</li>
-                    <li><b>Java Full Stack Developer:</b> AIFYC Texas Institute & Generation Mexico</li>
-                </ul>
-            </div>
-
         </div>
     </article>
 
