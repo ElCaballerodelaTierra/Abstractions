@@ -117,19 +117,19 @@
     <h1 class="content-en" style="display: none;">{{ page.titulo-en }}</h1>
     {% endif %}
 
-
-
-    <article>
+    <article id="article">
         <div class="content-es">
             {{ page['content-es'] | markdownify }}
         </div>
         <div class="content-en" style="display: none;">
             {{ page['content-en'] | markdownify }}
         </div>
+        
+        {{content}}
+
     </article>
 
 
-    {{content}}
 
     <!-- Se insertan los elementos reutilizables de autor y footer  -->
     {% include autor.html %}

@@ -3,6 +3,7 @@
 layout: default
 
 published: true
+canvas: true
 
 categories: Matemáticas
 

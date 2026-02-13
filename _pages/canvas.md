@@ -18,7 +18,7 @@ permalink: /canvas
 
 <section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
 
-    {% assign all_pages = site.documents | where: "collection", "pages" | where: "published", true %}
+    {% assign all_pages = site.documents | where: "collection", "pages" | where: "published", true  | where: "canvas", true %}
     
     <!-- Agrupar páginas por categoría -->
     {% assign grouped_pages = all_pages | group_by: "categories" %}

@@ -29,4 +29,21 @@ frase-en: |
 content-en: |
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
 ---
+<body>
 
+ {% include diagramaDeFlujo.html %}
+     <!-- Mermaid diagram -->
+    <figure class="mermaid diagramaDeFlujo">
+        flowchart TD
+        A(["Inicio del algoritmo"]) --> B[/"$N, \lambda, \alpha, \beta, p$"/]
+        B --> C["Se crea una red vacía"]
+        C --> D{"$i > N$"}
+        D -- Sí --> E(["Fin del algoritmo"])
+        D -- No --> F["Se crea una red completa de tamaño aleatorio <br> $P(x) \sim e^{-x/\lambda}$"]
+        F --> G["Se calculan los nodos reincidentes <br> $r = \alpha n - \beta$"]
+        G --> H["Se asignan los nodos reincidentes mediante probabilidades, <br> $p$ para reincidentes y $1-p$ para nodos normales"]
+        H --> I["Se aumenta el contador de las iteraciones <br> $i = i + 1$"]
+        I --> D
+    </figure>
+    <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Martins et al. </figcaption>
+</body>

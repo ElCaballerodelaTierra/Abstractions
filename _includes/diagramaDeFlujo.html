@@ -1,17 +1,28 @@
-    <!-- Load Mermaid from CDN -->
-    <script type="module">
-        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-        // Initialize Mermaid
-        mermaid.initialize({
-            startOnLoad: true,
-            theme: "base",
+<!-- Load MathJax from CDN -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+
+<!-- Load Mermaid from CDN -->
+<script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    // Initialize Mermaid
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "base",
+        fontFamily: '"CMU Serif", serif',
+        themeVariables: {
             fontFamily: '"CMU Serif", serif',
-            themeVariables: {
-            fontFamily: '"CMU Serif", serif',
-            primaryColor: '#000000',
-            lineColor: '#ffffff',
-            primaryBorderColor: '#ffffff',
-            primaryTextColor: '#ffffff',
-            }
-        });
-    </script>
+            background: '#00000000',
+            primaryColor: '#00000000',
+            lineColor: '#505050',
+            primaryBorderColor: '#505050',
+            primaryTextColor: '#ffffffae',
+        }
+    });
+</script>

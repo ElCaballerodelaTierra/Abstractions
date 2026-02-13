@@ -37,11 +37,22 @@ content-en: |
     <i>I wait for the sun at its confines, as the angle of the light changes, the clouds above me begin to shine like a multitude of fresh paintings, opening to time. Then, as the intensity changes, I see the silhouettes of the clouds projected on the distant horizon, I greet them with my gaze. They do the same, and I am happy again to see them again.
     <br><br>
     What a wonderful moment, ideal to remember...</i>
-
 ---
 
+<style>
+    #amaneceryatardecer{
+        width: 90%; 
+        aspect-ratio: 1 / 1; 
+        object-fit: cover; 
+        border-radius: 500px; 
+        display: block; 
+        margin: 0 auto;
+    }
+
+</style>
+
 <article>
-    <figure>
-        <img src="/assets/pasado/un-amanecer-ajeno-al-tiempo.jpg" alt="Un amanecer ajeno al tiempo" style="width: 90%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 500px; display: block; margin: 0 auto;">
+    <figure id="foto">
+        <img id="amaneceryatardecer" src="/assets/pasado/un-amanecer-ajeno-al-tiempo.jpg" alt="Un amanecer ajeno al tiempo">
     </figure>
 </article>
