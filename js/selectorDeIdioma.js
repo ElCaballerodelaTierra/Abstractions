@@ -4,11 +4,11 @@ const mermaidSources = new Map();
 document.addEventListener('DOMContentLoaded', () => {
     // Guardar el código fuente original de cada diagrama antes de que Mermaid lo procese
     document.querySelectorAll('.mermaid').forEach(el => {
-        // Usar innerHTML ayuda a preservar etiquetas como <br> que usa Mermaid, pero 
-        // decodificamos secuencias escapadas (ej: &gt; a >)
-        let source = el.innerHTML.trim();
-        source = source.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-        mermaidSources.set(el, source);
+        // Un clon para evitar manipular el DOM directamente antes de Mermaid
+        let cloned = el.cloneNode(true);
+        // Las etiquetas <br> se convierten en saltos de línea literales '\n' antes de extraer el texto
+        cloned.querySelectorAll('br').forEach(br => br.replaceWith('\n'));
+        mermaidSources.set(el, cloned.textContent.trim());
     });
 
     // Detectar el idioma del navegador
@@ -73,32 +73,11 @@ async function rerenderMermaidDiagrams(lang) {
     await new Promise(resolve => requestAnimationFrame(resolve));
 
     try {
-        await mermaid.run({
-            nodes: Array.from(visibleDiagrams),
-            fontFamily: '"CMU Serif", serif',
-            themeVariables: {
-                fontFamily: '"CMU Serif", serif',
-                background: '#00000000',
-                primaryColor: '#00000000',
-                lineColor: '#505050',
-                primaryBorderColor: '#505050',
-                primaryTextColor: '#ffffffae'
-            }
-        });
+        await mermaid.run({ nodes: Array.from(visibleDiagrams) });
 
         // Re-procesar las fórmulas matemáticas con MathJax
         if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
-            // MathJax por defecto ignora el interior de las etiquetas <svg>.
-            // Para que procese los textos del diagrama, debemos seleccionar los
-            // elementos HTML (<div>, <span>) dentro del <foreignObject> del SVG.
-            const textNodes = [];
-            visibleDiagrams.forEach(diagram => {
-                const foreignObjects = diagram.querySelectorAll('foreignObject div, foreignObject span');
-                foreignObjects.forEach(el => textNodes.push(el));
-            });
-            if (textNodes.length > 0) {
-                await MathJax.typesetPromise(textNodes);
-            }
+            await MathJax.typesetPromise(Array.from(visibleDiagrams));
         }
     } catch (e) {
         // Silenciar errores si mermaid aún no está disponible

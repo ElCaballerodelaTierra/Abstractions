@@ -20,8 +20,6 @@ content-es: |
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
 
-    Se presenta la tesis de redes
-
 titulo-en: The art of connecting the dots
 subtitulo-en: |
 frase-en: |

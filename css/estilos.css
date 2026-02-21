@@ -368,3 +368,9 @@ article button {
     }
 
 }
+
+/* Fix para Safari/iOS: arregla el error de posicionamiento de MathJax dentro de foreignObject en Mermaid */
+.mermaid foreignObject mjx-container {
+    position: unset !important;
+    will-change: unset !important;
+}
