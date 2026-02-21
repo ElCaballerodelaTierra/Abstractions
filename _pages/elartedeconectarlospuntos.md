@@ -20,6 +20,8 @@ content-es: |
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
 
+    Se presenta la tesis de redes
+
 titulo-en: The art of connecting the dots
 subtitulo-en: |
 frase-en: |
@@ -32,6 +34,8 @@ content-en: |
 <body>
 
  {% include diagramaDeFlujo.html %}
+
+ <div class="content-es">
      <!-- Mermaid diagram -->
     <figure class="mermaid diagramaDeFlujo">
         flowchart TD
@@ -46,4 +50,21 @@ content-en: |
         I --> D
     </figure>
     <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Martins et al. </figcaption>
+ </div>
+ <div class="content-en">
+     <!-- Mermaid diagram -->
+    <figure class="mermaid diagramaDeFlujo">
+        flowchart TD
+        A(["Start of the algorithm"]) --> B[/"$N, \lambda, \alpha, \beta, p$"/]
+        B --> C["A network is created"]
+        C --> D{"$i > N$"}
+        D -- Yes --> E(["End of the algorithm"])
+        D -- No --> F["A complete network of random size is created <br> $P(x) \sim e^{-x/\lambda}$"]
+        F --> G["The recurrent nodes are calculated <br> $r = \alpha n - \beta$"]
+        G --> H["The recurrent nodes are assigned by probabilities, <br> $p$ for recurrent nodes and $1-p$ for normal nodes"]
+        H --> I["The iteration counter is increased <br> $i = i + 1$"]
+        I --> D
+    </figure>
+    <figcaption>Flowchart that represents the most important parts of the algorithm proposed by Martins et al. </figcaption>
+ </div>
 </body>
