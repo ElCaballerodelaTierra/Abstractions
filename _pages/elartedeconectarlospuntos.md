@@ -66,6 +66,36 @@ content-en: |
     L ~~~ Y
     Y ~~~ Z
 </figure>
+<figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Scatà, M. et al. </figcaption>
+</div>
+
+<div class="content-en">
+<!-- Mermaid diagram -->
+<figure class="mermaid diagramaDeFlujo">
+    flowchart TD
+    A(["Start of the algorithm"]) --> B[/$M, c, J, H, K, N$/]
+    B --> C["A Barabási-Albert network is created"]
+    C --> D["The initial strategies ($M$) are assigned according to the initial position ($c$)"]
+    D --> E{"$i > N$"}
+    E -- No --> F{"$j > R$"}
+    F -- No --> G["The node plays ($J$) with all its neighbors"]
+    G --> H["Calculates its total gain ($g$)"]
+    H --> I{"$p < H + g$"}
+    I -- Si --> J["Maintain strategy"]
+    I -- No --> K["Change strategy"]
+    J --> L["Counter for each node of the network <br> $j = j + 1$"]
+    K --> L
+    L --> F
+    %% Ramas "Si" que bajan hasta el final del diagrama
+    F -- Si ---> Y["The iteration counter is increased <br> $i = i + 1$"]
+    Y --> E
+    E -- Si ----> Z(["End of the algorithm"])
+    %% Enlaces invisibles para ordenar Y y Z obligatoriamente hasta abajo
+    L ~~~ Y
+    Y ~~~ Z
+
+</figure>
+<figcaption>Flowchart that represents the most important parts of the algorithm proposed by Scatà, M. et al. </figcaption>
 </div>
 
  <div class="content-es">
