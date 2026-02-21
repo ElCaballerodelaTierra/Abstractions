@@ -46,6 +46,7 @@ content-en: |
         G --> H["Se asignan los nodos reincidentes mediante probabilidades, <br> $p$ para reincidentes y $1-p$ para nodos normales"]
         H --> I["Se aumenta el contador de las iteraciones <br> $i = i + 1$"]
         I --> D
+        I ~~~ E
     </figure>
     <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Martins et al. </figcaption>
  </div>
@@ -62,6 +63,7 @@ content-en: |
         G --> H["The recurrent nodes are assigned by probabilities, <br> $p$ for recurrent nodes and $1-p$ for normal nodes"]
         H --> I["The iteration counter is increased <br> $i = i + 1$"]
         I --> D
+        I ~~~ E
     </figure>
     <figcaption>Flowchart that represents the most important parts of the algorithm proposed by Martins et al. </figcaption>
  </div>
