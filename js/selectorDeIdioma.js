@@ -75,6 +75,9 @@ async function rerenderMermaidDiagrams(lang) {
     try {
         await mermaid.run({ nodes: Array.from(visibleDiagrams) });
 
+        // Agregar clase para que MathJax procese el interior (evitando el bloqueo de ignoreHtmlClass general)
+        visibleDiagrams.forEach(el => el.classList.add('mathjax-process'));
+
         // Re-procesar las fórmulas matemáticas con MathJax
         if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
             await MathJax.typesetPromise(Array.from(visibleDiagrams));
