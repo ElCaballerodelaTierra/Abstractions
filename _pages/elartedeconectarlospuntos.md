@@ -33,6 +33,41 @@ content-en: |
 
  {% include diagramaDeFlujo.html %}
 
+<div class="content-es">
+<!-- Mermaid diagram -->
+<figure class="mermaid diagramaDeFlujo">
+    flowchart TD
+    A(["Inicio del algoritmo"]) --> B[/"$M, c, J, H, K, N$"/]
+    B --> C["Se crea la red tipo Barabási-Albert de $R$ nodos"]
+    C --> D["Se asignan las estrategias iniciales ($M$) acorde a la posición inicial ($c$)"]
+    D --> E{"$i > N$"}
+        
+    E -- No --> F{"$j > R$"}
+        
+    F -- No --> G["El nodo juega ($J$) con todos sus nodos vecinos"]
+    G --> H["Calcula su ganancia total ($g$)"]
+    H --> I{"$p < H + g$"}
+    
+    I -- Si --> J["Mantener estrategia"]
+    I -- No --> K["Cambiar estrategia"]
+    
+    J --> L["Contador para cada nodo de la red <br> $j = j + 1$"]
+    K --> L
+    
+    L --> F
+    
+    %% Ramas "Si" que bajan hasta el final del diagrama
+    F -- Si ---> Y["Se aumenta el contador de las iteraciones \n $i = i + 1$"]
+    Y --> E
+    
+    E -- Si ----> Z(["Fin del algoritmo"])
+    
+    %% Enlaces invisibles para ordenar Y y Z obligatoriamente hasta abajo
+    L ~~~ Y
+    Y ~~~ Z
+</figure>
+</div>
+
  <div class="content-es">
      <!-- Mermaid diagram -->
     <figure class="mermaid diagramaDeFlujo">
@@ -67,4 +102,6 @@ content-en: |
     </figure>
     <figcaption>Flowchart that represents the most important parts of the algorithm proposed by Martins et al. </figcaption>
  </div>
+
+
 </body>
