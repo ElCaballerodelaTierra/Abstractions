@@ -367,3 +367,24 @@ article button {
         /* elimina el auto-margin */
     }
 
+}
+
+/* Fix para Safari/iOS: arregla el error de posicionamiento de MathJax dentro de foreignObject en Mermaid */
+.mermaid foreignObject mjx-container {
+    position: unset !important;
+    will-change: unset !important;
+}
+
+/* Fix para Edge Desktop: fuerza la tipografía personalizada en los nodos de Mermaid al cambiar de idioma */
+.mermaid .nodeLabel,
+.mermaid .edgeLabel,
+.mermaid .label,
+.mermaid text {
+    font-family: 'CMU Serif', serif !important;
+}
+
+.diagramaDeFlujo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}

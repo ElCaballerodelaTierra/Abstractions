@@ -4,6 +4,10 @@
     window.MathJax = {
         tex: {
             inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+            ignoreHtmlClass: 'mermaid',
+            processHtmlClass: 'mathjax-process'
         }
     };
 </script>
@@ -11,9 +15,11 @@
 <!-- Load Mermaid from CDN -->
 <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    // Exponer mermaid globalmente para que otros scripts puedan re-renderizar
+    window.mermaid = mermaid;
     // Initialize Mermaid
     mermaid.initialize({
-        startOnLoad: true,
+        startOnLoad: false,
         theme: "base",
         fontFamily: '"CMU Serif", serif',
         themeVariables: {

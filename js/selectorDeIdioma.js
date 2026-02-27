@@ -1,4 +1,16 @@
+// Almacena el código fuente original de cada diagrama Mermaid
+const mermaidSources = new Map();
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Guardar el código fuente original de cada diagrama antes de que Mermaid lo procese
+    document.querySelectorAll('.mermaid').forEach(el => {
+        // Un clon para evitar manipular el DOM directamente antes de Mermaid
+        let cloned = el.cloneNode(true);
+        // Las etiquetas <br> se convierten en saltos de línea literales '\n' antes de extraer el texto
+        cloned.querySelectorAll('br').forEach(br => br.replaceWith('\n'));
+        mermaidSources.set(el, cloned.textContent.trim());
+    });
+
     // Detectar el idioma del navegador
     let idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
     idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
@@ -33,5 +45,45 @@ function setLanguage(lang) {
         btnEs.style.backgroundColor = 'var(--gris)';
         btnEn.style.backgroundColor = 'var(--naranja)';
         currentLanguage = 'en';
+    }
+
+    // Re-renderizar los diagramas Mermaid que ahora son visibles
+    rerenderMermaidDiagrams(lang);
+}
+
+async function rerenderMermaidDiagrams(lang) {
+    const visibleSelector = lang === 'es' ? '.content-es .mermaid' : '.content-en .mermaid';
+    const visibleDiagrams = document.querySelectorAll(visibleSelector);
+
+    if (visibleDiagrams.length === 0) return;
+
+    visibleDiagrams.forEach(el => {
+        // Solo re-renderizar si ya fue procesado por Mermaid
+        if (el.getAttribute('data-processed') === 'true') {
+            const originalSource = mermaidSources.get(el);
+            if (originalSource) {
+                // Restaurar el código fuente original y limpiar el SVG renderizado
+                el.removeAttribute('data-processed');
+                el.innerHTML = originalSource;
+            }
+        }
+    });
+
+    // Esperar un frame para asegurar que el contenedor es visible antes de renderizar
+    await new Promise(resolve => requestAnimationFrame(resolve));
+
+    try {
+        await mermaid.run({ nodes: Array.from(visibleDiagrams) });
+
+        // Agregar clase para que MathJax procese el interior (evitando el bloqueo de ignoreHtmlClass general)
+        visibleDiagrams.forEach(el => el.classList.add('mathjax-process'));
+
+        // Re-procesar las fórmulas matemáticas con MathJax
+        if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
+            await MathJax.typesetPromise(Array.from(visibleDiagrams));
+        }
+    } catch (e) {
+        // Silenciar errores si mermaid aún no está disponible
+        console.warn('Mermaid rerender skipped:', e);
     }
 }
