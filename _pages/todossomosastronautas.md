@@ -27,8 +27,8 @@ content-es: |
     
     Mi interés se encuentra en la intersección entre el desarrollo espacial, la tecnología sustentable y los sistemas complejos. Me obsesiona una pregunta sencilla y, al mismo tiempo, radical: 
     
-    <br><br><cite>¿Cómo podemos rediseñar nuestros sistemas para que la humanidad siga progresando sin destruir la Tierra?</cite><br><br>
-    
+    <cite>¿Cómo podemos rediseñar nuestros sistemas para que la humanidad siga progresando sin destruir la Tierra?</cite>
+        
     La exploración espacial nos ha obligado a pensar en términos de energía, agua, aire y comida como recursos finitos, reutilizándolos y reciclándolos mediante una cooperación internacional. Esa misma lógica debe aplicarse a nuestras ciudades y estructuras sociales. La Tierra no es tan distinta de una nave espacial. La diferencia es que aún actuamos como si los recursos fueran infinitos. 
     
     Más adelante, al estudiar matemáticas, confirmé otra intuición inquietante: muchos de nuestros problemas sociales, como la corrupción o la ineficiencia institucional, no son fallas morales aisladas, son producto de un mal diseño en nuestros sistemas políticos, los cuales pueden entenderse y modelarse. Si somos capaces de optimizar nuestro consumo energético, también deberíamos ser capaces de rediseñar los sistemas políticos y económicos que sostienen nuestra civilización.
