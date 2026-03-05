@@ -12,10 +12,10 @@ titulo-es: Tlajomulco
 subtitulo-es: Los azules y verdes se tornaron naranjas y rojos
 content-es: |
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+    <i> Artículo publicado a principios del siglo XXI en el contexto de la guerra contra el narcotráfico en México y el cambio climático. </i>
 
 titulo-en: Tlajomulco
 subtitulo-en: The blues and greens turned orange and red
 content-en: |
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+    <i> Article published in the early 21st century in the context of the war against drug trafficking in Mexico and climate change. </i>
 ---
