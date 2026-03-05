@@ -14,9 +14,82 @@ permalink: /canvas
         display: none !important;
     }
 
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden; /* Esto desactiva estrictamente el scroll en toda la página */
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #article {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        max-width: none;
+        margin: 0;
+        min-height: 0; /* Asegura que el contenedor pueda encogerse */
+    }
+
+    #canvas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        align-items: flex-start; /* Alinea los elementos a la parte superior de su fila para sincronizar las imágenes */
+        flex: 1;
+        align-content: center;
+        min-height: 0; 
+        overflow: hidden; 
+    }
+
+    .page-item {
+        flex: 1 1 120px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        min-height: 0;
+    }
+
+    .page-item a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Mantiene la imagen anclada en la parte superior */
+        text-decoration: none;
+        color: inherit;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .page-item img {
+        width: 100%;
+        max-width: 45vh; /* Asegura que la anchura también esté restringida por el alto para mantener el círculo */
+        max-height: 45vh; 
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%; /* Hace el círculo perfecto sin importar el tamaño */
+        margin-bottom: 15px;
+        flex-shrink: 0; /* Evitar que flexbox lo achate de forma imprevista */
+    }
+
+    .page-item::hover {
+        cursor: pointer;
+    }
 </style>
 
-<section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+<section id="canvas">
 
     {% assign all_pages = site.documents | where: "collection", "pages" | where: "published", true  | where: "canvas", true %}
     
@@ -30,10 +103,10 @@ permalink: /canvas
                 <h3 style="display: none;">{{ group.name }}</h3>
 
                 {% for p in group.items %}
-                        <div style="flex: 1 1 120px; max-width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: start; text-align: center;">
-                        <a href="{{ p.url }}" style="text-decoration: none; color: inherit;">
+                        <div class="page-item">
+                        <a href="{{ p.url }}">
                             {% if p.imagenPortada %}
-                                <img src="{{ p.imagenPortada | relative_url }}" alt="{{ p.titulo-es | default: p.title }}" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 500px; margin-bottom: 10px;">
+                                <img src="{{ p.imagenPortada | relative_url }}" alt="{{ p.titulo-es | default: p.title }}">
                             {% endif %}
                             <span class="content-es" style="display: block;">
                                 {{ p.titulo-es | default: p.title }}
