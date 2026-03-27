@@ -201,7 +201,7 @@ content-en: |
 
     <br>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements (🔠)</a></button><br>
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements (🔠) [ES]</a></button><br>
 
     </section>
 
