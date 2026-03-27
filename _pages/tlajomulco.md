@@ -15,7 +15,7 @@ content-es: |
     <i> Artículo publicado a principios del siglo XXI en el contexto de la guerra contra el narcotráfico en México y el cambio climático. </i>
 
 titulo-en: Tlajomulco
-subtitulo-en: The blues and greens turned orange and red
+subtitulo-en: The blues and greens turned orange and red 
 content-en: |
     <i> Article published in the early 21st century in the context of the war against drug trafficking in Mexico and climate change. </i>
 ---
