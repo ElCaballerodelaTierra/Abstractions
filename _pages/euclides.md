@@ -74,7 +74,7 @@ content-es: |
 
     <section>
     <h3>Carlos Villarreal</h3> <br>
-    He traducido al español el primer libro de los Elementos de Euclides, reescribí el texto y algunas demostraciones para facilitar su comprensión. Además añadí figuras adicionales en los axiomas y un índice con todas las proposiciones para facilitar la navegación.<br><br>
+    Tomé como base la digitalización de Sergey Slyusarev y traduje al español el primer libro de los Elementos de Euclides, reescribí varias partes del texto y el formato de algunas demostraciones para facilitar su comprensión. Además añadí figuras adicionales y un índice con todas las proposiciones para facilitar la navegación.<br><br>
 
     <figure>
         <img src="/assets/euclides/Indice de Los Elementos.png" alt="Índice de Los Elementos">
@@ -85,9 +85,9 @@ content-es: |
 
     <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES].pdf" target="_blank" rel="noopener">📖 Los Elementos – Villarreal</a></button><br>
 
-    También está la edicion con letrinas para aquellas personas que les guste combinar ambas maneras de ver las demostraciones: <br><br>
+    También está la edicion con letras para aquellas personas que les guste combinar ambas maneras de ver las demostraciones: <br><br>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letrinas.pdf" target="_blank" rel="noopener">📖 Los Elementos [Letrinas] – Villarreal</a></button><br>
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Los Elementos + [Letras] – Villarreal</a></button><br>
 
     </section>
 
@@ -176,7 +176,7 @@ content-en: |
     <section>
     <h3>Carlos Villarreal</h3> <br>
 
-    I have translated the first book of Euclid's Elements to Spanish, rewriting the text and some demonstrations to make them easier to understand. I also added additional figures to the axioms and an index of all propositions to facilitate navigation.<br><br>
+    I took as a base the digitalization of Sergey Slyusarev and translated the first book of Euclid's Elements to spanish, rewriting several parts of the text and the format of some demonstrations to make them easier to understand. I also added additional figures and an index of all propositions to facilitate navigation.<br><br>
 
     <figure>
         <img src="/assets/euclides/Indice de Los Elementos.png" alt="Index of The Elements">
@@ -191,12 +191,12 @@ content-en: |
 
     <figure>
         <img src="/assets/euclides/Los Elementos de Byrne con Letras.png" alt="Los Elementos de Byrne con Letras">
-        <figcaption>Los Elementos with letters, Carlos Villarreal edition</figcaption>
+        <figcaption>The Elements with letters, Carlos Villarreal edition</figcaption>
     </figure>
 
     <br>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letrinas.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements [ES] + [Letters]</a></button><br>
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements [ES] + [Letters]</a></button><br>
 
     </section>
 
