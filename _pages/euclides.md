@@ -97,7 +97,7 @@ content-es: |
     </section>
 
     <section>
-    Merece la pena difundir esta obra y los esfuerzos por mejorarla, que el legado de Byrne contagie a cualquiera y muestre que existen maneras más eficientes de exponer tanto en matemáticas como en cualquier otra disciplina.<br>
+    Merece la pena difundir esta obra y los esfuerzos por mejorarla, que el legado de Byrne contagie a cualquiera y muestre que existen maneras más eficientes de exponer en matemáticas como en cualquier otra disciplina.<br>
     </section>
 
 # English
