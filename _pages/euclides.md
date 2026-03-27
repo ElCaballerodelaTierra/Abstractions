@@ -92,7 +92,7 @@ content-es: |
         <figcaption>Los Elementos de Byrne con Letras, digitalización de Carlos Villarreal</figcaption>
     </figure>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Los Elementos + [Letras] – Villarreal</a></button><br>
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Los Elementos (🔠) – Villarreal</a></button><br>
 
     </section>
 
@@ -201,7 +201,7 @@ content-en: |
 
     <br>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements [Letters]</a></button><br>
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements (🔠)</a></button><br>
 
     </section>
 
