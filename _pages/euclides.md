@@ -139,7 +139,7 @@ content-en: |
     </figure>
     <br>
 
-    <button><a href="https://www.amazon.com/Byrne-Books-Euclid-Werner-Oechslin/dp/3836559382" target="_blank" rel="noopener">🌐 Byrne's Elements</a></button><br>
+    <button><a href="https://www.amazon.com/Byrne-Books-Euclid-Werner-Oechslin/dp/3836559382" target="_blank" rel="noopener">🌐 Byrne's Elements (Taschen)</a></button><br>
     </section>
 
     <section>
@@ -185,7 +185,7 @@ content-en: |
 
     <br>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES].pdf" target="_blank" rel="noopener">📖 The Elements – Villarreal</a></button><br>
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES].pdf" target="_blank" rel="noopener">📖 Villarreal's Elements [ES]</a></button><br>
 
     There is also an edition with letters for those who enjoy combining both ways of visualizing the demonstrations: <br><br>
 
@@ -194,7 +194,9 @@ content-en: |
         <figcaption>Los Elementos with letters, Carlos Villarreal edition</figcaption>
     </figure>
 
-    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letrinas.pdf" target="_blank" rel="noopener">📖 Los Elementos [Letters] – Villarreal</a></button><br>
+    <br>
+
+    <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letrinas.pdf" target="_blank" rel="noopener">📖 Villarreal's Elements [ES] + [Letters]</a></button><br>
 
     </section>
 
