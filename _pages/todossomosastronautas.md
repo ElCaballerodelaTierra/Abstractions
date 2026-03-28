@@ -2,7 +2,7 @@
 layout: default
 
 published: true
-canvas: true
+canvas: false
 
 categories: Personal
 

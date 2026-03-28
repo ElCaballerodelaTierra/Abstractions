@@ -2,6 +2,7 @@
 layout: default
 
 published: true
+canvas: false
 
 categories: Economía
 

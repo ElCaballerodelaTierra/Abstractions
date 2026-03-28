@@ -78,7 +78,7 @@ content-es: |
 
     <figure>
         <img src="/assets/euclides/Indice de Los Elementos.png" alt="Índice de Los Elementos">
-        <figcaption>Índice de Los Elementos, digitalización de Carlos Villarreal</figcaption>
+        <figcaption>Índice de Los Elementos, edición de Carlos Villarreal</figcaption>
     </figure>
 
     <br>
@@ -89,7 +89,7 @@ content-es: |
 
     <figure>
         <img src="/assets/euclides/Los Elementos de Byrne con Letras.png" alt="Los Elementos de Byrne con Letras">
-        <figcaption>Los Elementos de Byrne con Letras, digitalización de Carlos Villarreal</figcaption>
+        <figcaption>Los Elementos de Byrne con letras, edición de Carlos Villarreal</figcaption>
     </figure>
 
     <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Los Elementos (🔠) – Villarreal</a></button><br>
