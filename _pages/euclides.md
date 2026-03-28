@@ -90,7 +90,9 @@ content-es: |
     <figure>
         <img src="/assets/euclides/Los Elementos de Byrne con Letras.png" alt="Los Elementos de Byrne con Letras">
         <figcaption>Los Elementos de Byrne con letras, edición de Carlos Villarreal</figcaption>
-    </figure>
+    </figure> 
+
+    <br>
 
     <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES] + Letras.pdf" target="_blank" rel="noopener">📖 Los Elementos (🔠) – Villarreal</a></button><br>
 
