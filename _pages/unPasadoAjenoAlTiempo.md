@@ -1,7 +1,7 @@
 ---
 layout: default
 portada: false
-canvas: false
+canvas: true
 
 published: true
 

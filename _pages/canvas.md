@@ -16,26 +16,26 @@ permalink: /canvas
 
     html,
     body {
-        height: 100%;
+        min-height: 100vh;
         margin: 0;
-        overflow: hidden; /* Esto desactiva estrictamente el scroll en toda la página */
+        /* Se eliminó overflow: hidden para permitir el scroll vertical con múltiples publicaciones */
     }
 
     body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start; /* Evita que en pantallas pequeñas el centro flex corte la parte superior */
     }
 
     #article {
         flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start; 
         padding: 0;
         max-width: none;
         margin: 0;
-        min-height: 0; /* Asegura que el contenedor pueda encogerse */
+        min-height: 100vh; /* Permite que crezca para alojar el canvas sin recortarlo */
     }
 
     #canvas {
@@ -43,12 +43,11 @@ permalink: /canvas
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        padding: 20px;
+        padding: 40px 20px; /* Un poco más de margen vertical para que se vea estético al hacer scroll */
         align-items: flex-start; /* Alinea los elementos a la parte superior de su fila para sincronizar las imágenes */
         flex: 1;
-        align-content: center;
+        align-content: center; /* Centrará todo verticalmente si hay pocas imágenes, y hacia arriba si sobrepasan el espacio permitiendo scroll */
         min-height: 0; 
-        overflow: hidden; 
     }
 
     .page-item {
@@ -82,6 +81,14 @@ permalink: /canvas
         border-radius: 50%; /* Hace el círculo perfecto sin importar el tamaño */
         margin-bottom: 15px;
         flex-shrink: 0; /* Evitar que flexbox lo achate de forma imprevista */
+    }
+
+    /* Ajustes específicos para móviles (como iPhone) */
+    @media (max-width: 600px) {
+        .page-item img {
+            max-width: 25vmax; /* Usa vmax o vw dependiendo, probemos 25vmax que se ajusta bien para tener un tamaño dinámico */
+            max-height: 25vmax;
+        }
     }
 
     .page-item::hover {
