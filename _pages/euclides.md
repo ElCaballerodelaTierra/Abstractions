@@ -85,7 +85,7 @@ content-es: |
 
     <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES].pdf" target="_blank" rel="noopener">📖 Los Elementos – Villarreal</a></button><br>
 
-    También creé la edición con letras para aquellas personas que les guste combinar ambas maneras de ver las demostraciones: <br><br>
+    También está la edición con letras para aquellas personas que les guste combinar ambas maneras de ver las demostraciones: <br><br>
 
     <figure>
         <img src="/assets/euclides/Los Elementos de Byrne con Letras.png" alt="Los Elementos de Byrne con Letras">
@@ -194,7 +194,7 @@ content-en: |
 
     <button><a href="/assets/euclides/Los Elementos - Euclides, ed. Byrne [ES].pdf" target="_blank" rel="noopener">📖 Villarreal's Elements [ES]</a></button><br>
 
-    I also created the version with letters for those who enjoy combining both ways of visualizing the demonstrations: <br><br>
+    There is also the version with letters for those who enjoy combining both ways of visualizing the demonstrations: <br><br>
 
     <figure>
         <img src="/assets/euclides/Los Elementos de Byrne con Letras.png" alt="Los Elementos de Byrne con Letras">
