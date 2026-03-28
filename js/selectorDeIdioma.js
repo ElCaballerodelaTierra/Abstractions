@@ -11,16 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
         mermaidSources.set(el, cloned.textContent.trim());
     });
 
-    // Detectar el idioma del navegador
-    let idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
-    idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
+    // Verificar si hay un idioma guardado en localStorage
+    let idioma = localStorage.getItem('idioma-preferido');
 
-    // Seleccionar idioma disponible, por defecto a inglés si no hay coincidencia
-    if (idioma !== 'es' && idioma !== 'en') {
-        idioma = 'en';
+    if (!idioma || (idioma !== 'es' && idioma !== 'en')) {
+        // Si no hay idioma guardado, detectar el idioma del navegador
+        idioma = navigator.language || navigator.userLanguage; // "en-US", "es-MX" etc.
+        idioma = idioma.split('-')[0]; // Tomar solo la parte principal "en", "es", "fr"
+
+        // Seleccionar idioma disponible, por defecto a inglés si no hay coincidencia
+        if (idioma !== 'es' && idioma !== 'en') {
+            idioma = 'en';
+        }
     }
 
-    // Inicializar en el idioma detectado
+    // Inicializar en el idioma detectado o guardado
     setLanguage(idioma);
 });
 
@@ -28,6 +33,8 @@ let currentLanguage = 'es'; // Idioma inicial
 
 function setLanguage(lang) {
     document.documentElement.setAttribute('lang', lang);
+    // Guardar la preferencia de idioma para futuras visitas
+    localStorage.setItem('idioma-preferido', lang);
     const esElements = document.querySelectorAll('.content-es');
     const enElements = document.querySelectorAll('.content-en');
     const btnEs = document.getElementById('btn-es');
