@@ -73,6 +73,11 @@ permalink: /canvas
         width: 100%;
     }
 
+    .page-item a span {
+        /* Reduce suavemente el tamaño de texto de 20px en Desktop a 14px en celulares (ej: 375px) */
+        font-size: clamp(18px, 4vw, 26px); 
+    }
+
     .page-item img {
         width: 100%;
         max-width: 45vh; /* Asegura que la anchura también esté restringida por el alto para mantener el círculo */
