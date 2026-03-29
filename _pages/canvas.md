@@ -53,7 +53,7 @@ permalink: /canvas
     .page-item {
         /* flex-grow 0 evita que el último elemento crezca de forma desproporcionada. 
            clamp(150px, 20vw, 280px) les da a todos los elementos exactamente el mismo ancho dinámico. */
-        flex: 0 1 clamp(120px, 25vw, 300px); 
+        flex: 0 1 clamp(95px, 25vw, 300px); 
         display: flex;
         flex-direction: column;
         align-items: center;
