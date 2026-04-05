@@ -82,7 +82,8 @@ content-en: |
 
 <h1>Tlajomulco</h1>
 
-Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.
+<p class="content-es">Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.</p>
+<p class="content-en">A small town that has changed drastically in the last 15 years.</p>
 
 <script>
   const galleryItems = document.querySelectorAll('.gallery-item');
