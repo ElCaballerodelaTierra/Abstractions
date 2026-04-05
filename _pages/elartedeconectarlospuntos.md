@@ -1,6 +1,6 @@
 ---
 published: true
-canvas: true
+canvas: false
 
 layout: default
 mediaPortada: true

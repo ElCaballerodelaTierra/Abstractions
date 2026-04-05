@@ -45,7 +45,7 @@ h5,
 h6 {
     color: var(--color-titulos);
     text-align: center;
-
+    padding: 10px 0px 10px 0px;
 }
 
 /* Se justifica el texto dentro de la etiqueta section */
@@ -327,6 +327,10 @@ figcaption {
     max-width: var(--anchura-contenido);
     margin: 0 auto;
     color: var(--color-descripcion-imagenes);
+}
+
+article .gallery-item figcaption {
+    padding: 10px 0px 4px 0px;
 }
 
 article figcaption {
