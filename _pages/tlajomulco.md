@@ -62,6 +62,12 @@ content-en: |
 }
 </style>
 
+<button id="btn-musica">
+  <span class="content-es">Iniciar música</span>
+  <span class="content-en">Play music</span>
+</button>
+<audio id="audio-fondo" src="/assets/tlajomulco/Golondrina%20de%20Ojos%20Negros%20(instrumental)%20-%20David%20Zaizar%20(comprimido).mp3" loop preload="none"></audio>
+
 <div class="gallery">
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/arcos-del-hospital-del-templo.jpeg" alt="Arcos del hospital del templo" loading="lazy"> <figcaption class="content-es">Arcos del hospital del templo</figcaption> <figcaption class="content-en">Arch of the temple</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/bolillos-en-la-mañana.jpeg" alt="Bolillos y tortillas colgados en una tienda por la mañana" loading="lazy"> <figcaption class="content-es">Bolillos y tortillas colgados en una tienda por la mañana</figcaption> <figcaption class="content-en">Bread and tortillas hanging in a store in the morning</figcaption></div>
@@ -90,4 +96,25 @@ content-en: |
       }
     });
   });
+
+  // Lógica del reproductor de música
+  const btnMusica = document.getElementById('btn-musica');
+  const audioFondo = document.getElementById('audio-fondo');
+  
+  if (btnMusica && audioFondo) {
+    btnMusica.addEventListener('click', function() {
+      const spanEs = btnMusica.querySelector('.content-es');
+      const spanEn = btnMusica.querySelector('.content-en');
+      
+      if (audioFondo.paused) {
+        audioFondo.play();
+        if (spanEs) spanEs.textContent = 'Pausar música';
+        if (spanEn) spanEn.textContent = 'Pause music';
+      } else {
+        audioFondo.pause();
+        if (spanEs) spanEs.textContent = 'Iniciar música';
+        if (spanEn) spanEn.textContent = 'Play music';
+      }
+    });
+  }
 </script>
