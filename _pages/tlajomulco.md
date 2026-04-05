@@ -80,11 +80,9 @@ content-en: |
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día nublado</figcaption> <figcaption class="content-en">A cloudy day</figcaption></div>
 </div>
 
-<h1 class="content-es">Tlajomulco</h1>
+<h1>Tlajomulco</h1>
 
 Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.
-
-<h1 class="content-en">Tlajomulco</h1>
 
 <script>
   const galleryItems = document.querySelectorAll('.gallery-item');
