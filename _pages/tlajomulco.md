@@ -12,12 +12,12 @@ titulo-es: Tlajomulco
 subtitulo-es: Los azules y verdes se tornaron naranjas y rojos
 content-es: |
 
-    <i> Artículo publicado a principios del siglo XXI en el contexto de la guerra contra el narcotráfico en México y el cambio climático. </i>
+    <i> Artículo publicado a principios del siglo XXI en el contexto de la guerra contra el narcotráfico en México y el inicio de la crisis climática en el mundo. </i>
 
 titulo-en: Tlajomulco
 subtitulo-en: The blues and greens turned orange and red 
 content-en: |
-    <i> Article published in the early 21st century in the context of the war against drug trafficking in Mexico and climate change. </i>
+    <i> Article published in the early 21st century in the context of the war against drug trafficking in Mexico and the start of the climate crisis in the world. </i>
 ---
 
 <style>
@@ -79,6 +79,12 @@ content-en: |
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/torre-de-la-iglesia.JPEG" alt="Torre de la iglesia" loading="lazy"> <figcaption class="content-es">Torre de la iglesia</figcaption> <figcaption class="content-en">Church tower</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día nublado</figcaption> <figcaption class="content-en">A cloudy day</figcaption></div>
 </div>
+
+<h1 class="content-es">Tlajomulco</h1>
+
+Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.
+
+<h1 class="content-en">Tlajomulco</h1>
 
 <script>
   const galleryItems = document.querySelectorAll('.gallery-item');
