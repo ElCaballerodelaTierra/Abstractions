@@ -1,0 +1,40 @@
+{% assign uid = include.id | default: "fondo" %}
+
+{% if include.src %}
+<audio id="audio-{{ uid }}" src="{{ include.src }}" loop preload="none"></audio>
+{% endif %}
+
+<button class="btn-musica" data-target="audio-{{ uid }}">
+  <span class="content-es">Iniciar música</span>
+  <span class="content-en">Play music</span>
+</button>
+
+<script>
+  // Usamos event delegation para soportar múltiples reproductores en la misma página
+  // y evitar errores cuando el script corre antes de que el tag <audio> exista.
+  if (!window.musicaConfigurada) {
+    window.musicaConfigurada = true;
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.btn-musica');
+      if (!btn) return;
+      
+      const targetId = btn.getAttribute('data-target');
+      const audioElem = document.getElementById(targetId);
+      
+      if (audioElem) {
+        const spanEs = btn.querySelector('.content-es');
+        const spanEn = btn.querySelector('.content-en');
+        
+        if (audioElem.paused) {
+          audioElem.play();
+          if (spanEs) spanEs.textContent = 'Pausar música';
+          if (spanEn) spanEn.textContent = 'Pause music';
+        } else {
+          audioElem.pause();
+          if (spanEs) spanEs.textContent = 'Iniciar música';
+          if (spanEn) spanEn.textContent = 'Play music';
+        }
+      }
+    });
+  }
+</script>

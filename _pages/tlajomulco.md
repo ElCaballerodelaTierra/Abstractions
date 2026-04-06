@@ -62,39 +62,31 @@ content-en: |
 }
 </style>
 
-<button id="btn-musica">
-  <span class="content-es">Iniciar música</span>
-  <span class="content-en">Play music</span>
-</button>
-<audio id="audio-fondo" src="/assets/tlajomulco/Golondrina%20de%20Ojos%20Negros%20(instrumental)%20-%20David%20Zaizar%20(comprimido).mp3" loop preload="none"></audio>
+{% include musica.html id="tlajomulco" src="/assets/tlajomulco/Golondrina%20de%20Ojos%20Negros%20(instrumental)%20-%20David%20Zaizar%20(comprimido).mp3" %}
 
 <div class="gallery">
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/arcos-del-hospital-del-templo.JPEG" alt="Arcos del hospital del templo" loading="lazy"> <figcaption class="content-es">Arcos del hospital del templo</figcaption> <figcaption class="content-en">Arch of the temple</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/bolillos-en-la-mañana.JPEG" alt="Bolillos y tortillas colgados en una tienda por la mañana" loading="lazy"> <figcaption class="content-es">Bolillos y tortillas colgados en una tienda por la mañana</figcaption> <figcaption class="content-en">Bread and tortillas hanging in a store in the morning</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-de-la-cultura.JPEG" alt="Casa de la cultura" loading="lazy"> <figcaption class="content-es">Casa de la cultura</figcaption> <figcaption class="content-en">House of culture</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-rustica.JPEG" alt="Casa rústica" loading="lazy"> <figcaption class="content-es">Casa rústica</figcaption> <figcaption class="content-en">Rustic house</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/dos-barcos.JPEG" alt="Dos barcos" loading="lazy"> <figcaption class="content-es">Dos barcos</figcaption> <figcaption class="content-en">Two boats</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/arcos-del-hospital-del-templo.JPEG" alt="Arcos del hospital del templo" loading="lazy"> <figcaption class="content-es">Arcos del hospital del templo</figcaption> <figcaption class="content-en">Archs of the hospital's church</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/bolillos-en-la-mañana.JPEG" alt="Bolillos y tortillas colgados en una tienda por la mañana" loading="lazy"> <figcaption class="content-es">Bolillos y tortillas colgados por la mañana antes de la apertura de la tienda </figcaption> <figcaption class="content-en">Bread and tortillas hanging in a store before opening</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-de-la-cultura.JPEG" alt="Casa de la cultura" loading="lazy"> <figcaption class="content-es">Interior de la casa de la cultura del pueblo</figcaption> <figcaption class="content-en">Inside the town's house of culture</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-rustica.JPEG" alt="Casa rústica" loading="lazy"> <figcaption class="content-es">Muchas casas todavía son de adobe</figcaption> <figcaption class="content-en">Many houses are still made of adobe</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/dos-barcos.JPEG" alt="Dos barcos" loading="lazy"> <figcaption class="content-es">Dos barcos, la abstracción y la realidad, repisa de mi cuarto</figcaption> <figcaption class="content-en">Two boats, abstraction and reality, my room's shelf</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/mi-ventana.JPEG" alt="Mi ventana" loading="lazy"> <figcaption class="content-es">Mi ventana</figcaption> <figcaption class="content-en">My window</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/plaza-central.JPEG" alt="Plaza central" loading="lazy"> <figcaption class="content-es">Plaza central</figcaption> <figcaption class="content-en">Central square</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/torre-de-la-iglesia.JPEG" alt="Torre de la iglesia" loading="lazy"> <figcaption class="content-es">Torre de la iglesia</figcaption> <figcaption class="content-en">Church tower</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/plaza-central.JPEG" alt="Plaza central" loading="lazy"> <figcaption class="content-es">Plaza central del pueblo</figcaption> <figcaption class="content-en">Town's central square</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/torre-de-la-iglesia.JPEG" alt="Torre de la iglesia" loading="lazy"> <figcaption class="content-es">Torre de la iglesia, una de las pocas iglesias donde la torre está separada del edificio central</figcaption> <figcaption class="content-en">Church tower, one of the few churches where the tower is separated from the main building</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día nublado</figcaption> <figcaption class="content-en">A cloudy day</figcaption></div>
 </div>
 
-<h1>Tlajomulco</h1>
+<!-- <h1>Tlajomulco</h1>
 
 <p class="content-es">Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.</p>
+
+<p class="content-en">A small town that has changed drastically in the last 15 years.</p>
 
 <h2>Un día típico</h2>
 
 <p class="content-es">Comer en el mercado</p>
 
-
-
-<p class="content-en">Eating at the market</p>
-
-<p class="content-en">A small town that has changed drastically in the last 15 years.</p>
-
-
+<p class="content-en">Eating at the market</p> -->
 
 <script>
   const galleryItems = document.querySelectorAll('.gallery-item');
@@ -112,25 +104,4 @@ content-en: |
       }
     });
   });
-
-  // Lógica del reproductor de música
-  const btnMusica = document.getElementById('btn-musica');
-  const audioFondo = document.getElementById('audio-fondo');
-  
-  if (btnMusica && audioFondo) {
-    btnMusica.addEventListener('click', function() {
-      const spanEs = btnMusica.querySelector('.content-es');
-      const spanEn = btnMusica.querySelector('.content-en');
-      
-      if (audioFondo.paused) {
-        audioFondo.play();
-        if (spanEs) spanEs.textContent = 'Pausar música';
-        if (spanEn) spanEn.textContent = 'Pause music';
-      } else {
-        audioFondo.pause();
-        if (spanEs) spanEs.textContent = 'Iniciar música';
-        if (spanEn) spanEn.textContent = 'Play music';
-      }
-    });
-  }
 </script>
