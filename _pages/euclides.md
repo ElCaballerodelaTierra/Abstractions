@@ -10,7 +10,7 @@ categories: Matemáticas
 titulo-es: Los Elementos de Euclides
 subtitulo-es: El inicio de la matemática moderna
 imagenPortada: /assets/euclides/Demostracion-del-teorema-de-pitagoras.jpg
-descripcionImagenPortada-es: Demostración del teorema de pitágoras, Los elementos de Euclides, Oliver Byrne, 1847
+descripcionImagenPortada-es: Demostración del teorema de pitágoras, Los Elementos, Oliver Byrne, 1847
 
 content-es: |
     <section>

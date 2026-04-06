@@ -99,10 +99,17 @@ content-en: |
 
 <p><b>Teoría de Redes y dinámicas de difusión de información:</b> Las personas no interactúan en el vacío. Estamos conectados en redes (familias, oficinas gubernamentales, empresas). Integrando dinámicas de redes, el modelo estudia cómo una actitud corrupta se "contagia" de un nodo (persona) a otro, de manera muy similar a cómo se propaga un virus en una pandemia.</p>
 
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" alt="Artículo Martins et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;" aria-label="Artículo Martins et al"></object>
+<figcaption>Figura 1: Artículo Martins et al</figcaption>
+</figure>
+
+
 <h4 id="enfoque-juegos">Enfoque mediante teoría de juegos</h4>
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" alt="Juego de la corrupción" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" style="width: 100%; height: auto;" aria-label="Juego de la corrupción"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" style="width: 70%; height: auto; display: block; margin: 0 auto;" aria-label="Juego de la corrupción"></object>
 <figcaption>Figura 1: Juego de la corrupción</figcaption>
 </figure>
 
@@ -110,23 +117,26 @@ content-en: |
 
 <p>Teoría de Juegos Evolutivos: Imagina la sociedad como un gran juego donde las estrategias de los jugadores (ser honesto o ser corrupto) evolucionan con el tiempo. Utilizando modelos previos (como el de Ubeda & Dueñez-Guzman), podemos analizar matemáticamente los "pagos" o recompensas que obtienen las personas al tomar una decisión. Si el sistema recompensa la corrupción y penaliza la honestidad, la estrategia corrupta "sobrevive" y prospera.</p>
 
-<h4 id="enfoque-mixto">Enfoque mixto, mediante teoría de redes y teoría de juegos</h4>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" alt="Artículo Ubeda et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;" aria-label="Artículo Ubeda et al"></object>
+<figcaption>Figura 1: Artículo Ubeda et al</figcaption>
+</figure>
 
-<p>Al fusionar ambos mundos (Scatá et al., 2016), se desarrolló un modelo computacional para simular el comportamiento de tres sociedades distintas:</p>
+<h4 id="enfoque-mixto">Enfoque mixto: teoría de redes y juegos</h4>
 
-<p><img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca"> <br>
-<b>Dinamarca:</b> Alta confianza social y transparencia. <br><br>
-<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur"> <br>
-<b>Singapur:</b> Leyes estrictas y castigos severos. <br><br>
-<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México"> <br>
-<b>México:</b> Equilibrio inestable, impunidad y vulnerabilidad sistémica. <br></p>
-</div>
+<p>Se uso una dinámica de actualización de estrategias en una red social. En cada paso, un individuo elige a uno de sus vecinos al azar y copia su estrategia si esta le ofrece un mayor beneficio. Este proceso se repite varias veces, permitiendo que las estrategias se propaguen por la red y observando cómo evoluciona el sistema a lo largo del tiempo.</p>
 
- {% include diagramaDeFlujo.html %}
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" alt="Algoritmo de Scàta et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" style="width: 90%; height: auto; display: block; margin: 0 auto;" aria-label="Algoritmo de Scàta et al"></object>
+<figcaption>Figura 1: Algoritmo de Scàta et al</figcaption>
+</figure>
 
- <div class="content-es">
- <p>Para comprender cómo evolucionan estas dinámicas en el tiempo, analizamos y replicamos el comportamiento de los modelos más influyentes en el campo. A continuación, se muestra la lógica de actualización de estrategias dentro de una red social:</p>
+ <p>El algoritmo que diseñó Scatà et al fue el siguiente:</p>
  
+ {% include diagramaDeFlujo.html %}
+ <div class="content-es">
 <!-- Mermaid diagram -->
 <figure class="mermaid diagramaDeFlujo">
     flowchart TD
@@ -160,6 +170,60 @@ content-en: |
     Y ~~~ Z
 </figure>
 <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Scatà, M. et al. </figcaption>
+</div>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" alt="Artículo Scatà et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;" aria-label="Artículo Scatà et al"></object>
+<figcaption>Figura 1: Artículo Scatà et al</figcaption>
+</figure>
+
+
+
+<p>Al fusionar ambos mundos (Scatá et al., 2016), se desarrolló un modelo computacional para simular el comportamiento de tres sociedades distintas:</p>
+
+<br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Índice de prosperidad de Legatum.svg" alt="Índice de prosperidad de Legatum" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Índice de prosperidad de Legatum.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Índice de prosperidad de Legatum"></object>
+<figcaption>Figura 1: Índice de prosperidad de Legatum</figcaption>
+</figure>
+<br>
+
+<h4>Dinamarca</h4>
+<p><img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca" style="width: 10%; height: auto; display: block; margin: 0 auto;"> <br>
+Alta confianza social y transparencia. <br>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" alt="Matriz de pagos de Dinamarca" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;" aria-label="Matriz de pagos de Dinamarca"></object>
+<figcaption>Figura 1: Matriz de pagos de Dinamarca</figcaption>
+</figure>
+
+<h4>Singapur</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 10%; height: auto; display: block; margin: 0 auto;"> <br>
+Leyes estrictas y castigos severos. <br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" alt="Matriz de pagos de Singapur" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;" aria-label="Matriz de pagos de Singapur"></object>
+<figcaption>Figura 1: Matriz de pagos de Singapur</figcaption>
+</figure>
+
+<h4>México</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México" style="width: 10%; height: auto; display: block; margin: 0 auto;"> <br>
+Equilibrio inestable, impunidad y vulnerabilidad sistémica. <br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" alt="Matriz de pagos de México" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;" aria-label="Matriz de pagos de México"></object>
+<figcaption>Figura 1: Matriz de pagos de México</figcaption>
+</figure>
+
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Red modelo para la tesis.svg" alt="Red modelo para la tesis" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red modelo para la tesis.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Red modelo para la tesis"></object>
+<figcaption>Figura 1: Red modelo para la tesis</figcaption>
+</figure>
 
 <h3 id="como-atacamos-la-red">El descubrimiento contraintuitivo: ¿Cómo atacamos la red?</h3>
 
@@ -169,7 +233,6 @@ content-en: |
 
 <p>La eliminación aleatoria de nodos degrada rápidamente la conectividad global de la red, fracturándola en pequeñas comunidades aisladas. En la vida real, esto se traduce en políticas como la rotación obligatoria y aleatoria de personal en puestos de alto riesgo (aduanas, compras públicas, licencias). Al rotar al personal, se impide la formación de lazos de confianza criminal a largo plazo.</p>
 
-</div>
 
 <div class="content-en">
 <p>To understand how these dynamics evolve over time, we analyzed and replicated the behavior of the most influential models in the field. Below is the logic of strategy updating within a social network:</p>
@@ -209,7 +272,6 @@ content-en: |
 
 <p>The random removal of nodes rapidly degrades the overall connectivity of the network, fracturing it into small, isolated communities. In real life, this translates into policies such as mandatory and random rotation of personnel in high-risk positions (customs, public procurement, licensing). By rotating staff, the formation of long-term criminal trust bonds is prevented.</p>
 
-</div>
 
  <div class="content-es">
 
