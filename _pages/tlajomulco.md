@@ -25,7 +25,7 @@ content-en: |
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
-  margin: 1.5rem 0;
+  margin: 20px 0;
 }
 .gallery .gallery-item {
   aspect-ratio: 1 / 1;
@@ -55,6 +55,7 @@ content-en: |
   max-height: 100vh;
   object-fit: contain;
 }
+
 @media (max-width: 600px) {
   .gallery {
     gap: 2px;
