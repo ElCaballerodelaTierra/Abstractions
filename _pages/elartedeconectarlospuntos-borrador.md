@@ -65,8 +65,6 @@ content-en: |
           </li>
         </ul>
       </li>
-    </ul>
-  </li>
   <li><a href="#como-atacamos-la-red">El descubrimiento contraintuitivo: ¿Cómo atacamos la red?</a></li>
   <li><a href="#conclusion">Conclusión</a></li>
 </ul>
