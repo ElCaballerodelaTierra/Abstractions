@@ -358,7 +358,7 @@ article {
     align-items: center;
     max-width: var(--anchura-contenido);
     margin: 0 auto;
-    padding: 0px 10px 10px 0px;
+    padding: 0px 10px 0px 10px;
 }
 
 article p {
