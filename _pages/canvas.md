@@ -71,11 +71,12 @@ permalink: /canvas
         color: inherit;
         min-height: 0;
         width: 100%;
+        transition: transform 0.3s ease; /* Transición suave para el zoom */
     }
 
     .page-item a span {
         /* Reduce suavemente el tamaño de texto de 20px en Desktop a 14px en celulares (ej: 375px) */
-        font-size: clamp(18px, 4vw, 26px); 
+        font-size: clamp(12px, 4vw, 26px); 
     }
 
     .page-item img {
@@ -87,6 +88,7 @@ permalink: /canvas
         border-radius: 50%; /* Hace el círculo perfecto sin importar el tamaño */
         margin-bottom: 15px;
         flex-shrink: 0; /* Evitar que flexbox lo achate de forma imprevista */
+        transition: box-shadow 0.3s ease; /* Añadimos también suavidad por si quieres agregar sombra después */
     }
 
     /* Ajustes específicos para móviles (como iPhone) */
@@ -97,7 +99,9 @@ permalink: /canvas
         }
     }
 
-    .page-item::hover {
+    /* Efecto de zoom y pointer al interactuar */
+    .page-item a:hover {
+        transform: scale(1.05);
         cursor: pointer;
     }
 </style>
