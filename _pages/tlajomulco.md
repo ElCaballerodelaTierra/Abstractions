@@ -52,7 +52,7 @@ content-en: |
 }
 .gallery .gallery-item.expanded img {
   height: auto;
-  max-height: 90vh;
+  max-height: 100vh;
   object-fit: contain;
 }
 @media (max-width: 600px) {
@@ -83,7 +83,18 @@ content-en: |
 <h1>Tlajomulco</h1>
 
 <p class="content-es">Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.</p>
+
+<h2>Un día típico</h2>
+
+<p class="content-es">Comer en el mercado</p>
+
+
+
+<p class="content-en">Eating at the market</p>
+
 <p class="content-en">A small town that has changed drastically in the last 15 years.</p>
+
+
 
 <script>
   const galleryItems = document.querySelectorAll('.gallery-item');

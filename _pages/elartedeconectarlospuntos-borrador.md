@@ -52,14 +52,12 @@ content-en: |
 <hr>
 <br>
 <h2>Índice</h2>
-<ul>
-  <li><a href="#resumen">Resumen</a>
-    <ul>
+<ul style="padding-left: 20px;">
       <li><a href="#podemos-predecir">¿Podemos predecir y detener la corrupción?</a></li>
       <li><a href="#que-es-corrupcion">¿Que es la corrupción?</a>
-        <ul>
+        <ul style="padding-left: 20px; list-style-type: square;">
           <li><a href="#modelando-corrupcion">Modelando la corrupción</a>
-            <ul>
+            <ul style="padding-left: 20px; list-style-type: circle;">
               <li><a href="#enfoque-redes">Enfoque mediante teoría de redes</a></li>
               <li><a href="#enfoque-juegos">Enfoque mediante teoría de juegos</a></li>
               <li><a href="#enfoque-mixto">Enfoque mixto, mediante teoría de redes y teoría de juegos</a></li>
