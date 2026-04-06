@@ -16,7 +16,7 @@ frase-es: |
     "Bienvenidos al arte de conectar los puntos"
 frase-autor-es:
 frase-contexto-es:
- 
+
 content-es: |
 
     <i> Resumen de la tesis: "Comprendiendo y atacando la corrupción, un análisis mediante teoría de redes y teoría de juegos a los sistemas sociales y su evolución". </i>
@@ -80,8 +80,7 @@ content-en: |
 <h2 id="que-es-corrupcion">¿Que es la corrupción?</h2>
 
 <p>La corrupción es un fenómeno complejo que puede manifestarse de muchas formas, pero en esencia, se puede definir como:</p>
-<br>
-<br>
+
 <p><cite>“El abuso del poder confiado a una persona para obtener una ganancia privada”</cite>
 <br>(Transparencia Internacional, 2024)</p>
 
@@ -91,11 +90,21 @@ content-en: |
 
 <h4 id="enfoque-redes">Enfoque mediante teoría de redes</h4>
 
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Red española.png" alt="Red española">
+<figcaption>Figura 1: Red corrupta española</figcaption>
+</figure>
+
 <p>Las redes corruptas (como las observadas en escándalos reales en Brasil, España y México) comparten características matemáticas precisas: tienen comunidades muy unidas y pocos nodos que concentran mucho poder.</p>
 
 <p><b>Teoría de Redes y dinámicas de difusión de información:</b> Las personas no interactúan en el vacío. Estamos conectados en redes (familias, oficinas gubernamentales, empresas). Integrando dinámicas de redes, el modelo estudia cómo una actitud corrupta se "contagia" de un nodo (persona) a otro, de manera muy similar a cómo se propaga un virus en una pandemia.</p>
 
 <h4 id="enfoque-juegos">Enfoque mediante teoría de juegos</h4>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" alt="Juego de la corrupción" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" style="width: 100%; height: auto;" aria-label="Juego de la corrupción"></object>
+<figcaption>Figura 1: Juego de la corrupción</figcaption>
+</figure>
 
 <p>Por otro lado, la corrupción es un "juego" de decisiones. En una sociedad, los ciudadanos y las personas en el poder deciden cooperar (ser honestos) o no cooperar (ser corruptos) basándose en las reglas del entorno: ¿Qué tan probable es que me atrapen? ¿Qué tan severo es el castigo?</p>
 

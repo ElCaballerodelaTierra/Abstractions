@@ -76,13 +76,13 @@ content-en: |
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día nublado</figcaption> <figcaption class="content-en">A cloudy day</figcaption></div>
 </div>
 
-<!-- <h1>Tlajomulco</h1>
+ <h1>Tlajomulco</h1>
 
 <p class="content-es">Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.</p>
 
 <p class="content-en">A small town that has changed drastically in the last 15 years.</p>
 
-<h2>Un día típico</h2>
+<!-- <h2>Un día típico</h2>
 
 <p class="content-es">Comer en el mercado</p>
 

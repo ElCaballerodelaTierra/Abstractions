@@ -43,14 +43,18 @@ function setLanguage(lang) {
     if (lang === 'es') {
         esElements.forEach(el => el.style.display = '');
         enElements.forEach(el => el.style.display = 'none');
-        btnEs.style.backgroundColor = 'var(--naranja)';
-        btnEn.style.backgroundColor = 'var(--gris)';
+        btnEs.classList.add('activo');
+        btnEs.classList.remove('inactivo');
+        btnEn.classList.remove('activo');
+        btnEn.classList.add('inactivo');
         currentLanguage = 'es';
     } else {
         esElements.forEach(el => el.style.display = 'none');
         enElements.forEach(el => el.style.display = '');
-        btnEs.style.backgroundColor = 'var(--gris)';
-        btnEn.style.backgroundColor = 'var(--naranja)';
+        btnEs.classList.remove('activo');
+        btnEs.classList.add('inactivo');
+        btnEn.classList.add('activo');
+        btnEn.classList.remove('inactivo');
         currentLanguage = 'en';
     }
 

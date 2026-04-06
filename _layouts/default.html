@@ -91,7 +91,7 @@
             <span class="frase-autor">{{ page['frase-autor-es'] | markdownify }}</span>
             <span class="frase-contexto">{{ page['frase-contexto-es'] | markdownify }}</span>
         </div>
-        <div class="texto content-en">
+        <div class="texto content-en" style="display: none;">
             {% if page.titulo-en-portada != false %}
             <div class="portada-titulo">{{page.titulo-en}}</div>
             {% endif %}

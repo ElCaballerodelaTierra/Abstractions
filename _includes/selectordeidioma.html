@@ -1,3 +1,19 @@
+<style>
+.selectorDeIdioma button {
+    transition: background-color 0.3s, filter 0.3s;
+}
+.selectorDeIdioma button.activo {
+    background-color: var(--naranja);
+}
+.selectorDeIdioma button.inactivo {
+    background-color: var(--gris);
+}
+.selectorDeIdioma button.inactivo:hover {
+    background-color: #1d1d1d; /* Realce sutil del fondo respecto a var(--gris) que es #121212 */
+    filter: brightness(0.85); /* Realce sutil de la brillantez del texto/contenido */
+}
+</style>
+
 <div class="selectorDeIdioma" style="display: flex; gap: 5px; justify-content: center; align-items: center; background-color: #121212; border-radius: 50px; margin: 20px auto; width: fit-content; ">
     <button id="btn-es" onclick="setLanguage('es')">Español</button>
     <button id="btn-en" onclick="setLanguage('en')">English</button>

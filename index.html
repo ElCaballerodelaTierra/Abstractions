@@ -1,72 +1,141 @@
 ---
+layout: default
+titulo-es: Todas las páginas
+titulo-en: All Pages
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    /* Se ocultan todos los elementos de la plantilla por defecto */
+    h1,
+    .autor,
+    footer,
+    .boton-descargar-pdf {
+        display: none !important;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abstractions</title>
-    <link rel="stylesheet" href="/css/estilos.css">
-    {% include analytics.html %}
-</head>
+    html,
+    body {
+        min-height: 100vh;
+        margin: 0;
+        /* Se eliminó overflow: hidden para permitir el scroll vertical con múltiples publicaciones */
+    }
 
-<body style="height: 100%; margin: 0; align-items: center; justify-content: center; display: flex;">
-    <div>
-        <h1 style="display: flex; justify-content: center; align-items: center; font-size: 2.3em; padding: 20px 0px 0px 0px;">
-            Abstractions</h1>
-       {% include selectordeidioma.html %}
-        <div
-            style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; height: 80vh;">
-            <div>
-                <img src="/assets/index/In the Búnker.jpg" alt="C.A.V.N."
-                    style="border-radius: 50%; width: 100vw; max-width: 500px; object-fit: cover; padding: 10px 20px;">
-            </div>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Evita que en pantallas pequeñas el centro flex corte la parte superior */
+    }
 
-            <div style="width:100vw; max-width: 500px; padding: 20px; ">
-                <h2 style="font-size: 1.3em; text-align: center; padding: 10px;">Carlos Alberto Villarreal Noyola</h2>
+    #article {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        padding: 0;
+        max-width: none;
+        margin: 0;
+        min-height: 100vh; /* Permite que crezca para alojar el canvas sin recortarlo */
+    }
 
-                    <cite class="content-es" style="font-size: .75em; padding: 5px 0px;">Inventor y visionario en
-                        México</cite>
-                    <cite class="content-en" style="display: none; font-size: .75em; padding: 5px 0px">Inventor and
-                        visionary in Mexico</cite>
-                    <p class="content-es">
-                        Imagina por un momento que todo aquello que sustenta a la humanidad, los sistemas económicos,
-                        los sistemas políticos y cada una de las invenciones que hacen posible nuestra vida cotidiana,
-                        fuera replanteado y rediseñado a partir de una filosofía central: preservar la vida global.
-                    </p>
-                    <p class="content-en" style="display: none;">
-                        Imagine for a moment that everything that sustains humanity, economic systems, political systems
-                        and every single invention that makes our daily life possible, were rethought and redesigned
-                        based on a central philosophy: preserving global life.
-                    </p>
+    #canvas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px; /* Un poco más de margen vertical para que se vea estético al hacer scroll */
+        align-items: flex-start; /* Alinea los elementos a la parte superior de su fila para sincronizar las imágenes */
+        flex: 1;
+        align-content: center; /* Centrará todo verticalmente si hay pocas imágenes, y hacia arriba si sobrepasan el espacio permitiendo scroll */
+        min-height: 0; 
+    }
 
-                    <a href="/lienzo.html"
-                        style="display: flex; justify-content: center; align-items: center; margin: 20px auto; text-decoration: none; width: fit-content;">
-                        <button id="lang-btn" class="content-es">Entrar</button>
-                        <button id="lang-btn" class="content-en" style="display: none;">Enter</button>
+    .page-item {
+        /* flex-grow 0 evita que el último elemento crezca de forma desproporcionada. 
+           clamp(150px, 20vw, 280px) les da a todos los elementos exactamente el mismo ancho dinámico. */
+        flex: 0 1 clamp(95px, 25vw, 300px); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        min-height: 0;
+    }
 
-                    </a>
+    .page-item a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Mantiene la imagen anclada en la parte superior */
+        text-decoration: none;
+        color: inherit;
+        min-height: 0;
+        width: 100%;
+        transition: transform 0.3s ease; /* Transición suave para el zoom */
+    }
 
-                    <div style="display: flex; justify-content: center; padding: 20px; gap: 5px;">
-                        <a href="https://instagram.com/elcaballerodelatierra">
-                            <img src="/assets/index/instagram.svg" alt="Instagram"
-                                style="width: 20px; height: 20px; margin: 0px 10px;">
+    .page-item a span {
+        /* Reduce suavemente el tamaño de texto de 20px en Desktop a 14px en celulares (ej: 375px) */
+        font-size: clamp(12px, 4vw, 26px); 
+    }
+
+    .page-item img {
+        width: 100%;
+        max-width: 45vh; /* Asegura que la anchura también esté restringida por el alto para mantener el círculo */
+        max-height: 45vh; 
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%; /* Hace el círculo perfecto sin importar el tamaño */
+        margin-bottom: 15px;
+        flex-shrink: 0; /* Evitar que flexbox lo achate de forma imprevista */
+        transition: box-shadow 0.3s ease; /* Añadimos también suavidad por si quieres agregar sombra después */
+    }
+
+    /* Ajustes específicos para móviles (como iPhone) */
+    @media (max-width: 600px) {
+        .page-item img {
+            max-width: 25vmax; /* Usa vmax o vw dependiendo, probemos 25vmax que se ajusta bien para tener un tamaño dinámico */
+            max-height: 25vmax;
+        }
+    }
+
+    /* Efecto de zoom y pointer al interactuar */
+    .page-item a:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+</style>
+
+<section id="canvas">
+
+    {% assign all_pages = site.documents | where: "collection", "pages" | where: "published", true  | where: "canvas", true %}
+    
+    <!-- Agrupar páginas por categoría -->
+    {% assign grouped_pages = all_pages | group_by: "categories" %}
+
+    <!-- Mostrar grupos con categoría -->
+    {% for group in grouped_pages %}
+
+        {% if group.name != "" %}
+                <h3 style="display: none;">{{ group.name }}</h3>
+
+                {% for p in group.items %}
+                        <div class="page-item">
+                        <a href="{{ p.url }}">
+                            {% if p.imagenPortada %}
+                                <img src="{{ p.imagenPortada | relative_url }}" alt="{{ p.titulo-es | default: p.title }}">
+                            {% endif %}
+                            <span class="content-es" style="display: block;">
+                                {{ p.titulo-es | default: p.title }}
+                            </span>
+                            <span class="content-en" style="display: none;">
+                                {{ p.titulo-en | default: p.title }}
+                            </span>
                         </a>
-                        <a href="https://linkedin.com/in/cavn">
-                            <img src="/assets/index/linkedin.svg" alt="LinkedIn"
-                                style="width: 20px; height: 20px; margin: 0px 10px;">
-                        </a>
-                        <a href="https://github.com/elcaballerodelatierra">
-                            <img src="/assets/index/github.svg" alt="GitHub"
-                                style="width: 20px; height: 20px; margin: 0px 10px;">
-                        </a>
+                        </div>
+                {% endfor %}
 
-                    </div>
-            </div>
-        </div>
+        {% endif %}
 
-</body>
+    {% endfor %}
 
-</html>
+</section>

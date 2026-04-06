@@ -6,6 +6,7 @@
 :root {
     /* Colores */
     --naranja: #6b2b00;
+    --naranja-oscuro: #4a1e00;
     --naranja-claro: #ffba8d;
     --color-texto-articulo: #ffffffb7;
     --color-titulos: #dfa776;
@@ -69,10 +70,11 @@ button {
     border-radius: 50px;
     font-family: 'CMU Serif', serif;
     font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--naranja);
+    background-color: var(--naranja-oscuro);
 }
 
 
@@ -139,6 +141,7 @@ cite.portada {
     text-align: center;
     font-size: 1.75rem;
     height: 100vh;
+    height: 100svh;
     /* 100% de la altura del viewport */
     width: 100%;
     margin: 0 auto;
@@ -155,6 +158,7 @@ cite.portada::before {
     left: 0;
     width: 100%;
     height: 100vh;
+    height: 100svh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), var(--bg-image);
     background-size: cover;
     background-position: center;
@@ -200,8 +204,14 @@ cite .frase-contexto {
 
 /* Estilos para la imagen de portada */
 
+figure.portada {
+    position: relative;
+    width: 100%;
+}
+
 figure.portada img {
     height: 100vh;
+    height: 100svh; /* Solves mobile Safari viewport height bug */
     /* 100% de la altura del viewport */
     width: 100%;
     object-fit: cover;
@@ -213,6 +223,7 @@ figure.portada img {
 
 section.mediaPortada {
     height: 100vh;
+    height: 100svh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -223,6 +234,7 @@ section.mediaPortada {
 
 section.mediaPortada figure {
     height: 100vh;
+    height: 100svh;
     width: 50%;
     margin: 0;
     padding: 0;
@@ -249,6 +261,7 @@ section.mediaPortada figure img {
 
 section.mediaPortada .texto {
     height: 100vh;
+    height: 100svh;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -283,7 +296,9 @@ section.mediaPortada .texto .frase-autor {
 
 .portada-titulos {
     position: absolute;
-    bottom: 0px;
+    top: 100vh;
+    top: 100svh;
+    transform: translateY(-100%);
     padding: 20px;
 }
 
