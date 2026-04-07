@@ -59,59 +59,106 @@ function setLanguage(lang) {
     }
 
     // Re-renderizar los diagramas Mermaid que ahora son visibles
+    // y luego procesar MathJax en toda la página
     rerenderMermaidDiagrams(lang);
+}
+
+// Esperar a que MathJax esté listo
+async function waitForMathJax() {
+    let attempts = 0;
+    while ((typeof MathJax === 'undefined' || !MathJax.typesetPromise) && attempts < 50) {
+        await new Promise(r => setTimeout(r, 100));
+        attempts++;
+    }
+    return typeof MathJax !== 'undefined' && MathJax.typesetPromise;
 }
 
 async function rerenderMermaidDiagrams(lang) {
     const visibleSelector = lang === 'es' ? '.content-es .mermaid' : '.content-en .mermaid';
     const visibleDiagrams = document.querySelectorAll(visibleSelector);
 
-    if (visibleDiagrams.length === 0) return;
-
-    visibleDiagrams.forEach(el => {
-        // Solo re-renderizar si ya fue procesado por Mermaid
-        if (el.getAttribute('data-processed') === 'true') {
-            const originalSource = mermaidSources.get(el);
-            if (originalSource) {
-                // Restaurar el código fuente original y limpiar el SVG renderizado
-                el.removeAttribute('data-processed');
-                el.innerHTML = originalSource;
+    // 1. Re-renderizar diagramas Mermaid (si existen)
+    if (visibleDiagrams.length > 0) {
+        visibleDiagrams.forEach(el => {
+            if (el.getAttribute('data-processed') === 'true') {
+                const originalSource = mermaidSources.get(el);
+                if (originalSource) {
+                    el.removeAttribute('data-processed');
+                    el.innerHTML = originalSource;
+                }
             }
+        });
+
+        await new Promise(resolve => requestAnimationFrame(resolve));
+
+        try {
+            await mermaid.run({ nodes: Array.from(visibleDiagrams) });
+        } catch (e) {
+            console.warn('Mermaid rerender skipped:', e);
+        }
+    }
+
+    // 2. Esperar a MathJax
+    const mathJaxReady = await waitForMathJax();
+    if (!mathJaxReady) return;
+
+    // 3. Procesar MathJax en labels de Mermaid (usando contenedor temporal
+    //    porque MathJax no puede manipular nodos dentro de SVG foreignObject)
+    if (visibleDiagrams.length > 0) {
+        for (const diagram of visibleDiagrams) {
+            const labels = diagram.querySelectorAll('.nodeLabel, .edgeLabel, .label');
+            for (const label of labels) {
+                if (!label.textContent.includes('$')) continue;
+
+                const tempDiv = document.createElement('div');
+                tempDiv.style.cssText = 'position:absolute;left:-9999px;visibility:hidden';
+                tempDiv.innerHTML = label.innerHTML;
+                document.body.appendChild(tempDiv);
+
+                try {
+                    await MathJax.typesetPromise([tempDiv]);
+                    label.innerHTML = tempDiv.innerHTML;
+                } catch (e) {
+                    console.warn('MathJax label error:', e);
+                } finally {
+                    document.body.removeChild(tempDiv);
+                }
+            }
+        }
+    }
+
+    // 4. Procesar MathJax en el resto del contenido visible de la página
+    //    (ya que auto-typeset está desactivado)
+    const visibleContent = lang === 'es'
+        ? document.querySelectorAll('.content-es')
+        : document.querySelectorAll('.content-en');
+
+    const nonMermaidElements = [];
+    visibleContent.forEach(el => {
+        // Excluir los diagramas Mermaid (ya procesados arriba)
+        if (!el.querySelector('.mermaid')) {
+            nonMermaidElements.push(el);
+        } else {
+            // Si contiene un .mermaid, procesar solo los elementos no-mermaid dentro
+            el.querySelectorAll(':scope > *:not(.mermaid):not(figure.mermaid)').forEach(child => {
+                nonMermaidElements.push(child);
+            });
         }
     });
 
-    // Esperar un frame para asegurar que el contenedor es visible antes de renderizar
-    await new Promise(resolve => requestAnimationFrame(resolve));
+    // También procesar contenido fuera de content-es/content-en (artículos, secciones generales)
+    document.querySelectorAll('article, section').forEach(el => {
+        if (!el.closest('.content-es') && !el.closest('.content-en') && !el.closest('.mermaid')) {
+            nonMermaidElements.push(el);
+        }
+    });
 
-    try {
-        await mermaid.run({ nodes: Array.from(visibleDiagrams) });
-
-        // Re-procesar las fórmulas matemáticas con MathJax
-        const processMath = async () => {
-            let attempts = 0;
-            while ((typeof MathJax === 'undefined' || !MathJax.typesetPromise) && attempts < 50) {
-                await new Promise(r => setTimeout(r, 100));
-                attempts++;
-            }
-            if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
-                const labelsToProcess = [];
-                visibleDiagrams.forEach(diagram => {
-                    diagram.querySelectorAll('.nodeLabel, .edgeLabel, .label').forEach(label => {
-                        label.classList.add('mathjax-process');
-                        labelsToProcess.push(label);
-                    });
-                });
-                if (labelsToProcess.length > 0) {
-                    await MathJax.typesetPromise(labelsToProcess);
-                } else {
-                    visibleDiagrams.forEach(el => el.classList.add('mathjax-process'));
-                    await MathJax.typesetPromise(Array.from(visibleDiagrams));
-                }
-            }
-        };
-        await processMath();
-    } catch (e) {
-        // Silenciar errores si mermaid aún no está disponible
-        console.warn('Mermaid rerender skipped:', e);
+    if (nonMermaidElements.length > 0) {
+        try {
+            MathJax.typesetClear(nonMermaidElements);
+            await MathJax.typesetPromise(nonMermaidElements);
+        } catch (e) {
+            console.warn('MathJax page typeset error:', e);
+        }
     }
 }

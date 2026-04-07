@@ -1,16 +1,15 @@
-<!-- Load MathJax from CDN -->
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Load MathJax: config MUST come before the script -->
 <script>
     window.MathJax = {
         tex: {
             inlineMath: [['$', '$'], ['\\(', '\\)']]
         },
-        options: {
-            ignoreHtmlClass: 'mermaid',
-            processHtmlClass: 'mathjax-process'
+        startup: {
+            typeset: false  // No auto-typeset; lo haremos manualmente después de Mermaid
         }
     };
 </script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- Load Mermaid from CDN -->
 <script type="module">

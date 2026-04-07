@@ -74,7 +74,7 @@ content-en: |
 <!-- Mermaid diagram -->
 <figure class="mermaid diagramaDeFlujo">
     flowchart TD
-    A(["Start of the algorithm"]) --> B[/$M, c, J, H, K, N$/]
+    A(["Start of the algorithm"]) --> B[/"$M, c, J, H, K, N$"/]
     B --> C["A Barabási-Albert network is created"]
     C --> D["The initial strategies ($M$) are assigned according to the initial position ($c$)"]
     D --> E{"$i > N$"}
