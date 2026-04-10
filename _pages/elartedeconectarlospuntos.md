@@ -80,12 +80,12 @@ content-en: |
 
 <h2 id="que-es-corrupcion">¿Que es la corrupción?</h2>
 
-<p>La corrupción es un fenómeno complejo que puede manifestarse de muchas formas, pero en esencia, se puede definir como:</p>
+<p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
 
 <p style="text-align: right; width: 90%;"><cite><strong>“El abuso del poder confiado a una persona para obtener una ganancia privada”</strong></cite>
 <br><br> <a href="https://www.transparency.org/en/what-is-corruption" target="_blank"> (Transparencia Internacional, 2024)</a></p>
 
-<p>Una definición matemática de la debe considerar dos ideas centrales: el <b>poder</b> como una red de relaciones y acceso a recursos, y la <b>ganancia</b> como resultado de decisiones estratégicas basadas en riesgos y beneficios. <br><br>
+<p>Una definición matemática de la corrupción debe considerar dos ideas centrales: el <b>poder</b> como una red de relaciones, y la <b>ganancia</b> como resultado de decisiones estratégicas basadas en riesgos y beneficios. <br><br>
 
 Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, que analiza la estructura y los actores dentro de sistemas corruptos, y la teoría de juegos, que estudia las decisiones estratégicas de los individuos. Aunque cada enfoque tiene limitaciones, su combinación permite una representación más completa del fenómeno.</p>
 
@@ -222,6 +222,11 @@ DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https
 
 <h4 id="nuevo-modelo">Desarrollo de un nuevo modelo</h4>
 
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" alt="Hipótesis del trabajo" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Hipótesis del trabajo"></object>
+<figcaption>Figura 1: Hipótesis del trabajo</figcaption>
+</figure>
 
 <p>Al fusionar ambos mundos (Scatá et al., 2016), se desarrolló un modelo computacional para simular el comportamiento de tres sociedades distintas:</p>
 

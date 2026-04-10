@@ -79,9 +79,17 @@ content-en: |
 
  <h1>Tlajomulco</h1>
 
-<p class="content-es">Un pequeño pueblo que ha cambiado drásticamente en los últimos 15 años.</p>
+<p class="content-es">Un pequeño pueblo que ha cambiado en los últimos años.</p>
 
-<p class="content-en">A small town that has changed drastically in the last 15 years.</p>
+<div style="display: none; flex-direction: column; gap: 15px;">
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.mural.com.mx/proyectan-para-tlajomulco-un-peor-aumento-de-temperatura/ar2584256" data-iframely-url="https://iframely.net/LCfcGia?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jornada.com.mx/noticia/2023/05/08/estados/tlajomulco-epicentro-de-fosas-clandestinas-en-jalisco-9220" data-iframely-url="https://iframely.net/hi8hyUb9?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+</div>
+
+<p class="content-en">A small town that has changed in the last 15 years.</p>
 
 <!-- <h2>Un día típico</h2>
 

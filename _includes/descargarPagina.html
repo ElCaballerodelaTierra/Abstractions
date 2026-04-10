@@ -143,7 +143,7 @@
 
             /* Fix: Establecer contexto de posicionamiento para que los títulos absolutos se queden aquí */
             position: relative !important;
-            height: 100vh !important;
+            height: 100vh !important; /* Reducido para evitar que el contenedor quede fuera de los márgenes de impresión */
             width: 100% !important;
             page-break-after: always !important;
             overflow: hidden !important;
@@ -166,7 +166,8 @@
         /* Asegurar que el texto de portada esté correctamente posicionado */
         .portada .portada-titulos {
             position: absolute !important;
-            bottom: 10px !important;
+            top: 95% !important; /* Se usa top en lugar de bottom para anclar desde arriba, evadiendo el corte inferior */
+            bottom: auto !important; /* Desactiva cualquier anclaje inferior */
             z-index: 10 !important;
         }
 
