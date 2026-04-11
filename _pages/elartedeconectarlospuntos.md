@@ -24,9 +24,8 @@ content-es: |
 
     # Resumen
 
-    Un nuevo modelo matemático simula la propagación y erradicación de la corrupción en distintas sociedades, como Dinamarca, Singapur y México para identificar patrones de comportamiento y gobernanza. <br><br>
-    El trabajo revela que la corrupción es un fenómeno estructural donde el estado de derecho, los castigos y los costos de vigilancia determinan la estabilidad del sistema. Entre los hallazgos principales, destaca que las intervenciones aleatorias resultan más efectivas para desmantelar redes corruptas que los ataques dirigidos a sus núcleos centrales. <br><br>
-    Se ofrece una justificación teórica para diseñar políticas públicas más inteligentes que logren transformar sociedades corruptas en sistemas cooperativos y transparentes.
+    Se propone un nuevo modelo matemático que simula la propagación y erradicación de la corrupción en distintas sociedades. Por medio de simulaciones, se revela que la corrupción es un fenómeno estructural donde el estado de derecho, los castigos y los costos de vigilancia determinan la estabilidad del sistema. <br><br>
+    Entre los hallazgos principales, destaca que las intervenciones aleatorias resultan más efectivas para desmantelar redes corruptas que los ataques dirigidos a sus núcleos centrales. Los resultados ofrecen una justificación teórica para diseñar políticas públicas más inteligentes que logren transformar sociedades corruptas en sistemas cooperativos y transparentes.
 
 
 titulo-en: The art of connecting the dots
@@ -68,22 +67,24 @@ content-en: |
   <li><a href="#nuevo-modelo">Desarrollo de un nuevo modelo</a></li>
   <li><a href="#como-atacamos-la-red">El descubrimiento contraintuitivo: ¿Cómo atacamos la red?</a></li>
   <li><a href="#conclusion">Conclusión</a></li>
+  <li><a href="#bibliografia">Bibliografía</a></li>
 </ul>
 <br>
 <hr>
 <br>
 <h2 id="podemos-predecir">¿Podemos predecir y detener la corrupción?</h2>
 
-<p>Tradicionalmente las políticas anticorrupción se han centrado en castigar individuos. Sin embargo, esta estrategia ha sido insuficiente. Para entender por qué persiste, fue necesario comprender cómo interactuaban las personas y qué incentivos tenían para corromperse o mantenerse honestas.</p>
+<p>La humanidad encontró un nuevo aliado en la lucha contra la corrupción: <b>las matemáticas</b>. En los últimos años gracias a la popularización de los ordenadores personales los modelos matemáticos han emergido como herramientas en la lucha contra la corrupción. En especial la modelación mediante teoría de redes y teoría de juegos.</p>
 
-<p>La humanidad encontró un nuevo aliado en la lucha contra la corrupción: <b>la matemática</b>. Especialmente a través de la <b>teoría de redes</b> (que analiza cómo se estructuran y conectan los grupos) y la <b>teoría de juegos</b> (que estudia cómo los individuos toman decisiones basadas en costos y beneficios) se pueden modelar los sistemas sociales.</p>
+<p>Tradicionalmente las políticas anticorrupción se han centrado en castigar individuos. Sin embargo, esta estrategia ha sido insuficiente. Para entender por qué persiste, es necesario comprender cómo interactuaban las personas y qué incentivos tienen para corromperse o mantenerse honestas.</p>
+
 
 <h2 id="que-es-corrupcion">¿Que es la corrupción?</h2>
 
 <p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
 
-<p style="text-align: right; width: 90%;"><cite><strong>“El abuso del poder confiado a una persona para obtener una ganancia privada”</strong></cite>
-<br><br> <a href="https://www.transparency.org/en/what-is-corruption" target="_blank"> (Transparencia Internacional, 2024)</a></p>
+<p style="text-align: right; width: 95%;"><cite><strong>“El abuso del poder confiado a una persona para obtener una ganancia privada”</strong></cite>
+<br><br> (<a href="https://www.transparency.org/en/what-is-corruption" target="_blank">Transparencia Internacional, 2024</a>)</p>
 
 <p>Una definición matemática de la corrupción debe considerar dos ideas centrales: el <b>poder</b> como una red de relaciones, y la <b>ganancia</b> como resultado de decisiones estratégicas basadas en riesgos y beneficios. <br><br>
 
@@ -91,19 +92,16 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <h3 id="modelando-corrupcion">Modelando la corrupción</h3>
 
-Existieron trabajos previos que buscaron modelar la corrupción, sin embargo, estos trabajos tenían limitaciones. Por ejemplo, los modelos basados en teoría de redes no consideraban las decisiones individuales de los actores, mientras que los modelos basados en teoría de juegos no consideraban la estructura de la red. 
+<p>Para mi trabajo me basé principalmente en tres artículos relevantes, cada uno de ellos aportaba un enfoque distinto para comprender la corrupción.</p>
 
 <h4 id="enfoque-redes">Enfoque mediante teoría de redes</h4>
 
-<p>Las personas no interactúan en el vacío. Estamos conectados en redes (familias, oficinas gubernamentales, empresas). Integrando dinámicas de redes, el modelo estudia cómo una actitud corrupta se "contagia" de un nodo (persona) a otro, de manera muy similar a cómo se propaga un virus en una pandemia.</p>
-
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Red española.png" alt="Red española">
+<figure id="red-espanola">
+<img src="/assets/elartedeconectarlospuntos/Red española.png" alt="Red española" style="width: 70%; height: auto; display: block; margin: 0 auto;">
 <figcaption>Figura 1: Red corrupta española (Martins et al., 2022).</figcaption>
 </figure>
 
-<p>Las redes corruptas (como las observadas en escándalos reales en Brasil, España y México) comparten características matemáticas precisas: tienen comunidades muy unidas y pocos nodos que concentran mucho poder.</p>
-
+<p>(<a href="#martins_et_al">Martins et al., 2022</a>) recrearon redes asociadas a escándalos de corrupción en España y Brasil (<a href="#red-espanola">figura 1</a>). Identificaron las propiedades comunes entre ellas. Y posteriormente desarrollaron un modelo que replicara las propiedades de las redes estudiadas.</p>
 
  <div hidden class="content-es">
      <!-- Mermaid diagram -->
@@ -123,20 +121,7 @@ Existieron trabajos previos que buscaron modelar la corrupción, sin embargo, es
     <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Martins et al. </figcaption>
  </div>
 
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" alt="Artículo Martins et al" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7;" aria-label="Artículo Martins et al"></object>
-</figure>
-
-<cite> Martins, A., da Cunha, B., Hanley, Q., Gonçalves, S., Perc, M., & Ribeiro, H. (2022). Universality of political corruption networks. Nature Scientific Reports. <br>
-DOI: <a href="https://doi.org/10.1038/s41598-022-10909-2" target="_blank">https://doi.org/10.1038/s41598-022-10909-2</a>
-</cite> 
-<br><br>
-<button><a href="assets/elartedeconectarlospuntos/Universality of corruption - Martins et al.pdf" target="_blank">📄 Martins et al., 2022 </a></button> 
-<br>
 <h4 id="enfoque-juegos">Enfoque mediante teoría de juegos</h4>
-
-<p>Imagina la sociedad como un gran juego donde las estrategias de los jugadores (ser honesto o ser corrupto) evolucionan con el tiempo. Utilizando modelos previos, como el de (Ubeda & Dueñez-Guzman, 2010), podemos analizar matemáticamente los "pagos" o recompensas que obtienen las personas al tomar una decisión. Si el sistema recompensa la corrupción y penaliza la honestidad, la estrategia corrupta "sobrevive" y prospera.</p>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" alt="Juego de la corrupción" style="display: none;">
@@ -144,23 +129,25 @@ DOI: <a href="https://doi.org/10.1038/s41598-022-10909-2" target="_blank">https:
 <figcaption>Figura 1: Juego de la corrupción</figcaption>
 </figure>
 
+<p>(<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) formularon el <i>juego de la corrupción</i> (<a href="#juego-de-la-corrupcion">figura 1</a>), una extensión del dilema del prisionero. La idea central fue permitir las asimetrías de poder entre personas.</p>
+
+<h4 id="avispa">El avispero <br> <i>Interpretación del juego de la corrupción</i></h4>
 
 <figure>
-<img src="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" alt="Artículo Ubeda et al" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Artículo Ubeda et al"></object>
+<img src="/assets/elartedeconectarlospuntos/Avispa.svg" alt="Avispa" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Avispa.svg" style="width: 20%; height: auto; display: block; margin: 0 auto;" aria-label="Avispa"></object>
 </figure>
-<cite>
-Ubeda, F., & Dueñez-Guzman, E. (2010). Power and Corruption. Evolution, 1127-1139. <br>
-DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">https://doi.org/10.1111/j.1558-5646.2010.01194.x</a>
-</cite>
-<br><br>
-<button><a href="assets/elartedeconectarlospuntos/Power and Corruption Úbeda & Duéñez.pdf" target="_blank">📄 Úbeda & Duéñez-Guzman, 2010 </a></button> 
-<br>
+
+<p>En una colmena de avispas el contrato social se conforma entre la avispa reina, la única delegada para poner huevos y las obreras <b>(C)</b>, que trabajan para criar a sus hermanas. Sin embargo, existe una tentación biológica: una obrera puede romper el contrato <b>(D)</b> y poner sus propios huevos no fertilizados para pasar sus genes, obteniendo un beneficio genético <b>(t)</b> a costa de las leyes de la colonia. Para evitar este caos, existen obreras con el rol de policía. Si una policía es honesta <b>(H)</b>, gastará energía y tiempo <b>(-c)</b> en inspeccionar las celdas y comerse los huevos ilegales de sus compañeras egoístas, aplicando un castigo <b>(-p)</b> al destruir su descendencia.</p>
+
+<p>El problema surge cuando la avispa policía es corrupta <b>(K)</b>, esto significa que tiene el poder de vigilar, pero decide no hacerlo para ahorrarse el costo energético <b>(c)</b> o, peor aún, usa su posición de poder para poner sus propios huevos impunemente <b>(t)</b>. Si las obreras comunes notan que las policías no están vigilando (es decir, que el poder no cooperativo es la estrategia dominante), se desata el caos: todas empiezan a poner huevos de manera egoísta en lugar de trabajar, y la productividad de la colmena colapsa. </p>
+
+<p>El juego demuestra que, al igual que en las sociedades humanas, si el costo de vigilar es muy alto o el castigo es ineficaz, la colmena evoluciona hacia un estado de anarquía.</p>
+
+
 
 
 <h4 id="enfoque-mixto">Enfoque mixto: teoría de redes y juegos</h4>
-
-<p>Se uso una dinámica de actualización de estrategias en una red social. En cada paso, un individuo elige a uno de sus vecinos al azar y copia su estrategia si esta le ofrece un mayor beneficio. Este proceso se repite varias veces, permitiendo que las estrategias se propaguen por la red y observando cómo evoluciona el sistema a lo largo del tiempo.</p>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" alt="Algoritmo de Scàta et al" style="display: none;">
@@ -168,10 +155,12 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <figcaption>Figura 1: Algoritmo de Scàta et al</figcaption>
 </figure>
 
- <p>El algoritmo que diseñaran los investigadores fue el siguiente:</p>
+<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) se exploró la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos y las redes libres de escala.</p>
+
  
+ <div hidden class="content-es">
  {% include diagramaDeFlujo.html %}
- <div class="content-es">
+ <p>El algoritmo que diseñaran los investigadores fue el siguiente:</p>
 <!-- Mermaid diagram -->
 <figure class="mermaid diagramaDeFlujo">
     flowchart TD
@@ -206,19 +195,6 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 </figure>
 <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Scatà, M. et al. </figcaption>
 </div>
-
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" alt="Artículo Scatà et al" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Artículo Scatà et al"></object>
-</figure>
-
-<cite>
-Scatà, M., Di Stefano, A., La Corte, A., Liò, P., Catania, E., Guardo, E., & Pagano, S. (2016). Combining evolutionary game theory and network theory to analyze human cooperation patterns. Chaos, Solitons and Fractals, 17–24. <br>
-DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https://doi.org/10.1016/j.chaos.2016.04.018</a>
-</cite>
-<br><br>
-<button><a href="assets/elartedeconectarlospuntos/Combining evolutionary game theory and network theory - Scata et al.pdf" target="_blank">📄 Scatà et al., 2016 </a></button> 
-<br>
 
 <h4 id="nuevo-modelo">Desarrollo de un nuevo modelo</h4>
 
@@ -273,13 +249,103 @@ Equilibrio inestable, impunidad y vulnerabilidad sistémica. <br>
 <figcaption>Figura 1: Red modelo para la tesis</figcaption>
 </figure>
 
-<h3 id="como-atacamos-la-red">El descubrimiento contraintuitivo: ¿Cómo atacamos la red?</h3>
+<h3>Poniendo a prueba el modelo</h3>
+
+<p>Al simular el comportamiento de tres sociedades distintas, se pudo observar el comportamiento de la red en diferentes contextos:</p>
+
+<h4>La robustez de las sociedades</h4>
+
+<p>La robustez de las sociedades se puede medir por la capacidad de la red para mantener una estrategia cooperativa a pesar de la inclusión de nodos no cooperativos (D) y (K). Recrear el comportamiento social descrito en la literatura sobre el tema.</p>
+
+
+<h3 id="como-atacamos-la-red">El descubrimiento contraintuitivo: <br> ¿Cómo atacar una red corrupta?</h3>
 
 <p>Uno de los hallazgos más reveladores de la simulación tiene que ver con cómo desmantelar estas redes. La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, nuestro modelo demostró que <b>un ataque centralizado tiende a fallar</b>. Al eliminar un nodo central, los nodos de jerarquía media reorganizan rápidamente sus conexiones y la red sobrevive.</p>
 
 <p>¿La solución matemática? <b>Una disrupción aleatoria</b>. </p>
 
 <p>La eliminación aleatoria de nodos degrada rápidamente la conectividad global de la red, fracturándola en pequeñas comunidades aisladas. En la vida real, esto se traduce en políticas como la rotación obligatoria y aleatoria de personal en puestos de alto riesgo (aduanas, compras públicas, licencias). Al rotar al personal, se impide la formación de lazos de confianza criminal a largo plazo.</p>
+
+<h2 id="conclusion">Conclusión</h2>
+
+<p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
+
+<h3 id="trabajo-futuro">Trabajo futuro</h3>
+
+<p>El trabajo futuro se centrará en la aplicación de este modelo a casos reales de corrupción en México, con el objetivo de identificar patrones y vulnerabilidades que puedan ser utilizados para diseñar políticas públicas más efectivas.</p>
+
+<br>
+<hr>
+<br>
+
+<h2 id="bibliografia">Bibliografía</h2>
+
+<h3 id="articulos">Artículos principales</h3>
+
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" alt="Artículo Martins et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7;" aria-label="Artículo Martins et al"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Universality of corruption - Martins et al.pdf" target="_blank">📄 Martins et al., 2022 </a>
+</button> 
+<br>
+<p id="martins_et_al">
+Martins, A., da Cunha, B., Hanley, Q., Gonçalves, S., Perc, M., & Ribeiro, H. (2022). Universality of political corruption networks. <i>Nature Scientific Reports</i>. <br>
+DOI: <a href="https://doi.org/10.1038/s41598-022-10909-2" target="_blank">https://doi.org/10.1038/s41598-022-10909-2</a>
+</p> 
+<br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" alt="Artículo Ubeda et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Artículo Ubeda et al"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Power and Corruption Úbeda & Duéñez.pdf" target="_blank">📄 Úbeda & Duéñez-Guzman, 2010 </a></button> 
+<br>
+<p id="ubeda_et_al">
+Ubeda, F., & Dueñez-Guzman, E. (2010). Power and Corruption. <i>Evolution</i>, 1127-1139. <br>
+DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">https://doi.org/10.1111/j.1558-5646.2010.01194.x</a>
+</p>
+<br>
+
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" alt="Artículo Scatà et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Artículo Scatà et al"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Combining evolutionary game theory and network theory - Scata et al.pdf" target="_blank">📄 Scatà et al., 2016 </a></button> 
+<br>
+<p id="scata_et_al">
+Scatà, M., Di Stefano, A., La Corte, A., Liò, P., Catania, E., Guardo, E., & Pagano, S. (2016). Combining evolutionary game theory and network theory to analyze human cooperation patterns. <i>Chaos, Solitons and Fractals</i>, 17–24. <br>
+DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https://doi.org/10.1016/j.chaos.2016.04.018</a>
+</p>
+<br>
+
+<h3>Artículos adicionales</h3>
+<br>
+<ul>
+    <li>Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks. Applied Network Science. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
+
+</ul>
+
+<br>
+<br>
+
+<hr>
+
+<br>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/MCM.svg" alt="Maria del Carmen Morales" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/MCM.svg" style="width: 80%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Maria del Carmen Morales"></object>
+</figure>
+
+<h4 id="en-memoria-de">En memoria de <b>Maria del Carmen Morales</b> <br> y de todas las madres buscadoras</h4>
+
+<p style="width: 90%; margin: 0 auto;">Asesinada junto a uno de sus hijos la noche del 23 de abril en el municipio de Tlajomulco de Zúñiga, Jalisco. Integrante del colectivo Guerreros Buscadores quienes revelaron lo ocurrido en el rancho Izaguirre en Teuchitlán, Jalisco. Donde integrantes del Cártel Jalisco Nueva Generación (CJNG), entrenaban, asesinaban y desaparecían personas.
+</p>
 
 
 <div class="content-en">

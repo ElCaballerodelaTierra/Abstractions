@@ -101,6 +101,9 @@ a {
     text-decoration: underline;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    text-decoration-color: #494242;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 a:hover {
