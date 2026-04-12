@@ -74,9 +74,9 @@ content-en: |
 <br>
 <h2 id="podemos-predecir">¿Podemos predecir y detener la corrupción?</h2>
 
-<p>La humanidad encontró un nuevo aliado en la lucha contra la corrupción: <b>las matemáticas</b>. En los últimos años gracias a la popularización de los ordenadores personales los modelos matemáticos han emergido como herramientas en la lucha contra la corrupción. En especial la modelación mediante teoría de redes y teoría de juegos.</p>
+<p>Se han propuesto diferentes políticas anticorrupción a lo largo del mundo. Los países escandinavos, como Dinamarca, han optado por la transparencia financiera y la rendición de cuentas (<a href="#chene_2011">Chêne, 2011</a>), otros como en el caso de Singapur han optado por estrategias basadas en castigos severos a los individuos (<a href="#gossain_2019">Gossaín, 2019</a>). Sin embargo, estas estrategias no siempre son replicables en paises con diferentes contextos sociales, culturales y políticos. Para entender por qué persiste la corrupción, es necesario comprender cómo interactúan las personas y qué incentivos tienen para corromperse o mantenerse honestas.</p>
 
-<p>Tradicionalmente las políticas anticorrupción se han centrado en castigar individuos. Sin embargo, esta estrategia ha sido insuficiente. Para entender por qué persiste, es necesario comprender cómo interactuaban las personas y qué incentivos tienen para corromperse o mantenerse honestas.</p>
+<p>Recientemente, la humanidad encontró un nuevo aliado en la lucha contra la corrupción: <b>las matemáticas</b>. En los últimos años gracias a la popularización de los ordenadores personales los modelos matemáticos emergieron como herramientas en la lucha contra la corrupción. En especial la modelación mediante teoría de redes y teoría de juegos.</p>
 
 
 <h2 id="que-es-corrupcion">¿Que es la corrupción?</h2>
@@ -88,11 +88,11 @@ content-en: |
 
 <p>Una definición matemática de la corrupción debe considerar dos ideas centrales: el <b>poder</b> como una red de relaciones, y la <b>ganancia</b> como resultado de decisiones estratégicas basadas en riesgos y beneficios. <br><br>
 
-Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, que analiza la estructura y los actores dentro de sistemas corruptos, y la teoría de juegos, que estudia las decisiones estratégicas de los individuos. Aunque cada enfoque tiene limitaciones, su combinación permite una representación más completa del fenómeno.</p>
+Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, que analiza la estructura y los actores dentro de sistemas corruptos, y la teoría de juegos, que estudia las decisiones estratégicas de los individuos. Aunque cada enfoque tiene sus limitaciones, al combinarlos se obtiene una representación más completa del fenómeno.</p>
 
 <h3 id="modelando-corrupcion">Modelando la corrupción</h3>
 
-<p>Para mi trabajo me basé principalmente en tres artículos relevantes, cada uno de ellos aportaba un enfoque distinto para comprender la corrupción.</p>
+<p>El trabajo se basó principalmente en tres artículos, cada uno de ellos aportó un enfoque distinto.</p>
 
 <h4 id="enfoque-redes">Enfoque mediante teoría de redes</h4>
 
@@ -101,7 +101,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Red corrupta española (Martins et al., 2022).</figcaption>
 </figure>
 
-<p>(<a href="#martins_et_al">Martins et al., 2022</a>) recrearon redes asociadas a escándalos de corrupción en España y Brasil (<a href="#red-espanola">figura 1</a>). Identificaron las propiedades comunes entre ellas. Y posteriormente desarrollaron un modelo que replicara las propiedades de las redes estudiadas.</p>
+<p>(<a href="#martins_et_al">Martins et al., 2022</a>) documentaron y recrearon las redes asociadas a escándalos de corrupción en España y Brasil (<a href="#red-espanola">figura 1</a>). Identificaron las propiedades comunes entre ellas y posteriormente desarrollaron un algoritmo que replicaba las propiedades de las redes corruptas.</p>
 
  <div hidden class="content-es">
      <!-- Mermaid diagram -->
@@ -131,7 +131,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <p>(<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) formularon el <i>juego de la corrupción</i> (<a href="#juego-de-la-corrupcion">figura 1</a>), una extensión del dilema del prisionero. La idea central fue permitir las asimetrías de poder entre personas.</p>
 
-<h4 id="avispa">El avispero <br> <i>Interpretación del juego de la corrupción</i></h4>
+<h4 id="avispa">El avispero <br> <i>Inspiración original del juego de la corrupción</i></h4>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Avispa.svg" alt="Avispa" style="display: none;">
@@ -155,7 +155,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Algoritmo de Scàta et al</figcaption>
 </figure>
 
-<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) se exploró la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos y las redes libres de escala.</p>
+<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) se exploró la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos (<i>el dilema del prisionero</i>) y las redes libres de escala. En su artículo buscaron comprender cómo la inserción de una masa mínima de personas cooperadoras influye en una red de personas no cooperadoras.</p>
 
  
  <div hidden class="content-es">
@@ -196,52 +196,61 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Scatà, M. et al. </figcaption>
 </div>
 
-<h4 id="nuevo-modelo">Desarrollo de un nuevo modelo</h4>
+<h3 id="nuevo-modelo">Desarrollo de un nuevo modelo</h3>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" alt="Hipótesis del trabajo" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Hipótesis del trabajo"></object>
-<figcaption>Figura 1: Hipótesis del trabajo</figcaption>
+<figcaption>Figura 1: Hipótesis del trabajo, si reemplazamos el dilema del prisionero por el juego de la corrupción, ¿será posible crear redes corruptas al variarar los parámetros de la matriz de pagos del juego?</figcaption>
 </figure>
 
-<p>Al fusionar ambos mundos (Scatá et al., 2016), se desarrolló un modelo computacional para simular el comportamiento de tres sociedades distintas:</p>
+<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las presentadas por (Martins et al, 2022) si se fusionara el modelo de (Scatá et al., 2016) con el juego de la corrupción (Ubeda & Dueñez-Guzman, 2010)?</p>
+
+<p>Para ello, se desarrolló un modelo computacional para simular el comportamiento de tres sociedades distintas.</p>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Dinamarca</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" alt="Matriz de pagos de Dinamarca" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de Dinamarca"></object>
+<figcaption>Figura 1: Matriz de Dinamarca.<br>Se caracteriza por una alta confianza social y transparencia.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Singapur</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" alt="Matriz de pagos de Singapur" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de Singapur"></object>
+<figcaption>Figura 1: Matriz de Singapur.<br>Se caracteriza por leyes estrictas y castigos severos.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>México</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" alt="Matriz de pagos de México" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de México"></object>
+<figcaption>Figura 1: Matriz de México.<br>Se caracteriza por un equilibrio inestable, donde puede emerger la corrupción.</figcaption>
+</figure>
+</div>
+</div>
+
+<p>La matriz de pagos de cada país se obtuvo del índice de prosperidad de Legatum (<a href="#legatum_institute_foundation">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países.</p>
 
 <br>
+
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Índice de prosperidad de Legatum.svg" alt="Índice de prosperidad de Legatum" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Índice de prosperidad de Legatum.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Índice de prosperidad de Legatum"></object>
-<figcaption>Figura 1: Índice de prosperidad de Legatum</figcaption>
+<figcaption>Figura 1: Índice de prosperidad de Legatum del 2023</figcaption>
 </figure>
+
 <br>
-
-<h4>Dinamarca</h4>
-<p><img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;"> <br>
-Alta confianza social y transparencia. <br>
-
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" alt="Matriz de pagos de Dinamarca" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" style="width: 50%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de Dinamarca"></object>
-<figcaption>Figura 1: Matriz de pagos de Dinamarca</figcaption>
-</figure>
-
-<h4>Singapur</h4>
-<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;"> <br>
-Leyes estrictas y castigos severos. <br>
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" alt="Matriz de pagos de Singapur" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" style="width: 50%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de Singapur"></object>
-<figcaption>Figura 1: Matriz de pagos de Singapur</figcaption>
-</figure>
-
-<h4>México</h4>
-<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;"> <br>
-Equilibrio inestable, impunidad y vulnerabilidad sistémica. <br>
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" alt="Matriz de pagos de México" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" style="width: 50%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de México"></object>
-<figcaption>Figura 1: Matriz de pagos de México</figcaption>
-</figure>
-
+<p>Se tomo como base una red exponencial para simular la interacción entre las personas. </p>
+<br>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Red modelo para la tesis.svg" alt="Red modelo para la tesis" style="display: none;">
@@ -251,7 +260,7 @@ Equilibrio inestable, impunidad y vulnerabilidad sistémica. <br>
 
 <h3>Poniendo a prueba el modelo</h3>
 
-<p>Al simular el comportamiento de tres sociedades distintas, se pudo observar el comportamiento de la red en diferentes contextos:</p>
+<p>Como primera prueba, era necesario probar el modelo apra que replicara la realidad, en este caso ¿que pasaba si se infectaba la red de una sociedad cooperadora con una masa crítica de nodos corruptos?</p>
 
 <h4>La robustez de las sociedades</h4>
 
@@ -327,6 +336,24 @@ DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https
 <br>
 <ul>
     <li>Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks. Applied Network Science. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
+
+</ul>
+
+<h3>Informes</h3>
+
+<ul>
+    <li id="legatum_institute_foundation">Legatum Institute Foundation. (2023). <i>The 2023 Legatum Prosperity Index</i>.
+    <br>Obtenido de <a href="https://index.prosperity.com/about/resources" target="_blank">https://index.prosperity.com/about/resources</a></li>
+</ul>
+
+<h3>Articulos periodisticos</h3>
+
+<ul>
+    <li id="chene_2011">Chêne, M. (2011). What makes New Zealand, Denmark, Finland, Sweden and others 'cleaner' than most countries? <i>Transparency International</i> <a href="https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries" target="_blank">https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries</a></li>
+
+    <li id="gossain_2019"> 
+        Gossaín, J. (Julio de 2019). ¿Quiere saber cómo fue que acabaron con la corrupción en Singapur? <i>El Tiempo</i>. <a href="https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920" target="_blank">https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920</a>
+    </li>
 
 </ul>
 

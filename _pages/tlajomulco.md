@@ -79,7 +79,7 @@ content-en: |
 
  <h1>Tlajomulco</h1>
 
-<p class="content-es">El pequeño pueblo donde crecí ha cambiado drásticamente en los últimos años.</p>
+<p class="content-es">El pequeño pueblo donde crecí ha cambiado en los últimos años.</p>
 
 <div style="display: none; flex-direction: column; gap: 15px;">
 
@@ -89,7 +89,7 @@ content-en: |
 
 </div>
 
-<p class="content-en">The small town where I grew up has changed drastically in the last years.</p>
+<p class="content-en">The small town where I grew up has changed in the last years.</p>
 
 <!-- <h2>Un día típico</h2>
 
