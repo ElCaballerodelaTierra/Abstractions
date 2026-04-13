@@ -24,7 +24,11 @@
 
     {% if page.imagenPortada and page.frase-es == null %}
     <figure class="portada">
-        <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada-es }}>
+        {% if page.imagenPortada contains '.svg' %}
+        <object type="image/svg+xml" data="{{ page.imagenPortada }}" aria-label="{{ page.descripcionImagenPortada-es }}"></object>
+        {% else %}
+        <img src="{{ page.imagenPortada }}" alt="{{ page.descripcionImagenPortada-es }}">
+        {% endif %}
         <!-- Titulos en español -->
         <div class="portada-titulos content-es">
             <div class="portada-titulo">{{page.titulo-es}}</div>
@@ -79,7 +83,11 @@
     <section class="mediaPortada">
         {% if page.imagenPortada %}
         <figure>
-            <img src={{ page.imagenPortada }} alt={{ page.descripcionImagenPortada-es }} >
+            {% if page.imagenPortada contains '.svg' %}
+            <object type="image/svg+xml" data="{{ page.imagenPortada }}" aria-label="{{ page.descripcionImagenPortada-es }}"></object>
+            {% else %}
+            <img src="{{ page.imagenPortada }}" alt="{{ page.descripcionImagenPortada-es }}">
+            {% endif %}
         </figure>
         {% endif %}
         <div class="texto content-es">

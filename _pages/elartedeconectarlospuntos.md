@@ -6,9 +6,10 @@ layout: default
 mediaPortada: true
 titulo-en-portada: false
 
+# imagenPortada: /assets/elartedeconectarlospuntos/red-dinamica.svg
 imagenPortada: /assets/redes/Red.jpg
-descripcionImagenPortada-es: "Ilustración de una red de conexiones entre personas"
-descripcionImagenPortada-en: "Illustration of a network of connections between people"
+#descripcionImagenPortada-es: "Ilustración de una red de conexiones entre personas"
+#descripcionImagenPortada-en: "Illustration of a network of connections between people"
 
 titulo-es: El arte de conectar los puntos
 subtitulo-es: 
@@ -21,6 +22,9 @@ content-es: |
 
     <i> Resumen de la tesis: "Comprendiendo y atacando la corrupción, un análisis mediante teoría de redes y teoría de juegos a los sistemas sociales y su evolución". </i>
     <br>
+
+    <img src="/assets/elartedeconectarlospuntos/red-dinamica.svg" alt="Red dinámica" style="display: none;">
+    <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/red-dinamica.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Red dinámica"></object>
 
     # Resumen
 
@@ -49,6 +53,7 @@ content-en: |
 <div class="content-es">
 <br>
 <hr>
+
 <br>
 <h2>Índice</h2>
 <ul style="padding-left: 20px;">
@@ -70,6 +75,8 @@ content-en: |
   <li><a href="#bibliografia">Bibliografía</a></li>
 </ul>
 <br>
+
+
 <hr>
 <br>
 <h2 id="podemos-predecir">¿Podemos predecir y detener la corrupción?</h2>
@@ -101,7 +108,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Red corrupta española (Martins et al., 2022).</figcaption>
 </figure>
 
-<p>(<a href="#martins_et_al">Martins et al., 2022</a>) documentaron y recrearon las redes asociadas a escándalos de corrupción en España y Brasil (<a href="#red-espanola">figura 1</a>). Identificaron las propiedades comunes entre ellas y posteriormente desarrollaron un algoritmo que replicaba las propiedades de las redes corruptas.</p>
+<p>(<a href="#martins_et_al">Martins et al., 2022</a>) documentaron y recrearon las redes asociadas a escándalos de corrupción en España y Brasil (<a href="#red-espanola">Figura 1</a>). Identificaron las propiedades comunes entre ellas y posteriormente desarrollaron un algoritmo que replicaba las propiedades de las redes corruptas.</p>
 
  <div hidden class="content-es">
      <!-- Mermaid diagram -->
@@ -152,14 +159,16 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Algoritmo de Scàta et al</figcaption>
 </figure>
 
-<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) exploraron la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos (<i>el dilema del prisionero</i>) y las redes libres de escala. En su artículo buscaron comprender cómo la inserción de una masa mínima de personas cooperadoras influye en una red de personas no cooperadoras.</p>
+<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) exploraron la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos (<i>el dilema del prisionero</i>) y las redes libres de escala.</p>
 
 
 <figure id="masa-critica">
 <img src="/assets/elartedeconectarlospuntos/Masa crítica en diferentes configuraciones iniciales.png" alt="Masa crítica en diferentes configuraciones iniciales">
 <figcaption>Figura 1: Masa crítica en distintas configuraciones iniciales: en la periferia, aleatoriamente y en el centro (<a href="#scata_et_al">Scatà et al., 2016</a>).</figcaption>
 </figure>
- 
+
+<p>En su artículo buscaron comprender cómo la inserción de una masa mínima de personas cooperadoras (<a href="#masa-critica">Figura 1</a>) influye en una red de personas no cooperadoras.</p>
+
  <div hidden class="content-es">
  {% include diagramaDeFlujo.html %}
  <p>El algoritmo que diseñaran los investigadores fue el siguiente:</p>
@@ -354,7 +363,7 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <h3>Artículos adicionales</h3>
 <br>
 <ul>
-    <li>Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks. Applied Network Science. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
+    <li>Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks.  <i>Applied Network Science</i>. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
 
 </ul>
 

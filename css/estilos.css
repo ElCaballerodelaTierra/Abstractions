@@ -219,7 +219,8 @@ figure.portada {
     width: 100%;
 }
 
-figure.portada img {
+figure.portada img,
+figure.portada object {
     height: 100vh;
     height: 100svh; /* Solves mobile Safari viewport height bug */
     /* 100% de la altura del viewport */
@@ -251,7 +252,8 @@ section.mediaPortada figure {
     overflow: hidden;
 }
 
-section.mediaPortada figure img {
+section.mediaPortada figure img,
+section.mediaPortada figure object {
     height: 100%;
     width: 100%;
     object-fit: cover;
