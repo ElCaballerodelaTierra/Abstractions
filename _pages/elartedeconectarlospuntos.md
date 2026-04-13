@@ -277,11 +277,70 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <p>Primero se verificó que cada una de las sociedades se comportara acorde a la literatura, es decir, que Dinamarca y Singapur alcanzaran un equilibrio cooperativo, mientras que México tendiera a un estado de corrupción.
 <br>
+
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Dinamarca</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción - Dinamarca.svg" alt="Juego de la corrupción - Dinamarca" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción - Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Juego de la corrupción - Dinamarca"></object>
+<figcaption>Figura 1: En pocas iteraciones la sociedad danesa llega a un equilibrio estable donde la mitad de la población corresponde a civiles cooperadores (C) y la otra mitad al poder honrado (H).</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Singapur</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción - Singapur.svg" alt="Juego de la corrupción - Singapur" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción - Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Juego de la corrupción - Singapur"></object>
+<figcaption>Figura 1: Las leyes estrictas y su fácil aplicación generan el equilibrio estable cooperativo de civiles cooperadores (C) y poder honrado (H) en la sociedad de Singapur.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>México</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción - México.svg" alt="Juego de la corrupción - México" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción - México.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Juego de la corrupción - México"></object>
+<figcaption>Figura 1: Se puede notar el equilibrio inestable de la población, a partir de la novena iteración la población cambia a una población mixta de civiles cooperadores (C), poder honrado (H) y corrupto (K), el sistema converge al equilibrio estable (x) analizado en el artículo 
+de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
+</figcaption>
+</figure>
+</div>
+</div>
+
+
+<br>
 Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 1</a>).</p>
 
 <h4>La robustez de las sociedades</h4>
 
 <p>La robustez de las sociedades se puede medir por la capacidad de la red para mantener una estrategia cooperativa a pesar de la inclusión de nodos no cooperativos (D) y (K). Recrear el comportamiento social descrito en la literatura sobre el tema.</p>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Evolución de la red de Dinamarca.gif" alt="Evolución de la red de Dinamarca" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de la red de Dinamarca.gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolución de la red de Dinamarca"></object>
+<figcaption>Figura 1: Evolución de la red de Dinamarca al introducir una masa crítica del 20% de nodos corruptos (color oscuro) en la periferia de la red.</figcaption>
+</figure>
+
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Evolución de Dinamarca con 20,25,30 M.C. - (K).gif" alt="Evolución de Dinamarca con 20,25,30 M.C. - (K)" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de Dinamarca con 20,25,30 M.C. - (K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolución de Dinamarca con 20,25,30 M.C. - (K)"></object>
+<figcaption>Figura 1: Evolución de Dinamarca con 20%, 25% y 30% de masa crítica de nodos corruptos (K).</figcaption>
+</figure>
+
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" alt="Dinamarca 95MC(K)3CI" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Dinamarca 95MC(K)3CI"></object>
+<figcaption>Figura 1: Evolución de Dinamarca con 95% de masa crítica de nodos corruptos (K).</figcaption>
+</figure>
 
 
 <h3 id="como-atacamos-la-red">El descubrimiento contraintuitivo: <br> ¿Cómo atacar una red corrupta?</h3>
@@ -308,7 +367,7 @@ Porteriormente se experimentó con la inclusión de una masa crítica de persona
 
 <h3 id="trabajo-futuro">Trabajo futuro</h3>
 
-<p>La mejor manera de comprobar si el modelo actual necesita ajustes es compararlo con casos reales de corrupción, para así identificar patrones que puedan ser utilizados para diseñar políticas públicas más efectivas.</p>
+<p>La mejor manera de comprobar si el modelo actual necesita ajustes es compararlo con casos reales de corrupción, así identificar patrones que puedan ser utilizados para diseñar políticas públicas más efectivas.</p>
 
 <br>
 <hr>
