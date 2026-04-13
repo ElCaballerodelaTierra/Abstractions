@@ -144,9 +144,6 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <p>El juego demuestra que, al igual que en las sociedades humanas, si el costo de vigilar es muy alto o el castigo es ineficaz, la colmena evoluciona hacia un estado de anarquía.</p>
 
-
-
-
 <h4 id="enfoque-mixto">Enfoque mixto: teoría de redes y juegos</h4>
 
 <figure>
@@ -155,8 +152,13 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Algoritmo de Scàta et al</figcaption>
 </figure>
 
-<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) se exploró la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos (<i>el dilema del prisionero</i>) y las redes libres de escala. En su artículo buscaron comprender cómo la inserción de una masa mínima de personas cooperadoras influye en una red de personas no cooperadoras.</p>
+<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) exploraron la evolución de la cooperación humana por medio de un modelo que combinó la teoría de juegos (<i>el dilema del prisionero</i>) y las redes libres de escala. En su artículo buscaron comprender cómo la inserción de una masa mínima de personas cooperadoras influye en una red de personas no cooperadoras.</p>
 
+
+<figure id="masa-critica">
+<img src="/assets/elartedeconectarlospuntos/Masa crítica en diferentes configuraciones iniciales.png" alt="Masa crítica en diferentes configuraciones iniciales">
+<figcaption>Figura 1: Masa crítica en distintas configuraciones iniciales: en la periferia, aleatoriamente y en el centro (<a href="#scata_et_al">Scatà et al., 2016</a>).</figcaption>
+</figure>
  
  <div hidden class="content-es">
  {% include diagramaDeFlujo.html %}
@@ -196,6 +198,10 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Diagrama de flujo que representa las partes más importantes del algoritmo propuesto por Scatà, M. et al. </figcaption>
 </div>
 
+<br>
+<hr>
+<br>
+
 <h3 id="nuevo-modelo">Desarrollo de un nuevo modelo</h3>
 
 <figure>
@@ -204,9 +210,9 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Hipótesis del trabajo, si reemplazamos el dilema del prisionero por el juego de la corrupción, ¿será posible crear redes corruptas al variarar los parámetros de la matriz de pagos del juego?</figcaption>
 </figure>
 
-<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las presentadas por (Martins et al, 2022) si se fusionara el modelo de (Scatá et al., 2016) con el juego de la corrupción (Ubeda & Dueñez-Guzman, 2010)?</p>
+<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las presentadas por (Martins et al, 2022) si se fusionara el modelo de (Scatá et al., 2016) con el juego de la corrupción de (Ubeda & Dueñez-Guzman, 2010)?</p>
 
-<p>Para ello, se desarrolló un modelo computacional para simular el comportamiento de tres sociedades distintas.</p>
+<p>Para ello, se propuso simular el comportamiento de tres sociedades distintas por medio del juego de la corrupción, cada una con una matriz de pagos distinta.</p>
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
 <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
@@ -215,7 +221,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" alt="Matriz de pagos de Dinamarca" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de Dinamarca"></object>
-<figcaption>Figura 1: Matriz de Dinamarca.<br>Se caracteriza por una alta confianza social y transparencia.</figcaption>
+<figcaption>Figura 1: Matriz de Dinamarca.<br>Se caracteriza por una alta confianza social y transparencia<br>(<a href="#chene_2011">Chêne, 2011</a>).</figcaption>
 </figure>
 </div>
 <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
@@ -224,7 +230,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" alt="Matriz de pagos de Singapur" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de Singapur"></object>
-<figcaption>Figura 1: Matriz de Singapur.<br>Se caracteriza por leyes estrictas y castigos severos.</figcaption>
+<figcaption>Figura 1: Matriz de Singapur.<br>Se caracteriza por leyes estrictas y castigos severos<br>(<a href="#gossain_2019">Gossaín, 2019</a>).</figcaption>
 </figure>
 </div>
 <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
@@ -233,12 +239,12 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" alt="Matriz de pagos de México" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Matriz de pagos de México"></object>
-<figcaption>Figura 1: Matriz de México.<br>Se caracteriza por un equilibrio inestable, donde puede emerger la corrupción.</figcaption>
+<figcaption>Figura 1: Matriz de México.<br>Se caracteriza por un equilibrio inestable, donde puede emerger la corrupción <br>(<a href="#casar_2023">Casar & Cejudo, 2023</a>).</figcaption>
 </figure>
 </div>
 </div>
 
-<p>La matriz de pagos de cada país se obtuvo del índice de prosperidad de Legatum (<a href="#legatum_institute_foundation">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países.</p>
+<p>La matriz de pagos de cada país se propuso basándose en el índice de prosperidad de Legatum (<a href="#legatum_institute_foundation">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros.</p>
 
 <br>
 
@@ -249,7 +255,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 </figure>
 
 <br>
-<p>Se tomo como base una red exponencial para simular la interacción entre las personas. </p>
+<p>Se tomo como base una red de tipo Barabasí-Albert para modelar las interacciones entre las personas, acorde a (<a href="#scata_2016">Scatà et al. 2016</a>) este tipo de red es la que mejor se asemeja a una red social real. </p>
 <br>
 
 <figure>
@@ -260,7 +266,9 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <h3>Poniendo a prueba el modelo</h3>
 
-<p>Como primera prueba, era necesario probar el modelo apra que replicara la realidad, en este caso ¿que pasaba si se infectaba la red de una sociedad cooperadora con una masa crítica de nodos corruptos?</p>
+<p>Primero se verificó que cada una de las sociedades se comportara acorde a la literatura, es decir, que Dinamarca y Singapur alcanzaran un equilibrio cooperativo, mientras que México tendiera a un estado de corrupción.
+<br>
+Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 1</a>).</p>
 
 <h4>La robustez de las sociedades</h4>
 
@@ -279,9 +287,19 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
 
+<h3>Limitaciones del trabajo</h3>
+
+<p>El modelo actual tiene varias limitaciones que deben ser consideradas:</p>
+
+<ul>
+    <li><b>Muestra poco representativa</b> <br> <p>Las conclusiones se basan únicamente en una red Barabasí-Albert, es necesario realizar un análisis más amplio con otras redes con las mismas propiedades.</p></li>
+    <li><b>Parámetros  arbitrarios en las matrices de pagos</b> <br> <p>Los parámetros en la matriz de pagos de cada país se ajustaron para que la sociedad se comportara de manera similar a la literatura, pero nada asegura que puedan ser los mejores valores para el modelado.</p></li>
+    <li><b>El modelo no considera la creación y disolución de enlaces en la red.</b> <br> <p>En el modelo actual, los enlaces entre los nodos son estáticos, lo cual contrasta con las conexiones dinámicas en la realidad.</p></li>
+</ul>
+
 <h3 id="trabajo-futuro">Trabajo futuro</h3>
 
-<p>El trabajo futuro se centrará en la aplicación de este modelo a casos reales de corrupción en México, con el objetivo de identificar patrones y vulnerabilidades que puedan ser utilizados para diseñar políticas públicas más efectivas.</p>
+<p>La mejor manera de comprobar si el modelo actual necesita ajustes es compararlo con casos reales de corrupción, para así identificar patrones que puedan ser utilizados para diseñar políticas públicas más efectivas.</p>
 
 <br>
 <hr>
@@ -305,19 +323,6 @@ Martins, A., da Cunha, B., Hanley, Q., Gonçalves, S., Perc, M., & Ribeiro, H. (
 DOI: <a href="https://doi.org/10.1038/s41598-022-10909-2" target="_blank">https://doi.org/10.1038/s41598-022-10909-2</a>
 </p> 
 <br>
-<figure>
-<img src="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" alt="Artículo Ubeda et al" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Artículo Ubeda et al"></object>
-</figure>
-<br>
-<button><a href="assets/elartedeconectarlospuntos/Power and Corruption Úbeda & Duéñez.pdf" target="_blank">📄 Úbeda & Duéñez-Guzman, 2010 </a></button> 
-<br>
-<p id="ubeda_et_al">
-Ubeda, F., & Dueñez-Guzman, E. (2010). Power and Corruption. <i>Evolution</i>, 1127-1139. <br>
-DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">https://doi.org/10.1111/j.1558-5646.2010.01194.x</a>
-</p>
-<br>
-
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" alt="Artículo Scatà et al" style="display: none;">
@@ -332,6 +337,20 @@ DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https
 </p>
 <br>
 
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" alt="Artículo Ubeda et al" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Artículo Ubeda et al"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Power and Corruption Úbeda & Duéñez.pdf" target="_blank">📄 Úbeda & Duéñez-Guzman, 2010 </a></button> 
+<br>
+<p id="ubeda_et_al">
+Ubeda, F., & Dueñez-Guzman, E. (2010). Power and Corruption. <i>Evolution</i>, 1127-1139. <br>
+DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">https://doi.org/10.1111/j.1558-5646.2010.01194.x</a>
+</p>
+<br>
+
+
 <h3>Artículos adicionales</h3>
 <br>
 <ul>
@@ -339,20 +358,25 @@ DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https
 
 </ul>
 
+<br>
 <h3>Informes</h3>
+<br>
 
 <ul>
     <li id="legatum_institute_foundation">Legatum Institute Foundation. (2023). <i>The 2023 Legatum Prosperity Index</i>.
     <br>Obtenido de <a href="https://index.prosperity.com/about/resources" target="_blank">https://index.prosperity.com/about/resources</a></li>
 </ul>
 
+<br>
 <h3>Articulos periodisticos</h3>
-
+<br>
 <ul>
+<br>
+    <li id="casar_2023">Casar, M. A., & Cejudo, Q. (2023). México: Anatomía de la Corrupcion.  <i>Mexicanos Contra la Corrupción y la Impunidad</i>. <a href="https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/" target="_blank">https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/</a></li>
+<br>
     <li id="chene_2011">Chêne, M. (2011). What makes New Zealand, Denmark, Finland, Sweden and others 'cleaner' than most countries? <i>Transparency International</i> <a href="https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries" target="_blank">https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries</a></li>
-
-    <li id="gossain_2019"> 
-        Gossaín, J. (Julio de 2019). ¿Quiere saber cómo fue que acabaron con la corrupción en Singapur? <i>El Tiempo</i>. <a href="https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920" target="_blank">https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920</a>
+<br>
+    <li id="gossain_2019">Gossaín, J. (2019). ¿Quiere saber cómo fue que acabaron con la corrupción en Singapur? <i>El Tiempo</i>. <a href="https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920" target="_blank">https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920</a>
     </li>
 
 </ul>
@@ -368,6 +392,7 @@ DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https
 <img src="/assets/elartedeconectarlospuntos/MCM.svg" alt="Maria del Carmen Morales" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/MCM.svg" style="width: 80%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Maria del Carmen Morales"></object>
 </figure>
+<br>
 
 <h4 id="en-memoria-de">En memoria de <b>Maria del Carmen Morales</b> <br> y de todas las madres buscadoras</h4>
 
