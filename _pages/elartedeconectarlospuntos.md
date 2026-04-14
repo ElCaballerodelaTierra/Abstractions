@@ -395,31 +395,68 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 
 <h4 id="todos-los-escenarios">Todos los escenarios posibles</h4>
 
-<p>Para encontrar respuesta este planteamiento, se modelaron todos los escenarios posibles. Buscando encontrar algún escenario en donde la población evolucionara a una población cooperadora o encontrar algún patrón que permitiera obtener alguna pista de cómo lograrlo. Los parámetros del modelo que se variaron fueron: </p> 
-<br>
-
-<li><b>Tipo de masa crítica:</b> Cooperadora (C,H), Poder honrado (H) <br>
-<li><b>Porcentaje de masa crítica:</b> 5%, 10%, ..., 95% <br>
-<li><b>Configuración espacial inicial:</b> Central, Aleatoria, Periférica <br>
-<li><b>Cantidad de iteraciones:</b> 100, 200, ..., 1000 <br>
-<li><b>Porcentaje de homofilia:</b> 5%, 10%, ..., 95% <br>
+<p>Para encontrar respuesta este planteamiento, se modelaron todos los escenarios posibles. Buscando encontrar algún escenario en donde la población evolucionara a una población cooperadora o encontrar algún patrón que permitiera obtener alguna pista de cómo lograrlo. Los parámetros del modelo que se variaron fueron: </p> <br>
+<ul>
+  <li><b>Tipo de masa crítica:</b> <span style="display: inline-block;">Cooperadora (C,H), Poder honrado (H)</span></li>
+  <li><b>Porcentaje de masa crítica:</b> <span style="display: inline-block;">5%, 10%, ..., 95%</span></li>
+  <li><b>Configuración espacial inicial:</b> <span style="display: inline-block;">Central, Aleatoria, Periférica</span></li>
+  <li><b>Cantidad de iteraciones:</b> <span style="display: inline-block;">100, 200, ..., 1000</span></li>
+  <li><b>Porcentaje de homofilia:</b> <span style="display: inline-block;">5%, 10%, ..., 95%</span></li>
+</ul>
 
 <br>
 <p>
-De esos 24,000 escenarios posibles algunos mostraron un resultado interesante.
+De esos 24,000 escenarios posibles se encontró una tendencia interesante.
+</p>
 
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 0px; margin-bottom: 0px;">
+<div style="flex: 1 1 100%; min-width: 200px; text-align: center;">
 
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Red de México MC25NA(H,C).svg" alt="Red de México MC25NA(H,C)" style="display: none;">
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 0px; align-items: flex-start;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC25NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC25NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Red de México MC25NA(H,C)"></object>
+</div>
+<figcaption>Figura 1: Una masa crítica cooperadora en una configuración aleatoria logró reducir del 75% al 52% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
+</figure>
 
+</div>
+</div>
 
-uno de los hallazgos más reveladores de la simulación tiene que ver con cómo desmantelar estas redes. La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, el modelo demostró que <b>un ataque centralizado tiende a fallar</b>. Al poder cambiar de estrategia un nodo central, los nodos corruptos vecinos tienden a revertir la estrategia de cooperación y la red corrupta sobrevive.</p>
+<p>La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, el modelo mostró que un ataque centralizado no es la mejor estrategia. La solución matemática es una disrupción aleatoria. </p>
 
-<p>¿La solución matemática? <b>Una disrupción aleatoria</b>. </p>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" alt="Red de México MC15NA(H,C)" style="display: none;">
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 0px; align-items: flex-start;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC15NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Red de México MC15NA(H,C)"></object>
+</div>
+<figcaption>Figura 1: Una masa crítica cooperadora del 15% en una configuración aleatoria logró reducir del 85% al 60% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
+</figure>
 
-<p>La eliminación aleatoria de nodos degrada rápidamente la conectividad global de la red, fracturándola en pequeñas comunidades aisladas. En la vida real, esto se traduce en políticas como la rotación obligatoria y aleatoria de personal en puestos de alto riesgo (aduanas, compras públicas, licencias). Al rotar al personal, se impide la formación de lazos de confianza criminal a largo plazo.</p>
+<p>No existe un umbral mínimo donde toda la red evolucione a una población cooperativa, pero existen porcentajes mínimos donde se genera una mayor propagación. Por ejemplo, con un 15% de masa crítica cooperadora la estrategia se logra propagar al 40% de la red. A partir del 30% de masa crítica la red evoluciona a una mayoría cooperativa del 60%</p>
 
-<h2 id="conclusion">Conclusión</h2>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" alt="Red de México MC30NA(H,C)" style="display: none;">
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 0px; align-items: flex-start;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC30NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Red de México MC30NA(H,C)"></object>
+</div>
+<figcaption>Figura 1: Una masa crítica cooperadora del 30% en una configuración aleatoria logró reducir del 70% al 40% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
+</figure>
 
+<p>La intervención aleatoria  fragmenta la comunidad central. El cambio de estrategia de los nodos modifica la conectividad de la red corrupta. Al atacar al azar, se rompen enlaces vitales que unen diferentes comunidades, fragmentando la red en múltiples comunidades aisladas y posibilitando que la estrategia cooperativa surja y se expanda hasta llegar a un equilibrio.</p>
 
+<br>
+<hr>
+<br>
+
+<h2 id="conclusion">Conclusiones</h2>
+
+<p>El análisis revela una dualidad fundamental en la dinámica de la corrupción. Por un lado, su persistencia depende del control central, las redes corruptas requieren nodos clave que sostengan su cohesión. Por otro lado, para su erradicación se necesita una disrupción aleatoria.</p>
+
+<p>La estrategia para combatir la corrupción es híbrida. Por un lado, requiere modificar la matriz de pagos de la sociedad, fortaleciendo el estado de derecho <b>(c)</b> y el castigo a las personas con poder <b>(<i>p < q</i>)</b> para que la corrupción sea una estrategia perdedora, como en Singapur. Por otro, exige debilitar la estructura de la red corrupta mediante intervenciones aleatorias, como la rotación de personal y la promoción de transparencia, siguiendo ejemplos como Dinamarca.</p>
 
 <h3 id="limitaciones">Limitaciones del trabajo</h3>
 
@@ -433,7 +470,7 @@ uno de los hallazgos más reveladores de la simulación tiene que ver con cómo 
 
 <h3 id="trabajo-futuro">Trabajo futuro</h3>
 
-<p>La mejor manera de comprobar si el modelo actual necesita ajustes es compararlo con casos reales de corrupción, así identificar patrones que puedan ser utilizados para diseñar políticas públicas más efectivas.</p>
+<p>El trabajo abre nuevas líneas de investigación, destacando la validación empírica del modelo mediante datos de casos reales de corrupción. Esto permitiría completar su desarrollo como herramienta de diagnóstico y pronóstico, con potencial para diseñar políticas públicas más efectivas y contribuir a la recuperación del estado de derecho en México y en otros contextos con problemas estructurales similares.</p>
 
 <br>
 <hr>
