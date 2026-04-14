@@ -19,10 +19,6 @@ frase-autor-es:
 frase-contexto-es:
 
 content-es: |
-    <img src="/assets/elartedeconectarlospuntos/red-dinamica.svg" alt="Red dinámica" style="display: none;">
-    <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/red-dinamica.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Red dinámica"></object>
-
-    <br>
     
     <i> Resumen de la tesis: "Comprendiendo y atacando la corrupción, un análisis mediante teoría de redes y teoría de juegos a los sistemas sociales y su evolución". </i>
     
@@ -55,7 +51,8 @@ content-en: |
 <hr>
 
 <br>
-<h2>Índice</h2>
+<h2>Índice</h2>    
+
 <ul style="padding-left: 20px;">
       <li><a href="#podemos-predecir">¿Podemos predecir y detener la corrupción?</a></li>
       <li><a href="#que-es-corrupcion">¿Que es la corrupción?</a>
@@ -64,27 +61,41 @@ content-en: |
             <ul style="padding-left: 20px; list-style-type: circle;">
               <li><a href="#enfoque-redes">Enfoque mediante teoría de redes</a></li>
               <li><a href="#enfoque-juegos">Enfoque mediante teoría de juegos</a></li>
-              <li><a href="#enfoque-mixto">Enfoque mixto, mediante teoría de redes y teoría de juegos</a></li>
+              <li><a href="#enfoque-mixto">Enfoque mixto: teoría de redes y juegos</a></li>
             </ul>
           </li>
         </ul>
       </li>
   <li><a href="#nuevo-modelo">Desarrollo de un nuevo modelo</a></li>
-  <li><a href="#como-atacamos-la-red">El descubrimiento contraintuitivo: ¿Cómo atacamos la red?</a></li>
-  <li><a href="#conclusion">Conclusión</a></li>
+  <li><a href="#como-atacamos-la-red">¿Cómo atacar una red corrupta?</a>
+    <ul style="padding-left: 20px; list-style-type: circle;">
+      <li><a href="#todos-los-escenarios">Todos los escenarios posibles</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion">Conclusión</a>
+    <ul style="padding-left: 20px; list-style-type: square;">
+      <li><a href="#limitaciones">Limitaciones del trabajo</a></li>
+      <li><a href="#trabajo-futuro">Trabajo futuro</a></li>
+    </ul>
+  </li>
   <li><a href="#bibliografia">Bibliografía</a></li>
 </ul>
 <br>
+
+<!-- <img src="/assets/elartedeconectarlospuntos/red-dinamica.svg" alt="Red dinámica" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/red-dinamica.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Red dinámica"></object> -->
 
 
 <hr>
 <br>
 <h2 id="podemos-predecir">¿Podemos predecir y detener la corrupción?</h2>
 
-<p>Se han propuesto diferentes políticas anticorrupción a lo largo del mundo. Los países escandinavos, como Dinamarca, han optado por la transparencia financiera y la rendición de cuentas (<a href="#chene_2011">Chêne, 2011</a>), otros como en el caso de Singapur han optado por estrategias basadas en castigos severos a los individuos (<a href="#gossain_2019">Gossaín, 2019</a>). Sin embargo, estas estrategias no siempre son replicables en paises con diferentes contextos sociales, culturales y políticos. Para entender por qué persiste la corrupción, es necesario comprender cómo interactúan las personas y qué incentivos tienen para corromperse o mantenerse honestas.</p>
+<p>Se han propuesto diferentes políticas anticorrupción a lo largo del mundo. Los países escandinavos, encabezados por Dinamarca, han optado por la transparencia financiera y la rendición de cuentas (<a href="#chene_2011">Chêne, 2011</a>), otros como en el caso de Singapur han optado por estrategias basadas en castigos severos a los individuos (<a href="#gossain_2019">Gossaín, 2019</a>). Sin embargo, estas estrategias no siempre son replicables en paises con diferentes contextos sociales, culturales y políticos. Para entender por qué persiste la corrupción, es necesario comprender cómo interactúan las personas y qué incentivos tienen para corromperse o mantenerse honestas.</p>
 
 <p>Recientemente, la humanidad encontró un nuevo aliado en la lucha contra la corrupción: <b>las matemáticas</b>. En los últimos años gracias a la popularización de los ordenadores personales los modelos matemáticos emergieron como herramientas en la lucha contra la corrupción. En especial la modelación mediante teoría de redes y teoría de juegos.</p>
 
+<p> Tal es el caso que nuevos estudios han documentado y analizado casos de corrupción con estos enfoques (<a href="#luna-pla&nicolas-carlock_2020">Luna-Pla y Nicolás-Carlock, 2020</a>).
+</p>
 
 <h2 id="que-es-corrupcion">¿Que es la corrupción?</h2>
 
@@ -219,7 +230,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 1: Hipótesis del trabajo, si reemplazamos el dilema del prisionero por el juego de la corrupción, ¿será posible crear redes corruptas al variarar los parámetros de la matriz de pagos del juego?</figcaption>
 </figure>
 
-<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las presentadas por (<a href="#martins_et_al">Martins et al., 2022</a>) si se fusionara el modelo de (<a href="#scata_et_al">Scatá et al., 2016</a>) con el juego de la corrupción de (<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>)?</p>
+<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las de (<a href="#martins_et_al">Martins et al., 2022</a>) si se usa el juego de de la corrupción (<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) en el modelo mixto de (<a href="#scata_et_al">Scatá et al., 2016</a>)?</p>
 
 <p>Para ello, se propuso simular el comportamiento de tres sociedades distintas por medio del juego de la corrupción, cada una con una matriz de pagos acorde a su contexto social.</p>
 
@@ -253,7 +264,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 </div>
 </div>
 
-<p>La matriz de pagos de cada país se propuso basándose en el índice de prosperidad de Legatum (<a href="#legatum_2023">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros.</p>
+<p>La matriz de pagos de cada país se propuso basándose en el índice de prosperidad de Legatum (<a href="#legatum_2023">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros. <br> Así como en la literatura respecto al compartamiento social en los diferentes países, Dinamarca (<a href="#chene_2011">Chêne, 2011</a>), Singapur (<a href="#gossain_2019">Gossaín, 2019</a>) y México (<a href="#casar_2023">Casar & Cejudo, 2023</a>).</p>
 
 <br>
 
@@ -275,7 +286,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <h3>Poniendo a prueba el modelo</h3>
 
-<p>Primero se verificó que cada una de las sociedades se comportara acorde a la literatura, es decir, que Dinamarca y Singapur alcanzaran un equilibrio cooperativo, mientras que México tendiera a un estado de corrupción.
+<p>Primero se verificó que cada una de las sociedades se comportara acorde a la realidad, es decir, que Dinamarca y Singapur alcanzaran un equilibrio cooperativo, mientras que México tendiera a un estado de corrupción.
 <br>
 
 
@@ -315,9 +326,10 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 </div>
 
 <br>
-<p>Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 1</a>), retomando las ideas centrales de (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
 
 <h4>La robustez de las sociedades</h4>
+<p>Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 1</a>), retomando las ideas centrales de (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
+
 <br>
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Cuatro roles en la sociedad.svg" alt="Cuatro roles en la sociedad" style="display: none;">
@@ -326,7 +338,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 </figure>
 
 
-<p>La robustez de las sociedades se puede medir por la capacidad de la red para mantener una estrategia cooperativa a pesar de la inclusión de nodos no cooperativos (D) y (K). Recrear el comportamiento social descrito en la literatura sobre el tema.</p>
+<p>Se midió en cada sociedad la capacidad de mantener estrategias cooperativas ante la inclusión de nodos no cooperativos (D) y (K).</p>
 
 <h4>Dinamarca</h4>
 <img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
@@ -340,15 +352,18 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Evolución de Dinamarca con 20,25,30 M.C. - (K).gif" alt="Evolución de Dinamarca con 20,25,30 M.C. - (K)" style="display: none;">
 <object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de Dinamarca con 20,25,30 M.C. - (K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolución de Dinamarca con 20,25,30 M.C. - (K)"></object>
-<figcaption>Figura 1: Evolución de Dinamarca con 20%, 25% y 30% de masa crítica de nodos corruptos (K).</figcaption>
+<figcaption>Figura 1: Evolución de Dinamarca con 20%, 25% y 30% de masa crítica de nodos corruptos (K) en la configuracion inicial de nodos centrales.</figcaption>
 </figure>
 
+<p>En Dinamarca se observa que la población mantiene sus estrategias cooperativas a pesar de la inclusión de nodos corruptos. Pero existe un punto de inflexión aproximadamente cuando se tiene el 20% - 25% de nodos corruptos en la parte central de la red, a partir del cual no es posible eliminarlos.</p>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" alt="Dinamarca 95MC(K)3CI" style="display: none;">
 <object type="image/gif" data="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Dinamarca 95MC(K)3CI"></object>
 <figcaption>Figura 1: Evolución de Dinamarca con 95% de masa crítica de nodos corruptos (K) con diferentes configuraciones iniciales, nodos aleatorios, centrales y periféricos.</figcaption>
 </figure>
+
+<p> En el caso límite donde el 95% de la red inicia con una estrategia corrupta, la población evoluciona a una población cooperadora excepto en cuando la masa crítica inicia en la parte central de la red. 
 
 <h4>Singapur</h4>
 <img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
@@ -359,6 +374,10 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 <figcaption>Figura 1: Evolución de Singapur con 95% de masa crítica de nodos corruptos (K) con diferentes configuraciones iniciales, nodos aleatorios, centrales y periféricos.</figcaption>
 </figure>
 
+<p>En Singapur se observó un resultado similar al de Dinamarca, la población mantiene sus estrategias cooperativas a pesar de la inclusión de nodos corruptos. Excepto en los nodos centrales de la red, donde se muestra una mayor resistencia a la cooperación.</p>
+
+<p>Este fue uno de los primeros resultados interesantes de la simulación, muestra que inclusive en sociedades altamente cooperadoras si se introduce una masa crítica de nodos corruptos, la población tiende a evolucionar a una población cooperadora excepto en la parte central de la red.</p>
+
 <h4>México</h4>
 <img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
 
@@ -368,9 +387,31 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 <figcaption>Figura 1: Evolución de la red de México con diferentes porcentajes de masa crítica en los nodos centrales con 20%, 60% y 90% de nodos corruptos (K).</figcaption>
 </figure>
 
-<h3 id="como-atacamos-la-red">El descubrimiento contraintuitivo: <br> ¿Cómo atacar una red corrupta?</h3>
+<p>En México se observó un resultado diferente al de Dinamarca y Singapur, la sociedad no es resiliente ante la inclusión de nodos corruptos. El porcentaje inicial de masa crítica se mantiene constante. </p>
 
-<p>Uno de los hallazgos más reveladores de la simulación tiene que ver con cómo desmantelar estas redes. La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, nuestro modelo demostró que <b>un ataque centralizado tiende a fallar</b>. Al eliminar un nodo central, los nodos de jerarquía media reorganizan rápidamente sus conexiones y la red sobrevive.</p>
+<h3 id="como-atacamos-la-red">¿Cómo atacar una red corrupta?</h3>
+
+<p>Al comprobar que el modelo recreaba la dinámica de la corrupción en diferentes países, dio pie a la parte más interesante del trabajo. En el caso mexicano al no contar con resiliencia ante la corrupción, si se inicia con una red donde todos los nodos son corruptos, ¿es posible lograr que evolucione a una sociedad cooperadora? </p>
+
+<h4 id="todos-los-escenarios">Todos los escenarios posibles</h4>
+
+<p>Para encontrar respuesta este planteamiento, se modelaron todos los escenarios posibles. Buscando encontrar algún escenario en donde la población evolucionara a una población cooperadora o encontrar algún patrón que permitiera obtener alguna pista de cómo lograrlo. Los parámetros del modelo que se variaron fueron: </p> 
+<br>
+
+<li><b>Tipo de masa crítica:</b> Cooperadora (C,H), Poder honrado (H) <br>
+<li><b>Porcentaje de masa crítica:</b> 5%, 10%, ..., 95% <br>
+<li><b>Configuración espacial inicial:</b> Central, Aleatoria, Periférica <br>
+<li><b>Cantidad de iteraciones:</b> 100, 200, ..., 1000 <br>
+<li><b>Porcentaje de homofilia:</b> 5%, 10%, ..., 95% <br>
+
+<br>
+<p>
+De esos 24,000 escenarios posibles algunos mostraron un resultado interesante.
+
+
+
+
+uno de los hallazgos más reveladores de la simulación tiene que ver con cómo desmantelar estas redes. La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, el modelo demostró que <b>un ataque centralizado tiende a fallar</b>. Al poder cambiar de estrategia un nodo central, los nodos corruptos vecinos tienden a revertir la estrategia de cooperación y la red corrupta sobrevive.</p>
 
 <p>¿La solución matemática? <b>Una disrupción aleatoria</b>. </p>
 
@@ -380,7 +421,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 
 
 
-<h3>Limitaciones del trabajo</h3>
+<h3 id="limitaciones">Limitaciones del trabajo</h3>
 
 <p>El modelo actual tiene varias limitaciones que deben ser consideradas:</p>
 
@@ -447,7 +488,7 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <h3>Artículos adicionales</h3>
 <br>
 <ul>
-    <li>Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks.  <i>Applied Network Science</i>. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
+    <li id="luna-pla&nicolas-carlock_2020">Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks.  <i>Applied Network Science</i>. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
 
 </ul>
 
