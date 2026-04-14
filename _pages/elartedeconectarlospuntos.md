@@ -19,13 +19,13 @@ frase-autor-es:
 frase-contexto-es:
 
 content-es: |
-
-    <i> Resumen de la tesis: "Comprendiendo y atacando la corrupción, un análisis mediante teoría de redes y teoría de juegos a los sistemas sociales y su evolución". </i>
-    <br>
-
     <img src="/assets/elartedeconectarlospuntos/red-dinamica.svg" alt="Red dinámica" style="display: none;">
     <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/red-dinamica.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Red dinámica"></object>
 
+    <br>
+    
+    <i> Resumen de la tesis: "Comprendiendo y atacando la corrupción, un análisis mediante teoría de redes y teoría de juegos a los sistemas sociales y su evolución". </i>
+    
     # Resumen
 
     Se propone un nuevo modelo matemático que simula la propagación y erradicación de la corrupción en distintas sociedades. Por medio de simulaciones, se revela que la corrupción es un fenómeno estructural donde el estado de derecho, los castigos y los costos de vigilancia determinan la estabilidad del sistema. <br><br>
@@ -91,7 +91,7 @@ content-en: |
 <p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
 
 <p style="text-align: right; width: 95%;"><cite><strong>“El abuso del poder confiado a una persona para obtener una ganancia privada”</strong></cite>
-<br><br> (<a href="https://www.transparency.org/en/what-is-corruption" target="_blank">Transparencia Internacional, 2024</a>)</p>
+<br><br> (<a href="#transparencia_2023" target="_blank">Transparencia Internacional, 2024</a>)</p>
 
 <p>Una definición matemática de la corrupción debe considerar dos ideas centrales: el <b>poder</b> como una red de relaciones, y la <b>ganancia</b> como resultado de decisiones estratégicas basadas en riesgos y beneficios. <br><br>
 
@@ -105,7 +105,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <figure id="red-espanola">
 <img src="/assets/elartedeconectarlospuntos/Red española.png" alt="Red española" style="width: 70%; height: auto; display: block; margin: 0 auto;">
-<figcaption>Figura 1: Red corrupta española (Martins et al., 2022).</figcaption>
+<figcaption>Figura 1: Red corrupta española (<a href="#martins_et_al">Martins et al., 2022</a>).</figcaption>
 </figure>
 
 <p>(<a href="#martins_et_al">Martins et al., 2022</a>) documentaron y recrearon las redes asociadas a escándalos de corrupción en España y Brasil (<a href="#red-espanola">Figura 1</a>). Identificaron las propiedades comunes entre ellas y posteriormente desarrollaron un algoritmo que replicaba las propiedades de las redes corruptas.</p>
@@ -133,16 +133,16 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" alt="Juego de la corrupción" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" style="width: 70%; height: auto; display: block; margin: 0 auto;" aria-label="Juego de la corrupción"></object>
-<figcaption>Figura 1: Juego de la corrupción</figcaption>
+<figcaption>Figura 1: Matriz de pagos del juego de la corrupción.</figcaption>
 </figure>
 
-<p>(<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) formularon el <i>juego de la corrupción</i> (<a href="#juego-de-la-corrupcion">figura 1</a>), una extensión del dilema del prisionero. La idea central fue permitir las asimetrías de poder entre personas.</p>
+<p>(<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) formularon el <i>juego de la corrupción</i> (<a href="#juego-de-la-corrupcion">Figura 1</a>), una extensión del dilema del prisionero. La idea central fue permitir las asimetrías de poder entre personas.</p>
 
 <h4 id="avispa">El avispero <br> <i>Inspiración original del juego de la corrupción</i></h4>
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Avispa.svg" alt="Avispa" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Avispa.svg" style="width: 20%; height: auto; display: block; margin: 0 auto;" aria-label="Avispa"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Avispa.svg" style="width: 20%; height: auto; display: block; margin: 0 auto;  opacity: 0.8;" aria-label="Avispa"></object>
 </figure>
 
 <p>En una colmena de avispas el contrato social se conforma entre la avispa reina, la única delegada para poner huevos y las obreras <b>(C)</b>, que trabajan para criar a sus hermanas. Sin embargo, existe una tentación biológica: una obrera puede romper el contrato <b>(D)</b> y poner sus propios huevos no fertilizados para pasar sus genes, obteniendo un beneficio genético <b>(t)</b> a costa de las leyes de la colonia. Para evitar este caos, existen obreras con el rol de policía. Si una policía es honesta <b>(H)</b>, gastará energía y tiempo <b>(-c)</b> en inspeccionar las celdas y comerse los huevos ilegales de sus compañeras egoístas, aplicando un castigo <b>(-p)</b> al destruir su descendencia.</p>
@@ -155,7 +155,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" alt="Algoritmo de Scàta et al" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" style="width: 90%; height: auto; display: block; margin: 0 auto;" aria-label="Algoritmo de Scàta et al"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" style="width: 90%; height: auto; display: block; margin: 0 auto;  opacity: 0.8;" aria-label="Algoritmo de Scàta et al"></object>
 <figcaption>Figura 1: Algoritmo de Scàta et al</figcaption>
 </figure>
 
@@ -215,13 +215,13 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" alt="Hipótesis del trabajo" style="display: none;">
-<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Hipótesis del trabajo"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Hipótesis del trabajo"></object>
 <figcaption>Figura 1: Hipótesis del trabajo, si reemplazamos el dilema del prisionero por el juego de la corrupción, ¿será posible crear redes corruptas al variarar los parámetros de la matriz de pagos del juego?</figcaption>
 </figure>
 
-<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las presentadas por (Martins et al, 2022) si se fusionara el modelo de (Scatá et al., 2016) con el juego de la corrupción de (Ubeda & Dueñez-Guzman, 2010)?</p>
+<p>La hipótesis del trabajo se basó en la pregunta: ¿es posible obtener redes corruptas similares a las presentadas por (<a href="#martins_et_al">Martins et al., 2022</a>) si se fusionara el modelo de (<a href="#scata_et_al">Scatá et al., 2016</a>) con el juego de la corrupción de (<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>)?</p>
 
-<p>Para ello, se propuso simular el comportamiento de tres sociedades distintas por medio del juego de la corrupción, cada una con una matriz de pagos distinta.</p>
+<p>Para ello, se propuso simular el comportamiento de tres sociedades distintas por medio del juego de la corrupción, cada una con una matriz de pagos acorde a su contexto social.</p>
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
 <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
@@ -253,7 +253,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 </div>
 </div>
 
-<p>La matriz de pagos de cada país se propuso basándose en el índice de prosperidad de Legatum (<a href="#legatum_institute_foundation">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros.</p>
+<p>La matriz de pagos de cada país se propuso basándose en el índice de prosperidad de Legatum (<a href="#legatum_2023">Legatum Institute Foundation, 2023</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros.</p>
 
 <br>
 
@@ -264,7 +264,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 </figure>
 
 <br>
-<p>Se tomo como base una red de tipo Barabasí-Albert para modelar las interacciones entre las personas, acorde a (<a href="#scata_2016">Scatà et al. 2016</a>) este tipo de red es la que mejor se asemeja a una red social real. </p>
+<p>Como base para modelar las sociedades se utilizó una red de tipo Barabasí-Albert, acorde a (<a href="#scata_2016">Scatà et al. 2016</a>) este tipo de red es la más cercana a una red social real.</p>
 <br>
 
 <figure>
@@ -314,19 +314,27 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 </div>
 </div>
 
-
 <br>
-Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 1</a>).</p>
+<p>Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 1</a>), retomando las ideas centrales de (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
 
 <h4>La robustez de las sociedades</h4>
+<br>
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Cuatro roles en la sociedad.svg" alt="Cuatro roles en la sociedad" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Cuatro roles en la sociedad.svg" viewBox="0 0 800 600" style="width: 80%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Cuatro roles en la sociedad"></object>
+<figcaption>Figura 1: Los cuatro roles en la sociedad</figcaption>
+</figure>
+
 
 <p>La robustez de las sociedades se puede medir por la capacidad de la red para mantener una estrategia cooperativa a pesar de la inclusión de nodos no cooperativos (D) y (K). Recrear el comportamiento social descrito en la literatura sobre el tema.</p>
 
-<figure>
+<h4>Dinamarca</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Dinamarca" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<!-- <figure>
 <img src="/assets/elartedeconectarlospuntos/Evolución de la red de Dinamarca.gif" alt="Evolución de la red de Dinamarca" style="display: none;">
 <object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de la red de Dinamarca.gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolución de la red de Dinamarca"></object>
 <figcaption>Figura 1: Evolución de la red de Dinamarca al introducir una masa crítica del 20% de nodos corruptos (color oscuro) en la periferia de la red.</figcaption>
-</figure>
+</figure> -->
 
 
 <figure>
@@ -339,9 +347,26 @@ Porteriormente se experimentó con la inclusión de una masa crítica de persona
 <figure>
 <img src="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" alt="Dinamarca 95MC(K)3CI" style="display: none;">
 <object type="image/gif" data="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Dinamarca 95MC(K)3CI"></object>
-<figcaption>Figura 1: Evolución de Dinamarca con 95% de masa crítica de nodos corruptos (K).</figcaption>
+<figcaption>Figura 1: Evolución de Dinamarca con 95% de masa crítica de nodos corruptos (K) con diferentes configuraciones iniciales, nodos aleatorios, centrales y periféricos.</figcaption>
 </figure>
 
+<h4>Singapur</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Evolución de la red de Singapur MC(H) 95(K).gif" alt="Evolución de la red de Singapur MC(H) 95(K)" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de la red de Singapur MC(H) 95(K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolución de la red de Singapur MC(H) 95(K)"></object>
+<figcaption>Figura 1: Evolución de Singapur con 95% de masa crítica de nodos corruptos (K) con diferentes configuraciones iniciales, nodos aleatorios, centrales y periféricos.</figcaption>
+</figure>
+
+<h4>México</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="México" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Evolución de la red de México MC(K).gif" alt="Evolución de la red de México MC(K)" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de la red de México MC(K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
+<figcaption>Figura 1: Evolución de la red de México con diferentes porcentajes de masa crítica en los nodos centrales con 20%, 60% y 90% de nodos corruptos (K).</figcaption>
+</figure>
 
 <h3 id="como-atacamos-la-red">El descubrimiento contraintuitivo: <br> ¿Cómo atacar una red corrupta?</h3>
 
@@ -353,7 +378,7 @@ Porteriormente se experimentó con la inclusión de una masa crítica de persona
 
 <h2 id="conclusion">Conclusión</h2>
 
-<p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
+
 
 <h3>Limitaciones del trabajo</h3>
 
@@ -431,8 +456,11 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <br>
 
 <ul>
-    <li id="legatum_institute_foundation">Legatum Institute Foundation. (2023). <i>The 2023 Legatum Prosperity Index</i>.
+    <li id="legatum_2023">Legatum Institute Foundation. (2023). <i>The 2023 Legatum Prosperity Index</i>.
     <br>Obtenido de <a href="https://index.prosperity.com/about/resources" target="_blank">https://index.prosperity.com/about/resources</a></li>
+    <br>
+    <li id="transparencia_2023">Transparencia Internacional. (2024). <i>Índice de Percepción de la Corrupción 2023</i>.
+    <br>Obtenido de <a href="https://www.transparency.org/en/cpi/2023" target="_blank">https://www.transparency.org/en/cpi/2023</a></li>
 </ul>
 
 <br>
@@ -440,11 +468,17 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <br>
 <ul>
 <br>
-    <li id="casar_2023">Casar, M. A., & Cejudo, Q. (2023). México: Anatomía de la Corrupcion.  <i>Mexicanos Contra la Corrupción y la Impunidad</i>. <a href="https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/" target="_blank">https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/</a></li>
+    <li id="casar_2023">Casar, M. A., & Cejudo, Q. (2023). México: Anatomía de la Corrupcion.  <i>Mexicanos Contra la Corrupción y la Impunidad</i>. 
+    <br>
+    Obtenido de <a href="https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/" target="_blank"> https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/</a></li>
 <br>
-    <li id="chene_2011">Chêne, M. (2011). What makes New Zealand, Denmark, Finland, Sweden and others 'cleaner' than most countries? <i>Transparency International</i> <a href="https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries" target="_blank">https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries</a></li>
+    <li id="chene_2011">Chêne, M. (2011). What makes New Zealand, Denmark, Finland, Sweden and others 'cleaner' than most countries? <i>Transparency International</i> 
+    <br>
+    Obtenido de <a href="https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries" target="_blank">https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries</a></li>
 <br>
-    <li id="gossain_2019">Gossaín, J. (2019). ¿Quiere saber cómo fue que acabaron con la corrupción en Singapur? <i>El Tiempo</i>. <a href="https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920" target="_blank">https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920</a>
+    <li id="gossain_2019">Gossaín, J. (2019). ¿Quiere saber cómo fue que acabaron con la corrupción en Singapur? <i>El Tiempo</i>. 
+    <br>
+    Obtenido de <a href="https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920" target="_blank">https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920</a>
     </li>
 
 </ul>
