@@ -46,13 +46,20 @@ frase-contexto-en:
 content-en: |
 
     <i> Summary of the thesis: "Understanding and attacking corruption, an analysis through network theory and game theory of social systems and their evolution". </i>
-    <br>
+    
+    <figure>
+    <img src="/assets/elartedeconectarlospuntos/Tesis - Carlos Villarreal.svg" alt="Thesis - Carlos Villarreal" style="display: none;">
+    <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Tesis - Carlos Villarreal.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Thesis - Carlos Villarreal"></object>
+    </figure>
+    <button><a href="assets/elartedeconectarlospuntos/Tesis - Comprendiendo y atacando la corrupción.pdf" target="_blank">📄 Download [ES]</a></button> 
+
+    <hr style="margin-top: 20px; margin-bottom: 10px;">
 
     # Abstract
 
-    This work proposes an innovative mathematical model to understand the spread and eradication of corruption in societies. By integrating network theory and game theory, it simulates the social dynamics of countries such as Denmark, Singapore, and Mexico to identify patterns of behavior and governance. The study reveals that corruption is a structural phenomenon where the rule of law, punishments, and monitoring costs determine the stability of the system. Among the main findings, it highlights that random interventions are more effective in dismantling corrupt networks than attacks directed at their central cores. Finally, the work offers a theoretical justification for designing smarter public policies that can transform corrupt societies into cooperative and transparent systems.
+    A new mathematical model is proposed that simulates the spread and eradication of corruption in different societies. Through simulations, it is revealed that corruption is a structural phenomenon where the rule of law, punishments, and monitoring costs determine the stability of the system. <br><br>
+    Among the main findings, it highlights that random interventions are more effective in dismantling corrupt networks than attacks directed at their central cores. The results offer a theoretical justification for designing smarter public policies that can transform corrupt societies into cooperative and transparent systems.
 ---
-<body>
 
 <div class="content-es">
 <br>
@@ -371,7 +378,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 <figcaption>Figura 8: Evolución de Dinamarca con 95% de masa crítica de nodos corruptos (K) con diferentes configuraciones iniciales, nodos aleatorios, centrales y periféricos.</figcaption>
 </figure>
 
-<p> En el caso límite (<a href="#evolucion-dinamarca-limite">Figura 8</a>), donde el 95% de la red inicia con una estrategia corrupta, la población evoluciona a una población cooperadora excepto en cuando la masa crítica inicia en la parte central de la red. 
+<p> En el caso límite (<a href="#evolucion-dinamarca-limite">Figura 8</a>), donde el 95% de la red inicia con una estrategia corrupta, la población evoluciona a una población cooperadora excepto en cuando la masa crítica inicia en la parte central de la red. </p>
 
 <h4>Singapur</h4>
 <img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapur" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
@@ -553,7 +560,6 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <h3>Articulos periodisticos</h3>
 <br>
 <ul>
-<br>
     <li id="casar_2023">Casar, M. A., & Cejudo, Q. (2023). México: Anatomía de la Corrupcion.  <i>Mexicanos Contra la Corrupción y la Impunidad</i>. 
     <br>
     Obtenido de <a href="https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/" target="_blank"> https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/</a></li>
@@ -587,64 +593,86 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <p style="width: 90%; margin: 0 auto;">Asesinada junto a uno de sus hijos la noche del 23 de abril en el municipio de Tlajomulco de Zúñiga, Jalisco. Integrante del colectivo Guerreros Buscadores quienes revelaron lo ocurrido en el rancho Izaguirre en Teuchitlán, Jalisco. Donde integrantes del Cártel Jalisco Nueva Generación (CJNG), entrenaban, asesinaban y desaparecían personas.
 </p>
 
+</div> <!-- end content-es -->
+
 
 <div class="content-en">
-<p>To understand how these dynamics evolve over time, we analyzed and replicated the behavior of the most influential models in the field. Below is the logic of strategy updating within a social network:</p>
+<br>
+<hr>
 
-<!-- Mermaid diagram -->
-<figure class="mermaid diagramaDeFlujo">
-    flowchart TD
-    A(["Start of the algorithm"]) --> B[/$M, c, J, H, K, N$/]
-    B --> C["A Barabási-Albert network is created"]
-    C --> D["The initial strategies ($M$) are assigned according to the initial position ($c$)"]
-    D --> E{"$i > N$"}
-    E -- No --> F{"$j > R$"}
-    F -- No --> G["The node plays ($J$) with all its neighbors"]
-    G --> H["Calculates its total gain ($g$)"]
-    H --> I{"$p < H + g$"}
-    I -- Si --> J["Maintain strategy"]
-    I -- No --> K["Change strategy"]
-    J --> L["Counter for each node of the network <br> $j = j + 1$"]
-    K --> L
-    L --> F
-    %% Ramas "Si" que bajan hasta el final del diagrama
-    F -- Si ---> Y["The iteration counter is increased <br> $i = i + 1$"]
-    Y --> E
-    E -- Si ----> Z(["End of the algorithm"])
-    %% Enlaces invisibles para ordenar Y y Z obligatoriamente hasta abajo
-    L ~~~ Y
-    Y ~~~ Z
+<br>
+<h2>Table of Contents</h2>    
 
+<ul style="padding-left: 20px;">
+      <li><a href="#can-we-predict">Can we predict and stop corruption?</a></li>
+      <li><a href="#what-is-corruption">What is corruption?</a>
+        <ul style="padding-left: 20px; list-style-type: square;">
+          <li><a href="#modeling-corruption">Modeling corruption</a>
+            <ul style="padding-left: 20px; list-style-type: circle;">
+              <li><a href="#network-approach">Network theory approach</a></li>
+              <li><a href="#game-theory-approach">Game theory approach</a></li>
+              <li><a href="#mixed-approach">Mixed approach: network and game theory</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+  <li><a href="#new-model">Development of a new model</a></li>
+  <li><a href="#how-to-attack-network">How to attack a corrupt network?</a>
+    <ul style="padding-left: 20px; list-style-type: circle;">
+      <li><a href="#all-scenarios">All possible scenarios</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion-en">Conclusion</a>
+    <ul style="padding-left: 20px; list-style-type: square;">
+      <li><a href="#limitations-en">Limitations of the work</a></li>
+      <li><a href="#future-work-en">Future work</a></li>
+    </ul>
+  </li>
+  <li><a href="#bibliography-en">Bibliography</a></li>
+</ul>
+<br>
+
+<hr>
+<br>
+<h2 id="can-we-predict">Can we predict and stop corruption?</h2>
+
+<p>Different anti-corruption policies have been proposed around the world. The Scandinavian countries, led by Denmark, have opted for financial transparency and accountability (<a href="#chene_2011">Chêne, 2011</a>), while others like Singapore have opted for strategies based on severe punishments for individuals (<a href="#gossain_2019">Gossaín, 2019</a>). However, these strategies are not always replicable in countries with different social, cultural, and political contexts. To understand why corruption persists, it is necessary to understand how people interact and what incentives they have to become corrupt or stay honest.</p>
+
+<p>Recently, humanity found a new ally in the fight against corruption: <b>mathematics</b>. In recent years, thanks to the popularization of personal computers, mathematical models emerged as tools in the fight against corruption. Especially modeling through network theory and game theory.</p>
+
+<p>Such is the case that new studies have documented and analyzed cases of corruption with these approaches (<a href="#luna-pla&nicolas-carlock_2020">Luna-Pla & Nicolás-Carlock, 2020</a>).
+</p>
+
+<h2 id="what-is-corruption">What is corruption?</h2>
+
+<p>Corruption is a complex phenomenon that can manifest itself from a bribe to the diversion of public resources, but in essence, it can be defined as:</p>
+
+<p style="text-align: right; width: 95%;"><cite><strong>"The abuse of entrusted power for private gain"</strong></cite>
+<br><br> (<a href="#transparencia_2023" target="_blank">Transparency International, 2024</a>)</p>
+
+<p>A mathematical definition of corruption must consider two central ideas: <b>power</b> as a network of relationships, and <b>gain</b> as the result of strategic decisions based on risks and benefits. <br><br>
+
+To model it, two main approaches have been followed: network theory, which analyzes the structure and actors within corrupt systems, and game theory, which studies the strategic decisions of individuals. Although each approach has its limitations, combining them provides a more complete representation of the phenomenon.</p>
+
+<h3 id="modeling-corruption">Modeling corruption</h3>
+
+<p>The work was primarily based on three articles, each contributing a different approach.</p>
+
+<h4 id="network-approach">Network theory approach</h4>
+
+<figure id="red-espanola-en">
+<img src="/assets/elartedeconectarlospuntos/Red española.png" alt="Spanish corruption network" style="width: 70%; height: auto; display: block; margin: 0 auto;">
+<figcaption>Figure 1: Spanish corruption network (<a href="#martins_et_al">Martins et al., 2022</a>).</figcaption>
 </figure>
-<figcaption>Flowchart that represents the most important parts of the algorithm proposed by Scatà, M. et al. </figcaption>
 
-<h3 id="how-to-attack">The Counterintuitive Discovery: How Do We Attack the Network?</h3>
+<p>(<a href="#martins_et_al">Martins et al., 2022</a>) documented and recreated the networks associated with corruption scandals in Spain and Brazil (<a href="#red-espanola-en">Figure 1</a>). They identified the common properties among them and subsequently developed an algorithm that replicated the properties of corrupt networks.</p>
 
-<p>One of the most revealing findings of the simulation involves how to dismantle these networks. Traditional logic suggests that we should seek out and arrest the heads of the network (the central nodes). However, our model showed that <b>a centralized attack tends to fail</b>. When a central node is removed, mid-hierarchy nodes quickly reorganize their connections, and the network survives.</p>
-
-<p>The mathematical solution? <b>Random disruption</b>.</p>
-
-<p>The random removal of nodes rapidly degrades the overall connectivity of the network, fracturing it into small, isolated communities. In real life, this translates into policies such as mandatory and random rotation of personnel in high-risk positions (customs, public procurement, licensing). By rotating staff, the formation of long-term criminal trust bonds is prevented.</p>
-
-
- <div class="content-es">
-
-    <h3 id="conclusion">Conclusión</h3>
-    <p>La corrupción es un sistema adaptativo, por lo que una solución única siempre será insuficiente. Los hallazgos de nuestra investigación sugieren que las políticas públicas deben enfocarse en dos frentes simultáneos:</p>
-    <ol>
-        <li><b>Cambiar la matriz de pagos:</b> Incrementar los costos de ser corrupto eliminando la impunidad y reduciendo los costos de monitoreo mediante la digitalización y transparencia total de datos (al estilo Dinamarca).</li>
-        <li><b>Atacar la estructura de la red:</b> Intervenciones aleatorias (rotación de personal) que rompan los enlaces de confianza y eviten que el sistema se reorganice.</li>
-    </ol>
-    <p>Las matemáticas nos brindan una nueva lente: la corrupción no es una falla moral inevitable, es una estructura que, si entendemos cómo se conecta, podemos calcular cómo desmantelarla.</p>
- </div>
- 
- <div class="content-en">
- <p>We also studied how these networks form and grow from scratch, using predictive models based on the recidivism of the actors involved:</p>
+ <div hidden class="content-en">
      <!-- Mermaid diagram -->
     <figure class="mermaid diagramaDeFlujo">
         flowchart TD
         A(["Start of the algorithm"]) --> B[/"$N, \lambda, \alpha, \beta, p$"/]
-        B --> C["A network is created"]
+        B --> C["An empty network is created"]
         C --> D{"$i > N$"}
         D -- Yes --> E(["End of the algorithm"])
         D -- No --> F["A complete network of random size is created <br> $P(x) \sim e^{-x/\lambda}$"]
@@ -654,15 +682,441 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
         I --> D
         I ~~~ E
     </figure>
-    <figcaption>Flowchart that represents the most important parts of the algorithm proposed by Martins et al. </figcaption>
-
-    <h3 id="conclusion-en">Conclusion: A Hybrid Strategy</h3>
-    <p>Corruption is an adaptive system, so a single solution will always fall short. The findings of our research suggest that public policies must focus on two simultaneous fronts:</p>
-    <ol>
-        <li><b>Change the payoff matrix:</b> Increase the costs of being corrupt by eliminating impunity and reducing monitoring costs through digitalization and total data transparency (like Denmark).</li>
-        <li><b>Attack the network structure:</b> Implement random interventions (such as staff rotation) that break trust links and prevent the system from reorganizing.</li>
-    </ol>
-    <p>Mathematics offers us a new lens: corruption is not an inevitable moral failure, it is a structure that, if we understand how it connects, we can calculate how to dismantle.</p>
+    <figcaption>Flowchart representing the most important parts of the algorithm proposed by Martins et al. </figcaption>
  </div>
 
-</body>
+<h4 id="game-theory-approach">Game theory approach</h4>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" alt="Corruption game" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción.svg" style="width: 70%; height: auto; display: block; margin: 0 auto;" aria-label="Corruption game"></object>
+<figcaption>Table 1: Payoff matrix of the corruption game.</figcaption>
+</figure>
+
+<p>(<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) formulated the <i>corruption game</i> (<a href="#juego-de-la-corrupcion">Table 1</a>), an extension of the prisoner's dilemma. The central idea was to allow power asymmetries between individuals.</p>
+
+<h4 id="wasp-nest">The wasp nest <br> <i>Original inspiration for the corruption game</i></h4>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Avispa.svg" alt="Wasp" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Avispa.svg" style="width: 20%; height: auto; display: block; margin: 0 auto;  opacity: 0.8;" aria-label="Wasp"></object>
+</figure>
+
+<p>In a wasp colony, the social contract is formed between the queen wasp, the only one delegated to lay eggs, and the workers <b>(C)</b>, who work to raise their sisters. However, there is a biological temptation: a worker can break the contract <b>(D)</b> and lay her own unfertilized eggs to pass on her genes, obtaining a genetic benefit <b>(t)</b> at the expense of the colony's laws. To prevent this chaos, there are workers with the role of police. If a police wasp is honest <b>(H)</b>, she will spend energy and time <b>(-c)</b> inspecting cells and eating the illegal eggs of her selfish companions, applying a punishment <b>(-p)</b> by destroying their offspring.</p>
+
+<p>The problem arises when the police wasp is corrupt <b>(K)</b>, which means she has the power to monitor but decides not to in order to save the energy cost <b>(c)</b>, or even worse, uses her position of power to lay her own eggs with impunity <b>(t)</b>. If the common workers notice that the police are not monitoring (i.e., that the non-cooperative power is the dominant strategy), chaos ensues: they all start laying eggs selfishly instead of working, and the hive's productivity collapses.</p>
+
+<p>The game demonstrates that, just as in human societies, if the cost of monitoring is very high or the punishment is ineffective, the colony evolves towards a state of anarchy.</p>
+
+<h4 id="mixed-approach">Mixed approach: network and game theory</h4>
+
+<figure id="algoritmo-scata-en">
+<img src="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" alt="Scàta et al. algorithm" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" style="width: 90%; height: auto; display: block; margin: 0 auto;  opacity: 0.8;" aria-label="Scàta et al. algorithm"></object>
+<figcaption>Figure 2: Scàta et al. algorithm</figcaption>
+</figure>
+
+<p>(<a href="#scata_et_al">Scatà et al., 2016</a>) explored the evolution of human cooperation through a model (<a href="#algoritmo-scata-en">Figure 2</a>) that combined game theory (<i>the prisoner's dilemma</i>) and scale-free networks.</p>
+
+
+<figure id="masa-critica-en">
+<img src="/assets/elartedeconectarlospuntos/Masa crítica en diferentes configuraciones iniciales.png" alt="Critical mass in different initial configurations">
+<figcaption>Figure 3: Critical mass in different initial configurations: at the periphery, randomly, and at the center (<a href="#scata_et_al">Scatà et al., 2016</a>).</figcaption>
+</figure>
+
+<p>In their article, they sought to understand how the insertion of a minimum mass of cooperative individuals (<a href="#masa-critica-en">Figure 3</a>) influences a network of non-cooperative individuals.</p>
+
+ <div hidden class="content-en">
+ {% include diagramaDeFlujo.html %}
+ <p>The algorithm designed by the researchers was as follows:</p>
+<!-- Mermaid diagram -->
+<figure class="mermaid diagramaDeFlujo">
+    flowchart TD
+    A(["Start of the algorithm"]) --> B[/"$M, c, J, H, K, N$"/]
+    B --> C["A Barabási-Albert network of $R$ nodes is created"]
+    C --> D["The initial strategies ($M$) are assigned according to the initial position ($c$)"]
+    D --> E{"$i > N$"}
+        
+    E -- No --> F{"$j > R$"}
+        
+    F -- No --> G["The node plays ($J$) with all its neighboring nodes"]
+    G --> H["Calculates its total gain ($g$)"]
+    H --> I{"$p < H + g$"}
+    
+    I -- Yes --> J["Maintain strategy"]
+    I -- No --> K["Change strategy"]
+    
+    J --> L["Counter for each node of the network <br> $j = j + 1$"]
+    K --> L
+    
+    L --> F
+    
+    %% "Yes" branches that go down to the end of the diagram
+    F -- Yes ---> Y["The iteration counter is increased \n $i = i + 1$"]
+    Y --> E
+    
+    E -- Yes ----> Z(["End of the algorithm"])
+    
+    %% Invisible links to force Y and Z to the bottom
+    L ~~~ Y
+    Y ~~~ Z
+</figure>
+<figcaption>Flowchart representing the most important parts of the algorithm proposed by Scatà, M. et al. </figcaption>
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3 id="new-model">Development of a new model</h3>
+
+<figure id="hipotesis-trabajo-en">
+<img src="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" alt="Work hypothesis" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Work hypothesis"></object>
+<figcaption>Figure 4: Work hypothesis: if we replace the prisoner's dilemma with the corruption game, will it be possible to create corrupt networks by varying the parameters of the game's payoff matrix?</figcaption>
+</figure>
+
+<p>The work hypothesis (<a href="#hipotesis-trabajo-en">Figure 4</a>) was based on the question: is it possible to obtain corrupt networks similar to those of (<a href="#martins_et_al">Martins et al., 2022</a>) if the corruption game (<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) is used in the mixed model of (<a href="#scata_et_al">Scatá et al., 2016</a>)?</p>
+<br>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Denmark</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Denmark" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<figure id="matriz-dinamarca-en">
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" alt="Denmark payoff matrix" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Denmark payoff matrix"></object>
+<figcaption>Table 2: Denmark matrix.<br>Characterized by high social trust and transparency<br>(<a href="#chene_2011">Chêne, 2011</a>).</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Singapore</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapore" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<figure id="matriz-singapur-en">
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" alt="Singapore payoff matrix" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Singapore payoff matrix"></object>
+<figcaption>Table 3: Singapore matrix.<br>Characterized by strict laws and severe punishments<br>(<a href="#gossain_2019">Gossaín, 2019</a>).</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Mexico</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="Mexico" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<figure id="matriz-mexico-en">
+<img src="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" alt="Mexico payoff matrix" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Matriz de pagos de México.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Mexico payoff matrix"></object>
+<figcaption>Table 4: Mexico matrix.<br>Characterized by an unstable equilibrium, where corruption can emerge<br>(<a href="#casar_2023">Casar & Cejudo, 2023</a>).</figcaption>
+</figure>
+</div>
+</div>
+
+
+<p>To this end, it was proposed to simulate the behavior of three different societies (<a href="#matriz-dinamarca-en">Table 2</a>, <a href="#matriz-singapur-en">Table 3</a>, and <a href="#matriz-mexico-en">Table 4</a>) through the corruption game, each with a payoff matrix adapted to its social context.</p>
+
+
+<br>
+
+<figure id="tabla-legatum-en">
+<img src="/assets/elartedeconectarlospuntos/Índice de prosperidad de Legatum.svg" alt="Legatum Prosperity Index" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Índice de prosperidad de Legatum.svg" style="width: 100%; height: auto; display: block; margin: 0 auto;" aria-label="Legatum Prosperity Index"></object>
+<figcaption>Table 5: 2023 Legatum Prosperity Index (<a href="#legatum_2023">Legatum Institute Foundation, 2023</a>).</figcaption>
+</figure>
+<br>
+<p>The payoffs were proposed based on the Legatum Prosperity Index (<a href="#tabla-legatum-en">Table 5</a>), which is a tool that measures the level of well-being and development of countries through different parameters. As well as the literature regarding the social behavior of Denmark (<a href="#chene_2011">Chêne, 2011</a>), Singapore (<a href="#gossain_2019">Gossaín, 2019</a>), and Mexico (<a href="#casar_2023">Casar & Cejudo, 2023</a>).</p>
+<br>
+
+<figure id="red-modelo-en">
+<img src="/assets/elartedeconectarlospuntos/Red modelo para la tesis.svg" alt="Model network for the thesis" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red modelo para la tesis.svg" style="width: 50%; height: auto; display: block; margin: 0 auto;opacity: 0.8;" aria-label="Model network for the thesis"></object>
+<figcaption>Figure 5: Model network for the thesis</figcaption>
+</figure>
+
+<p>A Barabási-Albert network (<a href="#red-modelo-en">Figure 5</a>) was used as the basis for modeling the societies, according to (<a href="#scata_2016">Scatà et al. 2016</a>) this type of network is the closest to a real social network.</p>
+
+
+<h3>Testing the model</h3>
+
+<br>
+
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Denmark</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Denmark" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<br>
+<figure id="juego-corrupcion-dinamarca-en">
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción - Dinamarca.svg" alt="Corruption game - Denmark" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción - Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Corruption game - Denmark"></object>
+<figcaption>Table 6: In a few iterations, Danish society reaches a stable equilibrium where half the population corresponds to cooperative civilians (C) and the other half to honest power (H).</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Singapore</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapore" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<br>
+<figure id="juego-corrupcion-singapur-en">
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción - Singapur.svg" alt="Corruption game - Singapore" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción - Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Corruption game - Singapore"></object>
+<figcaption>Table 7: Strict laws and their easy enforcement generate the stable cooperative equilibrium of cooperative civilians (C) and honest power (H) in Singapore's society.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+<h4>Mexico</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="Mexico" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+<br>
+<figure id="juego-corrupcion-mexico-en">
+<img src="/assets/elartedeconectarlospuntos/Juego de la corrupción - México.svg" alt="Corruption game - Mexico" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Juego de la corrupción - México.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Corruption game - Mexico"></object>
+<figcaption>Table 8: The unstable equilibrium of the population can be noticed; from the ninth iteration, the population shifts to a mixed population of cooperative civilians (C), honest power (H), and corrupt power (K). The system converges to the stable equilibrium (x) analyzed in the article 
+by (<a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
+</figcaption>
+</figure>
+</div>
+</div>
+
+<p>First, it was verified that each of the societies behaved according to reality, meaning that Denmark (<a href="#juego-corrupcion-dinamarca-en">Table 6</a>) and Singapore (<a href="#juego-corrupcion-singapur-en">Table 7</a>) would reach a cooperative equilibrium, while Mexico (<a href="#juego-corrupcion-mexico-en">Table 8</a>) would tend towards a state of corruption.</p>
+
+<h4>The robustness of societies</h4>
+<p>Subsequently, experiments were conducted with the inclusion of a critical mass of corrupt individuals in three different initial configurations of the network (<a href="#masa-critica-en">Figure 5</a>), building on the central ideas of (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
+
+<br>
+<figure id="roles-sociedad-en">
+<img src="/assets/elartedeconectarlospuntos/Cuatro roles en la sociedad.svg" alt="Four roles in society" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Cuatro roles en la sociedad.svg" viewBox="0 0 800 600" style="width: 80%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Four roles in society"></object>
+<figcaption>Figure 6: The four roles in society</figcaption>
+</figure>
+
+
+<p>In each society, the ability to maintain cooperative strategies in the face of the inclusion of non-cooperative strategies (D) and (K) (<a href="#roles-sociedad-en">Figure 6</a>) was measured.</p>
+
+<h4>Denmark</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Dinamarca.svg" alt="Denmark" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+
+<figure id="evolucion-dinamarca-en">
+<img src="/assets/elartedeconectarlospuntos/Evolución de Dinamarca con 20,25,30 M.C. - (K).gif" alt="Evolution of Denmark with 20,25,30 C.M. - (K)" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de Dinamarca con 20,25,30 M.C. - (K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolution of Denmark with 20,25,30 C.M. - (K)"></object>
+<figcaption>Figure 7: Evolution of Denmark with 20%, 25%, and 30% critical mass of corrupt nodes (K) in the initial configuration of central nodes.</figcaption>
+</figure>
+
+<p>In Denmark (<a href="#evolucion-dinamarca-en">Figure 7</a>), it is observed that the population maintains its cooperative strategies despite the inclusion of corrupt nodes. But there is a tipping point approximately when there is 20% - 25% of corrupt nodes in the central part of the network, beyond which it is not possible to eliminate them.</p>
+
+<figure id="evolucion-dinamarca-limite-en">
+<img src="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" alt="Denmark 95MC(K)3CI" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Dinamarca 95MC(K)3CI.gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Denmark 95MC(K)3CI"></object>
+<figcaption>Figure 8: Evolution of Denmark with 95% critical mass of corrupt nodes (K) with different initial configurations: random, central, and peripheral nodes.</figcaption>
+</figure>
+
+<p>In the limit case (<a href="#evolucion-dinamarca-limite-en">Figure 8</a>), where 95% of the network starts with a corrupt strategy, the population evolves to a cooperative population except when the critical mass starts in the central part of the network.</p>
+
+<h4>Singapore</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20Singapur.svg" alt="Singapore" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+
+<figure id="evolucion-singapur-en">
+<img src="/assets/elartedeconectarlospuntos/Evolución de la red de Singapur MC(H) 95(K).gif" alt="Evolution of Singapore network MC(H) 95(K)" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de la red de Singapur MC(H) 95(K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolution of Singapore network MC(H) 95(K)"></object>
+<figcaption>Figure 9: Evolution of Singapore with 95% critical mass of corrupt nodes (K) with different initial configurations: random, central, and peripheral nodes.</figcaption>
+</figure>
+
+<p>In Singapore (<a href="#evolucion-singapur-en">Figure 9</a>), a similar result to Denmark was observed: the population maintains its cooperative strategies despite the inclusion of corrupt nodes. Except in the central nodes of the network, where greater resistance to cooperation is shown.</p>
+
+<p>This was one of the first interesting results of the simulation, showing that even in highly cooperative societies, if a critical mass of corrupt nodes is introduced, the population tends to evolve towards a cooperative population except in the central part of the network.</p>
+
+<h4>Mexico</h4>
+<img src="/assets/elartedeconectarlospuntos/Bandera%20M%C3%A9xico.svg" alt="Mexico" style="width: 10%; height: auto; display: block; margin: 0 auto; opacity: 0.8;">
+
+<figure id="evolucion-mexico-en">
+<img src="/assets/elartedeconectarlospuntos/Evolución de la red de México MC(K).gif" alt="Evolution of Mexico network MC(K)" style="display: none;">
+<object type="image/gif" data="/assets/elartedeconectarlospuntos/Evolución de la red de México MC(K).gif" viewBox="0 0 800 600" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
+<figcaption>Figure 10: Evolution of the Mexico network with different percentages of critical mass in central nodes with 20%, 60%, and 90% of corrupt nodes (K).</figcaption>
+</figure>
+
+<p>In Mexico (<a href="#evolucion-mexico-en">Figure 10</a>), a different result from Denmark and Singapore was observed: the society is not resilient against the inclusion of corrupt nodes. The initial percentage of critical mass remains constant.</p>
+
+<h3 id="how-to-attack-network">How to attack a corrupt network?</h3>
+
+<p>After confirming that the model recreated the dynamics of corruption in different countries, it led to the most interesting part of the work. In the Mexican case, lacking resilience against corruption, if you start with a network where all nodes are corrupt, is it possible to make it evolve into a cooperative society?</p>
+
+<h4 id="all-scenarios">All possible scenarios</h4>
+
+<p>To find an answer to this question, all possible scenarios were modeled. The goal was to find a scenario where the population would evolve into a cooperative population, or to find a pattern that would provide a clue on how to achieve it. The model parameters that were varied were:</p> <br>
+<ul>
+  <li><b>Type of critical mass:</b> <span style="display: inline-block;">Cooperative (C,H), Honest power (H)</span></li>
+  <li><b>Percentage of critical mass:</b> <span style="display: inline-block;">5%, 10%, ..., 95%</span></li>
+  <li><b>Initial spatial configuration:</b> <span style="display: inline-block;">Central, Random, Peripheral</span></li>
+  <li><b>Number of iterations:</b> <span style="display: inline-block;">100, 200, ..., 1000</span></li>
+  <li><b>Homophily percentage:</b> <span style="display: inline-block;">5%, 10%, ..., 95%</span></li>
+</ul>
+
+<br>
+<p>
+From those 24,000 possible scenarios, an interesting trend was found.
+</p>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 0px; margin-bottom: 0px;">
+<div style="flex: 1 1 100%; min-width: 200px; text-align: center;">
+
+<figure id="intervencion-aleatoria-en">
+<img src="/assets/elartedeconectarlospuntos/Red de México MC25NA(H,C).svg" alt="Mexico network MC25NA(H,C)" style="display: none;">
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 0px; align-items: flex-start;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC25NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC25NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Mexico network MC25NA(H,C)"></object>
+</div>
+<figcaption>Figure 11: A cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 75% to 52%.</figcaption>
+</figure>
+
+</div>
+</div>
+
+<p>Traditional logic suggests that we should seek out and arrest the heads of the network (the central nodes). However, the model showed that a centralized attack is not the best strategy. The mathematical solution is a random disruption (<a href="#intervencion-aleatoria-en">Figure 11</a>).</p>
+
+<figure id="intervencion-aleatoria-15-en">
+<img src="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" alt="Mexico network MC15NA(H,C)" style="display: none;">
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 0px; align-items: flex-start;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC15NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Mexico network MC15NA(H,C)"></object>
+</div>
+<figcaption>Figure 12: A 15% cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 85% to 60%.</figcaption>
+</figure>
+
+<p>There is no minimum threshold where the entire network evolves into a cooperative population, but there are minimum percentages where greater propagation occurs. For example, with a 15% cooperative critical mass (<a href="#intervencion-aleatoria-15-en">Figure 12</a>), the strategy manages to spread to 40% of the network. Starting from 30% of critical mass, the network evolves to a cooperative majority of 60% (<a href="#intervencion-aleatoria-30-en">Figure 13</a>).</p>
+
+<figure id="intervencion-aleatoria-30-en">
+<img src="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" alt="Mexico network MC30NA(H,C)" style="display: none;">
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 0px; align-items: flex-start;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC30NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Mexico network MC30NA(H,C)"></object>
+</div>
+<figcaption>Figure 13: A 30% cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 70% to 40%.</figcaption>
+</figure>
+
+<p>Random intervention fragments the central community. The strategy change of the nodes modifies the connectivity of the corrupt network. By attacking randomly, vital links connecting different communities are broken, fragmenting the network into multiple isolated communities and enabling the cooperative strategy to emerge and expand until reaching an equilibrium.</p>
+
+<br>
+<hr>
+<br>
+
+<h2 id="conclusion-en">Conclusions</h2>
+
+<p>The analysis reveals a fundamental duality in the dynamics of corruption. On one hand, its persistence depends on central control (<a href="#evolucion-dinamarca-en">Figure 7</a>, <a href="#evolucion-dinamarca-limite-en">Figure 8</a>, and <a href="#evolucion-singapur-en">Figure 9</a>): corrupt networks require key nodes that sustain their cohesion. On the other hand, its eradication requires random disruption (<a href="#intervencion-aleatoria-en">Figure 11</a>, <a href="#intervencion-aleatoria-15-en">Figure 12</a>, and <a href="#intervencion-aleatoria-30-en">Figure 13</a>).</p>
+
+<p>The strategy to combat corruption is hybrid. On one hand, it requires modifying the payoff matrix of society, strengthening the rule of law <b>(c)</b> and the punishment of people in power <b>(<i>p < q</i>)</b> so that corruption becomes a losing strategy, as in Singapore. On the other hand, it demands weakening the structure of the corrupt network through random interventions, such as staff rotation and the promotion of transparency, following examples like Denmark.</p>
+
+<h3 id="limitations-en">Limitations of the work</h3>
+
+<p>The current model has several limitations that must be considered:</p>
+
+<ul>
+    <li><b>Unrepresentative sample</b> <br> <p>The conclusions are based solely on a Barabási-Albert network; a broader analysis with other networks sharing the same properties is needed.</p></li>
+    <li><b>Arbitrary parameters in payoff matrices</b> <br> <p>The parameters in each country's payoff matrix were adjusted so that the society would behave similarly to the literature, but nothing guarantees they are the best values for the modeling.</p></li>
+    <li><b>The model does not consider the creation and dissolution of links in the network.</b> <br> <p>In the current model, the links between nodes are static, which contrasts with dynamic connections in reality.</p></li>
+</ul>
+
+<h3 id="future-work-en">Future work</h3>
+
+<p>The work opens new lines of research, notably the empirical validation of the model using data from real corruption cases. This would allow completing its development as a diagnostic and prognostic tool, with potential for designing more effective public policies and contributing to the restoration of the rule of law in Mexico and in other contexts with similar structural problems.</p>
+
+<br>
+<hr>
+<br>
+
+<h2 id="bibliography-en">Bibliography</h2>
+
+<h3>Main articles</h3>
+
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" alt="Martins et al. article" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Martins et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7;" aria-label="Martins et al. article"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Universality of corruption - Martins et al.pdf" target="_blank">📄 Martins et al., 2022 </a>
+</button> 
+<br>
+<li id="martins_et_al_en">
+Martins, A., da Cunha, B., Hanley, Q., Gonçalves, S., Perc, M., & Ribeiro, H. (2022). Universality of political corruption networks. <i>Nature Scientific Reports</i>. <br>
+DOI: <a href="https://doi.org/10.1038/s41598-022-10909-2" target="_blank">https://doi.org/10.1038/s41598-022-10909-2</a>
+</li> 
+<br>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" alt="Scatà et al. article" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Scatà et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Scatà et al. article"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Combining evolutionary game theory and network theory - Scata et al.pdf" target="_blank">📄 Scatà et al., 2016 </a></button> 
+<br>
+<li id="scata_et_al_en">
+Scatà, M., Di Stefano, A., La Corte, A., Liò, P., Catania, E., Guardo, E., & Pagano, S. (2016). Combining evolutionary game theory and network theory to analyze human cooperation patterns. <i>Chaos, Solitons and Fractals</i>, 17–24. <br>
+DOI: <a href="https://doi.org/10.1016/j.chaos.2016.04.018" target="_blank">https://doi.org/10.1016/j.chaos.2016.04.018</a>
+</li> 
+<br>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" alt="Ubeda et al. article" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Artículo Ubeda et al - detallado.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Ubeda et al. article"></object>
+</figure>
+<br>
+<button><a href="assets/elartedeconectarlospuntos/Power and Corruption Úbeda & Duéñez.pdf" target="_blank">📄 Úbeda & Duéñez-Guzman, 2010 </a></button> 
+<br>
+<li id="ubeda_et_al_en">
+Ubeda, F., & Dueñez-Guzman, E. (2010). Power and Corruption. <i>Evolution</i>, 1127-1139. <br>
+DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">https://doi.org/10.1111/j.1558-5646.2010.01194.x</a>
+</li> 
+<br>
+
+
+<h3>Additional articles</h3>
+<br>
+<ul>
+    <li id="luna-pla&nicolas-carlock_2020_en">Luna-Pla, I., & Nicolás-Carlock, J. (2020). Corruption and complexity: a scientific framework for the analysis of corruption networks.  <i>Applied Network Science</i>. <br> doi: <a href="https://doi.org/10.1007/s41109-020-00258-2" target="_blank">https://doi.org/10.1007/s41109-020-00258-2</a></li>
+
+</ul>
+
+<br>
+<h3>Reports</h3>
+<br>
+
+<ul>
+    <li id="legatum_2023_en">Legatum Institute Foundation. (2023). <i>The 2023 Legatum Prosperity Index</i>.
+    <br>Retrieved from <a href="https://index.prosperity.com/about/resources" target="_blank">https://index.prosperity.com/about/resources</a></li>
+    <br>
+    <li id="transparencia_2023_en">Transparency International. (2024). <i>Corruption Perceptions Index 2023</i>.
+    <br>Retrieved from <a href="https://www.transparency.org/en/cpi/2023" target="_blank">https://www.transparency.org/en/cpi/2023</a></li>
+</ul>
+
+<br>
+<h3>Journalistic articles</h3>
+<br>
+<ul>
+    <li id="casar_2023_en">Casar, M. A., & Cejudo, Q. (2023). México: Anatomía de la Corrupcion.  <i>Mexicanos Contra la Corrupción y la Impunidad</i>. 
+    <br>
+    Retrieved from <a href="https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/" target="_blank"> https://contralacorrupcion.mx/anatomia-de-la-corrupcion-cuarta-edicion/</a></li>
+<br>
+    <li id="chene_2011_en">Chêne, M. (2011). What makes New Zealand, Denmark, Finland, Sweden and others 'cleaner' than most countries? <i>Transparency International</i> 
+    <br>
+    Retrieved from <a href="https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries" target="_blank">https://www.transparency.org/en/blog/what-makes-new-zealand-denmark-finland-sweden-and-others-cleaner-than-most-countries</a></li>
+<br>
+    <li id="gossain_2019_en">Gossaín, J. (2019). ¿Quiere saber cómo fue que acabaron con la corrupción en Singapur? <i>El Tiempo</i>. 
+    <br>
+    Retrieved from <a href="https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920" target="_blank">https://www.eltiempo.com/colombia/otras-ciudades/como-se-acabo-la-corrupcion-en-singapur-386920</a>
+    </li>
+
+</ul>
+
+<br>
+<br>
+
+<hr>
+
+<br>
+
+<figure>
+<img src="/assets/elartedeconectarlospuntos/MCM.svg" alt="Maria del Carmen Morales" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/MCM.svg" style="width: 80%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Maria del Carmen Morales"></object>
+</figure>
+<br>
+
+<h4 id="in-memory-of">In memory of <b>Maria del Carmen Morales</b> <br> and all the searching mothers</h4>
+
+<p style="width: 90%; margin: 0 auto;">Murdered along with one of her sons on the night of April 23 in the municipality of Tlajomulco de Zúñiga, Jalisco. Member of the Guerreros Buscadores collective, who revealed what occurred at the Izaguirre ranch in Teuchitlán, Jalisco, where members of the Jalisco New Generation Cartel (CJNG) trained, murdered, and disappeared people.
+</p>
+
+</div> <!-- end content-en -->
