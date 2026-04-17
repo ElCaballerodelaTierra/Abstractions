@@ -74,7 +74,7 @@ content-en: |
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/mi-ventana.JPEG" alt="Mi ventana" loading="lazy"> <figcaption class="content-es">Mi ventana</figcaption> <figcaption class="content-en">My window</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/plaza-central.JPEG" alt="Plaza central" loading="lazy"> <figcaption class="content-es">Plaza central del pueblo</figcaption> <figcaption class="content-en">Town's central square</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/torre-de-la-iglesia.JPEG" alt="Torre de la iglesia" loading="lazy"> <figcaption class="content-es">Torre de la iglesia, una de las pocas iglesias donde la torre está separada del edificio central</figcaption> <figcaption class="content-en">Church tower, one of the few churches where the tower is separated from the main building</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día nublado</figcaption> <figcaption class="content-en">A cloudy day</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día lluvioso</figcaption> <figcaption class="content-en">A rainy day</figcaption></div>
 </div>
 
  <h1>Tlajomulco</h1>

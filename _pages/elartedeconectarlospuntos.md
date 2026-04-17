@@ -69,23 +69,33 @@ content-en: |
 <h2>Índice</h2>    
 
 <ul style="padding-left: 20px;">
-      <li><a href="#podemos-predecir">¿Podemos predecir y detener la corrupción?</a></li>
-      <li><a href="#que-es-corrupcion">¿Que es la corrupción?</a>
-        <ul style="padding-left: 20px; list-style-type: square;">
-          <li><a href="#modelando-corrupcion">Modelando la corrupción</a>
-            <ul style="padding-left: 20px; list-style-type: circle;">
-              <li><a href="#enfoque-redes">Enfoque mediante teoría de redes</a></li>
-              <li><a href="#enfoque-juegos">Enfoque mediante teoría de juegos</a></li>
-              <li><a href="#enfoque-mixto">Enfoque mixto: teoría de redes y juegos</a></li>
+  <li><a href="#podemos-predecir">¿Podemos predecir y detener la corrupción?</a></li>
+  <li><a href="#que-es-corrupcion">¿Que es la corrupción?</a>
+    <ul style="padding-left: 20px; list-style-type: square;">
+      <li><a href="#modelando-corrupcion">Modelar la corrupción</a>
+        <ul style="padding-left: 20px; list-style-type: circle;">
+          <li><a href="#enfoque-redes">Enfoque mediante teoría de redes</a></li>
+          <li><a href="#enfoque-juegos">Enfoque mediante teoría de juegos</a>
+            <ul style="padding-left: 20px; list-style-type: square;">
+              <li><a href="#avispa">El avispero</a></li>
+            </ul>
+          </li>
+          <li><a href="#enfoque-mixto">Enfoque mixto: teoría de redes y juegos</a></li>
+        </ul>
+      </li>
+    </ul>
+    <li><a href="#nuevo-modelo">Desarrollo de un nuevo modelo</a></li>
+    <li><a href="#poniendo-a-prueba">Poniendo a prueba el modelo</a>
+        <ul style="padding-left: 20px; list-style-type: circle;">
+          <li><a href="#la-robustez-de-las-sociedades">La robustez de las sociedades</a></li>
+          <li><a href="#subred-corrupta">Las subredes corruptas</a></li>
+          <li><a href="#como-atacamos-la-red">¿Cómo atacar una red corrupta?</a>
+            <ul style="padding-left: 20px; list-style-type: square;">
+              <li><a href="#todos-los-escenarios">Todos los escenarios posibles</a></li>
             </ul>
           </li>
         </ul>
       </li>
-  <li><a href="#nuevo-modelo">Desarrollo de un nuevo modelo</a></li>
-  <li><a href="#como-atacamos-la-red">¿Cómo atacar una red corrupta?</a>
-    <ul style="padding-left: 20px; list-style-type: circle;">
-      <li><a href="#todos-los-escenarios">Todos los escenarios posibles</a></li>
-    </ul>
   </li>
   <li><a href="#conclusion">Conclusión</a>
     <ul style="padding-left: 20px; list-style-type: square;">
@@ -111,7 +121,7 @@ content-en: |
 <p> Tal es el caso que nuevos estudios han documentado y analizado casos de corrupción con estos enfoques (<a href="#luna-pla&nicolas-carlock_2020">Luna-Pla y Nicolás-Carlock, 2020</a>).
 </p>
 
-<h2 id="que-es-corrupcion">¿Que es la corrupción?</h2>
+<h2 id="que-es-corrupcion">¿Qué es la corrupción?</h2>
 
 <p>La corrupción es un fenómeno complejo que puede manifestarse desde un soborno hasta el desvío de recursos públicos, pero en esencia, se puede definir como:</p>
 
@@ -122,7 +132,7 @@ content-en: |
 
 Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, que analiza la estructura y los actores dentro de sistemas corruptos, y la teoría de juegos, que estudia las decisiones estratégicas de los individuos. Aunque cada enfoque tiene sus limitaciones, al combinarlos se obtiene una representación más completa del fenómeno.</p>
 
-<h3 id="modelando-corrupcion">Modelando la corrupción</h3>
+<h3 id="modelando-corrupcion">Modelar la corrupción</h3>
 
 <p>El trabajo se basó principalmente en tres artículos, cada uno de ellos aportó un enfoque distinto.</p>
 
@@ -241,11 +251,13 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figure id="hipotesis-trabajo">
 <img src="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" alt="Hipótesis del trabajo" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Hipótesis del trabajo.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Hipótesis del trabajo"></object>
-<figcaption>Figura 4: Hipótesis del trabajo, si reemplazamos el dilema del prisionero por el juego de la corrupción, ¿será posible crear redes corruptas al variarar los parámetros de la matriz de pagos del juego?</figcaption>
+<figcaption>Figura 4: Hipótesis del trabajo, si reemplazamos el dilema del prisionero por el juego de la corrupción, ¿será posible crear redes corruptas al variar los parámetros de la matriz de pagos del juego?</figcaption>
 </figure>
 
-<p>La hipótesis del trabajo (<a href="#hipotesis-trabajo">Figura 4</a>) se basó en la pregunta: ¿es posible obtener redes corruptas similares a las de (<a href="#martins_et_al">Martins et al., 2022</a>) si se usa el juego de de la corrupción (<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) en el modelo mixto de (<a href="#scata_et_al">Scatá et al., 2016</a>)?</p>
-<br>
+
+<p>La hipótesis del trabajo (<a href="#hipotesis-trabajo">Figura 4</a>) se basó en la pregunta: ¿es posible obtener redes corruptas similares a las de (<a href="#martins_et_al">Martins et al., 2022</a>) si se usa el juego de la corrupción (<a href="#ubeda_et_al">Ubeda & Dueñez-Guzman, 2010</a>) en el modelo mixto de (<a href="#scata_et_al">Scatá et al., 2016</a>)?</p>
+<p>Para ello, se propuso simular el comportamiento de tres sociedades  (<a href="#matriz-dinamarca">Tabla 2</a>, <a href="#matriz-singapur">Tabla 3</a> y <a href="#matriz-mexico">Tabla 4</a>) por medio del juego de la corrupción, cada una con una matriz de pagos acorde a su contexto social.</p>
+
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
 <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
 <h4>Dinamarca</h4>
@@ -276,10 +288,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 </div>
 </div>
 
-
-<p>Para ello, se propuso simular el comportamiento de tres sociedades distintas (<a href="#matriz-dinamarca">Tabla 2</a>, <a href="#matriz-singapur">Tabla 3</a> y <a href="#matriz-mexico">Tabla 4</a>) por medio del juego de la corrupción, cada una con una matriz de pagos acorde a su contexto social.</p>
-
-
+<p>Los pagos se propusieron con base en el índice de prosperidad de Legatum (<a href="#tabla-legatum">Tabla 5</a>), mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros.</p>
 <br>
 
 <figure id="tabla-legatum">
@@ -288,7 +297,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Tabla 5: Índice de prosperidad de Legatum del 2023 (<a href="#legatum_2023">Legatum Institute Foundation, 2023</a>).</figcaption>
 </figure>
 <br>
-<p>Los pagos se propusieron basándose en el índice de prosperidad de Legatum (<a href="#tabla-legatum">Tabla 5</a>), el cual es una herramienta que mide el nivel de bienestar y desarrollo de los países mediante diferentes parámetros. Así como en la literatura respecto al compartamiento social de Dinamarca (<a href="#chene_2011">Chêne, 2011</a>), Singapur (<a href="#gossain_2019">Gossaín, 2019</a>) y México (<a href="#casar_2023">Casar & Cejudo, 2023</a>).</p>
+<p>También se tomó en cuenta la literatura respecto al comportamiento social de Dinamarca (<a href="#chene_2011">Chêne, 2011</a>), Singapur (<a href="#gossain_2019">Gossaín, 2019</a>) y México (<a href="#casar_2023">Casar & Cejudo, 2023</a>).</p>
 <br>
 
 <figure id="red-modelo">
@@ -297,12 +306,12 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figcaption>Figura 5: Red modelo para la tesis</figcaption>
 </figure>
 
-<p>Como base para modelar las sociedades se utilizó una red de tipo Barabasí-Albert (<a href="#red-modelo">Figura 5</a>), acorde a (<a href="#scata_2016">Scatà et al. 2016</a>) este tipo de red es la más cercana a una red social real.</p>
+<p>Como base para modelar las sociedades se utilizó una red de tipo Barabási-Albert (<a href="#red-modelo">Figura 5</a>), acorde a (<a href="#scata_2016">Scatà et al. 2016</a>) este tipo de red es la más cercana a una red social real.</p>
 
 
-<h3>Poniendo a prueba el modelo</h3>
+<h3 id="poniendo-a-prueba">Poniendo a prueba el modelo</h3>
 
-<br>
+<p>Se verificó que cada una de las sociedades se comportara acorde a lo documentado en la literatura, es decir, que Dinamarca (<a href="#juego-corrupcion-dinamarca">Tabla 6</a>) y Singapur (<a href="#juego-corrupcion-singapur">Tabla 7</a>) alcanzaran un equilibrio cooperativo, mientras que México (<a href="#juego-corrupcion-mexico">Tabla 8</a>) tendiera a un estado de corrupción.</p>
 
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px;">
@@ -340,10 +349,9 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 </div>
 </div>
 
-<p>Primero se verificó que cada una de las sociedades se comportara acorde a la realidad, es decir, que Dinamarca (<a href="#juego-corrupcion-dinamarca">Tabla 6</a>) y Singapur (<a href="#juego-corrupcion-singapur">Tabla 7</a>) alcanzaran un equilibrio cooperativo, mientras que México (<a href="#juego-corrupcion-mexico">Tabla 8</a>) tendiera a un estado de corrupción.</p>
 
-<h4>La robustez de las sociedades</h4>
-<p>Porteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 5</a>), retomando las ideas centrales de (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
+<h4 id="la-robustez-de-las-sociedades">La robustez de las sociedades</h4>
+<p>Posteriormente se experimentó con la inclusión de una masa crítica de personas corruptas en tres diferentes configuraciones iniciales de la red (<a href="#masa-critica">Figura 5</a>), retomando las ideas centrales de (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
 
 <br>
 <figure id="roles-sociedad">
@@ -404,13 +412,177 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 
 <p>En México (<a href="#evolucion-mexico">Figura 10</a>) se observó un resultado diferente al de Dinamarca y Singapur, la sociedad no es resiliente ante la inclusión de nodos corruptos. El porcentaje inicial de masa crítica se mantiene constante. </p>
 
-<h3 id="como-atacamos-la-red">¿Cómo atacar una red corrupta?</h3>
+<h3 id="subred-corrupta">Las subredes corruptas</h3>
 
-<p>Al comprobar que el modelo recreaba la dinámica de la corrupción en diferentes países, dio pie a la parte más interesante del trabajo. En el caso mexicano al no contar con resiliencia ante la corrupción, si se inicia con una red donde todos los nodos son corruptos, ¿es posible lograr que evolucione a una sociedad cooperadora? </p>
+<p>Para comprobar la hipótesis inicial del trabajo se realizó un análisis de las subredes corruptas en el caso donde el 95% de la población inicia con una estrategia corrupta. </p>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+
+<figure id="subred-corrupta-dinamarca" style="margin: 0; display: flex; flex-direction: column; flex-grow: 1;">
+<img src="/assets/elartedeconectarlospuntos/Subred corrupta de Dinamarca.svg" alt="Subred corrupta" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Subred corrupta de Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Subred corrupta"></object>
+<figcaption style="margin-top: auto; padding-top: 15px;">Figura 11: Subred corrupta de Dinamarca.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+<table style="margin: 0 auto; width: 90%; font-size: 0.7em; min-width: 300px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Propiedad</th>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Distribución de grado exponencial</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Si</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Exponente de la ley de potencias (γ)</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-1.84</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Número de comunidades</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">106</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Comunidad más grande</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">35 nodos</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Tamaño promedio de las comunidades</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">3.3</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de agrupamiento global</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de agrupamiento local</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Camino medio</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">2.5</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Propiedad de mundo pequeño</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">No</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de asortatividad global</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.206</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de asortatividad local</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.594</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Densidad global</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.004</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Densidad local</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.057</td>
+    </tr>
+  </tbody>
+</table>
+<figcaption style="margin-top: auto; padding-top: 15px;">Tabla 5: Propiedades de la subred corrupta de Dinamarca.</figcaption>
+</div>
+</div>
+
+<p>Tanto Dinamarca cono Singapur presentaron métricas similares en su subred corrupta, algunos parámetros como la densidad global, o el camino medio fueron muy cercanos a lo documentado por ( <a href="#martins_et_al"> Martins et al., 2022</a>).</p>
+<br>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+
+<figure id="subred-corrupta-singapur" style="margin: 0; display: flex; flex-direction: column; flex-grow: 1;">
+<img src="/assets/elartedeconectarlospuntos/Subred corrupta de Singapur.svg" alt="Subred corrupta" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Subred corrupta de Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Subred corrupta"></object>
+<figcaption style="margin-top: auto; padding-top: 15px;">Figura 12: Subred corrupta de Singapur.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+<table style="margin: 0 auto; width: 90%; font-size: 0.7em; min-width: 300px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Propiedad</th>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Distribución de grado exponencial</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Si</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Exponente de la ley de potencias (γ)</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-2.14</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Número de comunidades</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">101</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Comunidad más grande</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">20 nodos</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Tamaño promedio de las comunidades</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">2.8</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de agrupamiento global</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de agrupamiento local</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Camino medio</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">2.7</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Propiedad de mundo pequeño</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">No</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de asortatividad global</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.229</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Coeficiente de asortatividad local</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.576</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Densidad global</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.004</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Densidad local</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.101</td>
+    </tr>
+  </tbody>
+</table>
+<figcaption style="margin-top: auto; padding-top: 15px;">Tabla 6: Propiedades de la subred corrupta de Singapur.</figcaption>
+</div>
+</div>
+
+
+
+<h4 id="como-atacamos-la-red">¿Cómo atacar una red corrupta?</h4>
+
+<p>Al comprobar que el modelo recreaba la dinámica de la corrupción en diferentes países, dio pie a la parte más interesante del trabajo. En el caso mexicano al <b>no contar con resiliencia</b> ante la corrupción, surgió el siguiente planteamiento: 
+<br> 
+<br> 
+Si se iniciara con una red donde la sociedad no es resiliente y todos los nodos son corruptos, ¿existe alguna forma de lograr que la red evolucione a una sociedad cooperadora? </p>
 
 <h4 id="todos-los-escenarios">Todos los escenarios posibles</h4>
 
-<p>Para encontrar respuesta este planteamiento, se modelaron todos los escenarios posibles. Buscando encontrar algún escenario en donde la población evolucionara a una población cooperadora o encontrar algún patrón que permitiera obtener alguna pista de cómo lograrlo. Los parámetros del modelo que se variaron fueron: </p> <br>
+<p>Para encontrar respuesta este planteamiento, se modelaron todas las configuraciones posibles del modelo, en búsqueda de encontrar algún escenario en donde la población evolucionara a una población cooperadora o encontrar alguna pista de cómo lograrlo. Los parámetros del modelo que se variaron fueron: </p> <br>
 <ul>
   <li><b>Tipo de masa crítica:</b> <span style="display: inline-block;">Cooperadora (C,H), Poder honrado (H)</span></li>
   <li><b>Porcentaje de masa crítica:</b> <span style="display: inline-block;">5%, 10%, ..., 95%</span></li>
@@ -467,7 +639,7 @@ De esos 24,000 escenarios posibles se encontró una tendencia interesante.
 <hr>
 <br>
 
-<h2 id="conclusion">Conclusiones</h2>
+<h2 id="conclusion">Conclusión</h2>
 
 <p>El análisis revela una dualidad fundamental en la dinámica de la corrupción. Por un lado, su persistencia depende del control central (<a href="#evolucion-dinamarca">Figura 7</a>, <a href="#evolucion-dinamarca-limite">Figura 8</a> y <a href="#evolucion-singapur">Figura 9</a>), las redes corruptas requieren nodos clave que sostengan su cohesión. Por otro lado, para su erradicación se necesita una disrupción aleatoria (<a href="#intervencion-aleatoria">Figura 11</a>, <a href="#intervencion-aleatoria-15">Figura 12</a> y <a href="#intervencion-aleatoria-30">Figura 13</a>).</p>
 
@@ -478,7 +650,7 @@ De esos 24,000 escenarios posibles se encontró una tendencia interesante.
 <p>El modelo actual tiene varias limitaciones que deben ser consideradas:</p>
 
 <ul>
-    <li><b>Muestra poco representativa</b> <br> <p>Las conclusiones se basan únicamente en una red Barabasí-Albert, es necesario realizar un análisis más amplio con otras redes con las mismas propiedades.</p></li>
+    <li><b>Muestra poco representativa</b> <br> <p>Las conclusiones se basan únicamente en una red Barabasí-Albert, es necesario realizar un análisis más amplio con otras redes.</p></li>
     <li><b>Parámetros  arbitrarios en las matrices de pagos</b> <br> <p>Los parámetros en la matriz de pagos de cada país se ajustaron para que la sociedad se comportara de manera similar a la literatura, pero nada asegura que puedan ser los mejores valores para el modelado.</p></li>
     <li><b>El modelo no considera la creación y disolución de enlaces en la red.</b> <br> <p>En el modelo actual, los enlaces entre los nodos son estáticos, lo cual contrasta con las conexiones dinámicas en la realidad.</p></li>
 </ul>
@@ -604,22 +776,31 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
 <h2>Table of Contents</h2>    
 
 <ul style="padding-left: 20px;">
-      <li><a href="#can-we-predict">Can we predict and stop corruption?</a></li>
-      <li><a href="#what-is-corruption">What is corruption?</a>
-        <ul style="padding-left: 20px; list-style-type: square;">
-          <li><a href="#modeling-corruption">Modeling corruption</a>
-            <ul style="padding-left: 20px; list-style-type: circle;">
-              <li><a href="#network-approach">Network theory approach</a></li>
-              <li><a href="#game-theory-approach">Game theory approach</a></li>
-              <li><a href="#mixed-approach">Mixed approach: network and game theory</a></li>
+  <li><a href="#can-we-predict">Can we predict and stop corruption?</a></li>
+  <li><a href="#what-is-corruption">What is corruption?</a>
+    <ul style="padding-left: 20px; list-style-type: square;">
+      <li><a href="#modeling-corruption">Modeling corruption</a>
+        <ul style="padding-left: 20px; list-style-type: circle;">
+          <li><a href="#network-approach">Network theory approach</a></li>
+          <li><a href="#game-theory-approach">Game theory approach</a>
+            <ul style="padding-left: 20px; list-style-type: square;">
+              <li><a href="#wasp-nest">The wasp nest</a></li>
+            </ul>
+          </li>
+          <li><a href="#mixed-approach">Mixed approach: network and game theory</a></li>
+        </ul>
+      </li>
+      <li><a href="#new-model">Development of a new model</a></li>
+      <li><a href="#testing-the-model">Testing the model</a>
+        <ul style="padding-left: 20px; list-style-type: circle;">
+          <li><a href="#robustness-of-societies">The robustness of societies</a></li>
+          <li><a href="#how-to-attack-network">How to attack a corrupt network?</a>
+            <ul style="padding-left: 20px; list-style-type: square;">
+              <li><a href="#all-scenarios">All possible scenarios</a></li>
             </ul>
           </li>
         </ul>
       </li>
-  <li><a href="#new-model">Development of a new model</a></li>
-  <li><a href="#how-to-attack-network">How to attack a corrupt network?</a>
-    <ul style="padding-left: 20px; list-style-type: circle;">
-      <li><a href="#all-scenarios">All possible scenarios</a></li>
     </ul>
   </li>
   <li><a href="#conclusion-en">Conclusion</a>
@@ -832,7 +1013,7 @@ To model it, two main approaches have been followed: network theory, which analy
 <p>A Barabási-Albert network (<a href="#red-modelo-en">Figure 5</a>) was used as the basis for modeling the societies, according to (<a href="#scata_2016">Scatà et al. 2016</a>) this type of network is the closest to a real social network.</p>
 
 
-<h3>Testing the model</h3>
+<h3 id="testing-the-model">Testing the model</h3>
 
 <br>
 
@@ -874,7 +1055,7 @@ by (<a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 
 <p>First, it was verified that each of the societies behaved according to reality, meaning that Denmark (<a href="#juego-corrupcion-dinamarca-en">Table 6</a>) and Singapore (<a href="#juego-corrupcion-singapur-en">Table 7</a>) would reach a cooperative equilibrium, while Mexico (<a href="#juego-corrupcion-mexico-en">Table 8</a>) would tend towards a state of corruption.</p>
 
-<h4>The robustness of societies</h4>
+<h4 id="robustness-of-societies">The robustness of societies</h4>
 <p>Subsequently, experiments were conducted with the inclusion of a critical mass of corrupt individuals in three different initial configurations of the network (<a href="#masa-critica-en">Figure 5</a>), building on the central ideas of (<a href="#scata_2016">Scatà et al. 2016</a>).</p>
 
 <br>
@@ -930,7 +1111,7 @@ by (<a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 
 <p>In Mexico (<a href="#evolucion-mexico-en">Figure 10</a>), a different result from Denmark and Singapore was observed: the society is not resilient against the inclusion of corrupt nodes. The initial percentage of critical mass remains constant.</p>
 
-<h3 id="how-to-attack-network">How to attack a corrupt network?</h3>
+<h4 id="how-to-attack-network">How to attack a corrupt network?</h4>
 
 <p>After confirming that the model recreated the dynamics of corruption in different countries, it led to the most interesting part of the work. In the Mexican case, lacking resilience against corruption, if you start with a network where all nodes are corrupt, is it possible to make it evolve into a cooperative society?</p>
 
@@ -993,7 +1174,7 @@ From those 24,000 possible scenarios, an interesting trend was found.
 <hr>
 <br>
 
-<h2 id="conclusion-en">Conclusions</h2>
+<h2 id="conclusion-en">Conclusion</h2>
 
 <p>The analysis reveals a fundamental duality in the dynamics of corruption. On one hand, its persistence depends on central control (<a href="#evolucion-dinamarca-en">Figure 7</a>, <a href="#evolucion-dinamarca-limite-en">Figure 8</a>, and <a href="#evolucion-singapur-en">Figure 9</a>): corrupt networks require key nodes that sustain their cohesion. On the other hand, its eradication requires random disruption (<a href="#intervencion-aleatoria-en">Figure 11</a>, <a href="#intervencion-aleatoria-15-en">Figure 12</a>, and <a href="#intervencion-aleatoria-30-en">Figure 13</a>).</p>
 
