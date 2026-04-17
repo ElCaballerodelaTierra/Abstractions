@@ -488,7 +488,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
     </tr>
   </tbody>
 </table>
-<figcaption style="margin-top: auto; padding-top: 15px;">Tabla 5: Propiedades de la subred corrupta de Dinamarca.</figcaption>
+<figcaption style="margin-top: auto; padding-top: 15px;">Tabla 9: Propiedades de la subred corrupta de Dinamarca.</figcaption>
 </div>
 </div>
 
@@ -567,7 +567,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
     </tr>
   </tbody>
 </table>
-<figcaption style="margin-top: auto; padding-top: 15px;">Tabla 6: Propiedades de la subred corrupta de Singapur.</figcaption>
+<figcaption style="margin-top: auto; padding-top: 15px;">Tabla 10: Propiedades de la subred corrupta de Singapur.</figcaption>
 </div>
 </div>
 
@@ -605,13 +605,13 @@ De esos 24,000 escenarios posibles se encontró una tendencia interesante.
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC25NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC25NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Red de México MC25NA(H,C)"></object>
 </div>
-<figcaption>Figura 11: Una masa crítica cooperadora en una configuración aleatoria logró reducir del 75% al 52% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
+<figcaption>Figura 13: Una masa crítica cooperadora en una configuración aleatoria logró reducir del 75% al 52% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
 </figure>
 
 </div>
 </div>
 
-<p>La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, el modelo mostró que un ataque centralizado no es la mejor estrategia. La solución matemática es una disrupción aleatoria (<a href="#intervencion-aleatoria">Figura 11</a>). </p>
+<p>La lógica tradicional sugiere que debemos buscar y arrestar a las cabezas de la red (los nodos centrales). Sin embargo, el modelo mostró que un ataque centralizado no es la mejor estrategia. La solución matemática es una disrupción aleatoria (<a href="#intervencion-aleatoria">Figura 13</a>). </p>
 
 <figure id="intervencion-aleatoria-15">
 <img src="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" alt="Red de México MC15NA(H,C)" style="display: none;">
@@ -619,10 +619,10 @@ De esos 24,000 escenarios posibles se encontró una tendencia interesante.
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC15NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Red de México MC15NA(H,C)"></object>
 </div>
-<figcaption>Figura 12: Una masa crítica cooperadora del 15% en una configuración aleatoria logró reducir del 85% al 60% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
+<figcaption>Figura 14: Una masa crítica cooperadora del 15% en una configuración aleatoria logró reducir del 85% al 60% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
 </figure>
 
-<p>No existe un umbral mínimo donde toda la red evolucione a una población cooperativa, pero existen porcentajes mínimos donde se genera una mayor propagación. Por ejemplo, con un 15% de masa crítica cooperadora (<a href="#intervencion-aleatoria-15">Figura 12</a>) la estrategia se logra propagar al 40% de la red. A partir del 30% de masa crítica la red evoluciona a una mayoría cooperativa del 60% (<a href="#intervencion-aleatoria-30">Figura 13</a>).</p>
+<p>No existe un umbral mínimo donde toda la red evolucione a una población cooperativa, pero existen porcentajes mínimos donde se genera una mayor propagación. Por ejemplo, con un 15% de masa crítica cooperadora (<a href="#intervencion-aleatoria-15">Figura 14</a>) la estrategia se logra propagar al 40% de la red. A partir del 30% de masa crítica la red evoluciona a una mayoría cooperativa del 60% (<a href="#intervencion-aleatoria-30">Figura 15</a>).</p>
 
 <figure id="intervencion-aleatoria-30">
 <img src="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" alt="Red de México MC30NA(H,C)" style="display: none;">
@@ -630,7 +630,7 @@ De esos 24,000 escenarios posibles se encontró una tendencia interesante.
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC30NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolución de la red de México MC(K)"></object>
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Red de México MC30NA(H,C)"></object>
 </div>
-<figcaption>Figura 13: Una masa crítica cooperadora del 30% en una configuración aleatoria logró reducir del 70% al 40% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
+<figcaption>Figura 15: Una masa crítica cooperadora del 30% en una configuración aleatoria logró reducir del 70% al 40% la estrategia corrupta mayoritaria en la red mexicana.</figcaption>
 </figure>
 
 <p>La intervención aleatoria fragmenta la comunidad central. El cambio de estrategia de los nodos modifica la conectividad de la red corrupta. Al atacar al azar, se rompen enlaces vitales que unen diferentes comunidades, fragmentando la red en múltiples comunidades aisladas y posibilitando que la estrategia cooperativa surja y se expanda hasta llegar a un equilibrio.</p>
@@ -641,7 +641,7 @@ De esos 24,000 escenarios posibles se encontró una tendencia interesante.
 
 <h2 id="conclusion">Conclusión</h2>
 
-<p>El análisis revela una dualidad fundamental en la dinámica de la corrupción. Por un lado, su persistencia depende del control central (<a href="#evolucion-dinamarca">Figura 7</a>, <a href="#evolucion-dinamarca-limite">Figura 8</a> y <a href="#evolucion-singapur">Figura 9</a>), las redes corruptas requieren nodos clave que sostengan su cohesión. Por otro lado, para su erradicación se necesita una disrupción aleatoria (<a href="#intervencion-aleatoria">Figura 11</a>, <a href="#intervencion-aleatoria-15">Figura 12</a> y <a href="#intervencion-aleatoria-30">Figura 13</a>).</p>
+<p>El análisis revela una dualidad fundamental en la dinámica de la corrupción. Por un lado, su persistencia depende del control central (<a href="#evolucion-dinamarca">Figura 7</a>, <a href="#evolucion-dinamarca-limite">Figura 8</a> y <a href="#evolucion-singapur">Figura 9</a>), las redes corruptas requieren nodos clave que sostengan su cohesión. Por otro lado, para su erradicación se necesita una disrupción aleatoria (<a href="#intervencion-aleatoria">Figura 13</a>, <a href="#intervencion-aleatoria-15">Figura 14</a> y <a href="#intervencion-aleatoria-30">Figura 15</a>).</p>
 
 <p>La estrategia para combatir la corrupción es híbrida. Por un lado, requiere modificar la matriz de pagos de la sociedad, fortaleciendo el estado de derecho <b>(c)</b> y el castigo a las personas con poder <b>(<i>p < q</i>)</b> para que la corrupción sea una estrategia perdedora, como en Singapur. Por otro, exige debilitar la estructura de la red corrupta mediante intervenciones aleatorias, como la rotación de personal y la promoción de transparencia, siguiendo ejemplos como Dinamarca.</p>
 
@@ -794,6 +794,7 @@ DOI: <a href="https://doi.org/10.1111/j.1558-5646.2010.01194.x" target="_blank">
       <li><a href="#testing-the-model">Testing the model</a>
         <ul style="padding-left: 20px; list-style-type: circle;">
           <li><a href="#robustness-of-societies">The robustness of societies</a></li>
+          <li><a href="#corrupt-subnetworks">The corrupt subnetworks</a></li>
           <li><a href="#how-to-attack-network">How to attack a corrupt network?</a>
             <ul style="padding-left: 20px; list-style-type: square;">
               <li><a href="#all-scenarios">All possible scenarios</a></li>
@@ -1111,6 +1112,165 @@ by (<a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 
 <p>In Mexico (<a href="#evolucion-mexico-en">Figure 10</a>), a different result from Denmark and Singapore was observed: the society is not resilient against the inclusion of corrupt nodes. The initial percentage of critical mass remains constant.</p>
 
+<h3 id="corrupt-subnetworks">The corrupt subnetworks</h3>
+
+<p>To verify the initial hypothesis of the work, an analysis of the corrupt subnetworks was carried out in the case where 95% of the population starts with a corrupt strategy. </p>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+
+<figure id="subred-corrupta-dinamarca-en" style="margin: 0; display: flex; flex-direction: column; flex-grow: 1;">
+<img src="/assets/elartedeconectarlospuntos/Subred corrupta de Dinamarca.svg" alt="Corrupt subnetwork" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Subred corrupta de Dinamarca.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Corrupt subnetwork"></object>
+<figcaption style="margin-top: auto; padding-top: 15px;">Figure 11: Denmark corrupt subnetwork.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+<table style="margin: 0 auto; width: 90%; font-size: 0.7em; min-width: 300px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Property</th>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Exponential degree distribution</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Yes</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Power law exponent (γ)</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-1.84</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Number of communities</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">106</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Largest community</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">35 nodes</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Average community size</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">3.3</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Global clustering coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Local clustering coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Average path length</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">2.5</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Small-world property</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">No</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Global assortativity coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.206</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Local assortativity coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.594</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Global density</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.004</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Local density</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.057</td>
+    </tr>
+  </tbody>
+</table>
+<figcaption style="margin-top: auto; padding-top: 15px;">Table 9: Properties of the Denmark corrupt subnetwork.</figcaption>
+</div>
+</div>
+
+<p>Both Denmark and Singapore presented similar metrics in their corrupt subnetwork; some parameters such as global density or average path length were very close to what was documented by (<a href="#martins_et_al_en">Martins et al., 2022</a>).</p>
+<br>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 15px; margin-bottom: 20px;">
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+
+<figure id="subred-corrupta-singapur-en" style="margin: 0; display: flex; flex-direction: column; flex-grow: 1;">
+<img src="/assets/elartedeconectarlospuntos/Subred corrupta de Singapur.svg" alt="Corrupt subnetwork" style="display: none;">
+<object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Subred corrupta de Singapur.svg" style="width: 100%; height: auto; display: block; margin: 0 auto; opacity: 0.8;" aria-label="Corrupt subnetwork"></object>
+<figcaption style="margin-top: auto; padding-top: 15px;">Figure 12: Singapore corrupt subnetwork.</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 45%; min-width: 300px; text-align: center; display: flex; flex-direction: column;">
+<table style="margin: 0 auto; width: 90%; font-size: 0.7em; min-width: 300px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Property</th>
+      <th style="padding: 4px; border-bottom: 2px solid #ccc; text-align: center;">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Exponential degree distribution</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Yes</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Power law exponent (γ)</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-2.14</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Number of communities</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">101</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Largest community</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">20 nodes</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Average community size</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">2.8</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Global clustering coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Local clustering coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.0</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Average path length</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">2.7</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Small-world property</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">No</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Global assortativity coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.229</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Local assortativity coefficient</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">-0.576</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Global density</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.004</td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">Local density</td>
+      <td style="padding: 4px; border-bottom: 1px solid #ccc;">0.101</td>
+    </tr>
+  </tbody>
+</table>
+<figcaption style="margin-top: auto; padding-top: 15px;">Table 10: Properties of the Singapore corrupt subnetwork.</figcaption>
+</div>
+</div>
+
 <h4 id="how-to-attack-network">How to attack a corrupt network?</h4>
 
 <p>After confirming that the model recreated the dynamics of corruption in different countries, it led to the most interesting part of the work. In the Mexican case, lacking resilience against corruption, if you start with a network where all nodes are corrupt, is it possible to make it evolve into a cooperative society?</p>
@@ -1140,13 +1300,13 @@ From those 24,000 possible scenarios, an interesting trend was found.
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC25NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC25NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Mexico network MC25NA(H,C)"></object>
 </div>
-<figcaption>Figure 11: A cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 75% to 52%.</figcaption>
+<figcaption>Figure 13: A cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 75% to 52%.</figcaption>
 </figure>
 
 </div>
 </div>
 
-<p>Traditional logic suggests that we should seek out and arrest the heads of the network (the central nodes). However, the model showed that a centralized attack is not the best strategy. The mathematical solution is a random disruption (<a href="#intervencion-aleatoria-en">Figure 11</a>).</p>
+<p>Traditional logic suggests that we should seek out and arrest the heads of the network (the central nodes). However, the model showed that a centralized attack is not the best strategy. The mathematical solution is a random disruption (<a href="#intervencion-aleatoria-en">Figure 13</a>).</p>
 
 <figure id="intervencion-aleatoria-15-en">
 <img src="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" alt="Mexico network MC15NA(H,C)" style="display: none;">
@@ -1154,10 +1314,10 @@ From those 24,000 possible scenarios, an interesting trend was found.
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC15NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC15NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Mexico network MC15NA(H,C)"></object>
 </div>
-<figcaption>Figure 12: A 15% cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 85% to 60%.</figcaption>
+<figcaption>Figure 14: A 15% cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 85% to 60%.</figcaption>
 </figure>
 
-<p>There is no minimum threshold where the entire network evolves into a cooperative population, but there are minimum percentages where greater propagation occurs. For example, with a 15% cooperative critical mass (<a href="#intervencion-aleatoria-15-en">Figure 12</a>), the strategy manages to spread to 40% of the network. Starting from 30% of critical mass, the network evolves to a cooperative majority of 60% (<a href="#intervencion-aleatoria-30-en">Figure 13</a>).</p>
+<p>There is no minimum threshold where the entire network evolves into a cooperative population, but there are minimum percentages where greater propagation occurs. For example, with a 15% cooperative critical mass (<a href="#intervencion-aleatoria-15-en">Figure 14</a>), the strategy manages to spread to 40% of the network. Starting from 30% of critical mass, the network evolves to a cooperative majority of 60% (<a href="#intervencion-aleatoria-30-en">Figure 15</a>).</p>
 
 <figure id="intervencion-aleatoria-30-en">
 <img src="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" alt="Mexico network MC30NA(H,C)" style="display: none;">
@@ -1165,7 +1325,7 @@ From those 24,000 possible scenarios, an interesting trend was found.
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Evolución de México MC30NA(H,C).svg" style="flex: 197; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Evolution of Mexico network MC(K)"></object>
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Red de México MC30NA(H,C).svg" style="flex: 209; min-width: 0; width: 100%; height: auto; display: block; opacity: 0.8;" aria-label="Mexico network MC30NA(H,C)"></object>
 </div>
-<figcaption>Figure 13: A 30% cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 70% to 40%.</figcaption>
+<figcaption>Figure 15: A 30% cooperative critical mass in a random configuration managed to reduce the majority corrupt strategy in the Mexican network from 70% to 40%.</figcaption>
 </figure>
 
 <p>Random intervention fragments the central community. The strategy change of the nodes modifies the connectivity of the corrupt network. By attacking randomly, vital links connecting different communities are broken, fragmenting the network into multiple isolated communities and enabling the cooperative strategy to emerge and expand until reaching an equilibrium.</p>
@@ -1176,7 +1336,7 @@ From those 24,000 possible scenarios, an interesting trend was found.
 
 <h2 id="conclusion-en">Conclusion</h2>
 
-<p>The analysis reveals a fundamental duality in the dynamics of corruption. On one hand, its persistence depends on central control (<a href="#evolucion-dinamarca-en">Figure 7</a>, <a href="#evolucion-dinamarca-limite-en">Figure 8</a>, and <a href="#evolucion-singapur-en">Figure 9</a>): corrupt networks require key nodes that sustain their cohesion. On the other hand, its eradication requires random disruption (<a href="#intervencion-aleatoria-en">Figure 11</a>, <a href="#intervencion-aleatoria-15-en">Figure 12</a>, and <a href="#intervencion-aleatoria-30-en">Figure 13</a>).</p>
+<p>The analysis reveals a fundamental duality in the dynamics of corruption. On one hand, its persistence depends on central control (<a href="#evolucion-dinamarca-en">Figure 7</a>, <a href="#evolucion-dinamarca-limite-en">Figure 8</a>, and <a href="#evolucion-singapur-en">Figure 9</a>): corrupt networks require key nodes that sustain their cohesion. On the other hand, its eradication requires random disruption (<a href="#intervencion-aleatoria-en">Figure 13</a>, <a href="#intervencion-aleatoria-15-en">Figure 14</a>, and <a href="#intervencion-aleatoria-30-en">Figure 15</a>).</p>
 
 <p>The strategy to combat corruption is hybrid. On one hand, it requires modifying the payoff matrix of society, strengthening the rule of law <b>(c)</b> and the punishment of people in power <b>(<i>p < q</i>)</b> so that corruption becomes a losing strategy, as in Singapore. On the other hand, it demands weakening the structure of the corrupt network through random interventions, such as staff rotation and the promotion of transparency, following examples like Denmark.</p>
 
