@@ -191,7 +191,7 @@ Para modelarlo, se han seguido dos enfoques principales: la teoría de redes, qu
 <figure id="algoritmo-scata">
 <img src="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" alt="Algoritmo de Scàta et al" style="display: none;">
 <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Algoritmo de Scata et al.svg" style="width: 90%; height: auto; display: block; margin: 0 auto;  opacity: 0.8;" aria-label="Algoritmo de Scàta et al"></object>
-<figcaption>Figura 2: Algoritmo de Scàta et al</figcaption>
+<figcaption>Figura 2: Algoritmo de Scàta et al. los nodos cooperadores (C) y no cooperadores (D) juegan al dilema del prisionero, en cada ronda los nodos calculan su ganancia total, en este ejemplo los nodos cooperadores (C) eligen cambiar su estrategia a la no cooperación (D) para obtener mejores pagos.</figcaption>
 </figure>
 
 <p>(<a href="#scata_et_al">Scatà et al., 2016</a>) exploraron la evolución de la cooperación humana por medio de un modelo (<a href="#algoritmo-scata">Figura 2</a>) que combinó la teoría de juegos (<i>el dilema del prisionero</i>) y las redes libres de escala.</p>
@@ -492,7 +492,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 </div>
 </div>
 
-<p>Tanto Dinamarca cono Singapur presentaron métricas similares en su subred corrupta, algunos parámetros como la densidad global, o el camino medio fueron muy cercanos a lo documentado por ( <a href="#martins_et_al"> Martins et al., 2022</a>).</p>
+<p>Tanto Dinamarca cono Singapur presentaron métricas similares en su subred corrupta, algunos parámetros como la densidad global, o el camino medio fueron muy cercanos a lo documentado por (<a href="#martins_et_al">Martins et al., 2022</a>).</p>
 <br>
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 15px; margin-bottom: 20px;">
