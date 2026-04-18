@@ -91,6 +91,12 @@ content-en: |
 
 <p class="content-en">The small town where I grew up has changed in the last years.</p>
 
+<figure>
+  <img src="/assets/tlajomulco/Vista desde el cerro.JPEG" alt="Vista desde el cerro">
+  <figcaption>El pueblo visto desde el cerro</figcaption>
+</figure>
+
+
 <!-- <h2>Un día típico</h2>
 
 <p class="content-es">Comer en el mercado</p>
