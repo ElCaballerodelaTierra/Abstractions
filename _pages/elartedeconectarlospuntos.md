@@ -26,7 +26,10 @@ content-es: |
     <img src="/assets/elartedeconectarlospuntos/Tesis - Carlos Villarreal.svg" alt="Tesis - Carlos Villarreal" style="display: none;">
     <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Tesis - Carlos Villarreal.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Tesis - Carlos Villarreal"></object>
     </figure>
-    <button><a href="assets/elartedeconectarlospuntos/Tesis - Comprendiendo y atacando la corrupción.pdf" target="_blank">📄 Descargar</a></button> 
+    <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; gap: 20px; margin: 10px; align-items: center;">
+    <button style="margin: 0;"><a href="assets/elartedeconectarlospuntos/Tesis - Comprendiendo y atacando la corrupción.pdf" target="_blank">📄 Tesis</a></button> 
+    <button style="margin: 0;"><a href="https://github.com/ElCaballerodelaTierra/Corrupcion/" target="_blank">🌐 GitHub</a></button> 
+    </div>
 
     <hr style="margin-top: 20px; margin-bottom: 10px;">
     
@@ -51,7 +54,10 @@ content-en: |
     <img src="/assets/elartedeconectarlospuntos/Tesis - Carlos Villarreal.svg" alt="Thesis - Carlos Villarreal" style="display: none;">
     <object type="image/svg+xml" data="/assets/elartedeconectarlospuntos/Tesis - Carlos Villarreal.svg" style="width: 30%; height: auto; display: block; margin: 0 auto; opacity: 0.7" aria-label="Thesis - Carlos Villarreal"></object>
     </figure>
-    <button><a href="assets/elartedeconectarlospuntos/Tesis - Comprendiendo y atacando la corrupción.pdf" target="_blank">📄 Download [ES]</a></button> 
+    <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; gap: 20px; margin: 10px; align-items: center;">
+    <button style="margin: 0;"><a href="assets/elartedeconectarlospuntos/Tesis - Comprendiendo y atacando la corrupción.pdf" target="_blank">📄 Thesis [ES]</a></button> 
+    <button style="margin: 0;"><a href="https://github.com/ElCaballerodelaTierra/Corrupcion/" target="_blank">🌐 GitHub</a></button> 
+    </div>
 
     <hr style="margin-top: 20px; margin-bottom: 10px;">
 
