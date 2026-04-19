@@ -81,13 +81,6 @@ content-en: |
 
 <p class="content-es">El pequeño pueblo donde crecí ha cambiado en los últimos años.</p>
 
-<div style="display: none; flex-direction: column; gap: 15px;">
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.mural.com.mx/proyectan-para-tlajomulco-un-peor-aumento-de-temperatura/ar2584256" data-iframely-url="https://iframely.net/LCfcGia?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jornada.com.mx/noticia/2023/05/08/estados/tlajomulco-epicentro-de-fosas-clandestinas-en-jalisco-9220" data-iframely-url="https://iframely.net/hi8hyUb9?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
-
-</div>
 
 <p class="content-en">The small town where I grew up has changed in the last years.</p>
 
@@ -96,6 +89,14 @@ content-en: |
   <figcaption class="content-es">El pueblo visto desde el cerro</figcaption>
   <figcaption class="content-en">The town seen from the hill</figcaption>
 </figure>
+
+<div style="display: none; flex-direction: column; gap: 15px;">
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.mural.com.mx/proyectan-para-tlajomulco-un-peor-aumento-de-temperatura/ar2584256" data-iframely-url="https://iframely.net/LCfcGia?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jornada.com.mx/noticia/2023/05/08/estados/tlajomulco-epicentro-de-fosas-clandestinas-en-jalisco-9220" data-iframely-url="https://iframely.net/hi8hyUb9?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+</div>
 
 
 <!-- <h2>Un día típico</h2>
