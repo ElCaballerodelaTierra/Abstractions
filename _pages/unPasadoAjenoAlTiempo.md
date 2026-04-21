@@ -53,7 +53,9 @@ content-en: |
 </style>
 
 <article>
+<br>
     <figure id="foto">
         <img id="amaneceryatardecer" src="/assets/pasado/un-amanecer-ajeno-al-tiempo.jpg" alt="Un amanecer ajeno al tiempo">
     </figure>
+<br>
 </article>
