@@ -498,7 +498,7 @@ de ( <a href="#ubeda_2010">Ubeda & Dueñez-Guzman, 2010</a>)
 </div>
 </div>
 
-<p>Tanto Dinamarca cono Singapur presentaron métricas similares en su subred corrupta, algunos parámetros como la densidad global, o el camino medio fueron muy cercanos a lo documentado por (<a href="#martins_et_al">Martins et al., 2022</a>).</p>
+<p>Tanto Dinamarca cono Singapur presentaron métricas similares en su subred corrupta (<a href="#subred-corrupta-dinamarca">Figura 11</a> y <a href="#subred-corrupta-singapur">Figura 12</a>), algunos parámetros como la densidad global, o el camino medio fueron muy cercanos a lo documentado por (<a href="#martins_et_al">Martins et al., 2022</a>).</p>
 <br>
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 15px; margin-bottom: 20px;">
