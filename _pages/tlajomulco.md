@@ -79,10 +79,10 @@ content-en: |
 
  <h1>Tlajomulco</h1>
 
-<p class="content-es">El pequeño pueblo donde crecí ha cambiado en los últimos años.</p>
+<p class="content-es">El pequeño pueblo donde crecí ha cambiado en los últimos años, pero sigue siendo mi hogar aunque esté lejos de él.</p>
 
 
-<p class="content-en">The small town where I grew up has changed in the last years.</p>
+<p class="content-en">The small town where I grew up has changed in the last years, but it's still my home even if I'm far from it.</p>
 
 <figure hidden>
   <img src="/assets/tlajomulco/Vista desde el cerro.JPEG" alt="Vista desde el cerro">
