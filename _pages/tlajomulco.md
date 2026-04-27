@@ -20,50 +20,10 @@ content-en: |
     <i> Article published in the early 21st century in the context of the war against drug trafficking in Mexico and the start of the climate crisis in the world. </i>
 ---
 
-<style>
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-  margin: 20px 0;
-}
-.gallery .gallery-item {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-.gallery .gallery-item:hover {
-  opacity: 0.9;
-}
-.gallery .gallery-item.expanded {
-  grid-column: 1 / -1;
-  aspect-ratio: auto;
-}
-.gallery .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  margin: 0;
-  border-radius: 0;
-}
-.gallery .gallery-item.expanded img {
-  height: auto;
-  max-height: 100vh;
-  object-fit: contain;
-}
-
-@media (max-width: 600px) {
-  .gallery {
-    gap: 2px;
-  }
-}
-</style>
 
 {% include musica.html id="tlajomulco" src="/assets/tlajomulco/Golondrina%20de%20Ojos%20Negros%20(instrumental)%20-%20David%20Zaizar%20(comprimido).mp3" %}
+
+{% include galeria.html gallery="tlajomulco" %}
 
 <div class="gallery">
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/arcos-del-hospital-del-templo.JPEG" alt="Arcos del hospital del templo" loading="lazy"> <figcaption class="content-es">Arcos del hospital del templo</figcaption> <figcaption class="content-en">Archs of the hospital's church</figcaption></div>
@@ -96,6 +56,7 @@ content-en: |
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jornada.com.mx/noticia/2023/05/08/estados/tlajomulco-epicentro-de-fosas-clandestinas-en-jalisco-9220" data-iframely-url="https://iframely.net/hi8hyUb9?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
 
+
 </div>
 
 
@@ -104,21 +65,3 @@ content-en: |
 <p class="content-es">Comer en el mercado</p>
 
 <p class="content-en">Eating at the market</p> -->
-
-<script>
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  galleryItems.forEach(item => {
-    item.addEventListener('click', function() {
-      const wasExpanded = this.classList.contains('expanded');
-      
-      galleryItems.forEach(i => i.classList.remove('expanded'));
-      
-      if (!wasExpanded) {
-        this.classList.add('expanded');
-        setTimeout(() => {
-          this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }, 50);
-      }
-    });
-  });
-</script>
