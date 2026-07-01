@@ -2,7 +2,7 @@
 layout: default
 
 published: true
-canvas: false
+canvas: true
 
 categories: Economía
 
@@ -32,8 +32,8 @@ frase-contexto-en: |
     In his essay *Economic Possibilities for our Grandchildren*, written in the midst of the Great Depression and in a context of technological transformation marked by agricultural and industrial mechanization.
 
 content-es: |
-    La vida es bella
+    <i> Artículo dedicado a mostrar diferentes formas de automatiar procesos para la autosuficiencia humana, se hablará de como crear casas sustentables, cultivar nuestros propios alimentos, generar energía renovable, además de sistemas de captación y filtración de agua </i>
 
 content-en: |
-    Life is beautiful
+    <i> Article dedicated to showing different ways to automate processes for human self-sufficiency, we will talk about how to create sustainable houses, grow our own food, generate renewable energy, as well as water capture systems and water filtration </i>
 ---

@@ -1,6 +1,6 @@
 ---
 published: true
-canvas: false
+canvas: true
 
 layout: default
 
