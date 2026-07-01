@@ -5,7 +5,7 @@ canvas: true
 
 layout: default
 
-imagenPortada: /assets/guadalajara/cupula-biblioteca-iberoamericana.jpg
+imagenPortada: /assets/guadalajara/cupula-biblioteca-iberoamericana.JPG
 descripcionImagenPortada-es: "Cúpula de la Biblioteca Iberoamericana, Guadalajara, Jalisco, México"
 descripcionImagenPortada-en: "Dome of the Iberoamerican Library, Guadalajara, Jalisco, Mexico"
 
