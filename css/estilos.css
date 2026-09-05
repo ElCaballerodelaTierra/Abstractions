@@ -222,7 +222,8 @@ figure.portada {
 figure.portada img,
 figure.portada object {
     height: 100vh;
-    height: 100svh; /* Solves mobile Safari viewport height bug */
+    height: 100svh;
+    /* Solves mobile Safari viewport height bug */
     /* 100% de la altura del viewport */
     width: 100%;
     object-fit: cover;
@@ -330,6 +331,9 @@ figure img {
     width: 100%;
 }
 
+
+/* Se agrega la clase 'anchura-completa' a la imagen, para que abarque todo el ancho de la pantalla*/
+
 figure.anchura-completa img {
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -342,6 +346,22 @@ figure.anchura-completa figcaption {
 
 figure.portada figcaption {
     padding: 10px 10px 0px 10px;
+}
+
+/* Estilo e interactividad para imagenes expandibles, al añadir la clase 'expandible' se puede expandir (anchura-completa) y contraer la imagen */
+.expandible,
+figure.expandible {
+    cursor: pointer;
+}
+
+.expandible,
+figure.expandible img {
+    transition: opacity 0.3s ease;
+}
+
+.expandible:hover,
+figure.expandible img:hover {
+    opacity: 0.9;
 }
 
 /* Estilo para la descripción de las imagenes */

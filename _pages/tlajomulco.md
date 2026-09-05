@@ -27,28 +27,46 @@ content-en: |
 
 <div class="gallery">
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/arcos-del-hospital-del-templo.JPEG" alt="Arcos del hospital del templo" loading="lazy"> <figcaption class="content-es">Arcos del hospital del templo</figcaption> <figcaption class="content-en">Archs of the hospital's church</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/bolillos-en-la-mañana.JPEG" alt="Bolillos y tortillas colgados en una tienda por la mañana" loading="lazy"> <figcaption class="content-es">Bolillos y tortillas colgados por la mañana antes de la apertura de la tienda </figcaption> <figcaption class="content-en">Bread and tortillas hanging in a store before opening</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-de-la-cultura.JPEG" alt="Casa de la cultura" loading="lazy"> <figcaption class="content-es">Interior de la casa de la cultura del pueblo</figcaption> <figcaption class="content-en">Inside the town's house of culture</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-rustica.JPEG" alt="Casa rústica" loading="lazy"> <figcaption class="content-es">Muchas casas todavía son de adobe</figcaption> <figcaption class="content-en">Many houses are still made of adobe</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/dos-barcos.JPEG" alt="Dos barcos" loading="lazy"> <figcaption class="content-es">Dos barcos, la abstracción y la realidad, repisa de mi cuarto</figcaption> <figcaption class="content-en">Two boats, abstraction and reality, my room's shelf</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/bolillos-en-la-mañana.JPEG" alt="Bolillos y tortillas colgados en una tienda por la mañana" loading="lazy"> <figcaption class="content-es">Bolillos y tortillas colgados por la mañana antes de la apertura de la tienda </figcaption> <figcaption class="content-en">Bread and tortillas hanging in a store before opening</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/mi-ventana.JPEG" alt="Mi ventana" loading="lazy"> <figcaption class="content-es">Mi ventana</figcaption> <figcaption class="content-en">My window</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/plaza-central.JPEG" alt="Plaza central" loading="lazy"> <figcaption class="content-es">Plaza central del pueblo</figcaption> <figcaption class="content-en">Town's central square</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/dos-barcos.JPEG" alt="Dos barcos" loading="lazy"> <figcaption class="content-es">Dos barcos, la abstracción y la realidad, repisa de mi cuarto</figcaption> <figcaption class="content-en">Two boats, abstraction and reality, my room's shelf</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/casa-rustica.JPEG" alt="Casa rústica" loading="lazy"> <figcaption class="content-es">Muchas casas todavía son de adobe</figcaption> <figcaption class="content-en">Many houses are still made of adobe</figcaption></div>
   <div class="gallery-item"><img src="/assets/tlajomulco/galería/torre-de-la-iglesia.JPEG" alt="Torre de la iglesia" loading="lazy"> <figcaption class="content-es">Torre de la iglesia, una de las pocas iglesias donde la torre está separada del edificio central</figcaption> <figcaption class="content-en">Church tower, one of the few churches where the tower is separated from the main building</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Un día lluvioso</figcaption> <figcaption class="content-en">A rainy day</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/plaza-central.JPEG" alt="Plaza central" loading="lazy"> <figcaption class="content-es">Plaza central del pueblo</figcaption> <figcaption class="content-en">Town's central square</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/atardecer-sobre-la-iglesia.JPG" alt="Atardecer sobre la iglesia" loading="lazy"> <figcaption class="content-es">Atardecer sobre la iglesia</figcaption> <figcaption class="content-en">Sunset over the church</figcaption></div>
+
 </div>
 
- <h1>Tlajomulco</h1>
+ <h1 hidden >Tlajomulco</h1>
 
 <p class="content-es">El pequeño pueblo donde crecí ha cambiado en los últimos años, pero sigue siendo mi hogar aunque esté lejos de él.</p>
 
+<div hidden class="content-es">
+<p>
+<i>Pude regresar durante una temporada, fueron los meses más agradables que he tenido en mucho tiempo. </i> 
+<br>
+<br>
+Espero la llegada del amanecer, sobre mí las nubes ocultas en la noche comienzan a brillar como una multitud de velas abriéndose al tiempo.
+
+</p>
+</div>
 
 <p class="content-en">The small town where I grew up has changed in the last years, but it's still my home even if I'm far from it.</p>
 
-<figure hidden>
-  <img src="/assets/tlajomulco/Vista desde el cerro.JPEG" alt="Vista desde el cerro">
-  <figcaption class="content-es">El pueblo visto desde el cerro</figcaption>
-  <figcaption class="content-en">The town seen from the hill</figcaption>
+
+<figure class="expandible">
+  <img src="/assets/tlajomulco/Vista desde el cerro.JPEG" alt="Vista desde el mirador de las Peñitas">
+  <figcaption class="content-es">El pueblo visto desde el mirador de las Peñitas</figcaption>
+  <figcaption class="content-en">The town seen from the viewpoint of Las Peñitas</figcaption>
 </figure>
+
+<div class="gallery">
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Las nubes siempre acarician a las montañas en los días lluviosos</figcaption> <figcaption class="content-en">The clouds always caress the mountains on rainy days</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/casa-en-la-lluvia.JPG" alt="La lluvia es una artista" loading="lazy"> <figcaption class="content-es">La lluvia es una artista sobre las fachadas de las casas</figcaption> <figcaption class="content-en">Rain is an artist on the houses' facades</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/inicio-sendero.JPG" alt="Las montañas cambian sus colores durante la temporada de lluvias" loading="lazy"> <figcaption class="content-es">Las montañas cambian sus colores en la temporada de lluvias</figcaption> <figcaption class="content-en">The mountains change their colors during the rainy season</figcaption></div>
+</div>
+
 
 <div style="display: none; flex-direction: column; gap: 15px;">
 
