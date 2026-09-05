@@ -54,19 +54,20 @@ Espero la llegada del amanecer, sobre mí las nubes ocultas en la noche comienza
 
 <p class="content-en">The small town where I grew up has changed in the last years, but it's still my home even if I'm far from it.</p>
 
+<div class="gallery">
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Las nubes acarician a las montañas en los días lluviosos</figcaption> <figcaption class="content-en">The clouds caress the mountains on rainy days</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/casa-en-la-lluvia.JPG" alt="La lluvia es una artista" loading="lazy"> <figcaption class="content-es">La lluvia es una artista sobre las fachadas de las casas</figcaption> <figcaption class="content-en">Rain is an artist on the houses' facades</figcaption></div>
+  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/inicio-sendero.JPG" alt="Inicio del sendero a la cima de las montañas" loading="lazy"> <figcaption class="content-es">Inicio del sendero a la cima de las montañas</figcaption> <figcaption class="content-en">Start of the trail to the top of the mountains</figcaption></div>
+</div>
 
-<figure class="expandible">
+<p class="content-es">Está rodeado de cerros, que cambian de color con las estaciones.</p>
+<p class="content-en">It's surrounded by hills, which change color with the seasons.</p>
+
+<figure class="expandible" style="padding-top: 20px;">
   <img src="/assets/tlajomulco/Vista desde el cerro.JPEG" alt="Vista desde el mirador de las Peñitas">
   <figcaption class="content-es">El pueblo visto desde el mirador de las Peñitas</figcaption>
   <figcaption class="content-en">The town seen from the viewpoint of Las Peñitas</figcaption>
 </figure>
-
-<div class="gallery">
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/un-día-nublado.JPEG" alt="Un día nublado" loading="lazy"> <figcaption class="content-es">Las nubes siempre acarician a las montañas en los días lluviosos</figcaption> <figcaption class="content-en">The clouds always caress the mountains on rainy days</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/casa-en-la-lluvia.JPG" alt="La lluvia es una artista" loading="lazy"> <figcaption class="content-es">La lluvia es una artista sobre las fachadas de las casas</figcaption> <figcaption class="content-en">Rain is an artist on the houses' facades</figcaption></div>
-  <div class="gallery-item"><img src="/assets/tlajomulco/galería/segunda-galeria/inicio-sendero.JPG" alt="Las montañas cambian sus colores durante la temporada de lluvias" loading="lazy"> <figcaption class="content-es">Las montañas cambian sus colores en la temporada de lluvias</figcaption> <figcaption class="content-en">The mountains change their colors during the rainy season</figcaption></div>
-</div>
-
 
 <div style="display: none; flex-direction: column; gap: 15px;">
 
